@@ -1,0 +1,258 @@
+{
+ "punch_through": {
+  "game_ref": "WeaponPunctureDepthMod",
+  "name_zh": "穿透",
+  "name_en": "Punch Through",
+  "group": "default",
+  "prefix": "Lexi",
+  "suffix": "Nok"
+ },
+ "slash_damage": {
+  "game_ref": "WeaponSlashDamageMod",
+  "name_zh": "切割伤害",
+  "name_en": "Slash",
+  "group": "default",
+  "prefix": "Sci",
+  "suffix": "Sus"
+ },
+ "impact_damage": {
+  "game_ref": "WeaponImpactDamageMod",
+  "name_zh": "冲击伤害",
+  "name_en": "Impact",
+  "group": "default",
+  "prefix": "Magna",
+  "suffix": "Ton"
+ },
+ "toxin_damage": {
+  "game_ref": "WeaponToxinDamageMod",
+  "name_zh": "毒素伤害",
+  "name_en": "Toxin",
+  "group": "default",
+  "prefix": "Toxi",
+  "suffix": "Tox"
+ },
+ "status_duration": {
+  "game_ref": "WeaponProcTimeMod",
+  "name_zh": "触发时间",
+  "name_en": "Status Duration",
+  "group": "default",
+  "prefix": "Deci",
+  "suffix": "Des"
+ },
+ "ammo_maximum": {
+  "game_ref": "WeaponAmmoMaxMod",
+  "name_zh": "弹药上限",
+  "name_en": "Ammo Maximum",
+  "group": "default",
+  "prefix": "Ampi",
+  "suffix": "Bin"
+ },
+ "recoil": {
+  "game_ref": "WeaponRecoilReductionMod",
+  "name_zh": "后坐力",
+  "name_en": "Weapon Recoil",
+  "group": "default",
+  "prefix": "Zeti",
+  "suffix": "Mag"
+ },
+ "zoom": {
+  "game_ref": "WeaponZoomFovMod",
+  "name_zh": "变焦",
+  "name_en": "Zoom",
+  "group": "default",
+  "prefix": "Hera",
+  "suffix": "Lis"
+ },
+ "channeling_damage": {
+  "game_ref": "WeaponMeleeComboInitialBonusMod",
+  "name_zh": "初始连击数",
+  "name_en": "Initial combo",
+  "group": "melee",
+  "prefix": "Para",
+  "suffix": "Um"
+ },
+ "channeling_efficiency": {
+  "game_ref": "WeaponMeleeComboEfficiencyMod",
+  "name_zh": "重击效率",
+  "name_en": "Heavy Attack Efficiency",
+  "group": "melee",
+  "prefix": "Forti",
+  "suffix": "Us"
+ },
+ "critical_chance": {
+  "game_ref": "WeaponCritChanceMod",
+  "name_zh": "暴击率",
+  "name_en": "Critical Chance",
+  "group": "default",
+  "prefix": "Crita",
+  "suffix": "Cron"
+ },
+ "critical_damage": {
+  "game_ref": "WeaponCritDamageMod",
+  "name_zh": "暴击伤害",
+  "name_en": "Critical Damage",
+  "group": "default",
+  "prefix": "Acri",
+  "suffix": "Tis"
+ },
+ "base_damage_/_melee_damage": {
+  "game_ref": "WeaponDamageAmountMod",
+  "name_zh": "基础伤害",
+  "name_en": "Damage",
+  "group": "default",
+  "prefix": "Visi",
+  "suffix": "Ata"
+ },
+ "heat_damage": {
+  "game_ref": "WeaponFireDamageMod",
+  "name_zh": "火焰伤害",
+  "name_en": "Heat",
+  "group": "default",
+  "prefix": "Igni",
+  "suffix": "Pha"
+ },
+ "multishot": {
+  "game_ref": "WeaponFireIterationsMod",
+  "name_zh": "多重射击",
+  "name_en": "Multishot",
+  "group": "default",
+  "prefix": "Sati",
+  "suffix": "Can"
+ },
+ "reload_speed": {
+  "game_ref": "WeaponReloadSpeedMod",
+  "name_zh": "装填速度",
+  "name_en": "Reload Speed",
+  "group": "default",
+  "prefix": "Feva",
+  "suffix": "Tak"
+ },
+ "range": {
+  "game_ref": "WeaponMeleeRangeIncMod",
+  "name_zh": "攻击范围",
+  "name_en": "Range",
+  "group": "melee",
+  "prefix": "Locti",
+  "suffix": "Tor"
+ },
+ "damage_vs_corpus": {
+  "game_ref": "WeaponFactionDamageCorpus",
+  "name_zh": "对Corpus伤害",
+  "name_en": "Damage to Corpus",
+  "group": "default",
+  "prefix": "Manti",
+  "suffix": "Tron"
+ },
+ "damage_vs_grineer": {
+  "game_ref": "WeaponFactionDamageGrineer",
+  "name_zh": "对Grineer伤害",
+  "name_en": "Damage to Grineer",
+  "group": "default",
+  "prefix": "Argi",
+  "suffix": "Con"
+ },
+ "puncture_damage": {
+  "game_ref": "WeaponArmorPiercingDamageMod",
+  "name_zh": "穿刺伤害",
+  "name_en": "Puncture",
+  "group": "default",
+  "prefix": "Insi",
+  "suffix": "Cak"
+ },
+ "damage_vs_infested": {
+  "game_ref": "WeaponFactionDamageInfested",
+  "name_zh": "对Infested伤害",
+  "name_en": "Damage to Infested",
+  "group": "default",
+  "prefix": "Pura",
+  "suffix": "Ada"
+ },
+ "electric_damage": {
+  "game_ref": "WeaponElectricityDamageMod",
+  "name_zh": "电击伤害",
+  "name_en": "Electricity",
+  "group": "default",
+  "prefix": "Vexi",
+  "suffix": "Tio"
+ },
+ "finisher_damage": {
+  "game_ref": "WeaponMeleeFinisherDamageMod",
+  "name_zh": "处决伤害",
+  "name_en": "Finisher Damage",
+  "group": "melee",
+  "prefix": "Exi",
+  "suffix": "Cta"
+ },
+ "fire_rate_/_attack_speed": {
+  "game_ref": "WeaponFireRateMod",
+  "name_zh": "射速/攻击速度",
+  "name_en": "Fire Rate / Attack Speed",
+  "group": "default",
+  "prefix": "Croni",
+  "suffix": "Dra"
+ },
+ "projectile_speed": {
+  "game_ref": "WeaponProjectileSpeedMod",
+  "name_zh": "投射物飞行速度",
+  "name_en": "Projectile speed",
+  "group": "default",
+  "prefix": "Conci",
+  "suffix": "Nak"
+ },
+ "magazine_capacity": {
+  "game_ref": "WeaponClipMaxMod",
+  "name_zh": "弹匣容量",
+  "name_en": "Magazine Capacity",
+  "group": "default",
+  "prefix": "Arma",
+  "suffix": "Tin"
+ },
+ "status_chance": {
+  "game_ref": "WeaponStunChanceMod",
+  "name_zh": "触发几率",
+  "name_en": "Status Chance",
+  "group": "default",
+  "prefix": "Hexa",
+  "suffix": "Dex"
+ },
+ "cold_damage": {
+  "game_ref": "WeaponFreezeDamageMod",
+  "name_zh": "冰冻伤害",
+  "name_en": "Cold",
+  "group": "default",
+  "prefix": "Geli",
+  "suffix": "Do"
+ },
+ "combo_duration": {
+  "game_ref": "ComboDurationMod",
+  "name_zh": "连击持续时间",
+  "name_en": "Combo Duration",
+  "group": "melee",
+  "prefix": "Tempi",
+  "suffix": "Nem"
+ },
+ "critical_chance_on_slide_attack": {
+  "game_ref": "SlideAttackCritChanceMod",
+  "name_zh": "滑行攻击暴击率",
+  "name_en": "Critical Chance for Slide Attack",
+  "group": "melee",
+  "prefix": "Pleci",
+  "suffix": "Nent"
+ },
+ "chance_to_gain_extra_combo_count": {
+  "game_ref": "WeaponMeleeComboBonusOnHitMod",
+  "name_zh": "额外连击数获取",
+  "name_en": "Additional Combo Count Chance",
+  "group": "melee",
+  "prefix": "Laci",
+  "suffix": "Nus"
+ },
+ "chance_to_gain_combo_count": {
+  "game_ref": "WeaponMeleeComboPointsOnHitMod",
+  "name_zh": "连击数获取几率",
+  "name_en": "Chance to Gain Combo Count",
+  "group": "melee",
+  "prefix": "",
+  "suffix": ""
+ }
+}

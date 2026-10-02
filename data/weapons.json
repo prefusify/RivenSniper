@@ -1,0 +1,4796 @@
+{
+ "kulstar": {
+  "name_zh": "杀星",
+  "name_en": "Kulstar",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.3,
+  "mr": 5,
+  "variant_dispositions": {
+   "Kulstar": 1.3
+  }
+ },
+ "heliocor": {
+  "name_zh": "赫利俄光锤",
+  "name_en": "Heliocor",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 9,
+  "variant_dispositions": {
+   "Heliocor": 1.35,
+   "Synoid Heliocor": 1.35
+  }
+ },
+ "nagantaka": {
+  "name_zh": "噬蛇弩",
+  "name_en": "Nagantaka",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 9,
+  "variant_dispositions": {
+   "Nagantaka": 1.3,
+   "Nagantaka Prime": 1.15
+  }
+ },
+ "ocucor": {
+  "name_zh": "视使之触",
+  "name_en": "Ocucor",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 8,
+  "variant_dispositions": {
+   "Ocucor": 1.2
+  }
+ },
+ "falcor": {
+  "name_zh": "猎鹰轮",
+  "name_en": "Falcor",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 8,
+  "variant_dispositions": {
+   "Falcor": 1.3
+  }
+ },
+ "paracesis": {
+  "name_zh": "心智之殁",
+  "name_en": "Paracesis",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.65,
+  "mr": 10,
+  "variant_dispositions": {
+   "Paracesis": 0.64999998
+  }
+ },
+ "exergis": {
+  "name_zh": "晶能放射器",
+  "name_en": "Exergis",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.1,
+  "mr": 8,
+  "variant_dispositions": {
+   "Exergis": 1.1
+  }
+ },
+ "battacor": {
+  "name_zh": "武使之力",
+  "name_en": "Battacor",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 10,
+  "variant_dispositions": {
+   "Battacor": 1.1
+  }
+ },
+ "euphona_prime": {
+  "name_zh": "悦音 Prime",
+  "name_en": "Euphona Prime",
+  "group": "secondary",
+  "riven_type": "shotgun",
+  "disposition": 0.95,
+  "mr": 14,
+  "variant_dispositions": {
+   "Euphona Prime": 0.94999999
+  }
+ },
+ "fusilai": {
+  "name_zh": "齐射玻刃",
+  "name_en": "Fusilai",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.35,
+  "mr": 7,
+  "variant_dispositions": {
+   "Fusilai": 1.35
+  }
+ },
+ "lato": {
+  "name_zh": "拉托",
+  "name_en": "Lato",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.4,
+  "mr": 0,
+  "variant_dispositions": {
+   "Lato": 1.4,
+   "Lato Prime": 1.35,
+   "Lato Vandal": 1.35
+  }
+ },
+ "magnus": {
+  "name_zh": "麦格努斯",
+  "name_en": "Magnus",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.53,
+  "mr": 10,
+  "variant_dispositions": {
+   "Magnus": 1.53,
+   "Magnus Prime": 1.25
+  }
+ },
+ "ack_and_brunt": {
+  "name_zh": "认知 & 冲击",
+  "name_en": "Ack & Brunt",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 3,
+  "variant_dispositions": {
+   "Ack & Brunt": 1.35
+  }
+ },
+ "amphis": {
+  "name_zh": "双头蛇",
+  "name_en": "Amphis",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.5,
+  "mr": 5,
+  "variant_dispositions": {
+   "Amphis": 1.5
+  }
+ },
+ "anku": {
+  "name_zh": "夺魂死神",
+  "name_en": "Anku",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.46,
+  "mr": 3,
+  "variant_dispositions": {
+   "Anku": 1.46
+  }
+ },
+ "arca_titron": {
+  "name_zh": "弧电振子锤",
+  "name_en": "Arca Titron",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 10,
+  "variant_dispositions": {
+   "Arca Titron": 1.3
+  }
+ },
+ "balla": {
+  "name_zh": "宝拉",
+  "name_en": "Balla",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 0.8,
+  "mr": 0,
+  "variant_dispositions": {
+   "Balla": 0.80000001
+  }
+ },
+ "boltace": {
+  "name_zh": "螺钉拐刃",
+  "name_en": "Boltace",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 4,
+  "variant_dispositions": {
+   "Boltace": 1.25,
+   "Telos Boltace": 1.1
+  }
+ },
+ "broken_war": {
+  "name_zh": "破碎的战争之剑",
+  "name_en": "Broken War",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 10,
+  "variant_dispositions": {
+   "Broken War": 1.15
+  }
+ },
+ "caustacyst": {
+  "name_zh": "灼蚀变体镰",
+  "name_en": "Caustacyst",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 7,
+  "variant_dispositions": {
+   "Caustacyst": 1.3,
+   "Coda Caustacyst": 0.85000002
+  }
+ },
+ "cerata": {
+  "name_zh": "裸鳃刃",
+  "name_en": "Cerata",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 7,
+  "variant_dispositions": {
+   "Cerata": 1.25
+  }
+ },
+ "hate": {
+  "name_zh": "憎恨",
+  "name_en": "Hate",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 8,
+  "variant_dispositions": {
+   "Hate": 1.1
+  }
+ },
+ "soma": {
+  "name_zh": "月神",
+  "name_en": "Soma",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 6,
+  "variant_dispositions": {
+   "Soma": 1.15,
+   "Soma Prime": 1.1
+  }
+ },
+ "synapse": {
+  "name_zh": "突触生化枪",
+  "name_en": "Synapse",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.31,
+  "mr": 11,
+  "variant_dispositions": {
+   "Coda Synapse": 0.89999998,
+   "Synapse": 1.3099999
+  }
+ },
+ "tigris": {
+  "name_zh": "猛虎",
+  "name_en": "Tigris",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.1,
+  "mr": 7,
+  "variant_dispositions": {
+   "Sancti Tigris": 1,
+   "Tigris": 1.1,
+   "Tigris Prime": 0.94999999
+  }
+ },
+ "tonkor": {
+  "name_zh": "征服榴炮",
+  "name_en": "Tonkor",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 5,
+  "variant_dispositions": {
+   "Kuva Tonkor": 0.89999998,
+   "Tonkor": 1.3
+  }
+ },
+ "torid": {
+  "name_zh": "托里德",
+  "name_en": "Torid",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 4,
+  "variant_dispositions": {
+   "Torid": 1.3
+  }
+ },
+ "vectis": {
+  "name_zh": "守望者",
+  "name_en": "Vectis",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 2,
+  "variant_dispositions": {
+   "Vectis": 1.15,
+   "Vectis Prime": 1
+  }
+ },
+ "veldt": {
+  "name_zh": "草原猎手",
+  "name_en": "Veldt",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 8,
+  "variant_dispositions": {
+   "Veldt": 1.3
+  }
+ },
+ "vulkar": {
+  "name_zh": "金工火神",
+  "name_en": "Vulkar",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.45,
+  "mr": 3,
+  "variant_dispositions": {
+   "Vulkar": 1.45,
+   "Vulkar Wraith": 1.4
+  }
+ },
+ "zarr": {
+  "name_zh": "沙皇",
+  "name_en": "Zarr",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 7,
+  "variant_dispositions": {
+   "Kuva Zarr": 0.69999999,
+   "Zarr": 1.15
+  }
+ },
+ "zenith": {
+  "name_zh": "天穹之顶",
+  "name_en": "Zenith",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 10,
+  "variant_dispositions": {
+   "Zenith": 1.1
+  }
+ },
+ "zhuge": {
+  "name_zh": "诸葛连弩",
+  "name_en": "Zhuge",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.2,
+  "mr": 10,
+  "variant_dispositions": {
+   "Zhuge": 1.2,
+   "Zhuge Prime": 1.15
+  }
+ },
+ "acrid": {
+  "name_zh": "阿克里德",
+  "name_en": "Acrid",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.33,
+  "mr": 7,
+  "variant_dispositions": {
+   "Acrid": 1.33
+  }
+ },
+ "afuris": {
+  "name_zh": "盗贼双枪",
+  "name_en": "Afuris",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.45,
+  "mr": 4,
+  "variant_dispositions": {
+   "Afuris": 1.45,
+   "Afuris Prime": 1.1
+  }
+ },
+ "akbolto": {
+  "name_zh": "螺钉双枪",
+  "name_en": "Akbolto",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.3,
+  "mr": 8,
+  "variant_dispositions": {
+   "Akbolto": 1.3,
+   "Akbolto Prime": 1.2,
+   "Telos Akbolto": 1.25
+  }
+ },
+ "akbronco": {
+  "name_zh": "野马双枪",
+  "name_en": "Akbronco",
+  "group": "secondary",
+  "riven_type": "shotgun",
+  "disposition": 1.35,
+  "mr": 2,
+  "variant_dispositions": {
+   "Akbronco": 1.35,
+   "Akbronco Prime": 1.3
+  }
+ },
+ "akjagara": {
+  "name_zh": "觉醒双枪",
+  "name_en": "Akjagara",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.1,
+  "mr": 8,
+  "variant_dispositions": {
+   "Akjagara": 1.1,
+   "Akjagara Prime": 1
+  }
+ },
+ "aklato": {
+  "name_zh": "拉托双枪",
+  "name_en": "Aklato",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.52,
+  "mr": 3,
+  "variant_dispositions": {
+   "Aklato": 1.52
+  }
+ },
+ "arca_scisco": {
+  "name_zh": "弧电探知者",
+  "name_en": "Arca Scisco",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.1,
+  "mr": 10,
+  "variant_dispositions": {
+   "Arca Scisco": 1.1
+  }
+ },
+ "cycron": {
+  "name_zh": "循环离子枪",
+  "name_en": "Cycron",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 8,
+  "variant_dispositions": {
+   "Cycron": 1.2,
+   "Tenet Cycron": 0.69999999
+  }
+ },
+ "detron": {
+  "name_zh": "德特昂",
+  "name_en": "Detron",
+  "group": "secondary",
+  "riven_type": "shotgun",
+  "disposition": 1.15,
+  "mr": 6,
+  "variant_dispositions": {
+   "Detron": 1.15,
+   "Mara Detron": 1.15,
+   "Tenet Detron": 1
+  }
+ },
+ "embolist": {
+  "name_zh": "安柏勒斯",
+  "name_en": "Embolist",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.4,
+  "mr": 9,
+  "variant_dispositions": {
+   "Embolist": 1.4
+  }
+ },
+ "dual_kamas": {
+  "name_zh": "双短柄战镰",
+  "name_en": "Dual Kamas",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 1,
+  "variant_dispositions": {
+   "Dual Kamas": 1.35,
+   "Dual Kamas Prime": 1.25
+  }
+ },
+ "kuva_shildeg": {
+  "name_zh": "赤毒·希尔德",
+  "name_en": "Kuva Shildeg",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.8,
+  "mr": 13,
+  "variant_dispositions": {
+   "Kuva Shildeg": 0.80000001
+  }
+ },
+ "kuva_ayanga": {
+  "name_zh": "赤毒·怒雷",
+  "name_en": "Kuva Ayanga",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 0.95,
+  "mr": 13,
+  "variant_dispositions": {
+   "Kuva Ayanga": 0.94999999
+  }
+ },
+ "vermisplicer": {
+  "name_zh": "虫置",
+  "name_en": "Vermisplicer",
+  "group": "kitgun",
+  "riven_type": "kitgun",
+  "disposition": 1.15,
+  "mr": 0,
+  "variant_dispositions": {}
+ },
+ "sporelacer": {
+  "name_zh": "孢射",
+  "name_en": "Sporelacer",
+  "group": "kitgun",
+  "riven_type": "kitgun",
+  "disposition": 0.6,
+  "mr": 0,
+  "variant_dispositions": {}
+ },
+ "argonak": {
+  "name_zh": "氩格纳克",
+  "name_en": "Argonak",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.25,
+  "mr": 7,
+  "variant_dispositions": {
+   "Argonak": 1.25
+  }
+ },
+ "castanas": {
+  "name_zh": "雷爆信镖",
+  "name_en": "Castanas",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.4,
+  "mr": 3,
+  "variant_dispositions": {
+   "Castanas": 1.4,
+   "Sancti Castanas": 1.35
+  }
+ },
+ "cestra": {
+  "name_zh": "锡斯特",
+  "name_en": "Cestra",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.52,
+  "mr": 4,
+  "variant_dispositions": {
+   "Cestra": 1.52
+  }
+ },
+ "dual_toxocyst": {
+  "name_zh": "毒囊双枪",
+  "name_en": "Dual Toxocyst",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.35,
+  "mr": 11,
+  "variant_dispositions": {
+   "Dual Toxocyst": 1.35
+  }
+ },
+ "hystrix": {
+  "name_zh": "豪猪",
+  "name_en": "Hystrix",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 7,
+  "variant_dispositions": {
+   "Hystrix": 1.2,
+   "Hystrix Prime": 1
+  }
+ },
+ "fragor": {
+  "name_zh": "重击巨锤",
+  "name_en": "Fragor",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.2,
+  "mr": 2,
+  "variant_dispositions": {
+   "Fragor": 1.2,
+   "Fragor Prime": 1.05
+  }
+ },
+ "galatine": {
+  "name_zh": "迦伦提恩",
+  "name_en": "Galatine",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.05,
+  "mr": 3,
+  "variant_dispositions": {
+   "Galatine": 1.05,
+   "Galatine Prime": 0.89999998
+  }
+ },
+ "gazal_machete": {
+  "name_zh": "加扎勒反曲刀",
+  "name_en": "Gazal Machete",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.4,
+  "mr": 5,
+  "variant_dispositions": {
+   "Gazal Machete": 1.4
+  }
+ },
+ "gram": {
+  "name_zh": "格拉姆",
+  "name_en": "Gram",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.44,
+  "mr": 2,
+  "variant_dispositions": {
+   "Gram": 1.4400001,
+   "Gram Prime": 0.75
+  }
+ },
+ "guandao": {
+  "name_zh": "关刀",
+  "name_en": "Guandao",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.05,
+  "mr": 4,
+  "variant_dispositions": {
+   "Guandao": 1.05,
+   "Guandao Prime": 0.69999999
+  }
+ },
+ "gunsen": {
+  "name_zh": "军扇",
+  "name_en": "Gunsen",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 8,
+  "variant_dispositions": {
+   "Gunsen": 1.35,
+   "Gunsen Prime": 1
+  }
+ },
+ "dual_skana": {
+  "name_zh": "空刃双刀",
+  "name_en": "Dual Skana",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.48,
+  "mr": 0,
+  "variant_dispositions": {
+   "Dual Skana": 1.48
+  }
+ },
+ "jaw_sword": {
+  "name_zh": "蛇颚刀",
+  "name_en": "Jaw Sword",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.4,
+  "mr": 0,
+  "variant_dispositions": {
+   "Jaw Sword": 1.4
+  }
+ },
+ "kesheg": {
+  "name_zh": "怯薛",
+  "name_en": "Kesheg",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 7,
+  "variant_dispositions": {
+   "Kesheg": 1.35
+  }
+ },
+ "kestrel": {
+  "name_zh": "红隼",
+  "name_en": "Kestrel",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.45,
+  "mr": 0,
+  "variant_dispositions": {
+   "Kestrel": 1.45,
+   "Kestrel Prime": 0.75
+  }
+ },
+ "kronsh": {
+  "name_zh": "客隆什",
+  "name_en": "Kronsh",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 1.3,
+  "mr": 0,
+  "variant_dispositions": {
+   "Kronsh": 1.3
+  }
+ },
+ "ballistica": {
+  "name_zh": "布里斯提卡",
+  "name_en": "Ballistica",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.25,
+  "mr": 2,
+  "variant_dispositions": {
+   "Ballistica": 1.25,
+   "Ballistica Prime": 1.2,
+   "Rakta Ballistica": 1.2
+  }
+ },
+ "heat_dagger": {
+  "name_zh": "烈焰匕首",
+  "name_en": "Heat Dagger",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.44,
+  "mr": 3,
+  "variant_dispositions": {
+   "Heat Dagger": 1.4400001
+  }
+ },
+ "jat_kittag": {
+  "name_zh": "喷射战锤",
+  "name_en": "Jat Kittag",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 5,
+  "variant_dispositions": {
+   "Jat Kittag": 1.35
+  }
+ },
+ "sonicor": {
+  "name_zh": "超音波冲击枪",
+  "name_en": "Sonicor",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.15,
+  "mr": 2,
+  "variant_dispositions": {
+   "Sonicor": 1.15
+  }
+ },
+ "tombfinger": {
+  "name_zh": "墓指",
+  "name_en": "Tombfinger",
+  "group": "kitgun",
+  "riven_type": "kitgun",
+  "disposition": 0.85,
+  "mr": 0,
+  "variant_dispositions": {}
+ },
+ "gaze": {
+  "name_zh": "凝目",
+  "name_en": "Gaze",
+  "group": "kitgun",
+  "riven_type": "kitgun",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {}
+ },
+ "pupacyst": {
+  "name_zh": "毒囊骨茧",
+  "name_en": "Pupacyst",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 7,
+  "variant_dispositions": {
+   "Pupacyst": 1.35
+  }
+ },
+ "arca_plasmor": {
+  "name_zh": "弧电离子枪",
+  "name_en": "Arca Plasmor",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 0.95,
+  "mr": 10,
+  "variant_dispositions": {
+   "Arca Plasmor": 0.94999999,
+   "Tenet Arca Plasmor": 0.55000001
+  }
+ },
+ "galvacord": {
+  "name_zh": "电流刺索",
+  "name_en": "Galvacord",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 6,
+  "variant_dispositions": {
+   "Galvacord": 1.35
+  }
+ },
+ "bronco": {
+  "name_zh": "野马",
+  "name_en": "Bronco",
+  "group": "secondary",
+  "riven_type": "shotgun",
+  "disposition": 1.45,
+  "mr": 0,
+  "variant_dispositions": {
+   "Bronco": 1.45,
+   "Bronco Prime": 1.4
+  }
+ },
+ "dual_cestra": {
+  "name_zh": "锡斯特双枪",
+  "name_en": "Dual Cestra",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.35,
+  "mr": 7,
+  "variant_dispositions": {
+   "Dual Cestra": 1.35,
+   "Secura Dual Cestra": 1.3
+  }
+ },
+ "furis": {
+  "name_zh": "盗贼",
+  "name_en": "Furis",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.35,
+  "mr": 1,
+  "variant_dispositions": {
+   "Dex Furis": 1.39,
+   "Furis": 1.35,
+   "Mk1-Furis": 1.4
+  }
+ },
+ "ankyros": {
+  "name_zh": "甲龙双拳",
+  "name_en": "Ankyros",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.5,
+  "mr": 2,
+  "variant_dispositions": {
+   "Ankyros": 1.5,
+   "Ankyros Prime": 1.45
+  }
+ },
+ "atterax": {
+  "name_zh": "阿特拉克斯",
+  "name_en": "Atterax",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 5,
+  "variant_dispositions": {
+   "Atterax": 1.15
+  }
+ },
+ "bo": {
+  "name_zh": "玻之武杖",
+  "name_en": "Bo",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 0,
+  "variant_dispositions": {
+   "Bo": 1.35,
+   "Bo Prime": 1.35,
+   "Mk1-Bo": 1.4
+  }
+ },
+ "cassowar": {
+  "name_zh": "鹤鸵长戟",
+  "name_en": "Cassowar",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 5,
+  "variant_dispositions": {
+   "Cassowar": 1.35
+  }
+ },
+ "ceramic_dagger": {
+  "name_zh": "陶瓷匕首",
+  "name_en": "Ceramic Dagger",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.43,
+  "mr": 3,
+  "variant_dispositions": {
+   "Ceramic Dagger": 1.4299999
+  }
+ },
+ "halikar": {
+  "name_zh": "哈利卡",
+  "name_en": "Halikar",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.44,
+  "mr": 7,
+  "variant_dispositions": {
+   "Halikar": 1.4400001,
+   "Halikar Wraith": 1.2
+  }
+ },
+ "hirudo": {
+  "name_zh": "蚂蟥",
+  "name_en": "Hirudo",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 7,
+  "variant_dispositions": {
+   "Coda Hirudo": 0.75,
+   "Hirudo": 1.15
+  }
+ },
+ "mire": {
+  "name_zh": "米尔",
+  "name_en": "Mire",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 5,
+  "variant_dispositions": {
+   "Coda Mire": 0.75,
+   "Mire": 1.3
+  }
+ },
+ "twin_krohkur": {
+  "name_zh": "双子克鲁古尔",
+  "name_en": "Twin Krohkur",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.2,
+  "mr": 10,
+  "variant_dispositions": {
+   "Twin Krohkur": 1.2
+  }
+ },
+ "latron": {
+  "name_zh": "拉特昂",
+  "name_en": "Latron",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.4,
+  "mr": 0,
+  "variant_dispositions": {
+   "Latron": 1.4,
+   "Latron Prime": 1.3,
+   "Latron Wraith": 1.35
+  }
+ },
+ "lenz": {
+  "name_zh": "楞次弓",
+  "name_en": "Lenz",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.05,
+  "mr": 8,
+  "variant_dispositions": {
+   "Lenz": 1.05,
+   "Prisma Lenz": 1
+  }
+ },
+ "miter": {
+  "name_zh": "米特尔",
+  "name_en": "Miter",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.5,
+  "mr": 6,
+  "variant_dispositions": {
+   "Miter": 1.5
+  }
+ },
+ "mutalist_cernos": {
+  "name_zh": "异融西诺斯",
+  "name_en": "Mutalist Cernos",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.35,
+  "mr": 7,
+  "variant_dispositions": {
+   "Mutalist Cernos": 1.35
+  }
+ },
+ "mutalist_quanta": {
+  "name_zh": "异融量子枪",
+  "name_en": "Mutalist Quanta",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.5,
+  "mr": 2,
+  "variant_dispositions": {
+   "Mutalist Quanta": 1.5
+  }
+ },
+ "opticor": {
+  "name_zh": "奥堤克光子枪",
+  "name_en": "Opticor",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 14,
+  "variant_dispositions": {
+   "Opticor": 1.15,
+   "Opticor Vandal": 1.1
+  }
+ },
+ "panthera": {
+  "name_zh": "猎豹",
+  "name_en": "Panthera",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.4,
+  "mr": 7,
+  "variant_dispositions": {
+   "Panthera": 1.4,
+   "Panthera Prime": 1.25
+  }
+ },
+ "penta": {
+  "name_zh": "潘塔",
+  "name_en": "Penta",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.35,
+  "mr": 6,
+  "variant_dispositions": {
+   "Carmine Penta": 1.3,
+   "Penta": 1.35,
+   "Secura Penta": 1.3
+  }
+ },
+ "phage": {
+  "name_zh": "噬菌者",
+  "name_en": "Phage",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.46,
+  "mr": 11,
+  "variant_dispositions": {
+   "Phage": 1.46
+  }
+ },
+ "phantasma": {
+  "name_zh": "幻离子",
+  "name_en": "Phantasma",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.1,
+  "mr": 9,
+  "variant_dispositions": {
+   "Phantasma": 1.1,
+   "Phantasma Prime": 0.80000001
+  }
+ },
+ "quanta": {
+  "name_zh": "量子切割器",
+  "name_en": "Quanta",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.4,
+  "mr": 4,
+  "variant_dispositions": {
+   "Quanta": 1.4,
+   "Quanta Vandal": 1.4,
+   "Tenet Quanta": 0.75
+  }
+ },
+ "rubico": {
+  "name_zh": "绝路",
+  "name_en": "Rubico",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.95,
+  "mr": 6,
+  "variant_dispositions": {
+   "Rubico": 0.94999999,
+   "Rubico Prime": 0.69999999
+  }
+ },
+ "simulor": {
+  "name_zh": "重力奇点拟成枪",
+  "name_en": "Simulor",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.25,
+  "mr": 5,
+  "variant_dispositions": {
+   "Simulor": 1.25,
+   "Synoid Simulor": 1.2
+  }
+ },
+ "snipetron": {
+  "name_zh": "狙击特昂",
+  "name_en": "Snipetron",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 0,
+  "variant_dispositions": {
+   "Snipetron": 1.3,
+   "Snipetron Vandal": 1.25
+  }
+ },
+ "sobek": {
+  "name_zh": "鳄神",
+  "name_en": "Sobek",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.33,
+  "mr": 7,
+  "variant_dispositions": {
+   "Kuva Sobek": 0.80000001,
+   "Sobek": 1.33
+  }
+ },
+ "stradavar": {
+  "name_zh": "斯特拉迪瓦",
+  "name_en": "Stradavar",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 8,
+  "variant_dispositions": {
+   "Stradavar": 1.1,
+   "Stradavar Prime": 1.1
+  }
+ },
+ "strun": {
+  "name_zh": "斯特朗",
+  "name_en": "Strun",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.4,
+  "mr": 1,
+  "variant_dispositions": {
+   "Mk1-Strun": 1.45,
+   "Strun": 1.4,
+   "Strun Prime": 1.2,
+   "Strun Wraith": 1.35
+  }
+ },
+ "sybaris": {
+  "name_zh": "席芭莉丝",
+  "name_en": "Sybaris",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 5,
+  "variant_dispositions": {
+   "Dex Sybaris": 1.3,
+   "Sybaris": 1.3,
+   "Sybaris Prime": 1.2
+  }
+ },
+ "tetra": {
+  "name_zh": "特拉",
+  "name_en": "Tetra",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.5,
+  "mr": 3,
+  "variant_dispositions": {
+   "Prisma Tetra": 1.45,
+   "Tenet Tetra": 1.25,
+   "Tetra": 1.5
+  }
+ },
+ "gammacor": {
+  "name_zh": "咖玛腕甲枪",
+  "name_en": "Gammacor",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.15,
+  "mr": 2,
+  "variant_dispositions": {
+   "Gammacor": 1.15,
+   "Synoid Gammacor": 1.1
+  }
+ },
+ "nukor": {
+  "name_zh": "努寇微波枪",
+  "name_en": "Nukor",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.45,
+  "mr": 4,
+  "variant_dispositions": {
+   "Kuva Nukor": 0.5,
+   "Nukor": 1.45
+  }
+ },
+ "pandero": {
+  "name_zh": "手鼓",
+  "name_en": "Pandero",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 8,
+  "variant_dispositions": {
+   "Pandero": 1.2,
+   "Pandero Prime": 1.1
+  }
+ },
+ "pox": {
+  "name_zh": "脓痘",
+  "name_en": "Pox",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 9,
+  "variant_dispositions": {
+   "Coda Pox": 1,
+   "Pox": 1.2
+  }
+ },
+ "pyrana": {
+  "name_zh": "食人鱼",
+  "name_en": "Pyrana",
+  "group": "secondary",
+  "riven_type": "shotgun",
+  "disposition": 0.95,
+  "mr": 12,
+  "variant_dispositions": {
+   "Pyrana": 0.94999999,
+   "Pyrana Prime": 0.64999998
+  }
+ },
+ "sicarus": {
+  "name_zh": "暗杀者",
+  "name_en": "Sicarus",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 3,
+  "variant_dispositions": {
+   "Sicarus": 1.2,
+   "Sicarus Prime": 1.15
+  }
+ },
+ "spira": {
+  "name_zh": "旋刃飞刀",
+  "name_en": "Spira",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.35,
+  "mr": 8,
+  "variant_dispositions": {
+   "Spira": 1.35,
+   "Spira Prime": 1.25
+  }
+ },
+ "dehtat": {
+  "name_zh": "德塔特",
+  "name_en": "Dehtat",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 1.25,
+  "mr": 0,
+  "variant_dispositions": {
+   "Dehtat": 1.25
+  }
+ },
+ "destreza": {
+  "name_zh": "技巧之剑",
+  "name_en": "Destreza",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 7,
+  "variant_dispositions": {
+   "Destreza": 1.25,
+   "Destreza Prime": 1.14
+  }
+ },
+ "dex_dakra": {
+  "name_zh": "Dex 达克拉双剑",
+  "name_en": "Dex Dakra",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 6,
+  "variant_dispositions": {
+   "Dex Dakra": 1.35
+  }
+ },
+ "dokrahm": {
+  "name_zh": "多克拉姆",
+  "name_en": "Dokrahm",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 0.75,
+  "mr": 0,
+  "variant_dispositions": {
+   "Dokrahm": 0.75
+  }
+ },
+ "dragon_nikana": {
+  "name_zh": "龙之侍刃",
+  "name_en": "Dragon Nikana",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 8,
+  "variant_dispositions": {
+   "Dragon Nikana": 1.15
+  }
+ },
+ "dual_cleavers": {
+  "name_zh": "斩肉双刀",
+  "name_en": "Dual Cleavers",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.2,
+  "mr": 5,
+  "variant_dispositions": {
+   "Dual Cleavers": 1.2,
+   "Prisma Dual Cleavers": 1.1
+  }
+ },
+ "dual_ether": {
+  "name_zh": "苍穹双剑",
+  "name_en": "Dual Ether",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.45,
+  "mr": 8,
+  "variant_dispositions": {
+   "Dual Ether": 1.45
+  }
+ },
+ "dual_heat_swords": {
+  "name_zh": "烈焰双剑",
+  "name_en": "Dual Heat Swords",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.44,
+  "mr": 3,
+  "variant_dispositions": {
+   "Dual Heat Swords": 1.4400001
+  }
+ },
+ "dual_ichor": {
+  "name_zh": "恶脓双斧",
+  "name_en": "Dual Ichor",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 6,
+  "variant_dispositions": {
+   "Dual Ichor": 1.25
+  }
+ },
+ "dual_keres": {
+  "name_zh": "凯瑞斯双刀",
+  "name_en": "Dual Keres",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 7,
+  "variant_dispositions": {
+   "Dual Keres": 1.1,
+   "Dual Keres Prime": 0.80000001
+  }
+ },
+ "kama": {
+  "name_zh": "短柄战镰",
+  "name_en": "Kama",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.47,
+  "mr": 1,
+  "variant_dispositions": {
+   "Kama": 1.47
+  }
+ },
+ "kogake": {
+  "name_zh": "科加基",
+  "name_en": "Kogake",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.46,
+  "mr": 2,
+  "variant_dispositions": {
+   "Kogake": 1.46,
+   "Kogake Prime": 1.4
+  }
+ },
+ "multron": {
+  "name_zh": "多连穿甲枪",
+  "name_en": "Multron",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1,
+  "mr": 3,
+  "variant_dispositions": {
+   "Multron": 1
+  }
+ },
+ "vulcax": {
+  "name_zh": "金工火舌",
+  "name_en": "Vulcax",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1,
+  "mr": 14,
+  "variant_dispositions": {
+   "Vulcax": 1
+  }
+ },
+ "masseter": {
+  "name_zh": "咀嚼金杖",
+  "name_en": "Masseter",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 8,
+  "variant_dispositions": {
+   "Masseter": 1.25,
+   "Masseter Prime": 1
+  }
+ },
+ "pathocyst": {
+  "name_zh": "病囊飞刃",
+  "name_en": "Pathocyst",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 9,
+  "variant_dispositions": {
+   "Coda Pathocyst": 0.64999998,
+   "Pathocyst": 1.35
+  }
+ },
+ "kuva_chakkhurr": {
+  "name_zh": "赤毒·邪眼",
+  "name_en": "Kuva Chakkhurr",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.95,
+  "mr": 15,
+  "variant_dispositions": {
+   "Kuva Chakkhurr": 0.94999999
+  }
+ },
+ "lecta": {
+  "name_zh": "勒克塔",
+  "name_en": "Lecta",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 0,
+  "variant_dispositions": {
+   "Lecta": 1.25,
+   "Secura Lecta": 1.2
+  }
+ },
+ "machete": {
+  "name_zh": "马谢特砍刀",
+  "name_en": "Machete",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.45,
+  "mr": 1,
+  "variant_dispositions": {
+   "Machete": 1.45,
+   "Machete Wraith": 1.4,
+   "Prisma Machete": 1.45
+  }
+ },
+ "magistar": {
+  "name_zh": "执法者",
+  "name_en": "Magistar",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 1,
+  "variant_dispositions": {
+   "Magistar": 1.35,
+   "Sancti Magistar": 1.25
+  }
+ },
+ "mewan": {
+  "name_zh": "密丸",
+  "name_en": "Mewan",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 1.15,
+  "mr": 0,
+  "variant_dispositions": {
+   "Mewan": 1.15
+  }
+ },
+ "mios": {
+  "name_zh": "牡狮神",
+  "name_en": "Mios",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 8,
+  "variant_dispositions": {
+   "Mios": 1.3
+  }
+ },
+ "rabvee": {
+  "name_zh": "拉比威",
+  "name_en": "Rabvee",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 1.3,
+  "mr": 0,
+  "variant_dispositions": {
+   "Rabvee": 1.3
+  }
+ },
+ "war": {
+  "name_zh": "战争之剑",
+  "name_en": "War",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.05,
+  "mr": 10,
+  "variant_dispositions": {
+   "War": 1.05,
+   "War Prime": 0.5
+  }
+ },
+ "artax": {
+  "name_zh": "阿塔克斯",
+  "name_en": "Artax",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Artax": 1
+  }
+ },
+ "burst_laser": {
+  "name_zh": "激光点发",
+  "name_en": "Burst Laser",
+  "group": "sentinel",
+  "riven_type": "pistol",
+  "disposition": 1.45,
+  "mr": 0,
+  "variant_dispositions": {
+   "Burst Laser": 1.45,
+   "Burst Laser Prime": 1.45,
+   "Prisma Burst Laser": 1.45
+  }
+ },
+ "deth_machine_rifle": {
+  "name_zh": "死亡机枪",
+  "name_en": "Deth Machine Rifle",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1.46,
+  "mr": 0,
+  "variant_dispositions": {
+   "Deth Machine Rifle": 1.455,
+   "Deth Machine Rifle Prime": 1.455
+  }
+ },
+ "laser_rifle": {
+  "name_zh": "激光步枪",
+  "name_en": "Laser Rifle",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1.21,
+  "mr": 0,
+  "variant_dispositions": {
+   "Laser Rifle": 1.21,
+   "Prime Laser Rifle": 1.21
+  }
+ },
+ "astilla": {
+  "name_zh": "碎裂者",
+  "name_en": "Astilla",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.3,
+  "mr": 10,
+  "variant_dispositions": {
+   "Astilla": 1.3,
+   "Astilla Prime": 1.2
+  }
+ },
+ "baza": {
+  "name_zh": "苍鹰",
+  "name_en": "Baza",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.05,
+  "mr": 7,
+  "variant_dispositions": {
+   "Baza": 1.05,
+   "Baza Prime": 1
+  }
+ },
+ "boar": {
+  "name_zh": "野猪",
+  "name_en": "Boar",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.45,
+  "mr": 2,
+  "variant_dispositions": {
+   "Boar": 1.45,
+   "Boar Prime": 1.34
+  }
+ },
+ "flux_rifle": {
+  "name_zh": "通量步枪",
+  "name_en": "Flux Rifle",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.55,
+  "mr": 6,
+  "variant_dispositions": {
+   "Flux Rifle": 1.55,
+   "Tenet Flux Rifle": 1.2
+  }
+ },
+ "cronus": {
+  "name_zh": "克洛诺斯",
+  "name_en": "Cronus",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.48,
+  "mr": 0,
+  "variant_dispositions": {
+   "Cronus": 1.48
+  }
+ },
+ "endura": {
+  "name_zh": "三叶坚韧",
+  "name_en": "Endura",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.4,
+  "mr": 7,
+  "variant_dispositions": {
+   "Endura": 1.4
+  }
+ },
+ "glaive": {
+  "name_zh": "战刃",
+  "name_en": "Glaive",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 1,
+  "variant_dispositions": {
+   "Glaive": 1.3,
+   "Glaive Prime": 0.69999999
+  }
+ },
+ "heat_sword": {
+  "name_zh": "烈焰长剑",
+  "name_en": "Heat Sword",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.48,
+  "mr": 3,
+  "variant_dispositions": {
+   "Heat Sword": 1.48
+  }
+ },
+ "jat_kusar": {
+  "name_zh": "喷射锁镰",
+  "name_en": "Jat Kusar",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.2,
+  "mr": 11,
+  "variant_dispositions": {
+   "Jat Kusar": 1.2
+  }
+ },
+ "nami_skyla": {
+  "name_zh": "海波斯库拉对剑",
+  "name_en": "Nami Skyla",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 2,
+  "variant_dispositions": {
+   "Nami Skyla": 1.3,
+   "Nami Skyla Prime": 1
+  }
+ },
+ "nami_solo": {
+  "name_zh": "海波单剑",
+  "name_en": "Nami Solo",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.43,
+  "mr": 6,
+  "variant_dispositions": {
+   "Nami Solo": 1.4299999
+  }
+ },
+ "nikana": {
+  "name_zh": "侍刃",
+  "name_en": "Nikana",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.95,
+  "mr": 4,
+  "variant_dispositions": {
+   "Dex Nikana": 1.1,
+   "Nikana": 0.94999999,
+   "Nikana Prime": 0.60000002
+  }
+ },
+ "ninkondi": {
+  "name_zh": "降灵追猎者",
+  "name_en": "Ninkondi",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.41,
+  "mr": 8,
+  "variant_dispositions": {
+   "Ninkondi": 1.41,
+   "Ninkondi Prime": 1.1
+  }
+ },
+ "obex": {
+  "name_zh": "奥比克斯",
+  "name_en": "Obex",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 4,
+  "variant_dispositions": {
+   "Obex": 1.3,
+   "Prisma Obex": 1.25
+  }
+ },
+ "ohma": {
+  "name_zh": "欧玛",
+  "name_en": "Ohma",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 8,
+  "variant_dispositions": {
+   "Ohma": 1.25,
+   "Prisma Ohma": 0.94999999
+  }
+ },
+ "okina": {
+  "name_zh": "翁",
+  "name_en": "Okina",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.4,
+  "mr": 5,
+  "variant_dispositions": {
+   "Okina": 1.4,
+   "Okina Prime": 0.69999999
+  }
+ },
+ "ooltha": {
+  "name_zh": "乌尔萨",
+  "name_en": "Ooltha",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 1.3,
+  "mr": 0,
+  "variant_dispositions": {
+   "Ooltha": 1.3
+  }
+ },
+ "orthos": {
+  "name_zh": "欧特鲁斯",
+  "name_en": "Orthos",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1,
+  "mr": 2,
+  "variant_dispositions": {
+   "Orthos": 1,
+   "Orthos Prime": 0.69999999
+  }
+ },
+ "orvius": {
+  "name_zh": "灵枢",
+  "name_en": "Orvius",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 5,
+  "variant_dispositions": {
+   "Orvius": 1.35
+  }
+ },
+ "pangolin_sword": {
+  "name_zh": "鲮鲤剑",
+  "name_en": "Pangolin Sword",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.47,
+  "mr": 3,
+  "variant_dispositions": {
+   "Pangolin Prime": 1.05,
+   "Pangolin Sword": 1.47
+  }
+ },
+ "plague_keewar": {
+  "name_zh": "瘟疫 奇沃",
+  "name_en": "Plague Keewar",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 0.85,
+  "mr": 0,
+  "variant_dispositions": {
+   "Plague Keewar": 0.85000002
+  }
+ },
+ "plague_kripath": {
+  "name_zh": "瘟疫 克里帕丝",
+  "name_en": "Plague Kripath",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 0.65,
+  "mr": 0,
+  "variant_dispositions": {
+   "Plague Kripath": 0.64999998
+  }
+ },
+ "plasma_sword": {
+  "name_zh": "等离子长剑",
+  "name_en": "Plasma Sword",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.48,
+  "mr": 4,
+  "variant_dispositions": {
+   "Plasma Sword": 1.48
+  }
+ },
+ "prova": {
+  "name_zh": "普罗沃",
+  "name_en": "Prova",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.4,
+  "mr": 3,
+  "variant_dispositions": {
+   "Prova": 1.4,
+   "Prova Vandal": 1.35
+  }
+ },
+ "redeemer": {
+  "name_zh": "救赎者",
+  "name_en": "Redeemer",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.05,
+  "mr": 4,
+  "variant_dispositions": {
+   "Redeemer": 1.05,
+   "Redeemer Prime": 0.64999998
+  }
+ },
+ "skana": {
+  "name_zh": "空刃",
+  "name_en": "Skana",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 0,
+  "variant_dispositions": {
+   "Prisma Skana": 1.2,
+   "Skana": 1.3,
+   "Skana Prime": 1.2
+  }
+ },
+ "harpak": {
+  "name_zh": "哈帕克",
+  "name_en": "Harpak",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.55,
+  "mr": 7,
+  "variant_dispositions": {
+   "Harpak": 1.55
+  }
+ },
+ "hema": {
+  "name_zh": "血肢",
+  "name_en": "Hema",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 7,
+  "variant_dispositions": {
+   "Coda Hema": 0.94999999,
+   "Hema": 1.3
+  }
+ },
+ "hind": {
+  "name_zh": "雌鹿",
+  "name_en": "Hind",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.42,
+  "mr": 0,
+  "variant_dispositions": {
+   "Hind": 1.42,
+   "Kuva Hind": 1.1
+  }
+ },
+ "ignis": {
+  "name_zh": "伊格尼斯",
+  "name_en": "Ignis",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.7,
+  "mr": 5,
+  "variant_dispositions": {
+   "Ignis": 0.69999999,
+   "Ignis Wraith": 0.64999998
+  }
+ },
+ "javlok": {
+  "name_zh": "燃焰标枪",
+  "name_en": "Javlok",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 7,
+  "variant_dispositions": {
+   "Javlok": 1.3
+  }
+ },
+ "karak": {
+  "name_zh": "卡拉克",
+  "name_en": "Karak",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.35,
+  "mr": 1,
+  "variant_dispositions": {
+   "Karak": 1.35,
+   "Karak Wraith": 1.28,
+   "Kuva Karak": 1.05
+  }
+ },
+ "kohm": {
+  "name_zh": "寇恩热能枪",
+  "name_en": "Kohm",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.3,
+  "mr": 5,
+  "variant_dispositions": {
+   "Kohm": 1.3,
+   "Kuva Kohm": 0.89999998
+  }
+ },
+ "lanka": {
+  "name_zh": "兰卡",
+  "name_en": "Lanka",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.05,
+  "mr": 10,
+  "variant_dispositions": {
+   "Lanka": 1.05
+  }
+ },
+ "paris": {
+  "name_zh": "帕里斯",
+  "name_en": "Paris",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.4,
+  "mr": 0,
+  "variant_dispositions": {
+   "Mk1-Paris": 1.45,
+   "Paris": 1.4,
+   "Paris Prime": 1.35
+  }
+ },
+ "quartakk": {
+  "name_zh": "夸塔克",
+  "name_en": "Quartakk",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.25,
+  "mr": 10,
+  "variant_dispositions": {
+   "Kuva Quartakk": 1.1,
+   "Quartakk": 1.25
+  }
+ },
+ "scourge": {
+  "name_zh": "祸根",
+  "name_en": "Scourge",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.2,
+  "mr": 6,
+  "variant_dispositions": {
+   "Scourge": 1.2,
+   "Scourge Prime": 1.1
+  }
+ },
+ "spectra": {
+  "name_zh": "光谱切割器",
+  "name_en": "Spectra",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.49,
+  "mr": 4,
+  "variant_dispositions": {
+   "Spectra": 1.49,
+   "Spectra Vandal": 1.45
+  }
+ },
+ "staticor": {
+  "name_zh": "静电能量导引枪",
+  "name_en": "Staticor",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.9,
+  "mr": 10,
+  "variant_dispositions": {
+   "Staticor": 0.89999998
+  }
+ },
+ "stubba": {
+  "name_zh": "史度巴",
+  "name_en": "Stubba",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.35,
+  "mr": 7,
+  "variant_dispositions": {
+   "Stubba": 1.35
+  }
+ },
+ "stug": {
+  "name_zh": "史特克",
+  "name_en": "Stug",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.48,
+  "mr": 2,
+  "variant_dispositions": {
+   "Stug": 1.48
+  }
+ },
+ "talons": {
+  "name_zh": "鹰爪",
+  "name_en": "Talons",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.44,
+  "mr": 8,
+  "variant_dispositions": {
+   "Talons": 1.4400001
+  }
+ },
+ "twin_grakatas": {
+  "name_zh": "双子葛拉卡达",
+  "name_en": "Twin Grakatas",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 9,
+  "variant_dispositions": {
+   "Twin Grakatas": 1.2
+  }
+ },
+ "twin_gremlins": {
+  "name_zh": "双子小精灵",
+  "name_en": "Twin Gremlins",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 5,
+  "variant_dispositions": {
+   "Prisma Twin Gremlins": 1.15,
+   "Twin Gremlins": 1.2
+  }
+ },
+ "twin_kohmak": {
+  "name_zh": "双子寇恩霰机枪",
+  "name_en": "Twin Kohmak",
+  "group": "secondary",
+  "riven_type": "shotgun",
+  "disposition": 1.25,
+  "mr": 10,
+  "variant_dispositions": {
+   "Twin Kohmak": 1.25
+  }
+ },
+ "twin_rogga": {
+  "name_zh": "双子罗格",
+  "name_en": "Twin Rogga",
+  "group": "secondary",
+  "riven_type": "shotgun",
+  "disposition": 1.3,
+  "mr": 9,
+  "variant_dispositions": {
+   "Twin Rogga": 1.3
+  }
+ },
+ "twin_vipers": {
+  "name_zh": "双子蝰蛇",
+  "name_en": "Twin Vipers",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.45,
+  "mr": 5,
+  "variant_dispositions": {
+   "Twin Vipers": 1.45,
+   "Twin Vipers Wraith": 1.41
+  }
+ },
+ "tysis": {
+  "name_zh": "啐沫者",
+  "name_en": "Tysis",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.45,
+  "mr": 9,
+  "variant_dispositions": {
+   "Coda Tysis": 1,
+   "Tysis": 1.45
+  }
+ },
+ "vasto": {
+  "name_zh": "瓦斯托",
+  "name_en": "Vasto",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.4,
+  "mr": 4,
+  "variant_dispositions": {
+   "Vasto": 1.4,
+   "Vasto Prime": 1.35
+  }
+ },
+ "viper": {
+  "name_zh": "蝰蛇",
+  "name_en": "Viper",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.45,
+  "mr": 4,
+  "variant_dispositions": {
+   "Viper": 1.45,
+   "Viper Wraith": 1.4
+  }
+ },
+ "zylok": {
+  "name_zh": "席尔火枪",
+  "name_en": "Zylok",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.25,
+  "mr": 6,
+  "variant_dispositions": {
+   "Zylok": 1.25,
+   "Zylok Prime": 0.89999998
+  }
+ },
+ "dakra_prime": {
+  "name_zh": "达克拉 Prime",
+  "name_en": "Dakra Prime",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 10,
+  "variant_dispositions": {
+   "Dakra Prime": 1.1
+  }
+ },
+ "dark_dagger": {
+  "name_zh": "暗黑匕首",
+  "name_en": "Dark Dagger",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 2,
+  "variant_dispositions": {
+   "Dark Dagger": 1.1,
+   "Rakta Dark Dagger": 1
+  }
+ },
+ "kuva_twin_stubbas": {
+  "name_zh": "赤毒·双子史度巴",
+  "name_en": "Kuva Twin Stubbas",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1,
+  "mr": 13,
+  "variant_dispositions": {
+   "Kuva Twin Stubbas": 1
+  }
+ },
+ "pennant": {
+  "name_zh": "尖幡",
+  "name_en": "Pennant",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.95,
+  "mr": 7,
+  "variant_dispositions": {
+   "Pennant": 0.94999999
+  }
+ },
+ "kuva_bramma": {
+  "name_zh": "赤毒·布拉玛",
+  "name_en": "Kuva Bramma",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.65,
+  "mr": 15,
+  "variant_dispositions": {
+   "Kuva Bramma": 0.64999998
+  }
+ },
+ "stropha": {
+  "name_zh": "诡计之刃",
+  "name_en": "Stropha",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.65,
+  "mr": 10,
+  "variant_dispositions": {
+   "Stropha": 0.64999998
+  }
+ },
+ "morgha": {
+  "name_zh": "置灵者",
+  "name_en": "Morgha",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1,
+  "mr": 15,
+  "variant_dispositions": {
+   "Morgha": 1
+  }
+ },
+ "catabolyst": {
+  "name_zh": "异化者",
+  "name_en": "Catabolyst",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 11,
+  "variant_dispositions": {
+   "Catabolyst": 1.2,
+   "Coda Catabolyst": 0.64999998
+  }
+ },
+ "hikou": {
+  "name_zh": "飞扬",
+  "name_en": "Hikou",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.3,
+  "mr": 2,
+  "variant_dispositions": {
+   "Hikou": 1.3,
+   "Hikou Prime": 1.25
+  }
+ },
+ "knell": {
+  "name_zh": "丧钟",
+  "name_en": "Knell",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.25,
+  "mr": 10,
+  "variant_dispositions": {
+   "Knell": 1.25,
+   "Knell Prime": 0.85000002
+  }
+ },
+ "kohmak": {
+  "name_zh": "寇恩霰机枪",
+  "name_en": "Kohmak",
+  "group": "secondary",
+  "riven_type": "shotgun",
+  "disposition": 1.35,
+  "mr": 5,
+  "variant_dispositions": {
+   "Kohmak": 1.35
+  }
+ },
+ "kraken": {
+  "name_zh": "北海巨妖",
+  "name_en": "Kraken",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.53,
+  "mr": 0,
+  "variant_dispositions": {
+   "Kraken": 1.53,
+   "Kuva Kraken": 1.1
+  }
+ },
+ "kunai": {
+  "name_zh": "苦无",
+  "name_en": "Kunai",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.51,
+  "mr": 0,
+  "variant_dispositions": {
+   "Kunai": 1.51,
+   "Mk1-Kunai": 1.51
+  }
+ },
+ "lex": {
+  "name_zh": "雷克斯",
+  "name_en": "Lex",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.25,
+  "mr": 3,
+  "variant_dispositions": {
+   "Lex": 1.25,
+   "Lex Prime": 1.2
+  }
+ },
+ "marelok": {
+  "name_zh": "玛瑞火枪",
+  "name_en": "Marelok",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 7,
+  "variant_dispositions": {
+   "Marelok": 1.2,
+   "Vaykor Marelok": 1.1
+  }
+ },
+ "broken_scepter": {
+  "name_zh": "破损珽杖",
+  "name_en": "Broken Scepter",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.4,
+  "mr": 7,
+  "variant_dispositions": {
+   "Broken Scepter": 1.4
+  }
+ },
+ "dual_zoren": {
+  "name_zh": "佐伦双斧",
+  "name_en": "Dual Zoren",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.44,
+  "mr": 2,
+  "variant_dispositions": {
+   "Dual Zoren": 1.4400001,
+   "Dual Zoren Prime": 0.89999998
+  }
+ },
+ "ether_daggers": {
+  "name_zh": "苍穹匕首",
+  "name_en": "Ether Daggers",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.49,
+  "mr": 6,
+  "variant_dispositions": {
+   "Ether Daggers": 1.49
+  }
+ },
+ "ether_reaper": {
+  "name_zh": "苍穹死神",
+  "name_en": "Ether Reaper",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.45,
+  "mr": 4,
+  "variant_dispositions": {
+   "Ether Reaper": 1.45
+  }
+ },
+ "ether_sword": {
+  "name_zh": "苍穹之剑",
+  "name_en": "Ether Sword",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.44,
+  "mr": 7,
+  "variant_dispositions": {
+   "Ether Sword": 1.4400001
+  }
+ },
+ "fang": {
+  "name_zh": "狼牙",
+  "name_en": "Fang",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.36,
+  "mr": 0,
+  "variant_dispositions": {
+   "Fang": 1.36,
+   "Fang Prime": 1.3
+  }
+ },
+ "furax": {
+  "name_zh": "弗拉克斯",
+  "name_en": "Furax",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.38,
+  "mr": 5,
+  "variant_dispositions": {
+   "Furax": 1.38,
+   "Furax Wraith": 1.15,
+   "Mk1-Furax": 1.45
+  }
+ },
+ "karyst": {
+  "name_zh": "凯洛斯特",
+  "name_en": "Karyst",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 6,
+  "variant_dispositions": {
+   "Karyst": 1.35,
+   "Karyst Prime": 1.15
+  }
+ },
+ "stinger": {
+  "name_zh": "毒刺",
+  "name_en": "Stinger",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1.32,
+  "mr": 0,
+  "variant_dispositions": {
+   "Stinger": 1.3150001
+  }
+ },
+ "vulklok": {
+  "name_zh": "金工火枪",
+  "name_en": "Vulklok",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1.25,
+  "mr": 0,
+  "variant_dispositions": {
+   "Vulklok": 1.245
+  }
+ },
+ "catchmoon": {
+  "name_zh": "捕月",
+  "name_en": "Catchmoon",
+  "group": "kitgun",
+  "riven_type": "kitgun",
+  "disposition": 0.75,
+  "mr": 0,
+  "variant_dispositions": {}
+ },
+ "plinx": {
+  "name_zh": "漫射者",
+  "name_en": "Plinx",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 6,
+  "variant_dispositions": {
+   "Plinx": 1.2,
+   "Tenet Plinx": 0.75
+  }
+ },
+ "korrudo": {
+  "name_zh": "库鲁多",
+  "name_en": "Korrudo",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 9,
+  "variant_dispositions": {
+   "Korrudo": 1.35
+  }
+ },
+ "fulmin": {
+  "name_zh": "雷霆",
+  "name_en": "Fulmin",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1,
+  "mr": 8,
+  "variant_dispositions": {
+   "Fulmin": 1,
+   "Fulmin Prime": 0.75
+  }
+ },
+ "cobra_and_crane": {
+  "name_zh": "眼镜蛇 & 鹤",
+  "name_en": "Cobra & Crane",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 10,
+  "variant_dispositions": {
+   "Cobra & Crane": 1.35,
+   "Cobra & Crane Prime": 1.2
+  }
+ },
+ "komorex": {
+  "name_zh": "猛毒",
+  "name_en": "Komorex",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 8,
+  "variant_dispositions": {
+   "Komorex": 1.15
+  }
+ },
+ "cyanex": {
+  "name_zh": "氰毒",
+  "name_en": "Cyanex",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1,
+  "mr": 8,
+  "variant_dispositions": {
+   "Cyanex": 1
+  }
+ },
+ "tatsu": {
+  "name_zh": "龙辰",
+  "name_en": "Tatsu",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.05,
+  "mr": 7,
+  "variant_dispositions": {
+   "Tatsu": 1.05,
+   "Tatsu Prime": 0.89999998
+  }
+ },
+ "cyngas": {
+  "name_zh": "合成燃气炮",
+  "name_en": "Cyngas",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 4,
+  "variant_dispositions": {
+   "Cyngas": 1.3
+  }
+ },
+ "larkspur": {
+  "name_zh": "翠雀",
+  "name_en": "Larkspur",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1.05,
+  "mr": 8,
+  "variant_dispositions": {
+   "Larkspur": 1.05,
+   "Larkspur Prime": 0.80000001
+  }
+ },
+ "imperator": {
+  "name_zh": "凯旋将军",
+  "name_en": "Imperator",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Imperator": 1.1,
+   "Imperator Vandal": 0.94999999
+  }
+ },
+ "corvas": {
+  "name_zh": "黑鸦",
+  "name_en": "Corvas",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1.2,
+  "mr": 1,
+  "variant_dispositions": {
+   "Corvas": 1.2,
+   "Corvas Prime": 0.94999999
+  }
+ },
+ "phaedra": {
+  "name_zh": "菲德菈",
+  "name_en": "Phaedra",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1.25,
+  "mr": 3,
+  "variant_dispositions": {
+   "Phaedra": 1.25
+  }
+ },
+ "grattler": {
+  "name_zh": "葛拉特勒",
+  "name_en": "Grattler",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 4,
+  "variant_dispositions": {
+   "Grattler": 1.1,
+   "Kuva Grattler": 0.69999999
+  }
+ },
+ "dual_decurion": {
+  "name_zh": "什长双枪",
+  "name_en": "Dual Decurion",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 1,
+  "variant_dispositions": {
+   "Dual Decurion": 1.3,
+   "Prisma Dual Decurions": 1.25
+  }
+ },
+ "attica": {
+  "name_zh": "阿提卡",
+  "name_en": "Attica",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.42,
+  "mr": 7,
+  "variant_dispositions": {
+   "Attica": 1.42
+  }
+ },
+ "boltor": {
+  "name_zh": "螺钉步枪",
+  "name_en": "Boltor",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 2,
+  "variant_dispositions": {
+   "Boltor": 1.3,
+   "Boltor Prime": 1.2,
+   "Telos Boltor": 1.2
+  }
+ },
+ "braton": {
+  "name_zh": "布莱顿",
+  "name_en": "Braton",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.35,
+  "mr": 0,
+  "variant_dispositions": {
+   "Braton": 1.35,
+   "Braton Prime": 1.25,
+   "Braton Vandal": 1.3,
+   "Mk1-Braton": 1.35
+  }
+ },
+ "corinth": {
+  "name_zh": "科林斯",
+  "name_en": "Corinth",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.15,
+  "mr": 8,
+  "variant_dispositions": {
+   "Corinth": 1.15,
+   "Corinth Prime": 1
+  }
+ },
+ "ferrox": {
+  "name_zh": "铁晶磁轨炮",
+  "name_en": "Ferrox",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.25,
+  "mr": 14,
+  "variant_dispositions": {
+   "Ferrox": 1.25,
+   "Tenet Ferrox": 1.15
+  }
+ },
+ "hek": {
+  "name_zh": "海克",
+  "name_en": "Hek",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.2,
+  "mr": 4,
+  "variant_dispositions": {
+   "Hek": 1.2,
+   "Kuva Hek": 1,
+   "Vaykor Hek": 1.15
+  }
+ },
+ "ogris": {
+  "name_zh": "食人女魔",
+  "name_en": "Ogris",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 9,
+  "variant_dispositions": {
+   "Kuva Ogris": 0.69999999,
+   "Ogris": 1.3
+  }
+ },
+ "paracyst": {
+  "name_zh": "附肢寄生者",
+  "name_en": "Paracyst",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.31,
+  "mr": 7,
+  "variant_dispositions": {
+   "Paracyst": 1.3099999
+  }
+ },
+ "supra": {
+  "name_zh": "苏普拉",
+  "name_en": "Supra",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 12,
+  "variant_dispositions": {
+   "Supra": 1.1,
+   "Supra Vandal": 1
+  }
+ },
+ "tenora": {
+  "name_zh": "双簧管",
+  "name_en": "Tenora",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 10,
+  "variant_dispositions": {
+   "Tenora": 1.1,
+   "Tenora Prime": 1.05
+  }
+ },
+ "tiberon": {
+  "name_zh": "狂鲨",
+  "name_en": "Tiberon",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 10,
+  "variant_dispositions": {
+   "Tiberon": 1.1,
+   "Tiberon Prime": 1
+  }
+ },
+ "aklex": {
+  "name_zh": "雷克斯双枪",
+  "name_en": "Aklex",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.05,
+  "mr": 4,
+  "variant_dispositions": {
+   "Aklex": 1.05,
+   "Aklex Prime": 0.94999999
+  }
+ },
+ "akmagnus": {
+  "name_zh": "麦格努斯双枪",
+  "name_en": "Akmagnus",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.35,
+  "mr": 12,
+  "variant_dispositions": {
+   "Akmagnus": 1.35,
+   "Akmagnus Prime": 1.1
+  }
+ },
+ "aksomati": {
+  "name_zh": "轻灵月神双枪",
+  "name_en": "Aksomati",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.25,
+  "mr": 9,
+  "variant_dispositions": {
+   "Aksomati": 1.25,
+   "Aksomati Prime": 1.05
+  }
+ },
+ "akstiletto": {
+  "name_zh": "史提托双枪",
+  "name_en": "Akstiletto",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.95,
+  "mr": 8,
+  "variant_dispositions": {
+   "Akstiletto": 0.94999999,
+   "Akstiletto Prime": 0.85000002
+  }
+ },
+ "akvasto": {
+  "name_zh": "瓦斯托双枪",
+  "name_en": "Akvasto",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.25,
+  "mr": 8,
+  "variant_dispositions": {
+   "Akvasto": 1.25,
+   "Akvasto Prime": 1.2
+  }
+ },
+ "akzani": {
+  "name_zh": "荒谬双枪",
+  "name_en": "Akzani",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.52,
+  "mr": 4,
+  "variant_dispositions": {
+   "Akzani": 1.52
+  }
+ },
+ "angstrum": {
+  "name_zh": "安格斯壮",
+  "name_en": "Angstrum",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.35,
+  "mr": 4,
+  "variant_dispositions": {
+   "Angstrum": 1.35,
+   "Prisma Angstrum": 1.3
+  }
+ },
+ "atomos": {
+  "name_zh": "原子矿融炮",
+  "name_en": "Atomos",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.95,
+  "mr": 5,
+  "variant_dispositions": {
+   "Atomos": 0.94999999
+  }
+ },
+ "azima": {
+  "name_zh": "方位角",
+  "name_en": "Azima",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.25,
+  "mr": 6,
+  "variant_dispositions": {
+   "Azima": 1.25
+  }
+ },
+ "bolto": {
+  "name_zh": "螺钉手枪",
+  "name_en": "Bolto",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.51,
+  "mr": 7,
+  "variant_dispositions": {
+   "Bolto": 1.51
+  }
+ },
+ "brakk": {
+  "name_zh": "布拉克",
+  "name_en": "Brakk",
+  "group": "secondary",
+  "riven_type": "shotgun",
+  "disposition": 1.25,
+  "mr": 6,
+  "variant_dispositions": {
+   "Brakk": 1.25,
+   "Kuva Brakk": 0.94999999
+  }
+ },
+ "despair": {
+  "name_zh": "绝望",
+  "name_en": "Despair",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.3,
+  "mr": 4,
+  "variant_dispositions": {
+   "Despair": 1.3
+  }
+ },
+ "dual_raza": {
+  "name_zh": "锋月双斧",
+  "name_en": "Dual Raza",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.4,
+  "mr": 6,
+  "variant_dispositions": {
+   "Dual Raza": 1.4
+  }
+ },
+ "reaper_prime": {
+  "name_zh": "收割者 Prime",
+  "name_en": "Reaper Prime",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.8,
+  "mr": 10,
+  "variant_dispositions": {
+   "Reaper Prime": 0.80000001
+  }
+ },
+ "ripkas": {
+  "name_zh": "锐卡斯",
+  "name_en": "Ripkas",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 5,
+  "variant_dispositions": {
+   "Ripkas": 1.3
+  }
+ },
+ "dark_sword": {
+  "name_zh": "暗黑长剑",
+  "name_en": "Dark Sword",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.48,
+  "mr": 8,
+  "variant_dispositions": {
+   "Dark Sword": 1.48
+  }
+ },
+ "kreska": {
+  "name_zh": "直镐",
+  "name_en": "Kreska",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 6,
+  "variant_dispositions": {
+   "Kreska": 1.35
+  }
+ },
+ "velocitus": {
+  "name_zh": "极速电磁步枪",
+  "name_en": "Velocitus",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Velocitus": 1.1
+  }
+ },
+ "fluctus": {
+  "name_zh": "巨浪",
+  "name_en": "Fluctus",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 2,
+  "variant_dispositions": {
+   "Fluctus": 1.1
+  }
+ },
+ "quatz": {
+  "name_zh": "夸兹",
+  "name_en": "Quatz",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 9,
+  "variant_dispositions": {
+   "Quatz": 1.2
+  }
+ },
+ "acceltra": {
+  "name_zh": "迅发电浆炮",
+  "name_en": "Acceltra",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.65,
+  "mr": 8,
+  "variant_dispositions": {
+   "Acceltra": 0.64999998,
+   "Acceltra Prime": 0.55000001
+  }
+ },
+ "akarius": {
+  "name_zh": "阿利乌双枪",
+  "name_en": "Akarius",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.05,
+  "mr": 8,
+  "variant_dispositions": {
+   "Akarius": 1.05,
+   "Akarius Prime": 0.64999998
+  }
+ },
+ "tazicor": {
+  "name_zh": "泰瑟步枪",
+  "name_en": "Tazicor",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1,
+  "mr": 3,
+  "variant_dispositions": {
+   "Tazicor": 1
+  }
+ },
+ "cryotra": {
+  "name_zh": "急冻喷枪",
+  "name_en": "Cryotra",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Cryotra": 1
+  }
+ },
+ "shedu": {
+  "name_zh": "舍杜",
+  "name_en": "Shedu",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.75,
+  "mr": 13,
+  "variant_dispositions": {
+   "Shedu": 0.75
+  }
+ },
+ "cortege": {
+  "name_zh": "送葬者",
+  "name_en": "Cortege",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1,
+  "mr": 14,
+  "variant_dispositions": {
+   "Cortege": 1
+  }
+ },
+ "vitrica": {
+  "name_zh": "金璃剑",
+  "name_en": "Vitrica",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 13,
+  "variant_dispositions": {
+   "Vitrica": 1.1
+  }
+ },
+ "pulmonars": {
+  "name_zh": "感染连枷",
+  "name_en": "Pulmonars",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.2,
+  "mr": 11,
+  "variant_dispositions": {
+   "Pulmonars": 1.2
+  }
+ },
+ "bubonico": {
+  "name_zh": "横痃重炮",
+  "name_en": "Bubonico",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.75,
+  "mr": 13,
+  "variant_dispositions": {
+   "Bubonico": 0.75,
+   "Coda Bubonico": 0.55000001
+  }
+ },
+ "proboscis_cernos": {
+  "name_zh": "刺吸西诺斯",
+  "name_en": "Proboscis Cernos",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.9,
+  "mr": 15,
+  "variant_dispositions": {
+   "Proboscis Cernos": 0.89999998
+  }
+ },
+ "sporothrix": {
+  "name_zh": "孢丝感染枪",
+  "name_en": "Sporothrix",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 13,
+  "variant_dispositions": {
+   "Coda Sporothrix": 0.94999999,
+   "Sporothrix": 1.3
+  }
+ },
+ "arum_spinosa": {
+  "name_zh": "疆南星刺",
+  "name_en": "Arum Spinosa",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 11,
+  "variant_dispositions": {
+   "Arum Spinosa": 1.25
+  }
+ },
+ "sarpa": {
+  "name_zh": "蛇刃",
+  "name_en": "Sarpa",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.2,
+  "mr": 8,
+  "variant_dispositions": {
+   "Sarpa": 1.2
+  }
+ },
+ "scindo": {
+  "name_zh": "分裂斩斧",
+  "name_en": "Scindo",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 2,
+  "variant_dispositions": {
+   "Scindo": 1.35,
+   "Scindo Prime": 1.3
+  }
+ },
+ "scoliac": {
+  "name_zh": "脊椎节鞭",
+  "name_en": "Scoliac",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 6,
+  "variant_dispositions": {
+   "Scoliac": 1.3
+  }
+ },
+ "sepfahn": {
+  "name_zh": "瑟普梵",
+  "name_en": "Sepfahn",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 0.7,
+  "mr": 0,
+  "variant_dispositions": {
+   "Sepfahn": 0.69999999
+  }
+ },
+ "serro": {
+  "name_zh": "电能斩锯",
+  "name_en": "Serro",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.38,
+  "mr": 6,
+  "variant_dispositions": {
+   "Serro": 1.38
+  }
+ },
+ "shaku": {
+  "name_zh": "双节尺棍",
+  "name_en": "Shaku",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 10,
+  "variant_dispositions": {
+   "Shaku": 1.35
+  }
+ },
+ "sheev": {
+  "name_zh": "希芙",
+  "name_en": "Sheev",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 5,
+  "variant_dispositions": {
+   "Sheev": 1.35
+  }
+ },
+ "sibear": {
+  "name_zh": "西伯利亚冰锤",
+  "name_en": "Sibear",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 6,
+  "variant_dispositions": {
+   "Sibear": 1.35
+  }
+ },
+ "sigma_and_octantis": {
+  "name_zh": "西格玛 & 南极座",
+  "name_en": "Sigma & Octantis",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 10,
+  "variant_dispositions": {
+   "Sigma & Octantis": 1.1
+  }
+ },
+ "silva_and_aegis": {
+  "name_zh": "席瓦 & 神盾",
+  "name_en": "Silva & Aegis",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 0,
+  "variant_dispositions": {
+   "Silva & Aegis": 1.15,
+   "Silva & Aegis Prime": 1.05
+  }
+ },
+ "skiajati": {
+  "name_zh": "影生",
+  "name_en": "Skiajati",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.9,
+  "mr": 11,
+  "variant_dispositions": {
+   "Skiajati": 0.89999998
+  }
+ },
+ "sydon": {
+  "name_zh": "恶龙",
+  "name_en": "Sydon",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 5,
+  "variant_dispositions": {
+   "Sydon": 1.35,
+   "Vaykor Sydon": 1.3
+  }
+ },
+ "tekko": {
+  "name_zh": "铁钩手甲",
+  "name_en": "Tekko",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.4,
+  "mr": 6,
+  "variant_dispositions": {
+   "Tekko": 1.4,
+   "Tekko Prime": 1.3
+  }
+ },
+ "tipedo": {
+  "name_zh": "提佩多",
+  "name_en": "Tipedo",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.31,
+  "mr": 3,
+  "variant_dispositions": {
+   "Tipedo": 1.3099999,
+   "Tipedo Prime": 1.25
+  }
+ },
+ "tonbo": {
+  "name_zh": "蜻蛉薙",
+  "name_en": "Tonbo",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.38,
+  "mr": 3,
+  "variant_dispositions": {
+   "Tonbo": 1.38
+  }
+ },
+ "twin_basolk": {
+  "name_zh": "双子巴萨克",
+  "name_en": "Twin Basolk",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 7,
+  "variant_dispositions": {
+   "Twin Basolk": 1.3
+  }
+ },
+ "amprex": {
+  "name_zh": "安培克斯",
+  "name_en": "Amprex",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.85,
+  "mr": 10,
+  "variant_dispositions": {
+   "Amprex": 0.85000002
+  }
+ },
+ "burston": {
+  "name_zh": "伯斯顿",
+  "name_en": "Burston",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.45,
+  "mr": 0,
+  "variant_dispositions": {
+   "Burston": 1.45,
+   "Burston Prime": 1.35
+  }
+ },
+ "buzlok": {
+  "name_zh": "巴兹火枪",
+  "name_en": "Buzlok",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.45,
+  "mr": 11,
+  "variant_dispositions": {
+   "Buzlok": 1.45
+  }
+ },
+ "cernos": {
+  "name_zh": "西诺斯",
+  "name_en": "Cernos",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 6,
+  "variant_dispositions": {
+   "Cernos": 1.3,
+   "Cernos Prime": 1.25,
+   "Rakta Cernos": 1.25
+  }
+ },
+ "convectrix": {
+  "name_zh": "导热聚焦枪",
+  "name_en": "Convectrix",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.46,
+  "mr": 7,
+  "variant_dispositions": {
+   "Convectrix": 1.46
+  }
+ },
+ "daikyu": {
+  "name_zh": "大久和弓",
+  "name_en": "Daikyu",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 10,
+  "variant_dispositions": {
+   "Daikyu": 1.3,
+   "Daikyu Prime": 0.89999998
+  }
+ },
+ "dera": {
+  "name_zh": "德拉",
+  "name_en": "Dera",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.4,
+  "mr": 4,
+  "variant_dispositions": {
+   "Dera": 1.4,
+   "Dera Vandal": 1.35
+  }
+ },
+ "drakgoon": {
+  "name_zh": "龙骑兵",
+  "name_en": "Drakgoon",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.4,
+  "mr": 5,
+  "variant_dispositions": {
+   "Drakgoon": 1.4,
+   "Kuva Drakgoon": 1.15
+  }
+ },
+ "dread": {
+  "name_zh": "恐惧",
+  "name_en": "Dread",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 5,
+  "variant_dispositions": {
+   "Dread": 1.3
+  }
+ },
+ "glaxion": {
+  "name_zh": "冷冻光束步枪",
+  "name_en": "Glaxion",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 8,
+  "variant_dispositions": {
+   "Glaxion": 1.3,
+   "Glaxion Vandal": 1.25,
+   "Tenet Glaxion": 0.64999998
+  }
+ },
+ "gorgon": {
+  "name_zh": "蛇发女妖",
+  "name_en": "Gorgon",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.4,
+  "mr": 3,
+  "variant_dispositions": {
+   "Gorgon": 1.4,
+   "Gorgon Wraith": 1.35,
+   "Prisma Gorgon": 1.3
+  }
+ },
+ "grakata": {
+  "name_zh": "葛拉卡达",
+  "name_en": "Grakata",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.35,
+  "mr": 5,
+  "variant_dispositions": {
+   "Grakata": 1.35,
+   "Prisma Grakata": 1.3
+  }
+ },
+ "grinlok": {
+  "name_zh": "葛恩火枪",
+  "name_en": "Grinlok",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 7,
+  "variant_dispositions": {
+   "Grinlok": 1.3,
+   "Prisma Grinlok": 1.25
+  }
+ },
+ "seer": {
+  "name_zh": "预言者",
+  "name_en": "Seer",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.5,
+  "mr": 0,
+  "variant_dispositions": {
+   "Kuva Seer": 1.1,
+   "Seer": 1.5
+  }
+ },
+ "zakti": {
+  "name_zh": "毒芽",
+  "name_en": "Zakti",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.25,
+  "mr": 10,
+  "variant_dispositions": {
+   "Zakti": 1.25,
+   "Zakti Prime": 1.1
+  }
+ },
+ "cyath": {
+  "name_zh": "西亚什",
+  "name_en": "Cyath",
+  "group": "zaw",
+  "riven_type": "zaw",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Cyath": 1
+  }
+ },
+ "dark_split_sword_(dual_swords)": {
+  "name_zh": "暗黑分合剑",
+  "name_en": "Dark Split-Sword",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 0,
+  "variant_dispositions": {
+   "Dark Split-Sword": 1.3
+  }
+ },
+ "krohkur": {
+  "name_zh": "克鲁古尔",
+  "name_en": "Krohkur",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.35,
+  "mr": 9,
+  "variant_dispositions": {
+   "Krohkur": 1.35
+  }
+ },
+ "kronen": {
+  "name_zh": "皇家拐刃",
+  "name_en": "Kronen",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.43,
+  "mr": 3,
+  "variant_dispositions": {
+   "Kronen": 1.4299999,
+   "Kronen Prime": 0.69999999
+  }
+ },
+ "lacera": {
+  "name_zh": "悲痛之刃",
+  "name_en": "Lacera",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.31,
+  "mr": 7,
+  "variant_dispositions": {
+   "Ceti Lacera": 1.2,
+   "Lacera": 1.3099999
+  }
+ },
+ "lesion": {
+  "name_zh": "病变",
+  "name_en": "Lesion",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.85,
+  "mr": 9,
+  "variant_dispositions": {
+   "Lesion": 0.85000002
+  }
+ },
+ "venka": {
+  "name_zh": "凯旋之爪",
+  "name_en": "Venka",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 4,
+  "variant_dispositions": {
+   "Venka": 1.1,
+   "Venka Prime": 0.85000002
+  }
+ },
+ "volnus": {
+  "name_zh": "创伤",
+  "name_en": "Volnus",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.4,
+  "mr": 9,
+  "variant_dispositions": {
+   "Volnus": 1.4,
+   "Volnus Prime": 1.3
+  }
+ },
+ "zenistar": {
+  "name_zh": "天顶之星",
+  "name_en": "Zenistar",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 6,
+  "variant_dispositions": {
+   "Zenistar": 1.15
+  }
+ },
+ "deconstructor": {
+  "name_zh": "分离",
+  "name_en": "Deconstructor",
+  "group": "sentinel",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 0,
+  "variant_dispositions": {
+   "Deconstructor": 1.25,
+   "Deconstructor Prime": 1.25
+  }
+ },
+ "sweeper": {
+  "name_zh": "扫除者",
+  "name_en": "Sweeper",
+  "group": "sentinel",
+  "riven_type": "shotgun",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Sweeper": 1,
+   "Sweeper Prime": 1
+  }
+ },
+ "rattleguts": {
+  "name_zh": "响胆",
+  "name_en": "Rattleguts",
+  "group": "kitgun",
+  "riven_type": "kitgun",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {}
+ },
+ "wolf_sledge": {
+  "name_zh": "恶狼战锤",
+  "name_en": "Wolf Sledge",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 7,
+  "variant_dispositions": {
+   "Wolf Sledge": 1.25
+  }
+ },
+ "quellor": {
+  "name_zh": "压制者",
+  "name_en": "Quellor",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 12,
+  "variant_dispositions": {
+   "Quellor": 1.15
+  }
+ },
+ "basmu": {
+  "name_zh": "巴什穆",
+  "name_en": "Basmu",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.2,
+  "mr": 11,
+  "variant_dispositions": {
+   "Basmu": 1.2
+  }
+ },
+ "stahlta": {
+  "name_zh": "钢刃步枪",
+  "name_en": "Stahlta",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.05,
+  "mr": 10,
+  "variant_dispositions": {
+   "Stahlta": 1.05
+  }
+ },
+ "velox": {
+  "name_zh": "逐电",
+  "name_en": "Velox",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.25,
+  "mr": 8,
+  "variant_dispositions": {
+   "Velox": 1.25,
+   "Velox Prime": 0.85000002
+  }
+ },
+ "helstrum": {
+  "name_zh": "赫尔斯壮",
+  "name_en": "Helstrum",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Helstrum": 1
+  }
+ },
+ "xoris": {
+  "name_zh": "驱魔之刃",
+  "name_en": "Xoris",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.65,
+  "mr": 4,
+  "variant_dispositions": {
+   "Xoris": 0.64999998
+  }
+ },
+ "athodai": {
+  "name_zh": "阿索代",
+  "name_en": "Athodai",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.05,
+  "mr": 10,
+  "variant_dispositions": {
+   "Athodai": 1.05,
+   "Athodai Prime": 0.5
+  }
+ },
+ "sepulcrum": {
+  "name_zh": "追击者",
+  "name_en": "Sepulcrum",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.1,
+  "mr": 14,
+  "variant_dispositions": {
+   "Sepulcrum": 1.1
+  }
+ },
+ "quassus": {
+  "name_zh": "威震武扇",
+  "name_en": "Quassus",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 8,
+  "variant_dispositions": {
+   "Quassus": 1.15,
+   "Quassus Prime": 0.89999998
+  }
+ },
+ "trumna": {
+  "name_zh": "灭杀者",
+  "name_en": "Trumna",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.85,
+  "mr": 13,
+  "variant_dispositions": {
+   "Trumna": 0.85000002,
+   "Trumna Prime": 0.64999998
+  }
+ },
+ "zymos": {
+  "name_zh": "邪莫斯",
+  "name_en": "Zymos",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.2,
+  "mr": 11,
+  "variant_dispositions": {
+   "Zymos": 1.2
+  }
+ },
+ "keratinos": {
+  "name_zh": "卡提努之爪",
+  "name_en": "Keratinos",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.05,
+  "mr": 9,
+  "variant_dispositions": {
+   "Keratinos": 1.05
+  }
+ },
+ "mausolon": {
+  "name_zh": "惩戒者",
+  "name_en": "Mausolon",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 0.5,
+  "mr": 14,
+  "variant_dispositions": {
+   "Mausolon": 0.5
+  }
+ },
+ "cedo": {
+  "name_zh": "塞多",
+  "name_en": "Cedo",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 0.65,
+  "mr": 8,
+  "variant_dispositions": {
+   "Cedo": 0.64999998,
+   "Cedo Prime": 0.55000001
+  }
+ },
+ "verglas": {
+  "name_zh": "冰凇",
+  "name_en": "Verglas",
+  "group": "sentinel",
+  "riven_type": "rifle",
+  "disposition": 1.3,
+  "mr": 0,
+  "variant_dispositions": {
+   "Verglas": 1.3,
+   "Verglas Prime": 1.3
+  }
+ },
+ "epitaph": {
+  "name_zh": "葬铭",
+  "name_en": "Epitaph",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.6,
+  "mr": 8,
+  "variant_dispositions": {
+   "Epitaph": 0.60000002,
+   "Epitaph Prime": 0.55000001
+  }
+ },
+ "tenet_envoy": {
+  "name_zh": "信条·典客",
+  "name_en": "Tenet Envoy",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.65,
+  "mr": 16,
+  "variant_dispositions": {
+   "Tenet Envoy": 0.64999998
+  }
+ },
+ "tenet_spirex": {
+  "name_zh": "信条·斯派克斯",
+  "name_en": "Tenet Spirex",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.05,
+  "mr": 14,
+  "variant_dispositions": {
+   "Tenet Spirex": 1.05
+  }
+ },
+ "kompressa": {
+  "name_zh": "卡帕压力枪",
+  "name_en": "Kompressa",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.15,
+  "mr": 8,
+  "variant_dispositions": {
+   "Kompressa": 1.15,
+   "Kompressa Prime": 0.60000002
+  }
+ },
+ "tenet_exec": {
+  "name_zh": "信条·枢密",
+  "name_en": "Tenet Exec",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.8,
+  "mr": 16,
+  "variant_dispositions": {
+   "Tenet Exec": 0.80000001
+  }
+ },
+ "tenet_grigori": {
+  "name_zh": "信条·格里高利",
+  "name_en": "Tenet Grigori",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.95,
+  "mr": 14,
+  "variant_dispositions": {
+   "Tenet Grigori": 0.94999999
+  }
+ },
+ "ambassador": {
+  "name_zh": "使节",
+  "name_en": "Ambassador",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 10,
+  "variant_dispositions": {
+   "Ambassador": 1.15
+  }
+ },
+ "cadus": {
+  "name_zh": "卡德斯",
+  "name_en": "Cadus",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.29,
+  "mr": 4,
+  "variant_dispositions": {
+   "Cadus": 1.29
+  }
+ },
+ "tenet_livia": {
+  "name_zh": "信条·莉薇娅",
+  "name_en": "Tenet Livia",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.95,
+  "mr": 14,
+  "variant_dispositions": {
+   "Tenet Livia": 0.94999999
+  }
+ },
+ "tenet_diplos": {
+  "name_zh": "信条·纵横双枪",
+  "name_en": "Tenet Diplos",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.8,
+  "mr": 16,
+  "variant_dispositions": {
+   "Tenet Diplos": 0.80000001
+  }
+ },
+ "tenet_agendus": {
+  "name_zh": "信条·集议",
+  "name_en": "Tenet Agendus",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.9,
+  "mr": 14,
+  "variant_dispositions": {
+   "Tenet Agendus": 0.89999998
+  }
+ },
+ "lacerten": {
+  "name_zh": "莱斯腾",
+  "name_en": "Lacerten",
+  "group": "sentinel",
+  "riven_type": "melee",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Lacerten": 1
+  }
+ },
+ "akaten": {
+  "name_zh": "阿卡腾",
+  "name_en": "Akaten",
+  "group": "sentinel",
+  "riven_type": "melee",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Akaten": 1
+  }
+ },
+ "batoten": {
+  "name_zh": "巴托腾",
+  "name_en": "Batoten",
+  "group": "sentinel",
+  "riven_type": "melee",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Batoten": 1
+  }
+ },
+ "vastilok": {
+  "name_zh": "瓦斯提枪刃",
+  "name_en": "Vastilok",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.9,
+  "mr": 9,
+  "variant_dispositions": {
+   "Vastilok": 0.89999998
+  }
+ },
+ "ghoulsaw": {
+  "name_zh": "尸鬼电锯",
+  "name_en": "Ghoulsaw",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.25,
+  "mr": 7,
+  "variant_dispositions": {
+   "Ghoulsaw": 1.25,
+   "Kuva Ghoulsaw": 0.69999999
+  }
+ },
+ "verdilac": {
+  "name_zh": "蝰首骨妖",
+  "name_en": "Verdilac",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 13,
+  "variant_dispositions": {
+   "Verdilac": 1.1
+  }
+ },
+ "nepheri": {
+  "name_zh": "赤炎流星",
+  "name_en": "Nepheri",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1,
+  "mr": 13,
+  "variant_dispositions": {
+   "Nepheri": 1
+  }
+ },
+ "rumblejack": {
+  "name_zh": "电匕怪杰",
+  "name_en": "Rumblejack",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.2,
+  "mr": 8,
+  "variant_dispositions": {
+   "Rumblejack": 1.2
+  }
+ },
+ "korumm": {
+  "name_zh": "雷霆暴君",
+  "name_en": "Korumm",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 13,
+  "variant_dispositions": {
+   "Korumm": 1.1
+  }
+ },
+ "venato": {
+  "name_zh": "脉纹",
+  "name_en": "Venato",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.3,
+  "mr": 9,
+  "variant_dispositions": {
+   "Venato": 1.3,
+   "Venato Prime": 0.60000002
+  }
+ },
+ "nataruk": {
+  "name_zh": "太始弓",
+  "name_en": "Nataruk",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.65,
+  "mr": 0,
+  "variant_dispositions": {
+   "Nataruk": 0.64999998
+  }
+ },
+ "hespar": {
+  "name_zh": "暮斩",
+  "name_en": "Hespar",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.05,
+  "mr": 12,
+  "variant_dispositions": {
+   "Hespar": 1.05
+  }
+ },
+ "alternox": {
+  "name_zh": "电幻步枪",
+  "name_en": "Alternox",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 8,
+  "variant_dispositions": {
+   "Alternox": 1.15,
+   "Alternox Prime": 0.80000001
+  }
+ },
+ "aeolak": {
+  "name_zh": "风鸣",
+  "name_en": "Aeolak",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.2,
+  "mr": 10,
+  "variant_dispositions": {
+   "Aeolak": 1.2
+  }
+ },
+ "phenmor": {
+  "name_zh": "凤殁",
+  "name_en": "Phenmor",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.6,
+  "mr": 14,
+  "variant_dispositions": {
+   "Phenmor": 0.60000002
+  }
+ },
+ "laetum": {
+  "name_zh": "奏凯",
+  "name_en": "Laetum",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.5,
+  "mr": 14,
+  "variant_dispositions": {
+   "Laetum": 0.5
+  }
+ },
+ "praedos": {
+  "name_zh": "双雄",
+  "name_en": "Praedos",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.6,
+  "mr": 14,
+  "variant_dispositions": {
+   "Praedos": 0.60000002
+  }
+ },
+ "innodem": {
+  "name_zh": "清刚",
+  "name_en": "Innodem",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.65,
+  "mr": 14,
+  "variant_dispositions": {
+   "Innodem": 0.64999998
+  }
+ },
+ "felarx": {
+  "name_zh": "逐枭",
+  "name_en": "Felarx",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 0.6,
+  "mr": 14,
+  "variant_dispositions": {
+   "Felarx": 0.60000002
+  }
+ },
+ "vericres": {
+  "name_zh": "真月武扇",
+  "name_en": "Vericres",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 8,
+  "variant_dispositions": {
+   "Vericres": 1.15
+  }
+ },
+ "slaytra": {
+  "name_zh": "屠煞",
+  "name_en": "Slaytra",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.05,
+  "mr": 13,
+  "variant_dispositions": {
+   "Slaytra": 1.05
+  }
+ },
+ "aegrit": {
+  "name_zh": "骇敌榴弹",
+  "name_en": "Aegrit",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1,
+  "mr": 11,
+  "variant_dispositions": {
+   "Aegrit": 1
+  }
+ },
+ "afentis": {
+  "name_zh": "圣英",
+  "name_en": "Afentis",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.05,
+  "mr": 8,
+  "variant_dispositions": {
+   "Afentis": 1.05,
+   "Afentis Prime": 0.5
+  }
+ },
+ "sarofang": {
+  "name_zh": "沙罗之牙",
+  "name_en": "Sarofang",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 8,
+  "variant_dispositions": {
+   "Sarofang": 1.15,
+   "Sarofang Prime": 0.64999998
+  }
+ },
+ "perigale": {
+  "name_zh": "月面狂风",
+  "name_en": "Perigale",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 8,
+  "variant_dispositions": {
+   "Perigale": 1.15,
+   "Perigale Prime": 0.64999998
+  }
+ },
+ "corufell": {
+  "name_zh": "闪劫",
+  "name_en": "Corufell",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.05,
+  "mr": 8,
+  "variant_dispositions": {
+   "Corufell": 1.05
+  }
+ },
+ "steflos": {
+  "name_zh": "石晶之花",
+  "name_en": "Steflos",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.25,
+  "mr": 8,
+  "variant_dispositions": {
+   "Steflos": 1.25
+  }
+ },
+ "sampotes": {
+  "name_zh": "三宝聚",
+  "name_en": "Sampotes",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Sampotes": 1
+  }
+ },
+ "azothane": {
+  "name_zh": "溶灵尊",
+  "name_en": "Azothane",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 0,
+  "variant_dispositions": {
+   "Azothane": 1.1
+  }
+ },
+ "syam": {
+  "name_zh": "业珀",
+  "name_en": "Syam",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.75,
+  "mr": 0,
+  "variant_dispositions": {
+   "Syam": 0.75
+  }
+ },
+ "cinta": {
+  "name_zh": "遂心",
+  "name_en": "Cinta",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.25,
+  "mr": 6,
+  "variant_dispositions": {
+   "Cinta": 1.25
+  }
+ },
+ "sun_and_moon": {
+  "name_zh": "赤阳 & 幽月",
+  "name_en": "Sun & Moon",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.8,
+  "mr": 0,
+  "variant_dispositions": {
+   "Sun & Moon": 0.80000001
+  }
+ },
+ "edun": {
+  "name_zh": "雷石祭",
+  "name_en": "Edun",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 0,
+  "variant_dispositions": {
+   "Edun": 1.15
+  }
+ },
+ "rauta": {
+  "name_zh": "锐铁",
+  "name_en": "Rauta",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 1.1,
+  "mr": 8,
+  "variant_dispositions": {
+   "Rauta": 1.1
+  }
+ },
+ "argo_and_vel": {
+  "name_zh": "星舟 & 帆",
+  "name_en": "Argo & Vel",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.15,
+  "mr": 0,
+  "variant_dispositions": {
+   "Argo & Vel": 1.15
+  }
+ },
+ "gotva_prime": {
+  "name_zh": "骨葬 Prime",
+  "name_en": "Gotva Prime",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.85,
+  "mr": 14,
+  "variant_dispositions": {
+   "Gotva Prime": 0.85000002
+  }
+ },
+ "dorrclave": {
+  "name_zh": "怒斩",
+  "name_en": "Dorrclave",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 8,
+  "variant_dispositions": {
+   "Dorrclave": 1.1
+  }
+ },
+ "ekhein": {
+  "name_zh": "映声战锤",
+  "name_en": "Ekhein",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.2,
+  "mr": 10,
+  "variant_dispositions": {
+   "Ekhein": 1.2
+  }
+ },
+ "mandonel": {
+  "name_zh": "辐光弩炮",
+  "name_en": "Mandonel",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 1.1,
+  "mr": 10,
+  "variant_dispositions": {
+   "Mandonel": 1.1
+  }
+ },
+ "grimoire": {
+  "name_zh": "魔典",
+  "name_en": "Grimoire",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.6,
+  "mr": 10,
+  "variant_dispositions": {
+   "Grimoire": 0.60000002
+  }
+ },
+ "onos": {
+  "name_zh": "赘骨",
+  "name_en": "Onos",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.8,
+  "mr": 14,
+  "variant_dispositions": {
+   "Onos": 0.80000001
+  }
+ },
+ "ruvox": {
+  "name_zh": "古声",
+  "name_en": "Ruvox",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.9,
+  "mr": 14,
+  "variant_dispositions": {
+   "Ruvox": 0.89999998
+  }
+ },
+ "dex_nikana": {
+  "name_zh": "Dex 侍刃",
+  "name_en": "Dex Nikana",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 1.1,
+  "mr": 8,
+  "variant_dispositions": {
+   "Dex Nikana": 1.1
+  }
+ },
+ "cantare": {
+  "name_zh": "歌颂",
+  "name_en": "Cantare",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.05,
+  "mr": 10,
+  "variant_dispositions": {
+   "Cantare": 1.05
+  }
+ },
+ "evensong": {
+  "name_zh": "晚祷",
+  "name_en": "Evensong",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.2,
+  "mr": 10,
+  "variant_dispositions": {
+   "Evensong": 1.2
+  }
+ },
+ "harmony": {
+  "name_zh": "和谐",
+  "name_en": "Harmony",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.6,
+  "mr": 10,
+  "variant_dispositions": {
+   "Harmony": 0.60000002
+  }
+ },
+ "ax_52": {
+  "name_zh": "AX-52",
+  "name_en": "AX-52",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.85,
+  "mr": 12,
+  "variant_dispositions": {
+   "Ax-52": 0.85000002
+  }
+ },
+ "higasa": {
+  "name_zh": "晴日伞",
+  "name_en": "Higasa",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.25,
+  "mr": 2,
+  "variant_dispositions": {
+   "Higasa": 1.25
+  }
+ },
+ "amanata": {
+  "name_zh": "天薙刀",
+  "name_en": "Amanata",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.85,
+  "mr": 2,
+  "variant_dispositions": {
+   "Amanata": 0.85000002
+  }
+ },
+ "vesper_77": {
+  "name_zh": "夜语者 77",
+  "name_en": "Vesper 77",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.8,
+  "mr": 14,
+  "variant_dispositions": {
+   "Vesper 77": 0.80000001
+  }
+ },
+ "reconifex": {
+  "name_zh": "侦察者",
+  "name_en": "Reconifex",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1,
+  "mr": 14,
+  "variant_dispositions": {
+   "Reconifex": 1
+  }
+ },
+ "riot_848": {
+  "name_zh": "暴乱-848",
+  "name_en": "Riot-848",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1,
+  "mr": 14,
+  "variant_dispositions": {
+   "Riot-848": 1
+  }
+ },
+ "purgator_1": {
+  "name_zh": "净化者 1",
+  "name_en": "Purgator 1",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 14,
+  "variant_dispositions": {
+   "Purgator 1": 1.15
+  }
+ },
+ "dual_viciss": {
+  "name_zh": "双子恶行",
+  "name_en": "Dual Viciss",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.8,
+  "mr": 14,
+  "variant_dispositions": {
+   "Dual Viciss": 0.80000001
+  }
+ },
+ "efv_8_mars": {
+  "name_zh": "艾弗旺-8 火星",
+  "name_en": "EFV-8 Mars",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 1.05,
+  "mr": 14,
+  "variant_dispositions": {
+   "Efv-8 Mars": 1.05
+  }
+ },
+ "efv_5_jupiter": {
+  "name_zh": "艾弗旺-5 木星",
+  "name_en": "EFV-5 Jupiter",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.05,
+  "mr": 14,
+  "variant_dispositions": {
+   "Efv-5 Jupiter": 1.05
+  }
+ },
+ "dual_coda_torxica": {
+  "name_zh": "终幕·孢蚀双枪",
+  "name_en": "Dual Coda Torxica",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.55,
+  "mr": 17,
+  "variant_dispositions": {
+   "Dual Coda Torxica": 0.55000001
+  }
+ },
+ "coda_motovore": {
+  "name_zh": "终幕·噬轮",
+  "name_en": "Coda Motovore",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.8,
+  "mr": 17,
+  "variant_dispositions": {
+   "Coda Motovore": 0.80000001
+  }
+ },
+ "coda_bassocyst": {
+  "name_zh": "终幕·低音爆囊",
+  "name_en": "Coda Bassocyst",
+  "group": "primary",
+  "riven_type": "shotgun",
+  "disposition": 0.6,
+  "mr": 17,
+  "variant_dispositions": {
+   "Coda Bassocyst": 0.60000002
+  }
+ },
+ "tak_and_lug": {
+  "name_zh": "塔克 & 卢格",
+  "name_en": "Tak & Lug",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.95,
+  "mr": 9,
+  "variant_dispositions": {
+   "Tak & Lug": 0.94999999
+  }
+ },
+ "tonkkatt": {
+  "name_zh": "通卡拐刃",
+  "name_en": "Tonkkatt",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.85,
+  "mr": 9,
+  "variant_dispositions": {
+   "Tonkkatt": 0.85000002
+  }
+ },
+ "thalys": {
+  "name_zh": "大力士",
+  "name_en": "Thalys",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.6,
+  "mr": 12,
+  "variant_dispositions": {
+   "Thalys": 0.60000002
+  }
+ },
+ "scyotid": {
+  "name_zh": "镰刃刺",
+  "name_en": "Scyotid",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.7,
+  "mr": 12,
+  "variant_dispositions": {
+   "Scyotid": 0.69999999
+  }
+ },
+ "spinnerex": {
+  "name_zh": "丝蛛皇",
+  "name_en": "Spinnerex",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.75,
+  "mr": 12,
+  "variant_dispositions": {
+   "Spinnerex": 0.75
+  }
+ },
+ "vadarya_prime": {
+  "name_zh": "瓦德雅 Prime",
+  "name_en": "Vadarya Prime",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.75,
+  "mr": 15,
+  "variant_dispositions": {
+   "Vadarya Prime": 0.75
+  }
+ },
+ "arbucep": {
+  "name_zh": "蕈菇",
+  "name_en": "Arbucep",
+  "group": "archgun",
+  "riven_type": "rifle",
+  "disposition": 0.7,
+  "mr": 0,
+  "variant_dispositions": {
+   "Arbucep": 0.69999999
+  }
+ },
+ "thornbak": {
+  "name_zh": "棘背",
+  "name_en": "Thornbak",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 1.15,
+  "mr": 0,
+  "variant_dispositions": {
+   "Thornbak": 1.15
+  }
+ },
+ "vinquibus": {
+  "name_zh": "制胜者",
+  "name_en": "Vinquibus",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.6,
+  "mr": 14,
+  "variant_dispositions": {
+   "Vinquibus": 0.60000002
+  }
+ },
+ "galariak_prime": {
+  "name_zh": "加拉亚 Prime",
+  "name_en": "Galariak Prime",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.8,
+  "mr": 14,
+  "variant_dispositions": {
+   "Galariak Prime": 0.80000001
+  }
+ },
+ "sagek_prime": {
+  "name_zh": "杀格 Prime",
+  "name_en": "Sagek Prime",
+  "group": "secondary",
+  "riven_type": "pistol",
+  "disposition": 0.8,
+  "mr": 14,
+  "variant_dispositions": {
+   "Sagek Prime": 0.80000001
+  }
+ },
+ "vinquibus_melee": {
+  "name_zh": "制胜者 (近战)",
+  "name_en": "Vinquibus (Melee)",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.5,
+  "mr": 14,
+  "variant_dispositions": {}
+ },
+ "enkaus": {
+  "name_zh": "绘墨",
+  "name_en": "Enkaus",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.7,
+  "mr": 12,
+  "variant_dispositions": {
+   "Enkaus": 0.69999999
+  }
+ },
+ "wrath": {
+  "name_zh": "愤怒",
+  "name_en": "Wrath",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.5,
+  "mr": 14,
+  "variant_dispositions": {
+   "Wrath": 0.5
+  }
+ },
+ "pride": {
+  "name_zh": "骄傲",
+  "name_en": "Pride",
+  "group": "melee",
+  "riven_type": "melee",
+  "disposition": 0.5,
+  "mr": 14,
+  "variant_dispositions": {
+   "Pride": 0.5
+  }
+ },
+ "haalvu": {
+  "name_zh": "哈尔武",
+  "name_en": "Haalvu",
+  "group": "primary",
+  "riven_type": "rifle",
+  "disposition": 0.5,
+  "mr": 8,
+  "variant_dispositions": {
+   "Haalvu": 0.5
+  }
+ }
+}

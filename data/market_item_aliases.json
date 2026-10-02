@@ -1,0 +1,6581 @@
+{
+  "aliases": {
+    "acceltra_prime_barrel": [
+      "迅发电浆炮P枪管"
+    ],
+    "acceltra_prime_blueprint": [
+      "迅发电浆炮P蓝图"
+    ],
+    "acceltra_prime_receiver": [
+      "迅发电浆炮P枪机"
+    ],
+    "acceltra_prime_set": [
+      "迅发电浆炮P一套"
+    ],
+    "acceltra_prime_stock": [
+      "迅发电浆炮P枪托"
+    ],
+    "afentis_prime_barrel": [
+      "圣英P枪管"
+    ],
+    "afentis_prime_blade": [
+      "圣英P刀刃"
+    ],
+    "afentis_prime_blueprint": [
+      "圣英P蓝图"
+    ],
+    "afentis_prime_handle": [
+      "圣英P握柄"
+    ],
+    "afentis_prime_set": [
+      "圣英P一套"
+    ],
+    "afuris_prime_barrel": [
+      "盗贼双枪P枪管"
+    ],
+    "afuris_prime_blueprint": [
+      "盗贼双枪P蓝图"
+    ],
+    "afuris_prime_link": [
+      "盗贼双枪P连接器"
+    ],
+    "afuris_prime_receiver": [
+      "盗贼双枪P枪机"
+    ],
+    "afuris_prime_set": [
+      "盗贼双枪P一套"
+    ],
+    "akarius_prime_barrel": [
+      "阿利乌双枪P枪管"
+    ],
+    "akarius_prime_blueprint": [
+      "阿利乌双枪P蓝图"
+    ],
+    "akarius_prime_link": [
+      "阿利乌双枪P连接器"
+    ],
+    "akarius_prime_receiver": [
+      "阿利乌双枪P枪机"
+    ],
+    "akarius_prime_set": [
+      "阿利乌双枪P一套"
+    ],
+    "akbolto_prime_barrel": [
+      "螺钉双枪P枪管"
+    ],
+    "akbolto_prime_blueprint": [
+      "螺钉双枪P蓝图"
+    ],
+    "akbolto_prime_link": [
+      "螺钉双枪P连接器"
+    ],
+    "akbolto_prime_receiver": [
+      "螺钉双枪P枪机"
+    ],
+    "akbolto_prime_set": [
+      "螺钉双枪P一套"
+    ],
+    "akbronco_prime_blueprint": [
+      "野马双枪P蓝图"
+    ],
+    "akbronco_prime_link": [
+      "野马双枪P连接器"
+    ],
+    "akbronco_prime_set": [
+      "野马双枪P一套"
+    ],
+    "akimbo_slip_shot": [
+      "双枪滑射"
+    ],
+    "akjagara_prime_barrel": [
+      "觉醒双枪P枪管"
+    ],
+    "akjagara_prime_blueprint": [
+      "觉醒双枪P蓝图"
+    ],
+    "akjagara_prime_link": [
+      "觉醒双枪P连接器"
+    ],
+    "akjagara_prime_receiver": [
+      "觉醒双枪P枪机"
+    ],
+    "akjagara_prime_set": [
+      "觉醒双枪P一套"
+    ],
+    "aklex_prime_blueprint": [
+      "雷克斯双枪P蓝图"
+    ],
+    "aklex_prime_link": [
+      "雷克斯双枪P连接器"
+    ],
+    "aklex_prime_set": [
+      "雷克斯双枪P一套"
+    ],
+    "akmagnus_prime_blueprint": [
+      "麦格努斯双枪P蓝图"
+    ],
+    "akmagnus_prime_link": [
+      "麦格努斯双枪P连接器"
+    ],
+    "akmagnus_prime_set": [
+      "麦格努斯双枪P一套"
+    ],
+    "aksomati_prime_barrel": [
+      "轻灵月神双枪P枪管"
+    ],
+    "aksomati_prime_blueprint": [
+      "轻灵月神双枪P蓝图"
+    ],
+    "aksomati_prime_link": [
+      "轻灵月神双枪P连接器"
+    ],
+    "aksomati_prime_receiver": [
+      "轻灵月神双枪P枪机"
+    ],
+    "aksomati_prime_set": [
+      "轻灵月神双枪P一套"
+    ],
+    "akstiletto_prime_barrel": [
+      "史提托双枪P枪管"
+    ],
+    "akstiletto_prime_blueprint": [
+      "史提托双枪P蓝图"
+    ],
+    "akstiletto_prime_link": [
+      "史提托双枪P连接器"
+    ],
+    "akstiletto_prime_receiver": [
+      "史提托双枪P枪机"
+    ],
+    "akstiletto_prime_set": [
+      "史提托双枪P一套"
+    ],
+    "akvasto_prime_blueprint": [
+      "瓦斯托双枪P蓝图"
+    ],
+    "akvasto_prime_link": [
+      "瓦斯托双枪P连接器"
+    ],
+    "akvasto_prime_set": [
+      "瓦斯托双枪P一套"
+    ],
+    "alternox_prime_barrel": [
+      "电幻步枪P枪管"
+    ],
+    "alternox_prime_blueprint": [
+      "电幻步枪P蓝图"
+    ],
+    "alternox_prime_receiver": [
+      "电幻步枪P枪机"
+    ],
+    "alternox_prime_set": [
+      "电幻步枪P一套"
+    ],
+    "alternox_prime_stock": [
+      "电幻步枪P枪托"
+    ],
+    "ankyros_prime_blade": [
+      "甲龙双拳P刀刃"
+    ],
+    "ankyros_prime_blueprint": [
+      "甲龙双拳P蓝图"
+    ],
+    "ankyros_prime_gauntlet": [
+      "甲龙双拳P拳套"
+    ],
+    "ankyros_prime_set": [
+      "甲龙双拳P一套"
+    ],
+    "arcane_acceleration": [
+      "赋能加速"
+    ],
+    "arcane_aegis": [
+      "赋能神盾"
+    ],
+    "arcane_agility": [
+      "赋能灵敏"
+    ],
+    "arcane_arachne": [
+      "赋能蜘蛛"
+    ],
+    "arcane_avenger": [
+      "赋能复仇者"
+    ],
+    "arcane_awakening": [
+      "赋能觉醒"
+    ],
+    "arcane_barrier": [
+      "赋能壁垒"
+    ],
+    "arcane_battery": [
+      "赋能电池"
+    ],
+    "arcane_bellicose": [
+      "赋能黩武"
+    ],
+    "arcane_blade_charger": [
+      "赋能刀刃充能"
+    ],
+    "arcane_blessing": [
+      "赋能赐福"
+    ],
+    "arcane_bodyguard": [
+      "赋能卫士"
+    ],
+    "arcane_camisado": [
+      "赋能奇袭"
+    ],
+    "arcane_circumvent": [
+      "赋能规避"
+    ],
+    "arcane_concentration": [
+      "赋能专注"
+    ],
+    "arcane_consequence": [
+      "赋能结果"
+    ],
+    "arcane_crepuscular": [
+      "赋能影袭"
+    ],
+    "arcane_deflection": [
+      "赋能偏折"
+    ],
+    "arcane_double_back": [
+      "赋能回返"
+    ],
+    "arcane_energize": [
+      "赋能充沛"
+    ],
+    "arcane_eruption": [
+      "赋能爆发"
+    ],
+    "arcane_escapist": [
+      "赋能脱逃"
+    ],
+    "arcane_expertise": [
+      "赋能精湛"
+    ],
+    "arcane_fury": [
+      "赋能狂怒"
+    ],
+    "arcane_grace": [
+      "赋能优雅"
+    ],
+    "arcane_guardian": [
+      "赋能保卫者"
+    ],
+    "arcane_healing": [
+      "赋能复原"
+    ],
+    "arcane_hot_shot": [
+      "赋能热火"
+    ],
+    "arcane_ice": [
+      "赋能冰冷"
+    ],
+    "arcane_ice_storm": [
+      "赋能冰暴"
+    ],
+    "arcane_impetus": [
+      "赋能激励"
+    ],
+    "arcane_intention": [
+      "赋能心相"
+    ],
+    "arcane_momentum": [
+      "赋能动量"
+    ],
+    "arcane_nullifier": [
+      "赋能消磁"
+    ],
+    "arcane_persistence": [
+      "赋能坚韧"
+    ],
+    "arcane_phantasm": [
+      "赋能幻象"
+    ],
+    "arcane_pistoleer": [
+      "赋能枪炮"
+    ],
+    "arcane_power_ramp": [
+      "赋能力升"
+    ],
+    "arcane_precision": [
+      "赋能精确"
+    ],
+    "arcane_primary_charger": [
+      "赋能主武充能"
+    ],
+    "arcane_pulse": [
+      "赋能生机"
+    ],
+    "arcane_rage": [
+      "赋能愤怒"
+    ],
+    "arcane_reaper": [
+      "赋能收割"
+    ],
+    "arcane_resistance": [
+      "赋能抗毒"
+    ],
+    "arcane_rise": [
+      "赋能崛起"
+    ],
+    "arcane_sculptor": [
+      "赋能雕塑"
+    ],
+    "arcane_steadfast": [
+      "赋能坚定"
+    ],
+    "arcane_strike": [
+      "赋能速攻"
+    ],
+    "arcane_tanker": [
+      "赋能坦克"
+    ],
+    "arcane_tempo": [
+      "赋能节奏"
+    ],
+    "arcane_trickery": [
+      "赋能诡计"
+    ],
+    "arcane_truculence": [
+      "赋能暴虐"
+    ],
+    "arcane_ultimatum": [
+      "赋能通牒"
+    ],
+    "arcane_universal_fallout": [
+      "赋能辐照"
+    ],
+    "arcane_velocity": [
+      "赋能迅速"
+    ],
+    "arcane_victory": [
+      "赋能胜利"
+    ],
+    "arcane_warmth": [
+      "赋能温暖"
+    ],
+    "archgun_riven_mod_(veiled)": [
+      "空战未开"
+    ],
+    "ash_prime_blueprint": [
+      "AshP蓝图"
+    ],
+    "ash_prime_chassis_blueprint": [
+      "AshP机体"
+    ],
+    "ash_prime_neuroptics_blueprint": [
+      "AshP头部"
+    ],
+    "ash_prime_set": [
+      "AshP一套"
+    ],
+    "ash_prime_systems_blueprint": [
+      "AshP系统"
+    ],
+    "astilla_prime_barrel": [
+      "碎裂者P枪管"
+    ],
+    "astilla_prime_blueprint": [
+      "碎裂者P蓝图"
+    ],
+    "astilla_prime_receiver": [
+      "碎裂者P枪机"
+    ],
+    "astilla_prime_set": [
+      "碎裂者P一套"
+    ],
+    "astilla_prime_stock": [
+      "碎裂者P枪托"
+    ],
+    "athodai_prime_barrel": [
+      "阿索代P枪管"
+    ],
+    "athodai_prime_blueprint": [
+      "阿索代P蓝图"
+    ],
+    "athodai_prime_receiver": [
+      "阿索代P枪机"
+    ],
+    "athodai_prime_set": [
+      "阿索代P一套"
+    ],
+    "atlas_prime_blueprint": [
+      "AtlasP蓝图"
+    ],
+    "atlas_prime_chassis_blueprint": [
+      "AtlasP机体"
+    ],
+    "atlas_prime_neuroptics_blueprint": [
+      "AtlasP头部"
+    ],
+    "atlas_prime_set": [
+      "AtlasP一套"
+    ],
+    "atlas_prime_systems_blueprint": [
+      "AtlasP系统"
+    ],
+    "axi_a1_relic": [
+      "后纪A1",
+      "后A1"
+    ],
+    "axi_a10_relic": [
+      "后纪A10",
+      "后A10"
+    ],
+    "axi_a11_relic": [
+      "后纪A11",
+      "后A11"
+    ],
+    "axi_a12_relic": [
+      "后纪A12",
+      "后A12"
+    ],
+    "axi_a13_relic": [
+      "后纪A13",
+      "后A13"
+    ],
+    "axi_a14_relic": [
+      "后纪A14",
+      "后A14"
+    ],
+    "axi_a15_relic": [
+      "后纪A15",
+      "后A15"
+    ],
+    "axi_a16_relic": [
+      "后纪A16",
+      "后A16"
+    ],
+    "axi_a17_relic": [
+      "后纪A17",
+      "后A17"
+    ],
+    "axi_a18_relic": [
+      "后纪A18",
+      "后A18"
+    ],
+    "axi_a19_relic": [
+      "后纪A19",
+      "后A19"
+    ],
+    "axi_a2_relic": [
+      "后纪A2",
+      "后A2"
+    ],
+    "axi_a20_relic": [
+      "后纪A20",
+      "后A20"
+    ],
+    "axi_a21_relic": [
+      "后纪A21",
+      "后A21"
+    ],
+    "axi_a22_relic": [
+      "后纪A22",
+      "后A22"
+    ],
+    "axi_a3_relic": [
+      "后纪A3",
+      "后A3"
+    ],
+    "axi_a4_relic": [
+      "后纪A4",
+      "后A4"
+    ],
+    "axi_a5_relic": [
+      "后纪A5",
+      "后A5"
+    ],
+    "axi_a6_relic": [
+      "后纪A6",
+      "后A6"
+    ],
+    "axi_a7_relic": [
+      "后纪A7",
+      "后A7"
+    ],
+    "axi_a8_relic": [
+      "后纪A8",
+      "后A8"
+    ],
+    "axi_a9_relic": [
+      "后纪A9",
+      "后A9"
+    ],
+    "axi_b1_relic": [
+      "后纪B1",
+      "后B1"
+    ],
+    "axi_b2_relic": [
+      "后纪B2",
+      "后B2"
+    ],
+    "axi_b3_relic": [
+      "后纪B3",
+      "后B3"
+    ],
+    "axi_b4_relic": [
+      "后纪B4",
+      "后B4"
+    ],
+    "axi_b5_relic": [
+      "后纪B5",
+      "后B5"
+    ],
+    "axi_b6_relic": [
+      "后纪B6",
+      "后B6"
+    ],
+    "axi_b7_relic": [
+      "后纪B7",
+      "后B7"
+    ],
+    "axi_b8_relic": [
+      "后纪B8",
+      "后B8"
+    ],
+    "axi_b9_relic": [
+      "后纪B9",
+      "后B9"
+    ],
+    "axi_c1_relic": [
+      "后纪C1",
+      "后C1"
+    ],
+    "axi_c10_relic": [
+      "后纪C10",
+      "后C10"
+    ],
+    "axi_c11_relic": [
+      "后纪C11",
+      "后C11"
+    ],
+    "axi_c2_relic": [
+      "后纪C2",
+      "后C2"
+    ],
+    "axi_c3_relic": [
+      "后纪C3",
+      "后C3"
+    ],
+    "axi_c4_relic": [
+      "后纪C4",
+      "后C4"
+    ],
+    "axi_c5_relic": [
+      "后纪C5",
+      "后C5"
+    ],
+    "axi_c6_relic": [
+      "后纪C6",
+      "后C6"
+    ],
+    "axi_c7_relic": [
+      "后纪C7",
+      "后C7"
+    ],
+    "axi_c8_relic": [
+      "后纪C8",
+      "后C8"
+    ],
+    "axi_c9_relic": [
+      "后纪C9",
+      "后C9"
+    ],
+    "axi_d1_relic": [
+      "后纪D1",
+      "后D1"
+    ],
+    "axi_d2_relic": [
+      "后纪D2",
+      "后D2"
+    ],
+    "axi_d3_relic": [
+      "后纪D3",
+      "后D3"
+    ],
+    "axi_d4_relic": [
+      "后纪D4",
+      "后D4"
+    ],
+    "axi_d5_relic": [
+      "后纪D5",
+      "后D5"
+    ],
+    "axi_d6_relic": [
+      "后纪D6",
+      "后D6"
+    ],
+    "axi_e1_relic": [
+      "后纪E1",
+      "后E1"
+    ],
+    "axi_e2_relic": [
+      "后纪E2",
+      "后E2"
+    ],
+    "axi_f1_relic": [
+      "后纪F1",
+      "后F1"
+    ],
+    "axi_f2_relic": [
+      "后纪F2",
+      "后F2"
+    ],
+    "axi_f3_relic": [
+      "后纪F3",
+      "后F3"
+    ],
+    "axi_g1_relic": [
+      "后纪G1",
+      "后G1"
+    ],
+    "axi_g10_relic": [
+      "后纪G10",
+      "后G10"
+    ],
+    "axi_g11_relic": [
+      "后纪G11",
+      "后G11"
+    ],
+    "axi_g12_relic": [
+      "后纪G12",
+      "后G12"
+    ],
+    "axi_g13_relic": [
+      "后纪G13",
+      "后G13"
+    ],
+    "axi_g14_relic": [
+      "后纪G14",
+      "后G14"
+    ],
+    "axi_g15_relic": [
+      "后纪G15",
+      "后G15"
+    ],
+    "axi_g2_relic": [
+      "后纪G2",
+      "后G2"
+    ],
+    "axi_g3_relic": [
+      "后纪G3",
+      "后G3"
+    ],
+    "axi_g4_relic": [
+      "后纪G4",
+      "后G4"
+    ],
+    "axi_g5_relic": [
+      "后纪G5",
+      "后G5"
+    ],
+    "axi_g6_relic": [
+      "后纪G6",
+      "后G6"
+    ],
+    "axi_g7_relic": [
+      "后纪G7",
+      "后G7"
+    ],
+    "axi_g8_relic": [
+      "后纪G8",
+      "后G8"
+    ],
+    "axi_g9_relic": [
+      "后纪G9",
+      "后G9"
+    ],
+    "axi_h1_relic": [
+      "后纪H1",
+      "后H1"
+    ],
+    "axi_h2_relic": [
+      "后纪H2",
+      "后H2"
+    ],
+    "axi_h3_relic": [
+      "后纪H3",
+      "后H3"
+    ],
+    "axi_h4_relic": [
+      "后纪H4",
+      "后H4"
+    ],
+    "axi_h5_relic": [
+      "后纪H5",
+      "后H5"
+    ],
+    "axi_h6_relic": [
+      "后纪H6",
+      "后H6"
+    ],
+    "axi_h7_relic": [
+      "后纪H7",
+      "后H7"
+    ],
+    "axi_h8_relic": [
+      "后纪H8",
+      "后H8"
+    ],
+    "axi_i1_relic": [
+      "后纪I1",
+      "后I1"
+    ],
+    "axi_i2_relic": [
+      "后纪I2",
+      "后I2"
+    ],
+    "axi_i3_relic": [
+      "后纪I3",
+      "后I3"
+    ],
+    "axi_k1_relic": [
+      "后纪K1",
+      "后K1"
+    ],
+    "axi_k10_relic": [
+      "后纪K10",
+      "后K10"
+    ],
+    "axi_k11_relic": [
+      "后纪K11",
+      "后K11"
+    ],
+    "axi_k12_relic": [
+      "后纪K12",
+      "后K12"
+    ],
+    "axi_k2_relic": [
+      "后纪K2",
+      "后K2"
+    ],
+    "axi_k3_relic": [
+      "后纪K3",
+      "后K3"
+    ],
+    "axi_k4_relic": [
+      "后纪K4",
+      "后K4"
+    ],
+    "axi_k5_relic": [
+      "后纪K5",
+      "后K5"
+    ],
+    "axi_k6_relic": [
+      "后纪K6",
+      "后K6"
+    ],
+    "axi_k7_relic": [
+      "后纪K7",
+      "后K7"
+    ],
+    "axi_k8_relic": [
+      "后纪K8",
+      "后K8"
+    ],
+    "axi_k9_relic": [
+      "后纪K9",
+      "后K9"
+    ],
+    "axi_l1_relic": [
+      "后纪L1",
+      "后L1"
+    ],
+    "axi_l2_relic": [
+      "后纪L2",
+      "后L2"
+    ],
+    "axi_l3_relic": [
+      "后纪L3",
+      "后L3"
+    ],
+    "axi_l4_relic": [
+      "后纪L4",
+      "后L4"
+    ],
+    "axi_l5_relic": [
+      "后纪L5",
+      "后L5"
+    ],
+    "axi_l6_relic": [
+      "后纪L6",
+      "后L6"
+    ],
+    "axi_m1_relic": [
+      "后纪M1",
+      "后M1"
+    ],
+    "axi_m2_relic": [
+      "后纪M2",
+      "后M2"
+    ],
+    "axi_m3_relic": [
+      "后纪M3",
+      "后M3"
+    ],
+    "axi_m4_relic": [
+      "后纪M4",
+      "后M4"
+    ],
+    "axi_m5_relic": [
+      "后纪M5",
+      "后M5"
+    ],
+    "axi_m6_relic": [
+      "后纪M6",
+      "后M6"
+    ],
+    "axi_n1_relic": [
+      "后纪N1",
+      "后N1"
+    ],
+    "axi_n10_relic": [
+      "后纪N10",
+      "后N10"
+    ],
+    "axi_n11_relic": [
+      "后纪N11",
+      "后N11"
+    ],
+    "axi_n12_relic": [
+      "后纪N12",
+      "后N12"
+    ],
+    "axi_n13_relic": [
+      "后纪N13",
+      "后N13"
+    ],
+    "axi_n2_relic": [
+      "后纪N2",
+      "后N2"
+    ],
+    "axi_n3_relic": [
+      "后纪N3",
+      "后N3"
+    ],
+    "axi_n4_relic": [
+      "后纪N4",
+      "后N4"
+    ],
+    "axi_n5_relic": [
+      "后纪N5",
+      "后N5"
+    ],
+    "axi_n6_relic": [
+      "后纪N6",
+      "后N6"
+    ],
+    "axi_n7_relic": [
+      "后纪N7",
+      "后N7"
+    ],
+    "axi_n8_relic": [
+      "后纪N8",
+      "后N8"
+    ],
+    "axi_n9_relic": [
+      "后纪N9",
+      "后N9"
+    ],
+    "axi_o1_relic": [
+      "后纪O1",
+      "后O1"
+    ],
+    "axi_o2_relic": [
+      "后纪O2",
+      "后O2"
+    ],
+    "axi_o3_relic": [
+      "后纪O3",
+      "后O3"
+    ],
+    "axi_o4_relic": [
+      "后纪O4",
+      "后O4"
+    ],
+    "axi_o5_relic": [
+      "后纪O5",
+      "后O5"
+    ],
+    "axi_o6_relic": [
+      "后纪O6",
+      "后O6"
+    ],
+    "axi_o7_relic": [
+      "后纪Y2",
+      "后Y2"
+    ],
+    "axi_p1_relic": [
+      "后纪P1",
+      "后P1"
+    ],
+    "axi_p10_relic": [
+      "后纪P10",
+      "后P10"
+    ],
+    "axi_p2_relic": [
+      "后纪P2",
+      "后P2"
+    ],
+    "axi_p3_relic": [
+      "后纪P3",
+      "后P3"
+    ],
+    "axi_p4_relic": [
+      "后纪P4",
+      "后P4"
+    ],
+    "axi_p5_relic": [
+      "后纪P5",
+      "后P5"
+    ],
+    "axi_p6_relic": [
+      "后纪P6",
+      "后P6"
+    ],
+    "axi_p7_relic": [
+      "后纪P7",
+      "后P7"
+    ],
+    "axi_p8_relic": [
+      "后纪P8",
+      "后P8"
+    ],
+    "axi_p9_relic": [
+      "后纪P9",
+      "后P9"
+    ],
+    "axi_r1_relic": [
+      "后纪R1",
+      "后R1"
+    ],
+    "axi_r2_relic": [
+      "后纪R2",
+      "后R2"
+    ],
+    "axi_r3_relic": [
+      "后纪R3",
+      "后R3"
+    ],
+    "axi_r4_relic": [
+      "后纪R4",
+      "后R4"
+    ],
+    "axi_s1_relic": [
+      "后纪S1",
+      "后S1"
+    ],
+    "axi_s10_relic": [
+      "后纪S10",
+      "后S10"
+    ],
+    "axi_s11_relic": [
+      "后纪S11",
+      "后S11"
+    ],
+    "axi_s12_relic": [
+      "后纪S12",
+      "后S12"
+    ],
+    "axi_s13_relic": [
+      "后纪S13",
+      "后S13"
+    ],
+    "axi_s14_relic": [
+      "后纪S14",
+      "后S14"
+    ],
+    "axi_s15_relic": [
+      "后纪S15",
+      "后S15"
+    ],
+    "axi_s16_relic": [
+      "后纪S16",
+      "后S16"
+    ],
+    "axi_s17_relic": [
+      "后纪S17",
+      "后S17"
+    ],
+    "axi_s18_relic": [
+      "后纪S18",
+      "后S18"
+    ],
+    "axi_s19_relic": [
+      "后纪S19",
+      "后S19"
+    ],
+    "axi_s2_relic": [
+      "后纪S2",
+      "后S2"
+    ],
+    "axi_s20_relic": [
+      "后纪S20",
+      "后S20"
+    ],
+    "axi_s3_relic": [
+      "后纪S3",
+      "后S3"
+    ],
+    "axi_s4_relic": [
+      "后纪S4",
+      "后S4"
+    ],
+    "axi_s5_relic": [
+      "后纪S5",
+      "后S5"
+    ],
+    "axi_s6_relic": [
+      "后纪S6",
+      "后S6"
+    ],
+    "axi_s7_relic": [
+      "后纪S7",
+      "后S7"
+    ],
+    "axi_s8_relic": [
+      "后纪S8",
+      "后S8"
+    ],
+    "axi_s9_relic": [
+      "后纪S9",
+      "后S9"
+    ],
+    "axi_t1_relic": [
+      "后纪T1",
+      "后T1"
+    ],
+    "axi_t10_relic": [
+      "后纪T10",
+      "后T10"
+    ],
+    "axi_t11_relic": [
+      "后纪T11",
+      "后T11"
+    ],
+    "axi_t12_relic": [
+      "后纪T12",
+      "后T12"
+    ],
+    "axi_t13_relic": [
+      "后纪T13",
+      "后T13"
+    ],
+    "axi_t2_relic": [
+      "后纪T2",
+      "后T2"
+    ],
+    "axi_t3_relic": [
+      "后纪T3",
+      "后T3"
+    ],
+    "axi_t4_relic": [
+      "后纪T4",
+      "后T4"
+    ],
+    "axi_t5_relic": [
+      "后纪T5",
+      "后T5"
+    ],
+    "axi_t6_relic": [
+      "后纪T6",
+      "后T6"
+    ],
+    "axi_t7_relic": [
+      "后纪T7",
+      "后T7"
+    ],
+    "axi_t8_relic": [
+      "后纪T8",
+      "后T8"
+    ],
+    "axi_t9_relic": [
+      "后纪T9",
+      "后T9"
+    ],
+    "axi_v1_relic": [
+      "后纪V1",
+      "后V1"
+    ],
+    "axi_v10_relic": [
+      "后纪V10",
+      "后V10"
+    ],
+    "axi_v11_relic": [
+      "后纪V11",
+      "后V11"
+    ],
+    "axi_v12_relic": [
+      "后纪V12",
+      "后V12"
+    ],
+    "axi_v13_relic": [
+      "后纪V13",
+      "后V13"
+    ],
+    "axi_v14_relic": [
+      "后纪V14",
+      "后V14"
+    ],
+    "axi_v2_relic": [
+      "后纪V2",
+      "后V2"
+    ],
+    "axi_v3_relic": [
+      "后纪V3",
+      "后V3"
+    ],
+    "axi_v4_relic": [
+      "后纪V4",
+      "后V4"
+    ],
+    "axi_v5_relic": [
+      "后纪V5",
+      "后V5"
+    ],
+    "axi_v6_relic": [
+      "后纪V6",
+      "后V6"
+    ],
+    "axi_v7_relic": [
+      "后纪V7",
+      "后V7"
+    ],
+    "axi_v8_relic": [
+      "后纪V8",
+      "后V8"
+    ],
+    "axi_v9_relic": [
+      "后纪V9",
+      "后V9"
+    ],
+    "axi_w1_relic": [
+      "后纪W1",
+      "后W1"
+    ],
+    "axi_w2_relic": [
+      "后纪W2",
+      "后W2"
+    ],
+    "axi_w3_relic": [
+      "后纪W3",
+      "后W3"
+    ],
+    "axi_w4_relic": [
+      "后纪W4",
+      "后W4"
+    ],
+    "axi_y1_relic": [
+      "后纪Y1",
+      "后Y1"
+    ],
+    "axi_y3_relic": [
+      "后纪Y3",
+      "后Y3"
+    ],
+    "axi_z1_relic": [
+      "后纪Z1",
+      "后Z1"
+    ],
+    "axi_z2_relic": [
+      "后纪Z2",
+      "后Z2"
+    ],
+    "ayatan_amber_star": [
+      "琥珀星"
+    ],
+    "ayatan_anasa_sculpture": [
+      "Anasa",
+      "Anasa雕像",
+      "突击雕像"
+    ],
+    "ayatan_ayr_sculpture": [
+      "Ayr",
+      "Ayr雕像"
+    ],
+    "ayatan_chattraka_sculpture": [
+      "Chattraka",
+      "Chattraka雕像"
+    ],
+    "ayatan_cyan_star": [
+      "青蓝星"
+    ],
+    "ayatan_hemakara_sculpture": [
+      "Hemakara",
+      "Hemakara雕像"
+    ],
+    "ayatan_kitha_sculpture": [
+      "Kitha",
+      "Kitha雕像"
+    ],
+    "ayatan_orta_sculpture": [
+      "Orta",
+      "Orta雕像"
+    ],
+    "ayatan_piv_sculpture": [
+      "Piv",
+      "Piv雕像"
+    ],
+    "ayatan_sah_sculpture": [
+      "Sah",
+      "Sah雕像"
+    ],
+    "ayatan_valana_sculpture": [
+      "Valana",
+      "Valana雕像"
+    ],
+    "ayatan_vaya_sculpture": [
+      "Vaya",
+      "Vaya雕像"
+    ],
+    "ayatan_zambuka_sculpture": [
+      "Zambuka",
+      "Zambuka雕像"
+    ],
+    "ballistica_prime_blueprint": [
+      "布里斯提卡P蓝图"
+    ],
+    "ballistica_prime_lower_limb": [
+      "布里斯提卡P下弓臂"
+    ],
+    "ballistica_prime_receiver": [
+      "布里斯提卡P枪机"
+    ],
+    "ballistica_prime_set": [
+      "布里斯提卡P一套"
+    ],
+    "ballistica_prime_string": [
+      "布里斯提卡P弓弦"
+    ],
+    "ballistica_prime_upper_limb": [
+      "布里斯提卡P上弓臂"
+    ],
+    "banshee_prime_blueprint": [
+      "BansheeP蓝图"
+    ],
+    "banshee_prime_chassis_blueprint": [
+      "BansheeP机体"
+    ],
+    "banshee_prime_neuroptics_blueprint": [
+      "BansheeP头部"
+    ],
+    "banshee_prime_set": [
+      "BansheeP一套"
+    ],
+    "banshee_prime_systems_blueprint": [
+      "BansheeP系统"
+    ],
+    "baro_void_signal_(key)": [
+      "Baro虚空信号"
+    ],
+    "baruuk_prime_blueprint": [
+      "BaruukP蓝图"
+    ],
+    "baruuk_prime_chassis_blueprint": [
+      "BaruukP机体"
+    ],
+    "baruuk_prime_neuroptics_blueprint": [
+      "BaruukP头部"
+    ],
+    "baruuk_prime_set": [
+      "BaruukP一套"
+    ],
+    "baruuk_prime_systems_blueprint": [
+      "BaruukP系统"
+    ],
+    "basmu_blueprint": [
+      "巴什穆"
+    ],
+    "baza_prime_barrel": [
+      "苍鹰P枪管"
+    ],
+    "baza_prime_blueprint": [
+      "苍鹰P蓝图"
+    ],
+    "baza_prime_receiver": [
+      "苍鹰P枪机"
+    ],
+    "baza_prime_set": [
+      "苍鹰P一套"
+    ],
+    "baza_prime_stock": [
+      "苍鹰P枪托"
+    ],
+    "bhaira_hound_blueprint": [
+      "拜拉猎犬"
+    ],
+    "bo_prime_blueprint": [
+      "玻之武杖P蓝图"
+    ],
+    "bo_prime_handle": [
+      "玻之武杖P握柄"
+    ],
+    "bo_prime_ornament": [
+      "玻之武杖P饰物"
+    ],
+    "bo_prime_set": [
+      "玻之武杖P一套"
+    ],
+    "boar_prime_barrel": [
+      "野猪P枪管"
+    ],
+    "boar_prime_blueprint": [
+      "野猪P蓝图"
+    ],
+    "boar_prime_receiver": [
+      "野猪P枪机"
+    ],
+    "boar_prime_set": [
+      "野猪P一套"
+    ],
+    "boar_prime_stock": [
+      "野猪P枪托"
+    ],
+    "boltor_prime_barrel": [
+      "螺钉步枪P枪管"
+    ],
+    "boltor_prime_blueprint": [
+      "螺钉步枪P蓝图"
+    ],
+    "boltor_prime_receiver": [
+      "螺钉步枪P枪机"
+    ],
+    "boltor_prime_set": [
+      "螺钉步枪P一套"
+    ],
+    "boltor_prime_stock": [
+      "螺钉步枪P枪托"
+    ],
+    "braton_prime_barrel": [
+      "布莱顿P枪管"
+    ],
+    "braton_prime_blueprint": [
+      "布莱顿P蓝图"
+    ],
+    "braton_prime_receiver": [
+      "布莱顿P枪机"
+    ],
+    "braton_prime_set": [
+      "布莱顿P一套"
+    ],
+    "braton_prime_stock": [
+      "布莱顿P枪托"
+    ],
+    "braton_vandal_barrel": [
+      "布莱顿 枪管",
+      "布莱顿破坏者 枪管"
+    ],
+    "braton_vandal_blueprint": [
+      "布莱顿 蓝图",
+      "布莱顿破坏者 蓝图"
+    ],
+    "braton_vandal_receiver": [
+      "布莱顿 枪机",
+      "布莱顿破坏者 枪机"
+    ],
+    "braton_vandal_set": [
+      "布莱顿 一套",
+      "布莱顿破坏者 一套"
+    ],
+    "braton_vandal_stock": [
+      "布莱顿 枪托",
+      "布莱顿破坏者 枪托"
+    ],
+    "bronco_prime_barrel": [
+      "野马P枪管"
+    ],
+    "bronco_prime_blueprint": [
+      "野马P蓝图"
+    ],
+    "bronco_prime_receiver": [
+      "野马P枪机"
+    ],
+    "bronco_prime_set": [
+      "野马P一套"
+    ],
+    "burston_prime_barrel": [
+      "伯斯顿P枪管"
+    ],
+    "burston_prime_blueprint": [
+      "伯斯顿P蓝图"
+    ],
+    "burston_prime_receiver": [
+      "伯斯顿P枪机"
+    ],
+    "burston_prime_set": [
+      "伯斯顿P一套"
+    ],
+    "burston_prime_stock": [
+      "伯斯顿P枪托"
+    ],
+    "caliban_prime_blueprint": [
+      "CalibanP蓝图"
+    ],
+    "caliban_prime_chassis_blueprint": [
+      "CalibanP机体"
+    ],
+    "caliban_prime_neuroptics_blueprint": [
+      "CalibanP头部"
+    ],
+    "caliban_prime_set": [
+      "CalibanP一套"
+    ],
+    "caliban_prime_systems_blueprint": [
+      "CalibanP系统"
+    ],
+    "carmine_penta_barrel": [
+      "嫣红潘塔 枪管"
+    ],
+    "carmine_penta_blueprint": [
+      "嫣红潘塔 蓝图"
+    ],
+    "carmine_penta_receiver": [
+      "嫣红潘塔 枪机"
+    ],
+    "carmine_penta_set": [
+      "嫣红潘塔 一套"
+    ],
+    "carmine_penta_stock": [
+      "嫣红潘塔 枪托"
+    ],
+    "carrier_prime_blueprint": [
+      "搬运者P蓝图"
+    ],
+    "carrier_prime_carapace": [
+      "搬运者P外壳"
+    ],
+    "carrier_prime_cerebrum": [
+      "搬运者P头部"
+    ],
+    "carrier_prime_set": [
+      "搬运者P一套"
+    ],
+    "carrier_prime_systems": [
+      "搬运者P系统"
+    ],
+    "cascadia_accuracy": [
+      "瀑流精准"
+    ],
+    "cascadia_empowered": [
+      "瀑流强化"
+    ],
+    "cascadia_flare": [
+      "瀑流耀炎"
+    ],
+    "cascadia_overcharge": [
+      "瀑流溢能"
+    ],
+    "cedo_prime_barrel": [
+      "塞多P枪管"
+    ],
+    "cedo_prime_blueprint": [
+      "塞多P蓝图"
+    ],
+    "cedo_prime_receiver": [
+      "塞多P枪机"
+    ],
+    "cedo_prime_set": [
+      "塞多P一套"
+    ],
+    "cedo_prime_stock": [
+      "塞多P枪托"
+    ],
+    "cernos_prime_blueprint": [
+      "西诺斯P蓝图"
+    ],
+    "cernos_prime_grip": [
+      "西诺斯P弓身"
+    ],
+    "cernos_prime_lower_limb": [
+      "西诺斯P下弓臂"
+    ],
+    "cernos_prime_set": [
+      "西诺斯P一套"
+    ],
+    "cernos_prime_string": [
+      "西诺斯P弓弦"
+    ],
+    "cernos_prime_upper_limb": [
+      "西诺斯P上弓臂"
+    ],
+    "ceti_lacera_blueprint": [
+      "悲痛之刃 蓝图",
+      "天仓悲痛之刃 蓝图"
+    ],
+    "chroma_prime_blueprint": [
+      "ChromaP蓝图"
+    ],
+    "chroma_prime_chassis_blueprint": [
+      "ChromaP机体"
+    ],
+    "chroma_prime_neuroptics_blueprint": [
+      "ChromaP头部"
+    ],
+    "chroma_prime_set": [
+      "ChromaP一套"
+    ],
+    "chroma_prime_systems_blueprint": [
+      "ChromaP系统"
+    ],
+    "cobra_and_crane_prime_blade": [
+      "眼镜蛇&鹤P刀刃"
+    ],
+    "cobra_and_crane_prime_blueprint": [
+      "眼镜蛇&鹤P蓝图"
+    ],
+    "cobra_and_crane_prime_guard": [
+      "眼镜蛇&鹤P护手"
+    ],
+    "cobra_and_crane_prime_hilt": [
+      "眼镜蛇&鹤P握柄"
+    ],
+    "cobra_and_crane_prime_set": [
+      "眼镜蛇&鹤P一套"
+    ],
+    "companion_weapon_riven_mod_(veiled)": [
+      "同伴未开",
+      "守护未开"
+    ],
+    "conjunction_voltage": [
+      "联结电压"
+    ],
+    "corinth_prime_barrel": [
+      "科林斯P枪管"
+    ],
+    "corinth_prime_blueprint": [
+      "科林斯P蓝图"
+    ],
+    "corinth_prime_receiver": [
+      "科林斯P枪机"
+    ],
+    "corinth_prime_set": [
+      "科林斯P一套"
+    ],
+    "corinth_prime_stock": [
+      "科林斯P枪托"
+    ],
+    "corvas_prime_barrel": [
+      "黑鸦P枪管"
+    ],
+    "corvas_prime_blueprint": [
+      "黑鸦P蓝图"
+    ],
+    "corvas_prime_receiver": [
+      "黑鸦P枪机"
+    ],
+    "corvas_prime_set": [
+      "黑鸦P一套"
+    ],
+    "corvas_prime_stock": [
+      "黑鸦P枪托"
+    ],
+    "daikyu_prime_blueprint": [
+      "大久和弓P蓝图"
+    ],
+    "daikyu_prime_grip": [
+      "大久和弓P弓身"
+    ],
+    "daikyu_prime_lower_limb": [
+      "大久和弓P下弓臂"
+    ],
+    "daikyu_prime_set": [
+      "大久和弓P一套"
+    ],
+    "daikyu_prime_string": [
+      "大久和弓P弓弦"
+    ],
+    "daikyu_prime_upper_limb": [
+      "大久和弓P上弓臂"
+    ],
+    "dakra_prime_blade": [
+      "达克拉P刀刃"
+    ],
+    "dakra_prime_blueprint": [
+      "达克拉P蓝图"
+    ],
+    "dakra_prime_handle": [
+      "达克拉P握柄"
+    ],
+    "dakra_prime_set": [
+      "达克拉P一套"
+    ],
+    "dera_vandal_barrel": [
+      "德拉 枪管",
+      "德拉破坏者 枪管"
+    ],
+    "dera_vandal_blueprint": [
+      "德拉 蓝图",
+      "德拉破坏者 蓝图"
+    ],
+    "dera_vandal_receiver": [
+      "德拉 枪机",
+      "德拉破坏者 枪机"
+    ],
+    "dera_vandal_set": [
+      "德拉 一套",
+      "德拉破坏者 一套"
+    ],
+    "dera_vandal_stock": [
+      "德拉 枪托",
+      "德拉破坏者 枪托"
+    ],
+    "destreza_prime_blade": [
+      "技巧之剑P刀刃"
+    ],
+    "destreza_prime_blueprint": [
+      "技巧之剑P蓝图"
+    ],
+    "destreza_prime_handle": [
+      "技巧之剑P握柄"
+    ],
+    "destreza_prime_set": [
+      "技巧之剑P一套"
+    ],
+    "dethcube_prime_blueprint": [
+      "死亡魔方P蓝图"
+    ],
+    "dethcube_prime_carapace": [
+      "死亡魔方P外壳"
+    ],
+    "dethcube_prime_cerebrum": [
+      "死亡魔方P头部"
+    ],
+    "dethcube_prime_set": [
+      "死亡魔方P一套"
+    ],
+    "dethcube_prime_systems": [
+      "死亡魔方P系统"
+    ],
+    "dual_kamas_prime_blade": [
+      "双短柄战镰P刀刃"
+    ],
+    "dual_kamas_prime_blueprint": [
+      "双短柄战镰P蓝图"
+    ],
+    "dual_kamas_prime_handle": [
+      "双短柄战镰P握柄"
+    ],
+    "dual_kamas_prime_set": [
+      "双短柄战镰P一套"
+    ],
+    "dual_keres_prime_blade": [
+      "凯瑞斯双刀P刀刃"
+    ],
+    "dual_keres_prime_blueprint": [
+      "凯瑞斯双刀P蓝图"
+    ],
+    "dual_keres_prime_handle": [
+      "凯瑞斯双刀P握柄"
+    ],
+    "dual_keres_prime_set": [
+      "凯瑞斯双刀P一套"
+    ],
+    "dual_zoren_prime_blade": [
+      "佐伦双斧P刀刃"
+    ],
+    "dual_zoren_prime_blueprint": [
+      "佐伦双斧P蓝图"
+    ],
+    "dual_zoren_prime_handle": [
+      "佐伦双斧P握柄"
+    ],
+    "dual_zoren_prime_set": [
+      "佐伦双斧P一套"
+    ],
+    "efv_5_jupiter_barrel": [
+      "艾弗旺5木星枪管"
+    ],
+    "efv_5_jupiter_receiver": [
+      "艾弗旺5木星枪机"
+    ],
+    "efv_5_jupiter_set": [
+      "艾弗旺5木星一套"
+    ],
+    "efv_5_jupiter_stock": [
+      "艾弗旺5木星枪托"
+    ],
+    "efv_8_mars_barrel": [
+      "艾弗旺8火星枪管"
+    ],
+    "efv_8_mars_receiver": [
+      "艾弗旺8火星枪机"
+    ],
+    "efv_8_mars_set": [
+      "艾弗旺8火星一套"
+    ],
+    "efv_8_mars_stock": [
+      "艾弗旺8火星枪托"
+    ],
+    "eidolon_madurai_lens": [
+      "夜灵M晶"
+    ],
+    "eidolon_naramon_lens": [
+      "夜灵N晶"
+    ],
+    "eidolon_unairu_lens": [
+      "夜灵U晶"
+    ],
+    "eidolon_vazarin_lens": [
+      "夜灵V晶"
+    ],
+    "eidolon_zenurik_lens": [
+      "夜灵Z晶"
+    ],
+    "ember_prime_blueprint": [
+      "EmberP蓝图"
+    ],
+    "ember_prime_chassis_blueprint": [
+      "EmberP机体"
+    ],
+    "ember_prime_neuroptics_blueprint": [
+      "EmberP头部"
+    ],
+    "ember_prime_set": [
+      "EmberP一套"
+    ],
+    "ember_prime_systems_blueprint": [
+      "EmberP系统"
+    ],
+    "emergence_dissipate": [
+      "始现消散"
+    ],
+    "emergence_renewed": [
+      "始现新生"
+    ],
+    "emergence_savior": [
+      "始现救世"
+    ],
+    "epitaph_prime_barrel": [
+      "葬铭P枪管"
+    ],
+    "epitaph_prime_blueprint": [
+      "葬铭P蓝图"
+    ],
+    "epitaph_prime_receiver": [
+      "葬铭P枪机"
+    ],
+    "epitaph_prime_set": [
+      "葬铭P一套"
+    ],
+    "equilibrium_(steam_pinnacle_pack)": [
+      "均衡点 5星",
+      "5星均衡点"
+    ],
+    "equinox_prime_blueprint": [
+      "EquinoxP蓝图"
+    ],
+    "equinox_prime_chassis_blueprint": [
+      "EquinoxP机体"
+    ],
+    "equinox_prime_neuroptics_blueprint": [
+      "EquinoxP头部"
+    ],
+    "equinox_prime_set": [
+      "EquinoxP一套"
+    ],
+    "equinox_prime_systems_blueprint": [
+      "EquinoxP系统"
+    ],
+    "esher_devar": [
+      "兄弟之石"
+    ],
+    "eternal_eradicate": [
+      "永恒湮灭"
+    ],
+    "eternal_logistics": [
+      "永恒流转"
+    ],
+    "eternal_onslaught": [
+      "永恒猛攻"
+    ],
+    "euphona_prime_barrel": [
+      "悦音P枪管"
+    ],
+    "euphona_prime_blueprint": [
+      "悦音P蓝图"
+    ],
+    "euphona_prime_receiver": [
+      "悦音P枪机"
+    ],
+    "euphona_prime_set": [
+      "悦音P一套"
+    ],
+    "exodia_brave": [
+      "神威勇武"
+    ],
+    "exodia_contagion": [
+      "神威触染"
+    ],
+    "exodia_epidemic": [
+      "神威流行病"
+    ],
+    "exodia_force": [
+      "神威气力"
+    ],
+    "exodia_hunt": [
+      "神威狩猎"
+    ],
+    "exodia_might": [
+      "神威力量"
+    ],
+    "exodia_triumph": [
+      "神威凯旋"
+    ],
+    "exodia_valor": [
+      "神威勇猛"
+    ],
+    "fang_prime_blade": [
+      "狼牙P刀刃"
+    ],
+    "fang_prime_blueprint": [
+      "狼牙P蓝图"
+    ],
+    "fang_prime_handle": [
+      "狼牙P握柄"
+    ],
+    "fang_prime_set": [
+      "狼牙P一套"
+    ],
+    "fleeting_expertise": [
+      "弹指瞬间"
+    ],
+    "fractalized_reset": [
+      "分形重置"
+    ],
+    "fragor_prime_blueprint": [
+      "重击巨锤P蓝图"
+    ],
+    "fragor_prime_handle": [
+      "重击巨锤P握柄"
+    ],
+    "fragor_prime_head": [
+      "重击巨锤P锤头"
+    ],
+    "fragor_prime_set": [
+      "重击巨锤P一套"
+    ],
+    "frost_prime_blueprint": [
+      "FrostP蓝图"
+    ],
+    "frost_prime_chassis_blueprint": [
+      "FrostP机体"
+    ],
+    "frost_prime_neuroptics_blueprint": [
+      "FrostP头部"
+    ],
+    "frost_prime_set": [
+      "FrostP一套"
+    ],
+    "frost_prime_systems_blueprint": [
+      "FrostP系统"
+    ],
+    "fulmin_prime_barrel": [
+      "雷霆P枪管"
+    ],
+    "fulmin_prime_blueprint": [
+      "雷霆P蓝图"
+    ],
+    "fulmin_prime_receiver": [
+      "雷霆P枪机"
+    ],
+    "fulmin_prime_set": [
+      "雷霆P一套"
+    ],
+    "fulmin_prime_stock": [
+      "雷霆P枪托"
+    ],
+    "furax_wraith_blueprint": [
+      "弗拉克斯 蓝图",
+      "弗拉克斯亡魂 蓝图"
+    ],
+    "furax_wraith_left_gauntlet": [
+      "弗拉克斯 左拳套",
+      "弗拉克斯亡魂 左拳套"
+    ],
+    "furax_wraith_right_gauntlet": [
+      "弗拉克斯 右拳套",
+      "弗拉克斯亡魂 右拳套"
+    ],
+    "furax_wraith_set": [
+      "弗拉克斯 一套",
+      "弗拉克斯亡魂 一套"
+    ],
+    "galatine_prime_blade": [
+      "迦伦提恩P刀刃"
+    ],
+    "galatine_prime_blueprint": [
+      "迦伦提恩P蓝图"
+    ],
+    "galatine_prime_handle": [
+      "迦伦提恩P握柄"
+    ],
+    "galatine_prime_set": [
+      "迦伦提恩P一套"
+    ],
+    "gara_prime_blueprint": [
+      "GaraP蓝图"
+    ],
+    "gara_prime_chassis_blueprint": [
+      "GaraP机体"
+    ],
+    "gara_prime_neuroptics_blueprint": [
+      "GaraP头部"
+    ],
+    "gara_prime_set": [
+      "GaraP一套"
+    ],
+    "gara_prime_systems_blueprint": [
+      "GaraP系统"
+    ],
+    "garuda_prime_blueprint": [
+      "GarudaP蓝图"
+    ],
+    "garuda_prime_chassis_blueprint": [
+      "GarudaP机体"
+    ],
+    "garuda_prime_neuroptics_blueprint": [
+      "GarudaP头部"
+    ],
+    "garuda_prime_set": [
+      "GarudaP一套"
+    ],
+    "garuda_prime_systems_blueprint": [
+      "GarudaP系统"
+    ],
+    "gauss_prime_blueprint": [
+      "GaussP蓝图"
+    ],
+    "gauss_prime_chassis_blueprint": [
+      "GaussP机体"
+    ],
+    "gauss_prime_neuroptics_blueprint": [
+      "GaussP头部"
+    ],
+    "gauss_prime_set": [
+      "GaussP一套"
+    ],
+    "gauss_prime_systems_blueprint": [
+      "GaussP系统"
+    ],
+    "glaive_prime_blade": [
+      "战刃P刀刃"
+    ],
+    "glaive_prime_blueprint": [
+      "战刃P蓝图"
+    ],
+    "glaive_prime_disc": [
+      "战刃P圆盘"
+    ],
+    "glaive_prime_set": [
+      "战刃P一套"
+    ],
+    "glaxion_vandal": [
+      "冷冻光束步枪",
+      "冷冻光束步枪破坏者"
+    ],
+    "gorgon_wraith_barrel": [
+      "蛇发女妖 枪管",
+      "蛇发女妖亡魂 枪管"
+    ],
+    "gorgon_wraith_blueprint": [
+      "蛇发女妖 蓝图",
+      "蛇发女妖亡魂 蓝图"
+    ],
+    "gorgon_wraith_receiver": [
+      "蛇发女妖 枪机",
+      "蛇发女妖亡魂 枪机"
+    ],
+    "gorgon_wraith_set": [
+      "蛇发女妖 一套",
+      "蛇发女妖亡魂 一套"
+    ],
+    "gorgon_wraith_stock": [
+      "蛇发女妖 枪托",
+      "蛇发女妖亡魂 枪托"
+    ],
+    "gotva_prime": [
+      "骨葬P",
+      "骨葬"
+    ],
+    "gram_prime_blade": [
+      "格拉姆P刀刃"
+    ],
+    "gram_prime_blueprint": [
+      "格拉姆P蓝图"
+    ],
+    "gram_prime_handle": [
+      "格拉姆P握柄"
+    ],
+    "gram_prime_set": [
+      "格拉姆P一套"
+    ],
+    "grendel_prime_blueprint": [
+      "GrendelP蓝图"
+    ],
+    "grendel_prime_chassis_blueprint": [
+      "GrendelP机体"
+    ],
+    "grendel_prime_neuroptics_blueprint": [
+      "GrendelP头部"
+    ],
+    "grendel_prime_set": [
+      "GrendelP一套"
+    ],
+    "grendel_prime_systems_blueprint": [
+      "GrendelP系统"
+    ],
+    "guandao_prime_blade": [
+      "关刀P刀刃"
+    ],
+    "guandao_prime_blueprint": [
+      "关刀P蓝图"
+    ],
+    "guandao_prime_handle": [
+      "关刀P握柄"
+    ],
+    "guandao_prime_set": [
+      "关刀P一套"
+    ],
+    "gunsen_prime_blade": [
+      "军扇P刀刃"
+    ],
+    "gunsen_prime_blueprint": [
+      "军扇P蓝图"
+    ],
+    "gunsen_prime_handle": [
+      "军扇P握柄"
+    ],
+    "gunsen_prime_set": [
+      "军扇P一套"
+    ],
+    "gyre_prime_blueprint": [
+      "GyreP蓝图"
+    ],
+    "gyre_prime_chassis_blueprint": [
+      "GyreP机体"
+    ],
+    "gyre_prime_neuroptics_blueprint": [
+      "GyreP头部"
+    ],
+    "gyre_prime_set": [
+      "GyreP一套"
+    ],
+    "gyre_prime_systems_blueprint": [
+      "GyreP系统"
+    ],
+    "halikar_wraith": [
+      "哈利卡",
+      "哈利卡亡魂"
+    ],
+    "harrow_prime_blueprint": [
+      "HarrowP蓝图"
+    ],
+    "harrow_prime_chassis_blueprint": [
+      "HarrowP机体"
+    ],
+    "harrow_prime_neuroptics_blueprint": [
+      "HarrowP头部"
+    ],
+    "harrow_prime_set": [
+      "HarrowP一套"
+    ],
+    "harrow_prime_systems_blueprint": [
+      "HarrowP系统"
+    ],
+    "helios_prime_blueprint": [
+      "赫利俄斯P蓝图"
+    ],
+    "helios_prime_carapace": [
+      "赫利俄斯P外壳"
+    ],
+    "helios_prime_cerebrum": [
+      "赫利俄斯P头部"
+    ],
+    "helios_prime_set": [
+      "赫利俄斯P一套"
+    ],
+    "helios_prime_systems": [
+      "赫利俄斯P系统"
+    ],
+    "hespar_blade_blueprint": [
+      "暮斩刀刃"
+    ],
+    "hespar_handle_blueprint": [
+      "暮斩握柄"
+    ],
+    "hespar_set": [
+      "暮斩"
+    ],
+    "hikou_prime_blueprint": [
+      "飞扬P蓝图"
+    ],
+    "hikou_prime_pouch": [
+      "飞扬P镖袋"
+    ],
+    "hikou_prime_set": [
+      "飞扬P一套"
+    ],
+    "hikou_prime_stars": [
+      "飞扬P星镖"
+    ],
+    "hildryn_prime_blueprint": [
+      "HildrynP蓝图"
+    ],
+    "hildryn_prime_chassis_blueprint": [
+      "HildrynP机体"
+    ],
+    "hildryn_prime_neuroptics_blueprint": [
+      "HildrynP头部"
+    ],
+    "hildryn_prime_set": [
+      "HildrynP一套"
+    ],
+    "hildryn_prime_systems_blueprint": [
+      "HildrynP系统"
+    ],
+    "hydroid_prime_blueprint": [
+      "HydroidP蓝图"
+    ],
+    "hydroid_prime_chassis_blueprint": [
+      "HydroidP机体"
+    ],
+    "hydroid_prime_neuroptics_blueprint": [
+      "HydroidP头部"
+    ],
+    "hydroid_prime_set": [
+      "HydroidP一套"
+    ],
+    "hydroid_prime_systems_blueprint": [
+      "HydroidP系统"
+    ],
+    "hystrix_prime_barrel": [
+      "豪猪P枪管"
+    ],
+    "hystrix_prime_blueprint": [
+      "豪猪P蓝图"
+    ],
+    "hystrix_prime_receiver": [
+      "豪猪P枪机"
+    ],
+    "hystrix_prime_set": [
+      "豪猪P一套"
+    ],
+    "imperator_vandal_barrel": [
+      "凯旋将军 枪管",
+      "凯旋将军破坏者 枪管"
+    ],
+    "imperator_vandal_blueprint": [
+      "凯旋将军 蓝图",
+      "凯旋将军破坏者 蓝图"
+    ],
+    "imperator_vandal_receiver": [
+      "凯旋将军 枪机",
+      "凯旋将军破坏者 枪机"
+    ],
+    "imperator_vandal_set": [
+      "凯旋将军 一套",
+      "凯旋将军破坏者 一套"
+    ],
+    "inaros_prime_blueprint": [
+      "InarosP蓝图"
+    ],
+    "inaros_prime_chassis_blueprint": [
+      "InarosP机体"
+    ],
+    "inaros_prime_neuroptics_blueprint": [
+      "InarosP头部"
+    ],
+    "inaros_prime_set": [
+      "InarosP一套"
+    ],
+    "inaros_prime_systems_blueprint": [
+      "InarosP系统"
+    ],
+    "ivara_prime_blueprint": [
+      "IvaraP蓝图"
+    ],
+    "ivara_prime_chassis_blueprint": [
+      "IvaraP机体"
+    ],
+    "ivara_prime_neuroptics_blueprint": [
+      "IvaraP头部"
+    ],
+    "ivara_prime_set": [
+      "IvaraP一套"
+    ],
+    "ivara_prime_systems_blueprint": [
+      "IvaraP系统"
+    ],
+    "karak_wraith_barrel": [
+      "卡拉克 枪管",
+      "卡拉克亡魂 枪管"
+    ],
+    "karak_wraith_blueprint": [
+      "卡拉克 蓝图",
+      "卡拉克亡魂 蓝图"
+    ],
+    "karak_wraith_receiver": [
+      "卡拉克 枪机",
+      "卡拉克亡魂 枪机"
+    ],
+    "karak_wraith_set": [
+      "卡拉克 一套",
+      "卡拉克亡魂 一套"
+    ],
+    "karak_wraith_stock": [
+      "卡拉克 枪托",
+      "卡拉克亡魂 枪托"
+    ],
+    "karyst_prime_blade": [
+      "凯洛斯特P刀刃"
+    ],
+    "karyst_prime_blueprint": [
+      "凯洛斯特P蓝图"
+    ],
+    "karyst_prime_handle": [
+      "凯洛斯特P握柄"
+    ],
+    "karyst_prime_set": [
+      "凯洛斯特P一套"
+    ],
+    "kavasa_prime_band": [
+      "喀婆萨P项圈带"
+    ],
+    "kavasa_prime_buckle": [
+      "喀婆萨P项圈扣"
+    ],
+    "kavasa_prime_kubrow_collar_blueprint": [
+      "喀婆萨P库狛项圈蓝图"
+    ],
+    "kavasa_prime_kubrow_collar_set": [
+      "喀婆萨P库狛项圈一套"
+    ],
+    "kestrel_prime_blade": [
+      "红隼P刀刃"
+    ],
+    "kestrel_prime_blueprint": [
+      "红隼P蓝图"
+    ],
+    "kestrel_prime_grip": [
+      "红隼P握把"
+    ],
+    "kestrel_prime_set": [
+      "红隼P一套"
+    ],
+    "khora_prime_blueprint": [
+      "KhoraP蓝图"
+    ],
+    "khora_prime_chassis_blueprint": [
+      "KhoraP机体"
+    ],
+    "khora_prime_neuroptics_blueprint": [
+      "KhoraP头部"
+    ],
+    "khora_prime_set": [
+      "KhoraP一套"
+    ],
+    "khora_prime_systems_blueprint": [
+      "KhoraP系统"
+    ],
+    "kitgun_riven_mod_(veiled)": [
+      "组合未开",
+      "组合枪未开"
+    ],
+    "knell_prime_barrel": [
+      "丧钟P枪管"
+    ],
+    "knell_prime_blueprint": [
+      "丧钟P蓝图"
+    ],
+    "knell_prime_receiver": [
+      "丧钟P枪机"
+    ],
+    "knell_prime_set": [
+      "丧钟P一套"
+    ],
+    "kogake_prime_blueprint": [
+      "科加基P蓝图"
+    ],
+    "kogake_prime_boot": [
+      "科加基P靴子"
+    ],
+    "kogake_prime_gauntlet": [
+      "科加基P拳套"
+    ],
+    "kogake_prime_set": [
+      "科加基P一套"
+    ],
+    "kompressa_prime_barrel": [
+      "卡帕压力枪P枪管"
+    ],
+    "kompressa_prime_blueprint": [
+      "卡帕压力枪P蓝图"
+    ],
+    "kompressa_prime_reciever": [
+      "卡帕压力枪P枪机"
+    ],
+    "kompressa_prime_set": [
+      "卡帕压力枪P一套"
+    ],
+    "kronen_prime_blade": [
+      "皇家拐刃P刀刃"
+    ],
+    "kronen_prime_blueprint": [
+      "皇家拐刃P蓝图"
+    ],
+    "kronen_prime_handle": [
+      "皇家拐刃P握柄"
+    ],
+    "kronen_prime_set": [
+      "皇家拐刃P一套"
+    ],
+    "larkspur_prime_barrel": [
+      "翠雀P枪管"
+    ],
+    "larkspur_prime_blueprint": [
+      "翠雀P蓝图"
+    ],
+    "larkspur_prime_receiver": [
+      "翠雀P枪机"
+    ],
+    "larkspur_prime_set": [
+      "翠雀P一套"
+    ],
+    "larkspur_prime_stock": [
+      "翠雀P枪托"
+    ],
+    "lato_vandal_barrel": [
+      "拉托 枪管",
+      "拉托破坏者 枪管"
+    ],
+    "lato_vandal_blueprint": [
+      "拉托 蓝图",
+      "拉托破坏者 蓝图"
+    ],
+    "lato_vandal_receiver": [
+      "拉托 枪机",
+      "拉托破坏者 枪机"
+    ],
+    "lato_vandal_set": [
+      "拉托 一套",
+      "拉托破坏者 一套"
+    ],
+    "latron_prime_barrel": [
+      "拉特昂P枪管"
+    ],
+    "latron_prime_blueprint": [
+      "拉特昂P蓝图"
+    ],
+    "latron_prime_receiver": [
+      "拉特昂P枪机"
+    ],
+    "latron_prime_set": [
+      "拉特昂P一套"
+    ],
+    "latron_prime_stock": [
+      "拉特昂P枪托"
+    ],
+    "latron_wraith_barrel": [
+      "拉特昂 枪管",
+      "拉特昂亡魂 枪管"
+    ],
+    "latron_wraith_blueprint": [
+      "拉特昂 蓝图",
+      "拉特昂亡魂 蓝图"
+    ],
+    "latron_wraith_receiver": [
+      "拉特昂 枪机",
+      "拉特昂亡魂 枪机"
+    ],
+    "latron_wraith_set": [
+      "拉特昂 一套",
+      "拉特昂亡魂 一套"
+    ],
+    "latron_wraith_stock": [
+      "拉特昂 枪托",
+      "拉特昂亡魂 枪托"
+    ],
+    "lavos_prime_blueprint": [
+      "LavosP蓝图"
+    ],
+    "lavos_prime_chassis_blueprint": [
+      "LavosP机体"
+    ],
+    "lavos_prime_neuroptics_blueprint": [
+      "LavosP头部"
+    ],
+    "lavos_prime_set": [
+      "LavosP一套"
+    ],
+    "lavos_prime_systems_blueprint": [
+      "LavosP系统"
+    ],
+    "lex_prime_barrel": [
+      "雷克斯P枪管"
+    ],
+    "lex_prime_blueprint": [
+      "雷克斯P蓝图"
+    ],
+    "lex_prime_receiver": [
+      "雷克斯P枪机"
+    ],
+    "lex_prime_set": [
+      "雷克斯P一套"
+    ],
+    "limbo_prime_blueprint": [
+      "LimboP蓝图"
+    ],
+    "limbo_prime_chassis_blueprint": [
+      "LimboP机体"
+    ],
+    "limbo_prime_neuroptics_blueprint": [
+      "LimboP头部"
+    ],
+    "limbo_prime_set": [
+      "LimboP一套"
+    ],
+    "limbo_prime_systems_blueprint": [
+      "LimboP系统"
+    ],
+    "lith_a1_relic": [
+      "古纪A1",
+      "古A1"
+    ],
+    "lith_a10_relic": [
+      "古纪A10",
+      "古A10"
+    ],
+    "lith_a11_relic": [
+      "古纪A11",
+      "古A11"
+    ],
+    "lith_a12_relic": [
+      "古纪A12",
+      "古A12"
+    ],
+    "lith_a2_relic": [
+      "古纪A2",
+      "古A2"
+    ],
+    "lith_a3_relic": [
+      "古纪A3",
+      "古A3"
+    ],
+    "lith_a4_relic": [
+      "古纪A4",
+      "古A4"
+    ],
+    "lith_a5_relic": [
+      "古纪A5",
+      "古A5"
+    ],
+    "lith_a6_relic": [
+      "古纪A6",
+      "古A6"
+    ],
+    "lith_a7_relic": [
+      "古纪A7",
+      "古A7"
+    ],
+    "lith_a8_relic": [
+      "古纪A8",
+      "古A8"
+    ],
+    "lith_a9_relic": [
+      "古纪A9",
+      "古A9"
+    ],
+    "lith_b1_relic": [
+      "古纪B1",
+      "古B1"
+    ],
+    "lith_b10_relic": [
+      "古纪B10",
+      "古B10"
+    ],
+    "lith_b11_relic": [
+      "古纪B11",
+      "古B11"
+    ],
+    "lith_b2_relic": [
+      "古纪B2",
+      "古B2"
+    ],
+    "lith_b3_relic": [
+      "古纪B3",
+      "古B3"
+    ],
+    "lith_b4_relic": [
+      "古纪B4",
+      "古B4"
+    ],
+    "lith_b5_relic": [
+      "古纪B5",
+      "古B5"
+    ],
+    "lith_b6_relic": [
+      "古纪B6",
+      "古B6"
+    ],
+    "lith_b7_relic": [
+      "古纪B7",
+      "古B7"
+    ],
+    "lith_b8_relic": [
+      "古纪B8",
+      "古B8"
+    ],
+    "lith_b9_relic": [
+      "古纪B9",
+      "古B9"
+    ],
+    "lith_c1_relic": [
+      "古纪C1",
+      "古C1"
+    ],
+    "lith_c10_relic": [
+      "古纪C10",
+      "古C10"
+    ],
+    "lith_c11_relic": [
+      "古纪C11",
+      "古C11"
+    ],
+    "lith_c12_relic": [
+      "古纪C12",
+      "古C12"
+    ],
+    "lith_c13_relic": [
+      "古纪C13",
+      "古C13"
+    ],
+    "lith_c14_relic": [
+      "古纪C14",
+      "古C14"
+    ],
+    "lith_c2_relic": [
+      "古纪C2",
+      "古C2"
+    ],
+    "lith_c3_relic": [
+      "古纪C3",
+      "古C3"
+    ],
+    "lith_c4_relic": [
+      "古纪C4",
+      "古C4"
+    ],
+    "lith_c5_relic": [
+      "古纪C5",
+      "古C5"
+    ],
+    "lith_c6_relic": [
+      "古纪C6",
+      "古C6"
+    ],
+    "lith_c7_relic": [
+      "古纪C7",
+      "古C7"
+    ],
+    "lith_c8_relic": [
+      "古纪C8",
+      "古C8"
+    ],
+    "lith_c9_relic": [
+      "古纪C9",
+      "古C9"
+    ],
+    "lith_d1_relic": [
+      "古纪D1",
+      "古D1"
+    ],
+    "lith_d2_relic": [
+      "古纪D2",
+      "古D2"
+    ],
+    "lith_d3_relic": [
+      "古纪D3",
+      "古D3"
+    ],
+    "lith_d4_relic": [
+      "古纪D4",
+      "古D4"
+    ],
+    "lith_d5_relic": [
+      "古纪D5",
+      "古D5"
+    ],
+    "lith_d6_relic": [
+      "古纪D6",
+      "古D6"
+    ],
+    "lith_d7_relic": [
+      "古纪D7",
+      "古D7"
+    ],
+    "lith_e1_relic": [
+      "古纪E1",
+      "古E1"
+    ],
+    "lith_e2_relic": [
+      "古纪E2",
+      "古E2"
+    ],
+    "lith_f1_relic": [
+      "古纪F1",
+      "古F1"
+    ],
+    "lith_f2_relic": [
+      "古纪F2",
+      "古F2"
+    ],
+    "lith_f3_relic": [
+      "古纪F3",
+      "古F3"
+    ],
+    "lith_g1_relic": [
+      "古纪G1",
+      "古G1"
+    ],
+    "lith_g10_relic": [
+      "古纪G10",
+      "古G10"
+    ],
+    "lith_g11_relic": [
+      "古纪G11",
+      "古G11"
+    ],
+    "lith_g12_relic": [
+      "古纪G12",
+      "古G12"
+    ],
+    "lith_g13_relic": [
+      "古纪G13",
+      "古G13"
+    ],
+    "lith_g14_relic": [
+      "古纪G14",
+      "古G14"
+    ],
+    "lith_g2_relic": [
+      "古纪G2",
+      "古G2"
+    ],
+    "lith_g3_relic": [
+      "古纪G3",
+      "古G3"
+    ],
+    "lith_g4_relic": [
+      "古纪G4",
+      "古G4"
+    ],
+    "lith_g5_relic": [
+      "古纪G5",
+      "古G5"
+    ],
+    "lith_g6_relic": [
+      "古纪G6",
+      "古G6"
+    ],
+    "lith_g7_relic": [
+      "古纪G7",
+      "古G7"
+    ],
+    "lith_g8_relic": [
+      "古纪G8",
+      "古G8"
+    ],
+    "lith_g9_relic": [
+      "古纪G9",
+      "古G9"
+    ],
+    "lith_h1_relic": [
+      "古纪H1",
+      "古H1"
+    ],
+    "lith_h10_relic": [
+      "古纪H10",
+      "古H10"
+    ],
+    "lith_h2_relic": [
+      "古纪H2",
+      "古H2"
+    ],
+    "lith_h3_relic": [
+      "古纪H3",
+      "古H3"
+    ],
+    "lith_h4_relic": [
+      "古纪H4",
+      "古H4"
+    ],
+    "lith_h5_relic": [
+      "古纪H5",
+      "古H5"
+    ],
+    "lith_h6_relic": [
+      "古纪H6",
+      "古H6"
+    ],
+    "lith_h7_relic": [
+      "古纪H7",
+      "古H7"
+    ],
+    "lith_h8_relic": [
+      "古纪H8",
+      "古H8"
+    ],
+    "lith_h9_relic": [
+      "古纪H9",
+      "古H9"
+    ],
+    "lith_i1_relic": [
+      "古纪I1",
+      "古I1"
+    ],
+    "lith_k1_relic": [
+      "古纪K1",
+      "古K1"
+    ],
+    "lith_k10_relic": [
+      "古纪K10",
+      "古K10"
+    ],
+    "lith_k11_relic": [
+      "古纪K11",
+      "古K11"
+    ],
+    "lith_k12_relic": [
+      "古纪K12",
+      "古K12"
+    ],
+    "lith_k2_relic": [
+      "古纪K2",
+      "古K2"
+    ],
+    "lith_k3_relic": [
+      "古纪K3",
+      "古K3"
+    ],
+    "lith_k4_relic": [
+      "古纪K4",
+      "古K4"
+    ],
+    "lith_k5_relic": [
+      "古纪K5",
+      "古K5"
+    ],
+    "lith_k6_relic": [
+      "古纪K6",
+      "古K6"
+    ],
+    "lith_k7_relic": [
+      "古纪K7",
+      "古K7"
+    ],
+    "lith_k8_relic": [
+      "古纪K8",
+      "古K8"
+    ],
+    "lith_k9_relic": [
+      "古纪K9",
+      "古K9"
+    ],
+    "lith_l1_relic": [
+      "古纪L1",
+      "古L1"
+    ],
+    "lith_l2_relic": [
+      "古纪L2",
+      "古L2"
+    ],
+    "lith_l3_relic": [
+      "古纪L3",
+      "古L3"
+    ],
+    "lith_l4_relic": [
+      "古纪L4",
+      "古L4"
+    ],
+    "lith_l5_relic": [
+      "古纪L5",
+      "古L5"
+    ],
+    "lith_l6_relic": [
+      "古纪L6",
+      "古L6"
+    ],
+    "lith_l7_relic": [
+      "古纪L7",
+      "古L7"
+    ],
+    "lith_m1_relic": [
+      "古纪M1",
+      "古M1"
+    ],
+    "lith_m10_relic": [
+      "古纪M10",
+      "古M10"
+    ],
+    "lith_m2_relic": [
+      "古纪M2",
+      "古M2"
+    ],
+    "lith_m3_relic": [
+      "古纪M3",
+      "古M3"
+    ],
+    "lith_m4_relic": [
+      "古纪M4",
+      "古M4"
+    ],
+    "lith_m5_relic": [
+      "古纪M5",
+      "古M5"
+    ],
+    "lith_m6_relic": [
+      "古纪M6",
+      "古M6"
+    ],
+    "lith_m7_relic": [
+      "古纪M7",
+      "古M7"
+    ],
+    "lith_m8_relic": [
+      "古纪M8",
+      "古M8"
+    ],
+    "lith_m9_relic": [
+      "古纪M9",
+      "古M9"
+    ],
+    "lith_n1_relic": [
+      "古纪N1",
+      "古N1"
+    ],
+    "lith_n10_relic": [
+      "古纪N10",
+      "古N10"
+    ],
+    "lith_n11_relic": [
+      "古纪N11",
+      "古N11"
+    ],
+    "lith_n12_relic": [
+      "古纪N12",
+      "古N12"
+    ],
+    "lith_n13_relic": [
+      "古纪N13",
+      "古N13"
+    ],
+    "lith_n14_relic": [
+      "古纪N14",
+      "古N14"
+    ],
+    "lith_n15_relic": [
+      "古纪N15",
+      "古N15"
+    ],
+    "lith_n16_relic": [
+      "古纪N16",
+      "古N16"
+    ],
+    "lith_n17_relic": [
+      "古纪N17",
+      "古N17"
+    ],
+    "lith_n18_relic": [
+      "古纪N18",
+      "古N18"
+    ],
+    "lith_n19_relic": [
+      "古纪N19",
+      "古N19"
+    ],
+    "lith_n2_relic": [
+      "古纪N2",
+      "古N2"
+    ],
+    "lith_n3_relic": [
+      "古纪N3",
+      "古N3"
+    ],
+    "lith_n4_relic": [
+      "古纪N4",
+      "古N4"
+    ],
+    "lith_n5_relic": [
+      "古纪N5",
+      "古N5"
+    ],
+    "lith_n6_relic": [
+      "古纪N6",
+      "古N6"
+    ],
+    "lith_n7_relic": [
+      "古纪N7",
+      "古N7"
+    ],
+    "lith_n8_relic": [
+      "古纪N8",
+      "古N8"
+    ],
+    "lith_n9_relic": [
+      "古纪N9",
+      "古N9"
+    ],
+    "lith_o1_relic": [
+      "古纪O1",
+      "古O1"
+    ],
+    "lith_o2_relic": [
+      "古纪O2",
+      "古O2"
+    ],
+    "lith_o3_relic": [
+      "古纪O3",
+      "古O3"
+    ],
+    "lith_o4_relic": [
+      "古纪O4",
+      "古O4"
+    ],
+    "lith_p1_relic": [
+      "古纪P1",
+      "古P1"
+    ],
+    "lith_p2_relic": [
+      "古纪P2",
+      "古P2"
+    ],
+    "lith_p3_relic": [
+      "古纪P3",
+      "古P3"
+    ],
+    "lith_p4_relic": [
+      "古纪P4",
+      "古P4"
+    ],
+    "lith_p5_relic": [
+      "古纪P5",
+      "古P5"
+    ],
+    "lith_p6_relic": [
+      "古纪P6",
+      "古P6"
+    ],
+    "lith_p7_relic": [
+      "古纪P7",
+      "古P7"
+    ],
+    "lith_p8_relic": [
+      "古纪P8",
+      "古P8"
+    ],
+    "lith_p9_relic": [
+      "古纪P9",
+      "古P9"
+    ],
+    "lith_q1_relic": [
+      "古纪Q1",
+      "古Q1"
+    ],
+    "lith_q2_relic": [
+      "古纪Q2",
+      "古Q2"
+    ],
+    "lith_q3_relic": [
+      "古纪Q3",
+      "古Q3"
+    ],
+    "lith_r1_relic": [
+      "古纪R1",
+      "古R1"
+    ],
+    "lith_r2_relic": [
+      "古纪R2",
+      "古R2"
+    ],
+    "lith_r3_relic": [
+      "古纪R3",
+      "古R3"
+    ],
+    "lith_r4_relic": [
+      "古纪R4",
+      "古R4"
+    ],
+    "lith_r5_relic": [
+      "古纪R5",
+      "古R5"
+    ],
+    "lith_s1_relic": [
+      "古纪S1",
+      "古S1"
+    ],
+    "lith_s10_relic": [
+      "古纪S10",
+      "古S10"
+    ],
+    "lith_s11_relic": [
+      "古纪S11",
+      "古S11"
+    ],
+    "lith_s12_relic": [
+      "古纪S12",
+      "古S12"
+    ],
+    "lith_s13_relic": [
+      "古纪S13",
+      "古S13"
+    ],
+    "lith_s14_relic": [
+      "古纪S14",
+      "古S14"
+    ],
+    "lith_s15_relic": [
+      "古纪S15",
+      "古S15"
+    ],
+    "lith_s16_relic": [
+      "古纪S16",
+      "古S16"
+    ],
+    "lith_s17_relic": [
+      "古纪S17",
+      "古S17"
+    ],
+    "lith_s18_relic": [
+      "古纪S18",
+      "古S18"
+    ],
+    "lith_s2_relic": [
+      "古纪S2",
+      "古S2"
+    ],
+    "lith_s3_relic": [
+      "古纪S3",
+      "古S3"
+    ],
+    "lith_s4_relic": [
+      "古纪S4",
+      "古S4"
+    ],
+    "lith_s5_relic": [
+      "古纪S5",
+      "古S5"
+    ],
+    "lith_s6_relic": [
+      "古纪S6",
+      "古S6"
+    ],
+    "lith_s7_relic": [
+      "古纪S7",
+      "古S7"
+    ],
+    "lith_s8_relic": [
+      "古纪S8",
+      "古S8"
+    ],
+    "lith_s9_relic": [
+      "古纪S9",
+      "古S9"
+    ],
+    "lith_t1_relic": [
+      "古纪T1",
+      "古T1"
+    ],
+    "lith_t10_relic": [
+      "古纪T10",
+      "古T10"
+    ],
+    "lith_t11_relic": [
+      "古纪T11",
+      "古T11"
+    ],
+    "lith_t12_relic": [
+      "古纪T12",
+      "古T12"
+    ],
+    "lith_t13_relic": [
+      "古纪T13",
+      "古T13"
+    ],
+    "lith_t14_relic": [
+      "古纪T14",
+      "古T14"
+    ],
+    "lith_t2_relic": [
+      "古纪T2",
+      "古T2"
+    ],
+    "lith_t3_relic": [
+      "古纪T3",
+      "古T3"
+    ],
+    "lith_t4_relic": [
+      "古纪T4",
+      "古T4"
+    ],
+    "lith_t5_relic": [
+      "古纪T5",
+      "古T5"
+    ],
+    "lith_t6_relic": [
+      "古纪T6",
+      "古T6"
+    ],
+    "lith_t7_relic": [
+      "古纪T7",
+      "古T7"
+    ],
+    "lith_t8_relic": [
+      "古纪T8",
+      "古T8"
+    ],
+    "lith_t9_relic": [
+      "古纪T9",
+      "古T9"
+    ],
+    "lith_v1_relic": [
+      "古纪V1",
+      "古V1"
+    ],
+    "lith_v10_relic": [
+      "古纪V10",
+      "古V10"
+    ],
+    "lith_v11_relic": [
+      "古纪V11",
+      "古V11"
+    ],
+    "lith_v2_relic": [
+      "古纪V2",
+      "古V2"
+    ],
+    "lith_v3_relic": [
+      "古纪V3",
+      "古V3"
+    ],
+    "lith_v4_relic": [
+      "古纪V4",
+      "古V4"
+    ],
+    "lith_v5_relic": [
+      "古纪V5",
+      "古V5"
+    ],
+    "lith_v6_relic": [
+      "古纪V6",
+      "古V6"
+    ],
+    "lith_v7_relic": [
+      "古纪V7",
+      "古V7"
+    ],
+    "lith_v8_relic": [
+      "古纪V8",
+      "古V8"
+    ],
+    "lith_v9_relic": [
+      "古纪V9",
+      "古V9"
+    ],
+    "lith_w1_relic": [
+      "古纪W1",
+      "古W1"
+    ],
+    "lith_w2_relic": [
+      "古纪W2",
+      "古W2"
+    ],
+    "lith_w3_relic": [
+      "古纪W3",
+      "古W3"
+    ],
+    "lith_w4_relic": [
+      "古纪W4",
+      "古W4"
+    ],
+    "lith_x1_relic": [
+      "古纪X1",
+      "古X1"
+    ],
+    "lith_y1_relic": [
+      "古纪Y1",
+      "古Y1"
+    ],
+    "lith_z1_relic": [
+      "古纪Z1",
+      "古Z1"
+    ],
+    "lith_z2_relic": [
+      "古纪Z2",
+      "古Z2"
+    ],
+    "lith_z3_relic": [
+      "古纪Z3",
+      "古Z3"
+    ],
+    "lith_z4_relic": [
+      "古纪Z4",
+      "古Z4"
+    ],
+    "loki_prime_blueprint": [
+      "LokiP蓝图"
+    ],
+    "loki_prime_chassis_blueprint": [
+      "LokiP机体"
+    ],
+    "loki_prime_neuroptics_blueprint": [
+      "LokiP头部"
+    ],
+    "loki_prime_set": [
+      "LokiP一套"
+    ],
+    "loki_prime_systems_blueprint": [
+      "LokiP系统"
+    ],
+    "longbow_sharpshot": [
+      "弓箭利矢"
+    ],
+    "lua_madurai_lens": [
+      "月球M晶"
+    ],
+    "lua_naramon_lens": [
+      "月球N晶"
+    ],
+    "lua_unairu_lens": [
+      "月球U晶"
+    ],
+    "lua_vazarin_lens": [
+      "月球V晶"
+    ],
+    "lua_zenurik_lens": [
+      "月球Z晶"
+    ],
+    "machete_wraith": [
+      "马谢特砍刀",
+      "马谢特砍刀亡魂"
+    ],
+    "mag_prime_blueprint": [
+      "MagP蓝图"
+    ],
+    "mag_prime_chassis_blueprint": [
+      "MagP机体"
+    ],
+    "mag_prime_neuroptics_blueprint": [
+      "MagP头部"
+    ],
+    "mag_prime_set": [
+      "MagP一套"
+    ],
+    "mag_prime_systems_blueprint": [
+      "MagP系统"
+    ],
+    "magnus_prime_barrel": [
+      "麦格努斯P枪管"
+    ],
+    "magnus_prime_blueprint": [
+      "麦格努斯P蓝图"
+    ],
+    "magnus_prime_receiver": [
+      "麦格努斯P枪机"
+    ],
+    "magnus_prime_set": [
+      "麦格努斯P一套"
+    ],
+    "magus_accelerant": [
+      "魔导触媒"
+    ],
+    "magus_aggress": [
+      "魔导侵略"
+    ],
+    "magus_anomaly": [
+      "魔导近点"
+    ],
+    "magus_cadence": [
+      "魔导韵律"
+    ],
+    "magus_cloud": [
+      "魔导游云"
+    ],
+    "magus_destruct": [
+      "魔导穿破"
+    ],
+    "magus_drive": [
+      "魔导驱动"
+    ],
+    "magus_elevate": [
+      "魔导振奋"
+    ],
+    "magus_firewall": [
+      "魔导防火墙"
+    ],
+    "magus_glitch": [
+      "魔导干扰"
+    ],
+    "magus_husk": [
+      "魔导外壳"
+    ],
+    "magus_lockdown": [
+      "魔导封锁"
+    ],
+    "magus_melt": [
+      "魔导热熔"
+    ],
+    "magus_nourish": [
+      "魔导滋养"
+    ],
+    "magus_overload": [
+      "魔导超载"
+    ],
+    "magus_repair": [
+      "魔导修复"
+    ],
+    "magus_replenish": [
+      "魔导充盈"
+    ],
+    "magus_revert": [
+      "魔导复位"
+    ],
+    "magus_vigor": [
+      "魔导活力"
+    ],
+    "mara_detron": [
+      "德特昂",
+      "苦痛德特昂"
+    ],
+    "masseter_prime_blade": [
+      "咀嚼金杖P刀刃"
+    ],
+    "masseter_prime_blueprint": [
+      "咀嚼金杖P蓝图"
+    ],
+    "masseter_prime_handle": [
+      "咀嚼金杖P握柄"
+    ],
+    "masseter_prime_set": [
+      "咀嚼金杖P一套"
+    ],
+    "melee_afflictions": [
+      "近战苦痛"
+    ],
+    "melee_animosity": [
+      "近战憎恶"
+    ],
+    "melee_assimilation": [
+      "近战同化"
+    ],
+    "melee_careen": [
+      "近战疾驰"
+    ],
+    "melee_crescendo": [
+      "近战渐强"
+    ],
+    "melee_doughty": [
+      "近战无畏"
+    ],
+    "melee_duplicate": [
+      "近战刃影"
+    ],
+    "melee_exposure": [
+      "近战暴露"
+    ],
+    "melee_fortification": [
+      "近战坚壁"
+    ],
+    "melee_influence": [
+      "近战侵染"
+    ],
+    "melee_retaliation": [
+      "近战报复"
+    ],
+    "melee_riven_mod_(veiled)": [
+      "近战未开"
+    ],
+    "melee_vortex": [
+      "近战漩涡"
+    ],
+    "mesa_prime_blueprint": [
+      "MesaP蓝图"
+    ],
+    "mesa_prime_chassis_blueprint": [
+      "MesaP机体"
+    ],
+    "mesa_prime_neuroptics_blueprint": [
+      "MesaP头部"
+    ],
+    "mesa_prime_set": [
+      "MesaP一套"
+    ],
+    "mesa_prime_systems_blueprint": [
+      "MesaP系统"
+    ],
+    "meso_a1_relic": [
+      "前纪A1",
+      "前A1"
+    ],
+    "meso_a10_relic": [
+      "前纪A10",
+      "前A10"
+    ],
+    "meso_a11_relic": [
+      "前纪A11",
+      "前A11"
+    ],
+    "meso_a12_relic": [
+      "前纪A12",
+      "前A12"
+    ],
+    "meso_a2_relic": [
+      "前纪A2",
+      "前A2"
+    ],
+    "meso_a3_relic": [
+      "前纪A3",
+      "前A3"
+    ],
+    "meso_a4_relic": [
+      "前纪A4",
+      "前A4"
+    ],
+    "meso_a5_relic": [
+      "前纪A5",
+      "前A5"
+    ],
+    "meso_a6_relic": [
+      "前纪A6",
+      "前A6"
+    ],
+    "meso_a7_relic": [
+      "前纪A7",
+      "前A7"
+    ],
+    "meso_a8_relic": [
+      "前纪A8",
+      "前A8"
+    ],
+    "meso_a9_relic": [
+      "前纪A9",
+      "前A9"
+    ],
+    "meso_b1_relic": [
+      "前纪B1",
+      "前B1"
+    ],
+    "meso_b10_relic": [
+      "前纪B10",
+      "前B10"
+    ],
+    "meso_b2_relic": [
+      "前纪B2",
+      "前B2"
+    ],
+    "meso_b3_relic": [
+      "前纪B3",
+      "前B3"
+    ],
+    "meso_b4_relic": [
+      "前纪B4",
+      "前B4"
+    ],
+    "meso_b5_relic": [
+      "前纪B5",
+      "前B5"
+    ],
+    "meso_b6_relic": [
+      "前纪B6",
+      "前B6"
+    ],
+    "meso_b7_relic": [
+      "前纪B7",
+      "前B7"
+    ],
+    "meso_b8_relic": [
+      "前纪B8",
+      "前B8"
+    ],
+    "meso_b9_relic": [
+      "前纪B9",
+      "前B9"
+    ],
+    "meso_c1_relic": [
+      "前纪C1",
+      "前C1"
+    ],
+    "meso_c10_relic": [
+      "前纪C10",
+      "前C10"
+    ],
+    "meso_c2_relic": [
+      "前纪C2",
+      "前C2"
+    ],
+    "meso_c3_relic": [
+      "前纪C3",
+      "前C3"
+    ],
+    "meso_c4_relic": [
+      "前纪C4",
+      "前C4"
+    ],
+    "meso_c5_relic": [
+      "前纪C5",
+      "前C5"
+    ],
+    "meso_c6_relic": [
+      "前纪C6",
+      "前C6"
+    ],
+    "meso_c7_relic": [
+      "前纪C7",
+      "前C7"
+    ],
+    "meso_c8_relic": [
+      "前纪C8",
+      "前C8"
+    ],
+    "meso_c9_relic": [
+      "前纪C9",
+      "前C9"
+    ],
+    "meso_d1_relic": [
+      "前纪D1",
+      "前D1"
+    ],
+    "meso_d2_relic": [
+      "前纪D2",
+      "前D2"
+    ],
+    "meso_d3_relic": [
+      "前纪D3",
+      "前D3"
+    ],
+    "meso_d4_relic": [
+      "前纪D4",
+      "前D4"
+    ],
+    "meso_d5_relic": [
+      "前纪D5",
+      "前D5"
+    ],
+    "meso_d6_relic": [
+      "前纪D6",
+      "前D6"
+    ],
+    "meso_d7_relic": [
+      "前纪D7",
+      "前D7"
+    ],
+    "meso_d8_relic": [
+      "前纪D8",
+      "前D8"
+    ],
+    "meso_e1_relic": [
+      "前纪E1",
+      "前E1"
+    ],
+    "meso_e2_relic": [
+      "前纪E2",
+      "前E2"
+    ],
+    "meso_e3_relic": [
+      "前纪E3",
+      "前E3"
+    ],
+    "meso_e4_relic": [
+      "前纪E4",
+      "前E4"
+    ],
+    "meso_e5_relic": [
+      "前纪E5",
+      "前E5"
+    ],
+    "meso_e6_relic": [
+      "前纪E6",
+      "前E6"
+    ],
+    "meso_e7_relic": [
+      "前纪E7",
+      "前E7"
+    ],
+    "meso_f1_relic": [
+      "前纪F1",
+      "前F1"
+    ],
+    "meso_f2_relic": [
+      "前纪F2",
+      "前F2"
+    ],
+    "meso_f3_relic": [
+      "前纪F3",
+      "前F3"
+    ],
+    "meso_f4_relic": [
+      "前纪F4",
+      "前F4"
+    ],
+    "meso_f5_relic": [
+      "前纪F5",
+      "前F5"
+    ],
+    "meso_g1_relic": [
+      "前纪G1",
+      "前G1"
+    ],
+    "meso_g10_relic": [
+      "前纪G10",
+      "前G10"
+    ],
+    "meso_g2_relic": [
+      "前纪G2",
+      "前G2"
+    ],
+    "meso_g3_relic": [
+      "前纪G3",
+      "前G3"
+    ],
+    "meso_g4_relic": [
+      "前纪G4",
+      "前G4"
+    ],
+    "meso_g5_relic": [
+      "前纪G5",
+      "前G5"
+    ],
+    "meso_g6_relic": [
+      "前纪G6",
+      "前G6"
+    ],
+    "meso_g7_relic": [
+      "前纪G7",
+      "前G7"
+    ],
+    "meso_g8_relic": [
+      "前纪G8",
+      "前G8"
+    ],
+    "meso_g9_relic": [
+      "前纪G9",
+      "前G9"
+    ],
+    "meso_h1_relic": [
+      "前纪H1",
+      "前H1"
+    ],
+    "meso_h2_relic": [
+      "前纪H2",
+      "前H2"
+    ],
+    "meso_h3_relic": [
+      "前纪H3",
+      "前H3"
+    ],
+    "meso_h4_relic": [
+      "前纪H4",
+      "前H4"
+    ],
+    "meso_h5_relic": [
+      "前纪H5",
+      "前H5"
+    ],
+    "meso_h6_relic": [
+      "前纪H6",
+      "前H6"
+    ],
+    "meso_h7_relic": [
+      "前纪H7",
+      "前H7"
+    ],
+    "meso_h8_relic": [
+      "前纪H8",
+      "前H8"
+    ],
+    "meso_i1_relic": [
+      "前纪I1",
+      "前I1"
+    ],
+    "meso_i2_relic": [
+      "前纪I2",
+      "前I2"
+    ],
+    "meso_k1_relic": [
+      "前纪K1",
+      "前K1"
+    ],
+    "meso_k2_relic": [
+      "前纪K2",
+      "前K2"
+    ],
+    "meso_k3_relic": [
+      "前纪K3",
+      "前K3"
+    ],
+    "meso_k4_relic": [
+      "前纪K4",
+      "前K4"
+    ],
+    "meso_k5_relic": [
+      "前纪K5",
+      "前K5"
+    ],
+    "meso_k6_relic": [
+      "前纪K6",
+      "前K6"
+    ],
+    "meso_k7_relic": [
+      "前纪K7",
+      "前K7"
+    ],
+    "meso_k8_relic": [
+      "前纪K8",
+      "前K8"
+    ],
+    "meso_l1_relic": [
+      "前纪L1",
+      "前L1"
+    ],
+    "meso_l2_relic": [
+      "前纪L2",
+      "前L2"
+    ],
+    "meso_l3_relic": [
+      "前纪L3",
+      "前L3"
+    ],
+    "meso_l4_relic": [
+      "前纪L4",
+      "前L4"
+    ],
+    "meso_l5_relic": [
+      "前纪L5",
+      "前L5"
+    ],
+    "meso_m1_relic": [
+      "前纪M1",
+      "前M1"
+    ],
+    "meso_m2_relic": [
+      "前纪M2",
+      "前M2"
+    ],
+    "meso_m3_relic": [
+      "前纪M3",
+      "前M3"
+    ],
+    "meso_m4_relic": [
+      "前纪M4",
+      "前M4"
+    ],
+    "meso_m5_relic": [
+      "前纪M5",
+      "前M5"
+    ],
+    "meso_n1_relic": [
+      "前纪N1",
+      "前N1"
+    ],
+    "meso_n10_relic": [
+      "前纪N10",
+      "前N10"
+    ],
+    "meso_n11_relic": [
+      "前纪N11",
+      "前N11"
+    ],
+    "meso_n12_relic": [
+      "前纪N12",
+      "前N12"
+    ],
+    "meso_n13_relic": [
+      "前纪N13",
+      "前N13"
+    ],
+    "meso_n14_relic": [
+      "前纪N14",
+      "前N14"
+    ],
+    "meso_n15_relic": [
+      "前纪N15",
+      "前N15"
+    ],
+    "meso_n16_relic": [
+      "前纪N16",
+      "前N16"
+    ],
+    "meso_n17_relic": [
+      "前纪N17",
+      "前N17"
+    ],
+    "meso_n2_relic": [
+      "前纪N2",
+      "前N2"
+    ],
+    "meso_n3_relic": [
+      "前纪N3",
+      "前N3"
+    ],
+    "meso_n4_relic": [
+      "前纪N4",
+      "前N4"
+    ],
+    "meso_n5_relic": [
+      "前纪N5",
+      "前N5"
+    ],
+    "meso_n6_relic": [
+      "前纪N6",
+      "前N6"
+    ],
+    "meso_n7_relic": [
+      "前纪N7",
+      "前N7"
+    ],
+    "meso_n8_relic": [
+      "前纪N8",
+      "前N8"
+    ],
+    "meso_n9_relic": [
+      "前纪N9",
+      "前N9"
+    ],
+    "meso_o1_relic": [
+      "前纪O1",
+      "前O1"
+    ],
+    "meso_o2_relic": [
+      "前纪O2",
+      "前O2"
+    ],
+    "meso_o3_relic": [
+      "前纪O3",
+      "前O3"
+    ],
+    "meso_o4_relic": [
+      "前纪O4",
+      "前O4"
+    ],
+    "meso_o5_relic": [
+      "前纪O5",
+      "前O5"
+    ],
+    "meso_o6_relic": [
+      "前纪O6",
+      "前O6"
+    ],
+    "meso_p1_relic": [
+      "前纪P1",
+      "前P1"
+    ],
+    "meso_p10_relic": [
+      "前纪P10",
+      "前P10"
+    ],
+    "meso_p11_relic": [
+      "前纪P11",
+      "前P11"
+    ],
+    "meso_p12_relic": [
+      "前纪P12",
+      "前P12"
+    ],
+    "meso_p13_relic": [
+      "前纪P13",
+      "前P13"
+    ],
+    "meso_p14_relic": [
+      "前纪P14",
+      "前P14"
+    ],
+    "meso_p15_relic": [
+      "前纪P15",
+      "前P15"
+    ],
+    "meso_p16_relic": [
+      "前纪P16",
+      "前P16"
+    ],
+    "meso_p17_relic": [
+      "前纪P17",
+      "前P17"
+    ],
+    "meso_p2_relic": [
+      "前纪P2",
+      "前P2"
+    ],
+    "meso_p3_relic": [
+      "前纪P3",
+      "前P3"
+    ],
+    "meso_p4_relic": [
+      "前纪P4",
+      "前P4"
+    ],
+    "meso_p5_relic": [
+      "前纪P5",
+      "前P5"
+    ],
+    "meso_p6_relic": [
+      "前纪P6",
+      "前P6"
+    ],
+    "meso_p7_relic": [
+      "前纪P7",
+      "前P7"
+    ],
+    "meso_p8_relic": [
+      "前纪P8",
+      "前P8"
+    ],
+    "meso_p9_relic": [
+      "前纪P9",
+      "前P9"
+    ],
+    "meso_r1_relic": [
+      "前纪R1",
+      "前R1"
+    ],
+    "meso_r2_relic": [
+      "前纪R2",
+      "前R2"
+    ],
+    "meso_r3_relic": [
+      "前纪R3",
+      "前R3"
+    ],
+    "meso_r4_relic": [
+      "前纪R4",
+      "前R4"
+    ],
+    "meso_r5_relic": [
+      "前纪R5",
+      "前R5"
+    ],
+    "meso_r6_relic": [
+      "前纪R6",
+      "前R6"
+    ],
+    "meso_s1_relic": [
+      "前纪S1",
+      "前S1"
+    ],
+    "meso_s10_relic": [
+      "前纪S10",
+      "前S10"
+    ],
+    "meso_s11_relic": [
+      "前纪S11",
+      "前S11"
+    ],
+    "meso_s12_relic": [
+      "前纪S12",
+      "前S12"
+    ],
+    "meso_s13_relic": [
+      "前纪S13",
+      "前S13"
+    ],
+    "meso_s14_relic": [
+      "前纪S14",
+      "前S14"
+    ],
+    "meso_s15_relic": [
+      "前纪S15",
+      "前S15"
+    ],
+    "meso_s2_relic": [
+      "前纪S2",
+      "前S2"
+    ],
+    "meso_s3_relic": [
+      "前纪S3",
+      "前S3"
+    ],
+    "meso_s4_relic": [
+      "前纪S4",
+      "前S4"
+    ],
+    "meso_s5_relic": [
+      "前纪S5",
+      "前S5"
+    ],
+    "meso_s6_relic": [
+      "前纪S6",
+      "前S6"
+    ],
+    "meso_s7_relic": [
+      "前纪S7",
+      "前S7"
+    ],
+    "meso_s8_relic": [
+      "前纪S8",
+      "前S8"
+    ],
+    "meso_s9_relic": [
+      "前纪S9",
+      "前S9"
+    ],
+    "meso_t1_relic": [
+      "前纪T1",
+      "前T1"
+    ],
+    "meso_t2_relic": [
+      "前纪T2",
+      "前T2"
+    ],
+    "meso_t3_relic": [
+      "前纪T3",
+      "前T3"
+    ],
+    "meso_t4_relic": [
+      "前纪T4",
+      "前T4"
+    ],
+    "meso_t5_relic": [
+      "前纪T5",
+      "前T5"
+    ],
+    "meso_t6_relic": [
+      "前纪T6",
+      "前T6"
+    ],
+    "meso_t7_relic": [
+      "前纪T7",
+      "前T7"
+    ],
+    "meso_t8_relic": [
+      "前纪T8",
+      "前T8"
+    ],
+    "meso_v1_relic": [
+      "前纪V1",
+      "前V1"
+    ],
+    "meso_v10_relic": [
+      "前纪V10",
+      "前V10"
+    ],
+    "meso_v11_relic": [
+      "前纪V11",
+      "前V11"
+    ],
+    "meso_v12_relic": [
+      "前纪V12",
+      "前V12"
+    ],
+    "meso_v13_relic": [
+      "前纪V13",
+      "前V13"
+    ],
+    "meso_v14_relic": [
+      "前纪V14",
+      "前V14"
+    ],
+    "meso_v15_relic": [
+      "前纪V15",
+      "前V15"
+    ],
+    "meso_v2_relic": [
+      "前纪V2",
+      "前V2"
+    ],
+    "meso_v3_relic": [
+      "前纪V3",
+      "前V3"
+    ],
+    "meso_v4_relic": [
+      "前纪V4",
+      "前V4"
+    ],
+    "meso_v5_relic": [
+      "前纪V5",
+      "前V5"
+    ],
+    "meso_v6_relic": [
+      "前纪V6",
+      "前V6"
+    ],
+    "meso_v7_relic": [
+      "前纪V7",
+      "前V7"
+    ],
+    "meso_v8_relic": [
+      "前纪V8",
+      "前V8"
+    ],
+    "meso_v9_relic": [
+      "前纪V9",
+      "前V9"
+    ],
+    "meso_w1_relic": [
+      "前纪W1",
+      "前W1"
+    ],
+    "meso_w2_relic": [
+      "前纪W2",
+      "前W2"
+    ],
+    "meso_w3_relic": [
+      "前纪W3",
+      "前W3"
+    ],
+    "meso_w4_relic": [
+      "前纪W4",
+      "前W4"
+    ],
+    "meso_w5_relic": [
+      "前纪W5",
+      "前W5"
+    ],
+    "meso_x1_relic": [
+      "前纪X1",
+      "前X1"
+    ],
+    "meso_y1_relic": [
+      "前纪Y1",
+      "前Y1"
+    ],
+    "meso_y2_relic": [
+      "前纪Y2",
+      "前Y2"
+    ],
+    "meso_z1_relic": [
+      "前纪Z1",
+      "前Z1"
+    ],
+    "meso_z2_relic": [
+      "前纪Z2",
+      "前Z2"
+    ],
+    "meso_z3_relic": [
+      "前纪Z3",
+      "前Z3"
+    ],
+    "meso_z4_relic": [
+      "前纪Z4",
+      "前Z4"
+    ],
+    "meso_z5_relic": [
+      "前纪Z5",
+      "前Z5"
+    ],
+    "meso_z6_relic": [
+      "前纪Z6",
+      "前Z6"
+    ],
+    "mirage_prime_blueprint": [
+      "MirageP蓝图"
+    ],
+    "mirage_prime_chassis_blueprint": [
+      "MirageP机体"
+    ],
+    "mirage_prime_neuroptics_blueprint": [
+      "MirageP头部"
+    ],
+    "mirage_prime_set": [
+      "MirageP一套"
+    ],
+    "mirage_prime_systems_blueprint": [
+      "MirageP系统"
+    ],
+    "molt_augmented": [
+      "蜕化升腾"
+    ],
+    "molt_efficiency": [
+      "蜕化效能"
+    ],
+    "molt_reconstruct": [
+      "蜕化重塑"
+    ],
+    "molt_vigor": [
+      "蜕化活力"
+    ],
+    "nagantaka_prime_barrel": [
+      "噬蛇弩P枪管"
+    ],
+    "nagantaka_prime_blueprint": [
+      "噬蛇弩P蓝图"
+    ],
+    "nagantaka_prime_receiver": [
+      "噬蛇弩P枪机"
+    ],
+    "nagantaka_prime_set": [
+      "噬蛇弩P一套"
+    ],
+    "nagantaka_prime_stock": [
+      "噬蛇弩P枪托"
+    ],
+    "nami_skyla_prime_blade": [
+      "海波斯库拉对剑P刀刃"
+    ],
+    "nami_skyla_prime_blueprint": [
+      "海波斯库拉对剑P蓝图"
+    ],
+    "nami_skyla_prime_handle": [
+      "海波斯库拉对剑P握柄"
+    ],
+    "nami_skyla_prime_set": [
+      "海波斯库拉对剑P一套"
+    ],
+    "nautilus_prime_blueprint": [
+      "鹦鹉螺P蓝图"
+    ],
+    "nautilus_prime_carapace": [
+      "鹦鹉螺P外壳"
+    ],
+    "nautilus_prime_cerebrum": [
+      "鹦鹉螺P头部"
+    ],
+    "nautilus_prime_set": [
+      "鹦鹉螺P一套"
+    ],
+    "nautilus_prime_systems": [
+      "鹦鹉螺P系统"
+    ],
+    "nekros_prime_blueprint": [
+      "NekrosP蓝图"
+    ],
+    "nekros_prime_chassis_blueprint": [
+      "NekrosP机体"
+    ],
+    "nekros_prime_neuroptics_blueprint": [
+      "NekrosP头部"
+    ],
+    "nekros_prime_set": [
+      "NekrosP一套"
+    ],
+    "nekros_prime_systems_blueprint": [
+      "NekrosP系统"
+    ],
+    "neo_a1_relic": [
+      "中纪A1",
+      "中A1"
+    ],
+    "neo_a10_relic": [
+      "中纪A10",
+      "中A10"
+    ],
+    "neo_a11_relic": [
+      "中纪A11",
+      "中A11"
+    ],
+    "neo_a12_relic": [
+      "中纪A12",
+      "中A12"
+    ],
+    "neo_a13_relic": [
+      "中纪A13",
+      "中A13"
+    ],
+    "neo_a14_relic": [
+      "中纪A14",
+      "中A14"
+    ],
+    "neo_a15_relic": [
+      "中纪A15",
+      "中A15"
+    ],
+    "neo_a16_relic": [
+      "中纪A16",
+      "中A16"
+    ],
+    "neo_a2_relic": [
+      "中纪A2",
+      "中A2"
+    ],
+    "neo_a3_relic": [
+      "中纪A3",
+      "中A3"
+    ],
+    "neo_a4_relic": [
+      "中纪A4",
+      "中A4"
+    ],
+    "neo_a5_relic": [
+      "中纪A5",
+      "中A5"
+    ],
+    "neo_a6_relic": [
+      "中纪A6",
+      "中A6"
+    ],
+    "neo_a7_relic": [
+      "中纪A7",
+      "中A7"
+    ],
+    "neo_a8_relic": [
+      "中纪A8",
+      "中A8"
+    ],
+    "neo_a9_relic": [
+      "中纪A9",
+      "中A9"
+    ],
+    "neo_b1_relic": [
+      "中纪B1",
+      "中B1"
+    ],
+    "neo_b2_relic": [
+      "中纪B2",
+      "中B2"
+    ],
+    "neo_b3_relic": [
+      "中纪B3",
+      "中B3"
+    ],
+    "neo_b4_relic": [
+      "中纪B4",
+      "中B4"
+    ],
+    "neo_b5_relic": [
+      "中纪B5",
+      "中B5"
+    ],
+    "neo_b6_relic": [
+      "中纪B6",
+      "中B6"
+    ],
+    "neo_b7_relic": [
+      "中纪B7",
+      "中B7"
+    ],
+    "neo_b8_relic": [
+      "中纪B8",
+      "中B8"
+    ],
+    "neo_b9_relic": [
+      "中纪B9",
+      "中B9"
+    ],
+    "neo_c1_relic": [
+      "中纪C1",
+      "中C1"
+    ],
+    "neo_c2_relic": [
+      "中纪C2",
+      "中C2"
+    ],
+    "neo_c3_relic": [
+      "中纪C3",
+      "中C3"
+    ],
+    "neo_c4_relic": [
+      "中纪C4",
+      "中C4"
+    ],
+    "neo_c5_relic": [
+      "中纪C5",
+      "中C5"
+    ],
+    "neo_c6_relic": [
+      "中纪C6",
+      "中C6"
+    ],
+    "neo_c7_relic": [
+      "中纪C7",
+      "中C7"
+    ],
+    "neo_c8_relic": [
+      "中纪C8",
+      "中C8"
+    ],
+    "neo_c9_relic": [
+      "中纪C9",
+      "中C9"
+    ],
+    "neo_d1_relic": [
+      "中纪D1",
+      "中D1"
+    ],
+    "neo_d10_relic": [
+      "中纪D10",
+      "中D10"
+    ],
+    "neo_d2_relic": [
+      "中纪D2",
+      "中D2"
+    ],
+    "neo_d3_relic": [
+      "中纪D3",
+      "中D3"
+    ],
+    "neo_d4_relic": [
+      "中纪D4",
+      "中D4"
+    ],
+    "neo_d5_relic": [
+      "中纪D5",
+      "中D5"
+    ],
+    "neo_d6_relic": [
+      "中纪D6",
+      "中D6"
+    ],
+    "neo_d7_relic": [
+      "中纪D7",
+      "中D7"
+    ],
+    "neo_d8_relic": [
+      "中纪D8",
+      "中D8"
+    ],
+    "neo_d9_relic": [
+      "中纪D9",
+      "中D9"
+    ],
+    "neo_e1_relic": [
+      "中纪E1",
+      "中E1"
+    ],
+    "neo_e2_relic": [
+      "中纪E2",
+      "中E2"
+    ],
+    "neo_e3_relic": [
+      "中纪E3",
+      "中E3"
+    ],
+    "neo_e4_relic": [
+      "中纪E4",
+      "中E4"
+    ],
+    "neo_f1_relic": [
+      "中纪F1",
+      "中F1"
+    ],
+    "neo_f2_relic": [
+      "中纪F2",
+      "中F2"
+    ],
+    "neo_f3_relic": [
+      "中纪F3",
+      "中F3"
+    ],
+    "neo_g1_relic": [
+      "中纪G1",
+      "中G1"
+    ],
+    "neo_g10_relic": [
+      "中纪G10",
+      "中G10"
+    ],
+    "neo_g2_relic": [
+      "中纪G2",
+      "中G2"
+    ],
+    "neo_g3_relic": [
+      "中纪G3",
+      "中G3"
+    ],
+    "neo_g4_relic": [
+      "中纪G4",
+      "中G4"
+    ],
+    "neo_g5_relic": [
+      "中纪G5",
+      "中G5"
+    ],
+    "neo_g6_relic": [
+      "中纪G6",
+      "中G6"
+    ],
+    "neo_g7_relic": [
+      "中纪G7",
+      "中G7"
+    ],
+    "neo_g8_relic": [
+      "中纪G8",
+      "中G8"
+    ],
+    "neo_g9_relic": [
+      "中纪G9",
+      "中G9"
+    ],
+    "neo_h1_relic": [
+      "中纪H1",
+      "中H1"
+    ],
+    "neo_h2_relic": [
+      "中纪H2",
+      "中H2"
+    ],
+    "neo_h3_relic": [
+      "中纪H3",
+      "中H3"
+    ],
+    "neo_h4_relic": [
+      "中纪H4",
+      "中H4"
+    ],
+    "neo_i1_relic": [
+      "中纪I1",
+      "中I1"
+    ],
+    "neo_i2_relic": [
+      "中纪I2",
+      "中I2"
+    ],
+    "neo_i3_relic": [
+      "中纪I3",
+      "中I3"
+    ],
+    "neo_k1_relic": [
+      "中纪K1",
+      "中K1"
+    ],
+    "neo_k2_relic": [
+      "中纪K2",
+      "中K2"
+    ],
+    "neo_k3_relic": [
+      "中纪K3",
+      "中K3"
+    ],
+    "neo_k4_relic": [
+      "中纪K4",
+      "中K4"
+    ],
+    "neo_k5_relic": [
+      "中纪K5",
+      "中K5"
+    ],
+    "neo_k6_relic": [
+      "中纪K6",
+      "中K6"
+    ],
+    "neo_k7_relic": [
+      "中纪K7",
+      "中K7"
+    ],
+    "neo_k8_relic": [
+      "中纪K8",
+      "中K8"
+    ],
+    "neo_k9_relic": [
+      "中纪K9",
+      "中K9"
+    ],
+    "neo_l1_relic": [
+      "中纪L1",
+      "中L1"
+    ],
+    "neo_l2_relic": [
+      "中纪L2",
+      "中L2"
+    ],
+    "neo_l3_relic": [
+      "中纪L3",
+      "中L3"
+    ],
+    "neo_l4_relic": [
+      "中纪L4",
+      "中L4"
+    ],
+    "neo_m1_relic": [
+      "中纪M1",
+      "中M1"
+    ],
+    "neo_m2_relic": [
+      "中纪M2",
+      "中M2"
+    ],
+    "neo_m3_relic": [
+      "中纪M3",
+      "中M3"
+    ],
+    "neo_m4_relic": [
+      "中纪M4",
+      "中M4"
+    ],
+    "neo_m5_relic": [
+      "中纪M5",
+      "中M5"
+    ],
+    "neo_m6_relic": [
+      "中纪M6",
+      "中M6"
+    ],
+    "neo_n1_relic": [
+      "中纪N1",
+      "中N1"
+    ],
+    "neo_n10_relic": [
+      "中纪N10",
+      "中N10"
+    ],
+    "neo_n11_relic": [
+      "中纪N11",
+      "中N11"
+    ],
+    "neo_n12_relic": [
+      "中纪N12",
+      "中N12"
+    ],
+    "neo_n13_relic": [
+      "中纪N13",
+      "中N13"
+    ],
+    "neo_n14_relic": [
+      "中纪N14",
+      "中N14"
+    ],
+    "neo_n15_relic": [
+      "中纪N15",
+      "中N15"
+    ],
+    "neo_n16_relic": [
+      "中纪N16",
+      "中N16"
+    ],
+    "neo_n17_relic": [
+      "中纪N17",
+      "中N17"
+    ],
+    "neo_n18_relic": [
+      "中纪N18",
+      "中N18"
+    ],
+    "neo_n19_relic": [
+      "中纪N19",
+      "中N19"
+    ],
+    "neo_n2_relic": [
+      "中纪N2",
+      "中N2"
+    ],
+    "neo_n20_relic": [
+      "中纪N20",
+      "中N20"
+    ],
+    "neo_n21_relic": [
+      "中纪N21",
+      "中N21"
+    ],
+    "neo_n22_relic": [
+      "中纪N22",
+      "中N22"
+    ],
+    "neo_n23_relic": [
+      "中纪N23",
+      "中N23"
+    ],
+    "neo_n24_relic": [
+      "中纪N24",
+      "中N24"
+    ],
+    "neo_n3_relic": [
+      "中纪N3",
+      "中N3"
+    ],
+    "neo_n4_relic": [
+      "中纪N4",
+      "中N4"
+    ],
+    "neo_n5_relic": [
+      "中纪N5",
+      "中N5"
+    ],
+    "neo_n6_relic": [
+      "中纪N6",
+      "中N6"
+    ],
+    "neo_n7_relic": [
+      "中纪N7",
+      "中N7"
+    ],
+    "neo_n8_relic": [
+      "中纪N8",
+      "中N8"
+    ],
+    "neo_n9_relic": [
+      "中纪N9",
+      "中N9"
+    ],
+    "neo_o1_relic": [
+      "中纪O1",
+      "中O1"
+    ],
+    "neo_o2_relic": [
+      "中纪O2",
+      "中O2"
+    ],
+    "neo_o3_relic": [
+      "中纪O3",
+      "中O3"
+    ],
+    "neo_p1_relic": [
+      "中纪P1",
+      "中P1"
+    ],
+    "neo_p10_relic": [
+      "中纪P10",
+      "中P10"
+    ],
+    "neo_p2_relic": [
+      "中纪P2",
+      "中P2"
+    ],
+    "neo_p3_relic": [
+      "中纪P3",
+      "中P3"
+    ],
+    "neo_p4_relic": [
+      "中纪P4",
+      "中P4"
+    ],
+    "neo_p5_relic": [
+      "中纪P5",
+      "中P5"
+    ],
+    "neo_p6_relic": [
+      "中纪P6",
+      "中P6"
+    ],
+    "neo_p7_relic": [
+      "中纪P7",
+      "中P7"
+    ],
+    "neo_p8_relic": [
+      "中纪P8",
+      "中P8"
+    ],
+    "neo_p9_relic": [
+      "中纪P9",
+      "中P9"
+    ],
+    "neo_q1_relic": [
+      "中纪Q1",
+      "中Q1"
+    ],
+    "neo_r1_relic": [
+      "中纪R1",
+      "中R1"
+    ],
+    "neo_r2_relic": [
+      "中纪R2",
+      "中R2"
+    ],
+    "neo_r3_relic": [
+      "中纪R3",
+      "中R3"
+    ],
+    "neo_r4_relic": [
+      "中纪R4",
+      "中R4"
+    ],
+    "neo_r5_relic": [
+      "中纪R5",
+      "中R5"
+    ],
+    "neo_s1_relic": [
+      "中纪S1",
+      "中S1"
+    ],
+    "neo_s10_relic": [
+      "中纪S10",
+      "中S10"
+    ],
+    "neo_s11_relic": [
+      "中纪S11",
+      "中S11"
+    ],
+    "neo_s12_relic": [
+      "中纪S12",
+      "中S12"
+    ],
+    "neo_s13_relic": [
+      "中纪S13",
+      "中S13"
+    ],
+    "neo_s14_relic": [
+      "中纪S14",
+      "中S14"
+    ],
+    "neo_s15_relic": [
+      "中纪S15",
+      "中S15"
+    ],
+    "neo_s16_relic": [
+      "中纪S16",
+      "中S16"
+    ],
+    "neo_s17_relic": [
+      "中纪S17",
+      "中S17"
+    ],
+    "neo_s18_relic": [
+      "中纪S18",
+      "中S18"
+    ],
+    "neo_s19_relic": [
+      "中纪S19",
+      "中S19"
+    ],
+    "neo_s2_relic": [
+      "中纪S2",
+      "中S2"
+    ],
+    "neo_s20_relic": [
+      "中纪S20",
+      "中S20"
+    ],
+    "neo_s3_relic": [
+      "中纪S3",
+      "中S3"
+    ],
+    "neo_s5_relic": [
+      "中纪S5",
+      "中S5"
+    ],
+    "neo_s6_relic": [
+      "中纪S6",
+      "中S6"
+    ],
+    "neo_s7_relic": [
+      "中纪S7",
+      "中S7"
+    ],
+    "neo_s8_relic": [
+      "中纪S8",
+      "中S8"
+    ],
+    "neo_s9_relic": [
+      "中纪S9",
+      "中S9"
+    ],
+    "neo_t1_relic": [
+      "中纪T1",
+      "中T1"
+    ],
+    "neo_t10_relic": [
+      "中纪T10",
+      "中T10"
+    ],
+    "neo_t11_relic": [
+      "中纪T11",
+      "中T11"
+    ],
+    "neo_t2_relic": [
+      "中纪T2",
+      "中T2"
+    ],
+    "neo_t3_relic": [
+      "中纪T3",
+      "中T3"
+    ],
+    "neo_t4_relic": [
+      "中纪T4",
+      "中T4"
+    ],
+    "neo_t5_relic": [
+      "中纪T5",
+      "中T5"
+    ],
+    "neo_t6_relic": [
+      "中纪T6",
+      "中T6"
+    ],
+    "neo_t7_relic": [
+      "中纪T7",
+      "中T7"
+    ],
+    "neo_t8_relic": [
+      "中纪T8",
+      "中T8"
+    ],
+    "neo_t9_relic": [
+      "中纪T9",
+      "中T9"
+    ],
+    "neo_v1_relic": [
+      "中纪V1",
+      "中V1"
+    ],
+    "neo_v10_relic": [
+      "中纪V10",
+      "中V10"
+    ],
+    "neo_v11_relic": [
+      "中纪V11",
+      "中V11"
+    ],
+    "neo_v12_relic": [
+      "中纪V12",
+      "中V12"
+    ],
+    "neo_v2_relic": [
+      "中纪V2",
+      "中V2"
+    ],
+    "neo_v3_relic": [
+      "中纪V3",
+      "中V3"
+    ],
+    "neo_v4_relic": [
+      "中纪V4",
+      "中V4"
+    ],
+    "neo_v5_relic": [
+      "中纪V5",
+      "中V5"
+    ],
+    "neo_v6_relic": [
+      "中纪V6",
+      "中V6"
+    ],
+    "neo_v7_relic": [
+      "中纪V7",
+      "中V7"
+    ],
+    "neo_v8_relic": [
+      "中纪V8",
+      "中V8"
+    ],
+    "neo_v9_relic": [
+      "中纪V9",
+      "中V9"
+    ],
+    "neo_w1_relic": [
+      "中纪W1",
+      "中W1"
+    ],
+    "neo_w2_relic": [
+      "中纪W2",
+      "中W2"
+    ],
+    "neo_x1_relic": [
+      "中纪X1",
+      "中X1"
+    ],
+    "neo_y1_relic": [
+      "中纪Y1",
+      "中Y1"
+    ],
+    "neo_z1_relic": [
+      "中纪Z1",
+      "中Z1"
+    ],
+    "neo_z10_relic": [
+      "中纪Z10",
+      "中Z10"
+    ],
+    "neo_z11_relic": [
+      "中纪Z11",
+      "中Z11"
+    ],
+    "neo_z2_relic": [
+      "中纪Z2",
+      "中Z2"
+    ],
+    "neo_z3_relic": [
+      "中纪Z3",
+      "中Z3"
+    ],
+    "neo_z4_relic": [
+      "中纪Z4",
+      "中Z4"
+    ],
+    "neo_z5_relic": [
+      "中纪Z5",
+      "中Z5"
+    ],
+    "neo_z6_relic": [
+      "中纪Z6",
+      "中Z6"
+    ],
+    "neo_z7_relic": [
+      "中纪Z7",
+      "中Z7"
+    ],
+    "neo_z8_relic": [
+      "中纪Z8",
+      "中Z8"
+    ],
+    "neo_z9_relic": [
+      "中纪Z9",
+      "中Z9"
+    ],
+    "nezha_prime_blueprint": [
+      "NezhaP蓝图"
+    ],
+    "nezha_prime_chassis_blueprint": [
+      "NezhaP机体"
+    ],
+    "nezha_prime_neuroptics_blueprint": [
+      "NezhaP头部"
+    ],
+    "nezha_prime_set": [
+      "NezhaP一套"
+    ],
+    "nezha_prime_systems_blueprint": [
+      "NezhaP系统"
+    ],
+    "nidus_prime_blueprint": [
+      "NidusP蓝图"
+    ],
+    "nidus_prime_chassis_blueprint": [
+      "NidusP机体"
+    ],
+    "nidus_prime_neuroptics_blueprint": [
+      "NidusP头部"
+    ],
+    "nidus_prime_set": [
+      "NidusP一套"
+    ],
+    "nidus_prime_systems_blueprint": [
+      "NidusP系统"
+    ],
+    "nikana_prime_blade": [
+      "侍刃P刀刃"
+    ],
+    "nikana_prime_blueprint": [
+      "侍刃P蓝图"
+    ],
+    "nikana_prime_hilt": [
+      "侍刃P握柄"
+    ],
+    "nikana_prime_set": [
+      "侍刃P一套"
+    ],
+    "ninkondi_prime_blueprint": [
+      "降灵追猎者P蓝图"
+    ],
+    "ninkondi_prime_chain": [
+      "降灵追猎者P链条"
+    ],
+    "ninkondi_prime_handle": [
+      "降灵追猎者P握柄"
+    ],
+    "ninkondi_prime_set": [
+      "降灵追猎者P一套"
+    ],
+    "nova_prime_blueprint": [
+      "NovaP蓝图"
+    ],
+    "nova_prime_chassis_blueprint": [
+      "NovaP机体"
+    ],
+    "nova_prime_neuroptics_blueprint": [
+      "NovaP头部"
+    ],
+    "nova_prime_set": [
+      "NovaP一套"
+    ],
+    "nova_prime_systems_blueprint": [
+      "NovaP系统"
+    ],
+    "nyx_prime_blueprint": [
+      "NyxP蓝图"
+    ],
+    "nyx_prime_chassis_blueprint": [
+      "NyxP机体"
+    ],
+    "nyx_prime_neuroptics_blueprint": [
+      "NyxP头部"
+    ],
+    "nyx_prime_set": [
+      "NyxP一套"
+    ],
+    "nyx_prime_systems_blueprint": [
+      "NyxP系统"
+    ],
+    "oberon_prime_blueprint": [
+      "OberonP蓝图"
+    ],
+    "oberon_prime_chassis_blueprint": [
+      "OberonP机体"
+    ],
+    "oberon_prime_neuroptics_blueprint": [
+      "OberonP头部"
+    ],
+    "oberon_prime_set": [
+      "OberonP一套"
+    ],
+    "oberon_prime_systems_blueprint": [
+      "OberonP系统"
+    ],
+    "octavia_prime_blueprint": [
+      "OctaviaP蓝图"
+    ],
+    "octavia_prime_chassis_blueprint": [
+      "OctaviaP机体"
+    ],
+    "octavia_prime_neuroptics_blueprint": [
+      "OctaviaP头部"
+    ],
+    "octavia_prime_set": [
+      "OctaviaP一套"
+    ],
+    "octavia_prime_systems_blueprint": [
+      "OctaviaP系统"
+    ],
+    "odonata_prime_blueprint": [
+      "陨蜓P蓝图"
+    ],
+    "odonata_prime_harness_blueprint": [
+      "陨蜓P外甲蓝图"
+    ],
+    "odonata_prime_set": [
+      "陨蜓P一套"
+    ],
+    "odonata_prime_systems_blueprint": [
+      "陨蜓P系统"
+    ],
+    "odonata_prime_wings_blueprint": [
+      "陨蜓P机翼蓝图"
+    ],
+    "okina_prime_blade": [
+      "翁P刀刃"
+    ],
+    "okina_prime_blueprint": [
+      "翁P蓝图"
+    ],
+    "okina_prime_handle": [
+      "翁P握柄"
+    ],
+    "okina_prime_set": [
+      "翁P一套"
+    ],
+    "opticor_vandal": [
+      "奥堤克光子枪",
+      "莲花O炮",
+      "莲花奥堤克光子枪",
+      "莲花OP",
+      "奥堤克光子枪破坏者"
+    ],
+    "orthos_prime_blade": [
+      "欧特鲁斯P刀刃"
+    ],
+    "orthos_prime_blueprint": [
+      "欧特鲁斯P蓝图"
+    ],
+    "orthos_prime_handle": [
+      "欧特鲁斯P握柄"
+    ],
+    "orthos_prime_set": [
+      "欧特鲁斯P一套"
+    ],
+    "pandero_prime_barrel": [
+      "手鼓P枪管"
+    ],
+    "pandero_prime_blueprint": [
+      "手鼓P蓝图"
+    ],
+    "pandero_prime_receiver": [
+      "手鼓P枪机"
+    ],
+    "pandero_prime_set": [
+      "手鼓P一套"
+    ],
+    "pangolin_prime_blade": [
+      "鲮鲤剑P刀刃"
+    ],
+    "pangolin_prime_blueprint": [
+      "鲮鲤剑P蓝图"
+    ],
+    "pangolin_prime_handle": [
+      "鲮鲤剑P握柄"
+    ],
+    "pangolin_prime_set": [
+      "鲮鲤剑P一套"
+    ],
+    "panthera_prime_barrel": [
+      "猎豹P枪管"
+    ],
+    "panthera_prime_blueprint": [
+      "猎豹P蓝图"
+    ],
+    "panthera_prime_receiver": [
+      "猎豹P枪机"
+    ],
+    "panthera_prime_set": [
+      "猎豹P一套"
+    ],
+    "panthera_prime_stock": [
+      "猎豹P枪托"
+    ],
+    "paris_prime_blueprint": [
+      "帕里斯P蓝图"
+    ],
+    "paris_prime_grip": [
+      "帕里斯P弓身"
+    ],
+    "paris_prime_lower_limb": [
+      "帕里斯P下弓臂"
+    ],
+    "paris_prime_set": [
+      "帕里斯P一套"
+    ],
+    "paris_prime_string": [
+      "帕里斯P弓弦"
+    ],
+    "paris_prime_upper_limb": [
+      "帕里斯P上弓臂"
+    ],
+    "pax_bolt": [
+      "和平电闪"
+    ],
+    "pax_charge": [
+      "和平电充"
+    ],
+    "pax_seeker": [
+      "和平追寻者"
+    ],
+    "pax_soar": [
+      "和平高飞"
+    ],
+    "perigale_prime_barrel": [
+      "月面狂风P枪管"
+    ],
+    "perigale_prime_blueprint": [
+      "月面狂风P蓝图"
+    ],
+    "perigale_prime_receiver": [
+      "月面狂风P枪机"
+    ],
+    "perigale_prime_set": [
+      "月面狂风P一套"
+    ],
+    "perigale_prime_stock": [
+      "月面狂风P枪托"
+    ],
+    "phantasma_prime_barrel": [
+      "幻离子P枪管"
+    ],
+    "phantasma_prime_blueprint": [
+      "幻离子P蓝图"
+    ],
+    "phantasma_prime_receiver": [
+      "幻离子P枪机"
+    ],
+    "phantasma_prime_set": [
+      "幻离子P一套"
+    ],
+    "phantasma_prime_stock": [
+      "幻离子P枪托"
+    ],
+    "pistol_riven_mod_(veiled)": [
+      "手枪未开"
+    ],
+    "primary_blight": [
+      "主要毒侵"
+    ],
+    "primary_bulwark": [
+      "主要堡垒"
+    ],
+    "primary_compression": [
+      "主要压缩"
+    ],
+    "primary_crux": [
+      "主要准星"
+    ],
+    "primary_deadhead": [
+      "主要死首"
+    ],
+    "primary_debilitate": [
+      "主要衰弱"
+    ],
+    "primary_dexterity": [
+      "主要熟练"
+    ],
+    "primary_exhilarate": [
+      "主要激昂"
+    ],
+    "primary_frostbite": [
+      "主要霜冻"
+    ],
+    "primary_merciless": [
+      "主要无情"
+    ],
+    "primary_obstruct": [
+      "主要滞阻"
+    ],
+    "primary_overcharge": [
+      "主要过载"
+    ],
+    "primary_plated_round": [
+      "主要镀金弹头"
+    ],
+    "primed_ammo_chain": [
+      "弹链P"
+    ],
+    "primed_ammo_stock": [
+      "霰弹扩充P",
+      "散弹扩充P"
+    ],
+    "primed_animal_instinct": [
+      "动物本能P"
+    ],
+    "primed_bane_of_corpus": [
+      "灭亡CorpusP"
+    ],
+    "primed_bane_of_corrupted": [
+      "灭亡奥罗金P"
+    ],
+    "primed_bane_of_grineer": [
+      "灭亡GrineerP"
+    ],
+    "primed_bane_of_infested": [
+      "灭亡InfestedP"
+    ],
+    "primed_bane_of_the_murmur": [
+      "灭亡低语者P"
+    ],
+    "primed_chamber": [
+      "膛室P"
+    ],
+    "primed_charged_shell": [
+      "充电弹头P"
+    ],
+    "primed_chilling_grasp": [
+      "急冻控场P"
+    ],
+    "primed_cleanse_corpus": [
+      "净化CorpusP"
+    ],
+    "primed_cleanse_corrupted": [
+      "净化奥罗金P"
+    ],
+    "primed_cleanse_grineer": [
+      "净化GrineerP"
+    ],
+    "primed_cleanse_infested": [
+      "净化InfestedP"
+    ],
+    "primed_cleanse_the_murmur": [
+      "净化低语者P"
+    ],
+    "primed_combustion_rounds": [
+      "燃烧弹头P"
+    ],
+    "primed_continuity": [
+      "持久力P"
+    ],
+    "primed_convulsion": [
+      "痉挛P"
+    ],
+    "primed_counterbalance": [
+      "制衡P"
+    ],
+    "primed_cryo_rounds": [
+      "低温弹头P"
+    ],
+    "primed_deadly_efficiency": [
+      "致命效率P"
+    ],
+    "primed_dual_rounds": [
+      "双重弹头P"
+    ],
+    "primed_expel_corpus": [
+      "驱逐CorpusP"
+    ],
+    "primed_expel_corrupted": [
+      "驱逐奥罗金P"
+    ],
+    "primed_expel_grineer": [
+      "驱逐GrineerP"
+    ],
+    "primed_expel_infested": [
+      "驱逐InfestedP"
+    ],
+    "primed_expel_the_murmur": [
+      "驱逐低语者P"
+    ],
+    "primed_fast_hands": [
+      "爆发装填P"
+    ],
+    "primed_fever_strike": [
+      "热病打击P"
+    ],
+    "primed_firestorm": [
+      "烈焰风暴P"
+    ],
+    "primed_flow": [
+      "川流不息P"
+    ],
+    "primed_fulmination": [
+      "猛烈爆发P"
+    ],
+    "primed_heated_charge": [
+      "火焰装填P"
+    ],
+    "primed_heavy_trauma": [
+      "重创P"
+    ],
+    "primed_magazine_warp": [
+      "弹匣增幅P"
+    ],
+    "primed_morphic_transformer": [
+      "非晶变压器P"
+    ],
+    "primed_pack_leader": [
+      "领袖P"
+    ],
+    "primed_pistol_ammo_mutation": [
+      "手枪弹药转换P"
+    ],
+    "primed_pistol_gambit": [
+      "手枪精通P"
+    ],
+    "primed_point_blank": [
+      "抵近射击P"
+    ],
+    "primed_pressure_point": [
+      "压迫点P"
+    ],
+    "primed_quickdraw": [
+      "持续火力P"
+    ],
+    "primed_ravage": [
+      "破灭P"
+    ],
+    "primed_reach": [
+      "剑风P"
+    ],
+    "primed_redirection": [
+      "蓄能重划P"
+    ],
+    "primed_regen": [
+      "重生P"
+    ],
+    "primed_rifle_ammo_mutation": [
+      "步枪弹药转换P"
+    ],
+    "primed_rubedo_lined_barrel": [
+      "红晶枪管P"
+    ],
+    "primed_shotgun_ammo_mutation": [
+      "霰弹枪弹药转换P",
+      "散弹枪弹药转换P"
+    ],
+    "primed_slip_magazine": [
+      "串联弹匣P"
+    ],
+    "primed_smite_corpus": [
+      "毁灭CorpusP"
+    ],
+    "primed_smite_corrupted": [
+      "毁灭奥罗金P"
+    ],
+    "primed_smite_grineer": [
+      "毁灭GrineerP"
+    ],
+    "primed_smite_infested": [
+      "毁灭InfestedP"
+    ],
+    "primed_smite_the_murmur": [
+      "毁灭低语者P"
+    ],
+    "primed_sniper_ammo_mutation": [
+      "狙击枪弹药转换P"
+    ],
+    "primed_stabilizer": [
+      "稳定P"
+    ],
+    "primed_steady_hands": [
+      "稳定枪手P"
+    ],
+    "primed_tactical_pump": [
+      "战术上膛P"
+    ],
+    "primed_target_cracker": [
+      "弱点专精P"
+    ],
+    "primed_venomous_clip": [
+      "恶毒弹匣P"
+    ],
+    "prisma_angstrum": [
+      "安格斯壮",
+      "棱晶安格斯壮"
+    ],
+    "prisma_dual_cleavers": [
+      "斩肉双刀",
+      "棱晶斩肉双刀"
+    ],
+    "prisma_dual_decurions": [
+      "什长双枪",
+      "棱晶什长双枪"
+    ],
+    "prisma_gorgon": [
+      "蛇发女妖",
+      "棱晶蛇发女妖"
+    ],
+    "prisma_grakata": [
+      "葛拉卡达",
+      "棱晶葛拉卡达"
+    ],
+    "prisma_grinlok": [
+      "葛恩火枪",
+      "棱晶葛恩火枪"
+    ],
+    "prisma_lenz": [
+      "楞次弓",
+      "棱晶楞次弓"
+    ],
+    "prisma_machete": [
+      "棱晶马谢特砍刀"
+    ],
+    "prisma_obex": [
+      "奥比克斯",
+      "棱晶奥比克斯"
+    ],
+    "prisma_ohma": [
+      "欧玛",
+      "棱晶欧玛"
+    ],
+    "prisma_skana": [
+      "空刃",
+      "棱晶空刃"
+    ],
+    "prisma_tetra": [
+      "特拉",
+      "棱晶特拉"
+    ],
+    "prisma_twin_gremlins": [
+      "双子小精灵",
+      "棱晶双子小精灵"
+    ],
+    "prisma_veritux": [
+      "真理巨剑",
+      "棱晶真理巨剑"
+    ],
+    "protea_prime_blueprint": [
+      "ProteaP蓝图"
+    ],
+    "protea_prime_chassis_blueprint": [
+      "ProteaP机体"
+    ],
+    "protea_prime_neuroptics_blueprint": [
+      "ProteaP头部"
+    ],
+    "protea_prime_set": [
+      "ProteaP一套"
+    ],
+    "protea_prime_systems_blueprint": [
+      "ProteaP系统"
+    ],
+    "prova_vandal": [
+      "普罗沃",
+      "普罗沃破坏者"
+    ],
+    "pyrana_prime_barrel": [
+      "食人鱼P枪管"
+    ],
+    "pyrana_prime_blueprint": [
+      "食人鱼P蓝图"
+    ],
+    "pyrana_prime_receiver": [
+      "食人鱼P枪机"
+    ],
+    "pyrana_prime_set": [
+      "食人鱼P一套"
+    ],
+    "quanta_vandal": [
+      "量子切割器",
+      "量子切割器破坏者"
+    ],
+    "quassus_prime_blade": [
+      "威震武扇P刀刃"
+    ],
+    "quassus_prime_blueprint": [
+      "威震武扇P蓝图"
+    ],
+    "quassus_prime_handle": [
+      "威震武扇P握柄"
+    ],
+    "quassus_prime_set": [
+      "威震武扇P一套"
+    ],
+    "rakta_ballistica": [
+      "绯红布里斯提卡"
+    ],
+    "rakta_cernos": [
+      "绯红西诺斯"
+    ],
+    "rakta_dark_dagger": [
+      "暗黑匕首",
+      "绯红暗黑匕首"
+    ],
+    "reaper_prime_blade": [
+      "收割者P刀刃"
+    ],
+    "reaper_prime_blueprint": [
+      "收割者P蓝图"
+    ],
+    "reaper_prime_handle": [
+      "收割者P握柄"
+    ],
+    "reaper_prime_set": [
+      "收割者P一套"
+    ],
+    "redeemer_prime_blade": [
+      "救赎者P刀刃"
+    ],
+    "redeemer_prime_blueprint": [
+      "救赎者P蓝图"
+    ],
+    "redeemer_prime_handle": [
+      "救赎者P握柄"
+    ],
+    "redeemer_prime_set": [
+      "救赎者P一套"
+    ],
+    "requiem_eterna_relic": [
+      "安魂永恒",
+      "安永恒",
+      "永恒安魂",
+      "永恒"
+    ],
+    "requiem_i_relic": [
+      "安魂I",
+      "安I"
+    ],
+    "requiem_ii_relic": [
+      "安魂II",
+      "安II"
+    ],
+    "requiem_iii_relic": [
+      "安魂III",
+      "安III"
+    ],
+    "requiem_iv_relic": [
+      "安魂IV",
+      "安IV"
+    ],
+    "residual_boils": [
+      "残差燃沸"
+    ],
+    "residual_malodor": [
+      "残差恶嗅"
+    ],
+    "residual_shock": [
+      "残差电击"
+    ],
+    "residual_viremia": [
+      "残差毒血"
+    ],
+    "revenant_prime_blueprint": [
+      "RevenantP蓝图"
+    ],
+    "revenant_prime_chassis_blueprint": [
+      "RevenantP机体"
+    ],
+    "revenant_prime_neuroptics_blueprint": [
+      "RevenantP头部"
+    ],
+    "revenant_prime_set": [
+      "RevenantP一套"
+    ],
+    "revenant_prime_systems_blueprint": [
+      "RevenantP系统"
+    ],
+    "rhino_prime_blueprint": [
+      "RhinoP蓝图"
+    ],
+    "rhino_prime_chassis_blueprint": [
+      "RhinoP机体"
+    ],
+    "rhino_prime_neuroptics_blueprint": [
+      "RhinoP头部"
+    ],
+    "rhino_prime_set": [
+      "RhinoP一套"
+    ],
+    "rhino_prime_systems_blueprint": [
+      "RhinoP系统"
+    ],
+    "rubico_prime_barrel": [
+      "绝路P枪管"
+    ],
+    "rubico_prime_blueprint": [
+      "绝路P蓝图"
+    ],
+    "rubico_prime_receiver": [
+      "绝路P枪机"
+    ],
+    "rubico_prime_set": [
+      "绝路P一套"
+    ],
+    "rubico_prime_stock": [
+      "绝路P枪托"
+    ],
+    "sancti_castanas": [
+      "雷爆信镖",
+      "圣洁雷爆信镖"
+    ],
+    "sancti_magistar": [
+      "执法者",
+      "圣洁执法者"
+    ],
+    "sancti_tigris": [
+      "猛虎",
+      "圣洁猛虎"
+    ],
+    "sarofang_prime_blade": [
+      "沙罗之牙P刀刃"
+    ],
+    "sarofang_prime_blueprint": [
+      "沙罗之牙P蓝图"
+    ],
+    "sarofang_prime_handle": [
+      "沙罗之牙P握柄"
+    ],
+    "sarofang_prime_set": [
+      "沙罗之牙P一套"
+    ],
+    "saryn_prime_blueprint": [
+      "SarynP蓝图"
+    ],
+    "saryn_prime_chassis_blueprint": [
+      "SarynP机体"
+    ],
+    "saryn_prime_neuroptics_blueprint": [
+      "SarynP头部"
+    ],
+    "saryn_prime_set": [
+      "SarynP一套"
+    ],
+    "saryn_prime_systems_blueprint": [
+      "SarynP系统"
+    ],
+    "scindo_prime_blade": [
+      "分裂斩斧P刀刃"
+    ],
+    "scindo_prime_blueprint": [
+      "分裂斩斧P蓝图"
+    ],
+    "scindo_prime_handle": [
+      "分裂斩斧P握柄"
+    ],
+    "scindo_prime_set": [
+      "分裂斩斧P一套"
+    ],
+    "scourge_prime_barrel": [
+      "祸根P枪管"
+    ],
+    "scourge_prime_blade": [
+      "祸根P刀刃"
+    ],
+    "scourge_prime_blueprint": [
+      "祸根P蓝图"
+    ],
+    "scourge_prime_handle": [
+      "祸根P握柄"
+    ],
+    "scourge_prime_set": [
+      "祸根P一套"
+    ],
+    "secondary_cryogenic": [
+      "次要低温"
+    ],
+    "secondary_deadhead": [
+      "次要死首"
+    ],
+    "secondary_dexterity": [
+      "次要熟练"
+    ],
+    "secondary_encumber": [
+      "次要妨害"
+    ],
+    "secondary_enervate": [
+      "次要失活"
+    ],
+    "secondary_fortifier": [
+      "次要筑垒"
+    ],
+    "secondary_irradiate": [
+      "次要照射"
+    ],
+    "secondary_kinship": [
+      "次要手足"
+    ],
+    "secondary_merciless": [
+      "次要无情"
+    ],
+    "secondary_outburst": [
+      "次要爆发"
+    ],
+    "secondary_shiver": [
+      "次要冷颤"
+    ],
+    "secondary_surge": [
+      "次要激涌"
+    ],
+    "secura_dual_cestra": [
+      "锡斯特双枪",
+      "保障锡斯特双枪"
+    ],
+    "secura_lecta": [
+      "勒克塔",
+      "保障勒克塔"
+    ],
+    "secura_penta": [
+      "潘塔",
+      "保障潘塔"
+    ],
+    "semi_pistol_cannonade": [
+      "手枪炮轰"
+    ],
+    "semi_rifle_cannonade": [
+      "步枪炮轰"
+    ],
+    "sevagoth_prime_blueprint": [
+      "SevagothP蓝图"
+    ],
+    "sevagoth_prime_chassis_blueprint": [
+      "SevagothP机体"
+    ],
+    "sevagoth_prime_neuroptics_blueprint": [
+      "SevagothP头部"
+    ],
+    "sevagoth_prime_set": [
+      "SevagothP一套"
+    ],
+    "sevagoth_prime_systems_blueprint": [
+      "SevagothP系统"
+    ],
+    "shade_prime_blueprint": [
+      "阴影P蓝图"
+    ],
+    "shade_prime_carapace": [
+      "阴影P外壳"
+    ],
+    "shade_prime_cerebrum": [
+      "阴影P头部"
+    ],
+    "shade_prime_set": [
+      "阴影P一套"
+    ],
+    "shade_prime_systems": [
+      "阴影P系统"
+    ],
+    "shotgun_cannonade": [
+      "霰弹枪炮轰"
+    ],
+    "shotgun_elementalist": [
+      "散弹枪元素师"
+    ],
+    "shotgun_riven_mod_(veiled)": [
+      "散弹未开",
+      "霰弹未开",
+      "散弹枪未开",
+      "霰弹枪未开"
+    ],
+    "shotgun_vendetta": [
+      "霰弹仇杀",
+      "散弹仇杀"
+    ],
+    "sicarus_prime_barrel": [
+      "暗杀者P枪管"
+    ],
+    "sicarus_prime_blueprint": [
+      "暗杀者P蓝图"
+    ],
+    "sicarus_prime_receiver": [
+      "暗杀者P枪机"
+    ],
+    "sicarus_prime_set": [
+      "暗杀者P一套"
+    ],
+    "silva_and_aegis_prime_blade": [
+      "席瓦&神盾P刀刃",
+      "席瓦神盾P刀刃"
+    ],
+    "silva_and_aegis_prime_blueprint": [
+      "席瓦&神盾P蓝图",
+      "席瓦神盾P蓝图"
+    ],
+    "silva_and_aegis_prime_guard": [
+      "席瓦&神盾P护手",
+      "席瓦神盾P护手"
+    ],
+    "silva_and_aegis_prime_hilt": [
+      "席瓦&神盾P握柄",
+      "席瓦神盾P握柄"
+    ],
+    "silva_and_aegis_prime_set": [
+      "席瓦&神盾P一套",
+      "席瓦神盾P一套"
+    ],
+    "snipetron_vandal_barrel": [
+      "狙击特昂 枪管",
+      "狙击特昂破坏者 枪管"
+    ],
+    "snipetron_vandal_blueprint": [
+      "狙击特昂 蓝图",
+      "狙击特昂破坏者 蓝图"
+    ],
+    "snipetron_vandal_receiver": [
+      "狙击特昂 枪机",
+      "狙击特昂破坏者 枪机"
+    ],
+    "snipetron_vandal_set": [
+      "狙击特昂 一套",
+      "狙击特昂破坏者 一套"
+    ],
+    "snipetron_vandal_stock": [
+      "狙击特昂 枪托",
+      "狙击特昂破坏者 枪托"
+    ],
+    "soma_prime_barrel": [
+      "月神P枪管"
+    ],
+    "soma_prime_blueprint": [
+      "月神P蓝图"
+    ],
+    "soma_prime_receiver": [
+      "月神P枪机"
+    ],
+    "soma_prime_set": [
+      "月神P一套"
+    ],
+    "soma_prime_stock": [
+      "月神P枪托"
+    ],
+    "spectra_vandal_barrel": [
+      "光谱切割器 枪管",
+      "光谱切割器破坏者 枪管"
+    ],
+    "spectra_vandal_blueprint": [
+      "光谱切割器 蓝图",
+      "光谱切割器破坏者 蓝图"
+    ],
+    "spectra_vandal_chassis": [
+      "光谱切割器 机体",
+      "光谱切割器破坏者 机体"
+    ],
+    "spectra_vandal_handle": [
+      "光谱切割器 握柄",
+      "光谱切割器破坏者 握柄"
+    ],
+    "spectra_vandal_set": [
+      "光谱切割器 一套",
+      "光谱切割器破坏者 一套"
+    ],
+    "spira_prime_blade": [
+      "旋刃飞刀P刀刃"
+    ],
+    "spira_prime_blueprint": [
+      "旋刃飞刀P蓝图"
+    ],
+    "spira_prime_pouch": [
+      "旋刃飞刀P镖袋"
+    ],
+    "spira_prime_set": [
+      "旋刃飞刀P一套"
+    ],
+    "stradavar_prime_barrel": [
+      "斯特拉迪瓦P枪管"
+    ],
+    "stradavar_prime_blueprint": [
+      "斯特拉迪瓦P蓝图"
+    ],
+    "stradavar_prime_receiver": [
+      "斯特拉迪瓦P枪机"
+    ],
+    "stradavar_prime_set": [
+      "斯特拉迪瓦P一套"
+    ],
+    "stradavar_prime_stock": [
+      "斯特拉迪瓦P枪托"
+    ],
+    "strun_prime_barrel": [
+      "斯特朗P枪管"
+    ],
+    "strun_prime_blueprint": [
+      "斯特朗P蓝图"
+    ],
+    "strun_prime_receiver": [
+      "斯特朗P枪机"
+    ],
+    "strun_prime_set": [
+      "斯特朗P一套"
+    ],
+    "strun_prime_stock": [
+      "斯特朗P枪托"
+    ],
+    "strun_wraith_barrel": [
+      "斯特朗亡魂 枪管"
+    ],
+    "strun_wraith_blueprint": [
+      "斯特朗亡魂 蓝图"
+    ],
+    "strun_wraith_receiver": [
+      "斯特朗亡魂 枪机"
+    ],
+    "strun_wraith_set": [
+      "斯特朗亡魂 一套"
+    ],
+    "strun_wraith_stock": [
+      "斯特朗亡魂 枪托"
+    ],
+    "styanax_prime_blueprint": [
+      "StyanaxP蓝图"
+    ],
+    "styanax_prime_chassis_blueprint": [
+      "StyanaxP机体"
+    ],
+    "styanax_prime_neuroptics_blueprint": [
+      "StyanaxP头部"
+    ],
+    "styanax_prime_set": [
+      "StyanaxP一套"
+    ],
+    "styanax_prime_systems_blueprint": [
+      "StyanaxP系统"
+    ],
+    "supra_vandal": [
+      "苏普拉",
+      "苏普拉破坏者",
+      "莲花苏普拉"
+    ],
+    "sybaris_prime_barrel": [
+      "席芭莉丝P枪管"
+    ],
+    "sybaris_prime_blueprint": [
+      "席芭莉丝P蓝图"
+    ],
+    "sybaris_prime_receiver": [
+      "席芭莉丝P枪机"
+    ],
+    "sybaris_prime_set": [
+      "席芭莉丝P一套"
+    ],
+    "sybaris_prime_stock": [
+      "席芭莉丝P枪托"
+    ],
+    "synoid_gammacor": [
+      "咖玛腕甲枪",
+      "枢议咖玛腕甲枪"
+    ],
+    "synoid_heliocor": [
+      "赫利俄光锤",
+      "枢议赫利俄光锤"
+    ],
+    "synoid_simulor": [
+      "重力奇点拟成枪",
+      "枢议重力奇点拟成枪"
+    ],
+    "tatsu_prime_blade": [
+      "龙辰P刀刃"
+    ],
+    "tatsu_prime_blueprint": [
+      "龙辰P蓝图"
+    ],
+    "tatsu_prime_handle": [
+      "龙辰P握柄"
+    ],
+    "tatsu_prime_set": [
+      "龙辰P一套"
+    ],
+    "tekko_prime_blade": [
+      "铁钩手甲P刀刃"
+    ],
+    "tekko_prime_blueprint": [
+      "铁钩手甲P蓝图"
+    ],
+    "tekko_prime_gauntlet": [
+      "铁钩手甲P拳套"
+    ],
+    "tekko_prime_set": [
+      "铁钩手甲P一套"
+    ],
+    "telos_akbolto": [
+      "终极螺钉双枪"
+    ],
+    "telos_boltace": [
+      "螺钉拐刃",
+      "终极螺钉拐刃"
+    ],
+    "telos_boltor": [
+      "终极螺钉步枪"
+    ],
+    "tenora_prime_barrel": [
+      "双簧管P枪管"
+    ],
+    "tenora_prime_blueprint": [
+      "双簧管P蓝图"
+    ],
+    "tenora_prime_receiver": [
+      "双簧管P枪机"
+    ],
+    "tenora_prime_set": [
+      "双簧管P一套"
+    ],
+    "tenora_prime_stock": [
+      "双簧管P枪托"
+    ],
+    "theorem_contagion": [
+      "定理触染"
+    ],
+    "theorem_demulcent": [
+      "定理缓和"
+    ],
+    "theorem_infection": [
+      "定理感染"
+    ],
+    "tiberon_prime_barrel": [
+      "狂鲨P枪管"
+    ],
+    "tiberon_prime_blueprint": [
+      "狂鲨P蓝图"
+    ],
+    "tiberon_prime_receiver": [
+      "狂鲨P枪机"
+    ],
+    "tiberon_prime_set": [
+      "狂鲨P一套"
+    ],
+    "tiberon_prime_stock": [
+      "狂鲨P枪托"
+    ],
+    "tigris_prime_barrel": [
+      "猛虎P枪管"
+    ],
+    "tigris_prime_blueprint": [
+      "猛虎P蓝图"
+    ],
+    "tigris_prime_receiver": [
+      "猛虎P枪机"
+    ],
+    "tigris_prime_set": [
+      "猛虎P一套"
+    ],
+    "tigris_prime_stock": [
+      "猛虎P枪托"
+    ],
+    "tipedo_prime_blueprint": [
+      "提佩多P蓝图"
+    ],
+    "tipedo_prime_handle": [
+      "提佩多P握柄"
+    ],
+    "tipedo_prime_ornament": [
+      "提佩多P饰物"
+    ],
+    "tipedo_prime_set": [
+      "提佩多P一套"
+    ],
+    "titania_prime_blueprint": [
+      "TitaniaP蓝图"
+    ],
+    "titania_prime_chassis_blueprint": [
+      "TitaniaP机体"
+    ],
+    "titania_prime_neuroptics_blueprint": [
+      "TitaniaP头部"
+    ],
+    "titania_prime_set": [
+      "TitaniaP一套"
+    ],
+    "titania_prime_systems_blueprint": [
+      "TitaniaP系统"
+    ],
+    "trinity_prime_blueprint": [
+      "TrinityP蓝图"
+    ],
+    "trinity_prime_chassis_blueprint": [
+      "TrinityP机体"
+    ],
+    "trinity_prime_neuroptics_blueprint": [
+      "TrinityP头部"
+    ],
+    "trinity_prime_set": [
+      "TrinityP一套"
+    ],
+    "trinity_prime_systems_blueprint": [
+      "TrinityP系统"
+    ],
+    "trumna_prime_barrel": [
+      "灭杀者P枪管"
+    ],
+    "trumna_prime_blueprint": [
+      "灭杀者P蓝图"
+    ],
+    "trumna_prime_receiver": [
+      "灭杀者P枪机"
+    ],
+    "trumna_prime_set": [
+      "灭杀者P一套"
+    ],
+    "trumna_prime_stock": [
+      "灭杀者P枪托"
+    ],
+    "twin_vipers_wraith_barrels": [
+      "双子蝰蛇 枪管",
+      "双子蝰蛇亡魂 枪管"
+    ],
+    "twin_vipers_wraith_blueprint": [
+      "双子蝰蛇 蓝图",
+      "双子蝰蛇亡魂 蓝图"
+    ],
+    "twin_vipers_wraith_link": [
+      "双子蝰蛇 连接器",
+      "双子蝰蛇亡魂 连接器"
+    ],
+    "twin_vipers_wraith_receivers": [
+      "双子蝰蛇 枪机",
+      "双子蝰蛇亡魂 枪机"
+    ],
+    "twin_vipers_wraith_set": [
+      "双子蝰蛇 一套",
+      "双子蝰蛇亡魂 一套"
+    ],
+    "vadarya_prime_barrel": [
+      "瓦德雅P枪管"
+    ],
+    "vadarya_prime_blueprint": [
+      "瓦德雅P蓝图"
+    ],
+    "vadarya_prime_receiver": [
+      "瓦德雅P枪机"
+    ],
+    "vadarya_prime_set": [
+      "瓦德雅P一套"
+    ],
+    "vadarya_prime_stock": [
+      "瓦德雅P枪托"
+    ],
+    "valkyr_prime_blueprint": [
+      "ValkyrP蓝图"
+    ],
+    "valkyr_prime_chassis_blueprint": [
+      "ValkyrP机体"
+    ],
+    "valkyr_prime_neuroptics_blueprint": [
+      "ValkyrP头部"
+    ],
+    "valkyr_prime_set": [
+      "ValkyrP一套"
+    ],
+    "valkyr_prime_systems_blueprint": [
+      "ValkyrP系统"
+    ],
+    "vanguard_c1_relic": [
+      "先锋C1",
+      "先C1"
+    ],
+    "vanguard_e1_relic": [
+      "先锋E1",
+      "先E1"
+    ],
+    "vanguard_m1_relic": [
+      "先锋M1",
+      "先M1"
+    ],
+    "vanguard_p1_relic": [
+      "先锋P1",
+      "先P1"
+    ],
+    "vasto_prime_barrel": [
+      "瓦斯托P枪管"
+    ],
+    "vasto_prime_blueprint": [
+      "瓦斯托P蓝图"
+    ],
+    "vasto_prime_receiver": [
+      "瓦斯托P枪机"
+    ],
+    "vasto_prime_set": [
+      "瓦斯托P一套"
+    ],
+    "vauban_prime_blueprint": [
+      "VaubanP蓝图"
+    ],
+    "vauban_prime_chassis_blueprint": [
+      "VaubanP机体"
+    ],
+    "vauban_prime_neuroptics_blueprint": [
+      "VaubanP头部"
+    ],
+    "vauban_prime_set": [
+      "VaubanP一套"
+    ],
+    "vauban_prime_systems_blueprint": [
+      "VaubanP系统"
+    ],
+    "vaykor_hek": [
+      "海克",
+      "勇气海克"
+    ],
+    "vaykor_marelok": [
+      "玛瑞火枪",
+      "勇气玛瑞火枪"
+    ],
+    "vaykor_sydon": [
+      "恶龙",
+      "勇气恶龙"
+    ],
+    "vectis_prime_barrel": [
+      "守望者P枪管"
+    ],
+    "vectis_prime_blueprint": [
+      "守望者P蓝图"
+    ],
+    "vectis_prime_receiver": [
+      "守望者P枪机"
+    ],
+    "vectis_prime_set": [
+      "守望者P一套"
+    ],
+    "vectis_prime_stock": [
+      "守望者P枪托"
+    ],
+    "velox_prime_barrel": [
+      "逐电P枪管"
+    ],
+    "velox_prime_blueprint": [
+      "逐电P蓝图"
+    ],
+    "velox_prime_receiver": [
+      "逐电P枪机"
+    ],
+    "velox_prime_set": [
+      "逐电P一套"
+    ],
+    "venato_prime_blade": [
+      "脉纹P刀刃"
+    ],
+    "venato_prime_blueprint": [
+      "脉纹P蓝图"
+    ],
+    "venato_prime_handle": [
+      "脉纹P握柄"
+    ],
+    "venato_prime_set": [
+      "脉纹P一套"
+    ],
+    "venka_prime_blades": [
+      "凯旋之爪P爪刃"
+    ],
+    "venka_prime_blueprint": [
+      "凯旋之爪P蓝图"
+    ],
+    "venka_prime_gauntlet": [
+      "凯旋之爪P手套"
+    ],
+    "venka_prime_set": [
+      "凯旋之爪P一套"
+    ],
+    "viper_wraith": [
+      "蝰蛇",
+      "蝰蛇亡魂"
+    ],
+    "virtuos_forge": [
+      "正直熔炉"
+    ],
+    "virtuos_fury": [
+      "正直狂怒"
+    ],
+    "virtuos_ghost": [
+      "正直鬼魅"
+    ],
+    "virtuos_null": [
+      "正直空无"
+    ],
+    "virtuos_shadow": [
+      "正直暗影"
+    ],
+    "virtuos_spike": [
+      "正直尖刺"
+    ],
+    "virtuos_strike": [
+      "正直打击"
+    ],
+    "virtuos_surge": [
+      "正直突波"
+    ],
+    "virtuos_tempo": [
+      "正直节奏"
+    ],
+    "virtuos_trojan": [
+      "正直特洛伊"
+    ],
+    "volnus_prime_blueprint": [
+      "创伤P蓝图"
+    ],
+    "volnus_prime_handle": [
+      "创伤P握柄"
+    ],
+    "volnus_prime_head": [
+      "创伤P锤头"
+    ],
+    "volnus_prime_set": [
+      "创伤P一套"
+    ],
+    "volt_prime_blueprint": [
+      "VoltP蓝图"
+    ],
+    "volt_prime_chassis_blueprint": [
+      "VoltP机体"
+    ],
+    "volt_prime_neuroptics_blueprint": [
+      "VoltP头部"
+    ],
+    "volt_prime_set": [
+      "VoltP一套"
+    ],
+    "volt_prime_systems_blueprint": [
+      "VoltP系统"
+    ],
+    "voruna_prime_blueprint": [
+      "VorunaP蓝图"
+    ],
+    "voruna_prime_chassis_blueprint": [
+      "VorunaP机体"
+    ],
+    "voruna_prime_neuroptics_blueprint": [
+      "VorunaP头部"
+    ],
+    "voruna_prime_set": [
+      "VorunaP一套"
+    ],
+    "voruna_prime_systems_blueprint": [
+      "VorunaP系统"
+    ],
+    "vulkar_wraith": [
+      "金工火神",
+      "金工火神亡魂"
+    ],
+    "wisp_prime_blueprint": [
+      "WispP蓝图"
+    ],
+    "wisp_prime_chassis_blueprint": [
+      "WispP机体"
+    ],
+    "wisp_prime_neuroptics_blueprint": [
+      "WispP头部"
+    ],
+    "wisp_prime_set": [
+      "WispP一套"
+    ],
+    "wisp_prime_systems_blueprint": [
+      "WispP系统"
+    ],
+    "wukong_prime_blueprint": [
+      "WukongP蓝图"
+    ],
+    "wukong_prime_chassis_blueprint": [
+      "WukongP机体"
+    ],
+    "wukong_prime_neuroptics_blueprint": [
+      "WukongP头部"
+    ],
+    "wukong_prime_set": [
+      "WukongP一套"
+    ],
+    "wukong_prime_systems_blueprint": [
+      "WukongP系统"
+    ],
+    "wyrm_prime_blueprint": [
+      "蛟龙P蓝图"
+    ],
+    "wyrm_prime_carapace": [
+      "蛟龙P外壳"
+    ],
+    "wyrm_prime_cerebrum": [
+      "蛟龙P头部"
+    ],
+    "wyrm_prime_set": [
+      "蛟龙P一套"
+    ],
+    "wyrm_prime_systems": [
+      "蛟龙P系统"
+    ],
+    "xaku_prime_blueprint": [
+      "XakuP蓝图"
+    ],
+    "xaku_prime_chassis_blueprint": [
+      "XakuP机体"
+    ],
+    "xaku_prime_neuroptics_blueprint": [
+      "XakuP头部"
+    ],
+    "xaku_prime_set": [
+      "XakuP一套"
+    ],
+    "xaku_prime_systems_blueprint": [
+      "XakuP系统"
+    ],
+    "yareli_prime_blueprint": [
+      "YareliP蓝图"
+    ],
+    "yareli_prime_chassis_blueprint": [
+      "YareliP机体"
+    ],
+    "yareli_prime_neuroptics_blueprint": [
+      "YareliP头部"
+    ],
+    "yareli_prime_set": [
+      "YareliP一套"
+    ],
+    "yareli_prime_systems_blueprint": [
+      "YareliP系统"
+    ],
+    "zakti_prime_barrel": [
+      "毒芽P枪管"
+    ],
+    "zakti_prime_blueprint": [
+      "毒芽P蓝图"
+    ],
+    "zakti_prime_receiver": [
+      "毒芽P枪机"
+    ],
+    "zakti_prime_set": [
+      "毒芽P一套"
+    ],
+    "zaw_riven_mod_(veiled)": [
+      "zaw未开"
+    ],
+    "zephyr_prime_blueprint": [
+      "ZephyrP蓝图"
+    ],
+    "zephyr_prime_chassis_blueprint": [
+      "ZephyrP机体"
+    ],
+    "zephyr_prime_neuroptics_blueprint": [
+      "ZephyrP头部"
+    ],
+    "zephyr_prime_set": [
+      "ZephyrP一套"
+    ],
+    "zephyr_prime_systems_blueprint": [
+      "ZephyrP系统"
+    ],
+    "zhuge_prime_barrel": [
+      "诸葛连弩P枪管"
+    ],
+    "zhuge_prime_blueprint": [
+      "诸葛连弩P蓝图"
+    ],
+    "zhuge_prime_grip": [
+      "诸葛连弩P弓身"
+    ],
+    "zhuge_prime_receiver": [
+      "诸葛连弩P枪机"
+    ],
+    "zhuge_prime_set": [
+      "诸葛连弩P一套"
+    ],
+    "zhuge_prime_string": [
+      "诸葛连弩P弓弦"
+    ],
+    "zylok_prime_barrel": [
+      "席尔火枪P枪管"
+    ],
+    "zylok_prime_blueprint": [
+      "席尔火枪P蓝图"
+    ],
+    "zylok_prime_receiver": [
+      "席尔火枪P枪机"
+    ],
+    "zylok_prime_set": [
+      "席尔火枪P一套"
+    ]
+  }
+}

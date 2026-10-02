@@ -1,0 +1,19 @@
+{
+  "A": {"nick": "account-a"},
+  "B": {"nick": "account-b"},
+  "C": {"nick": "account-c"},
+  "D": {"nick": "account-d"},
+  "E": {"nick": "account-e"},
+  "F": {"nick": "account-f"},
+  "G": {"nick": "account-g"},
+  "H": {"nick": "account-h"},
+  "I": {"nick": "account-i"},
+  "J": {"nick": "account-j"},
+  "K": {"nick": "account-k"},
+  "L": {"nick": "account-l"},
+  "M": {"nick": "account-m"},
+  "N": {"nick": "account-n"},
+  "O": {"nick": "account-o"},
+  "P": {"nick": "account-p"},
+  "Q": {"nick": "account-q"}
+}

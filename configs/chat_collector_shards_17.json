@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "matrix_size": 68,
+  "presence_snapshot": {
+    "enabled": false,
+    "manual_enabled": true,
+    "initial_delay_seconds": 5,
+    "request_gap_seconds": 4,
+    "timeout_seconds": 30,
+    "max_record_bytes": 786432
+  },
+  "reconnect": {
+    "enabled": true,
+    "backoff_seconds": [15, 30, 60, 120, 300],
+    "max_attempts": 12,
+    "reuse_ttl_hours": 6
+  },
+  "shards": {
+    "A": {"channels": ["#G_ZH", "#Q_ZH", "#R_ZH", "#T_ZH"]},
+    "B": {"channels": ["#G_FR", "#Q_FR", "#R_FR", "#T_FR"]},
+    "C": {"channels": ["#G_DE", "#Q_DE", "#R_DE", "#T_DE"]},
+    "D": {"channels": ["#G_ES", "#Q_ES", "#R_ES", "#T_ES"]},
+    "E": {"channels": ["#G_PT", "#Q_PT", "#R_PT", "#T_PT"]},
+    "F": {"channels": ["#G_RU", "#Q_RU", "#R_RU", "#T_RU"]},
+    "G": {"channels": ["#G_JA", "#Q_JA", "#R_JA", "#T_JA"]},
+    "H": {"channels": ["#G_KO", "#Q_KO", "#R_KO", "#T_KO"]},
+    "I": {"channels": ["#G_TC", "#Q_TC", "#R_TC", "#T_TC"]},
+    "J": {"channels": ["#G_IT", "#Q_IT", "#R_IT", "#T_IT"]},
+    "K": {"channels": ["#G_PL", "#Q_PL", "#R_PL", "#T_PL"]},
+    "L": {"channels": ["#G_UK", "#Q_UK", "#R_UK", "#T_UK"]},
+    "M": {"channels": ["#G_EN_NA", "#Q_EN_NA", "#R_EN_NA", "#T_EN_NA"]},
+    "N": {"channels": ["#G_EN_EU", "#Q_EN_EU", "#R_EN_EU", "#T_EN_EU"]},
+    "O": {"channels": ["#G_EN_SA", "#Q_EN_SA", "#R_EN_SA", "#T_EN_SA"]},
+    "P": {"channels": ["#G_EN_RU", "#Q_EN_RU", "#R_EN_RU", "#T_EN_RU"]},
+    "Q": {"channels": ["#G_EN_AS", "#Q_EN_AS", "#R_EN_AS", "#T_EN_AS"]}
+  }
+}

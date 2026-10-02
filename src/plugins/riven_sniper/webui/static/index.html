@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f5f2">
+<title>RivenSniper 控制台</title>
+<style>
+:root {
+  --bg:#f6f5f2; --surface:#fff; --surface-muted:#fbfaf7; --surface-active:#f0eee8;
+  --border:#e3e1db; --border-strong:#c9c6bd; --text:#26251f; --muted:#6a6860;
+  --ok:#0f6e56; --ok-soft:#e1f5ee; --warn:#854f0b; --warn-soft:#faeeda;
+  --err:#a32d2d; --err-soft:#fcebeb; --accent:#185fa5; --accent-soft:#edf4fb;
+  --radius:10px; --z-sticky:20; --z-nav:30; --z-toast:40;
+}
+* { box-sizing:border-box; margin:0; }
+html { color-scheme:light; }
+body {
+  min-width:320px; background:var(--bg); color:var(--text);
+  font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+}
+::selection { background:#cfe3f5; color:var(--text); }
+* { scrollbar-color:var(--border-strong) transparent; scrollbar-width:thin; }
+h1,h2,h3 { text-wrap:balance; }
+p { text-wrap:pretty; }
+[hidden] { display:none !important; }
+.sr-only {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
+  clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+.skip-link {
+  position:fixed; top:8px; left:8px; z-index:var(--z-toast); padding:8px 12px;
+  border-radius:8px; background:var(--text); color:#fff; transform:translateY(-150%);
+}
+.skip-link:focus { transform:translateY(0); }
+#app { min-height:100vh; }
+.layout { display:flex; min-height:100vh; }
+nav {
+  position:sticky; top:0; align-self:flex-start; display:flex; flex:0 0 224px; flex-direction:column;
+  width:224px; height:100vh; overflow-y:auto; padding:18px 12px; background:var(--surface);
+  border-right:1px solid var(--border);
+}
+.brand {
+  display:flex; align-items:flex-start; justify-content:space-between; gap:8px; padding:3px 10px 18px;
+}
+.brand-name { display:block; font-size:16px; font-weight:650; line-height:1.35; letter-spacing:-.01em; }
+.brand-meta { display:block; margin-top:2px; color:var(--muted); font-size:11px; font-weight:400; }
+.nav-close { display:none; }
+.nav-group { margin-bottom:14px; }
+.nav-label {
+  display:block; padding:5px 10px; color:var(--muted); font-size:11px; font-weight:600;
+  letter-spacing:.05em;
+}
+nav a {
+  display:block; width:100%; margin:1px 0; padding:8px 10px; border-radius:8px;
+  color:var(--muted); text-decoration:none; text-underline-offset:3px; touch-action:manipulation;
+  -webkit-tap-highlight-color:rgba(24,95,165,.14);
+}
+nav a:hover { background:var(--surface-muted); color:var(--text); }
+nav a:active { background:var(--surface-active); }
+nav a.active { background:var(--accent-soft); color:var(--accent); font-weight:600; }
+.nav-hint { display:block; margin-top:1px; color:inherit; font-size:11px; font-weight:400; opacity:.82; }
+.nav-backdrop { display:none; }
+main { flex:1; min-width:0; padding:28px 32px 56px; }
+main > * { width:100%; max-width:1280px; margin-right:auto; margin-left:auto; }
+main a,
+main a:visited { color:var(--accent); text-decoration-color:#8cb8df; text-underline-offset:3px; }
+main a:hover { color:#124d87; text-decoration-color:currentColor; }
+.page-header { display:grid; gap:16px; margin-bottom:20px; }
+.page-heading { display:flex; align-items:flex-start; gap:12px; min-width:0; }
+.menu-toggle { display:none; }
+.page-header h1 { font-size:25px; line-height:1.3; font-weight:650; letter-spacing:-.02em; }
+.page-header p { max-width:72ch; margin-top:3px; color:var(--muted); font-size:13px; }
+.group-context {
+  display:grid; grid-template-columns:minmax(260px,420px);
+  align-items:end; gap:12px; padding:13px 14px; border:1px solid var(--border);
+  border-radius:var(--radius); background:var(--surface);
+}
+.group-context.with-preferences {
+  grid-template-columns:minmax(220px,1fr) minmax(140px,170px) max-content max-content;
+}
+.context-field { display:flex; min-width:0; flex-direction:column; gap:4px; }
+.context-field > span { color:var(--muted); font-size:11px; font-weight:600; }
+.context-toggle { display:flex; min-height:37px; align-items:center; gap:8px; padding:0 4px; white-space:nowrap; }
+.context-toggle input { width:auto; }
+.section { display:none; }
+.section.active { display:block; }
+.surface,
+.card {
+  padding:16px 18px; border:1px solid var(--border); border-radius:var(--radius);
+  background:var(--surface);
+}
+.panel-header {
+  display:flex; align-items:flex-start; justify-content:space-between; gap:16px; margin-bottom:14px;
+}
+.panel-title { margin:0; font-size:14px; font-weight:650; }
+.panel-copy { max-width:72ch; margin-top:2px; color:var(--muted); font-size:12px; }
+.k { color:var(--muted); font-size:12px; }
+.v { margin-top:2px; font-size:18px; font-weight:650; font-variant-numeric:tabular-nums; }
+.stack { display:flex; flex-direction:column; gap:14px; }
+.split-layout { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr); gap:14px; }
+.overview-layout {
+  display:grid; grid-template-columns:minmax(0,1.3fr) minmax(320px,.7fr); gap:14px; margin-bottom:14px;
+}
+.dashboard-details { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.metric-grid {
+  display:grid; grid-template-columns:repeat(2,minmax(120px,1fr)); overflow:hidden;
+  border:1px solid var(--border); border-radius:var(--radius); background:var(--surface);
+}
+.metric { min-width:0; padding:15px 16px; }
+.metric:nth-child(odd) { border-right:1px solid var(--border); }
+.metric:nth-child(-n+2) { border-bottom:1px solid var(--border); }
+.status-list { display:grid; grid-template-columns:repeat(2,minmax(140px,1fr)); gap:12px 24px; margin-top:4px; }
+.status-item { min-width:0; }
+.status-item strong { display:block; color:var(--muted); font-size:11px; font-weight:600; }
+.status-item span { display:block; margin-top:1px; overflow-wrap:normal; word-break:keep-all; font-weight:550; }
+.metric dd { overflow-wrap:normal; word-break:keep-all; }
+.status-error {
+  display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:14px;
+  border-color:#e2caca; background:#fffafa; color:var(--text);
+}
+.status-error strong { display:block; color:var(--err); }
+.status-error span { display:block; margin-top:1px; color:var(--muted); }
+.quick-actions { display:flex; flex-direction:column; gap:12px; }
+.quick-action-row { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:end; gap:8px; }
+.quick-action-row.targeted { grid-template-columns:minmax(0,1fr) auto; }
+.toolbar { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+.toolbar .spacer { flex:1; }
+.tabs {
+  display:flex; width:max-content; max-width:100%; gap:2px; margin-bottom:16px; padding:3px;
+  overflow-x:auto; border:1px solid var(--border); border-radius:9px; background:var(--surface-muted);
+}
+.tabs button { border:0; background:transparent; color:var(--muted); white-space:nowrap; }
+.tabs button.active { background:var(--surface); color:var(--text); font-weight:600; }
+.tab-panel { display:none; }
+.tab-panel.active { display:block; }
+.segment { display:flex; gap:4px; }
+.segment button.active { border-color:var(--text); background:var(--text); color:#fff; }
+.table-wrap { max-width:100%; margin-bottom:16px; overflow-x:auto; border-radius:var(--radius); }
+.table-wrap > table { margin-bottom:0 !important; }
+table {
+  width:100%; overflow:hidden; border:1px solid var(--border); border-collapse:separate;
+  border-spacing:0; border-radius:var(--radius); background:var(--surface); font-size:13px;
+}
+caption { padding:0; }
+th,td { padding:9px 12px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top; }
+th { background:var(--surface-muted); color:var(--muted); font-size:11px; font-weight:600; white-space:nowrap; }
+tr:last-child td { border-bottom:0; }
+tbody tr:hover { background:#fdfcf9; }
+.numeric { font-variant-numeric:tabular-nums; }
+button,
+.button-link {
+  min-height:36px; padding:6px 12px; border:1px solid var(--border-strong); border-radius:8px;
+  background:var(--surface); color:var(--text); font:inherit; font-size:13px; line-height:1.4;
+  cursor:pointer; touch-action:manipulation; -webkit-tap-highlight-color:rgba(24,95,165,.14);
+}
+button:hover,
+.button-link:hover { border-color:#aaa79e; background:var(--surface-muted); }
+button:active,
+.button-link:active { background:var(--surface-active); }
+button.primary { border-color:var(--accent); background:var(--accent); color:#fff; }
+button.primary:hover { border-color:#124d87; background:#124d87; }
+button.danger { color:var(--err); }
+button.danger:hover { border-color:#d9aaaa; background:var(--err-soft); }
+button:disabled { cursor:not-allowed; opacity:.55; }
+button.state-toggle { min-width:52px; min-height:28px; padding:3px 10px; border:0; border-radius:99px; }
+button.state-toggle.on { background:var(--ok-soft); color:var(--ok); }
+button.state-toggle.off { background:var(--surface-active); color:var(--muted); }
+button.text-action { min-height:28px; padding:2px 4px; border:0; background:transparent; color:var(--accent); }
+button.text-action:hover { background:transparent; text-decoration:underline; text-underline-offset:3px; }
+button.compact { min-height:30px; padding:4px 9px; }
+.button-link { display:inline-flex; align-items:center; text-decoration:none; }
+.pill-action { margin:1px 3px 1px 0; border:0; cursor:pointer; }
+input,select,textarea {
+  min-height:37px; max-width:100%; padding:7px 10px; border:1px solid var(--border-strong);
+  border-radius:8px; background:var(--surface); color:var(--text); font:inherit;
+}
+textarea { min-height:90px; resize:vertical; }
+input[readonly] { border-color:var(--border); background:var(--surface-muted); color:var(--muted); }
+input[type="checkbox"] { min-height:auto; accent-color:var(--accent); }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible,
+a:focus-visible, summary:focus-visible {
+  outline:2px solid var(--accent); outline-offset:2px;
+}
+.ok { color:var(--ok); }
+.warn { color:var(--warn); }
+.err { color:var(--err); }
+.muted { color:var(--muted); }
+.row { display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
+.row:last-child { margin-bottom:0; }
+.form-grid { display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); align-items:end; gap:12px; }
+.form-field { display:flex; min-width:0; flex-direction:column; align-items:stretch; gap:4px; }
+.form-field > span { color:var(--muted); font-size:11px; font-weight:600; }
+.field-span-2 { grid-column:span 2; }
+.field-span-3 { grid-column:span 3; }
+.field-span-4 { grid-column:span 4; }
+.field-span-6 { grid-column:span 6; }
+.field-span-8 { grid-column:span 8; }
+.field-span-10 { grid-column:span 10; }
+.field-span-12 { grid-column:1 / -1; }
+.form-action { display:flex; align-items:center; gap:8px; min-height:37px; }
+.inline-edit {
+  padding:14px; border:1px solid var(--border-strong); border-radius:8px; background:var(--surface-muted);
+}
+.notice { padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface-muted); color:var(--muted); font-size:12px; }
+.settings-layout { display:grid; grid-template-columns:1fr 1fr; gap:20px 28px; }
+.settings-group { min-width:0; }
+.settings-group h3 { margin-bottom:3px; font-size:13px; }
+.settings-group > p { margin-bottom:12px; color:var(--muted); font-size:12px; }
+.setting-row {
+  display:grid; grid-template-columns:minmax(160px,1fr) 112px; align-items:center; gap:12px;
+  padding:9px 0; border-top:1px solid var(--border);
+}
+.setting-row label { min-width:0; }
+.setting-row label span { display:block; color:var(--muted); font-size:11px; }
+.setting-row input { width:100%; }
+.settings-actions { display:flex; align-items:center; gap:10px; margin-top:18px; padding-top:14px; border-top:1px solid var(--border); }
+.danger-zone { border-color:#e2caca; background:#fffafa; }
+.danger-zone .panel-title { color:var(--err); }
+.pill { display:inline-block; padding:1px 9px; border-radius:99px; font-size:12px; white-space:nowrap; }
+.pill-static { margin:1px 3px 1px 0; }
+.pill.on { background:var(--ok-soft); color:var(--ok); }
+.pill.off { background:var(--err-soft); color:var(--err); }
+#logbox {
+  max-height:64vh; overflow:auto; padding:12px 14px; border:1px solid var(--border);
+  border-radius:var(--radius); background:var(--surface); font:12px/1.9 ui-monospace,Consolas,monospace;
+}
+.target-form { display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); align-items:end; gap:10px; }
+.target-form > * { grid-column:span 2; }
+.target-form .field-wide { grid-column:span 4; }
+.target-form .form-action { grid-column:span 2; }
+.target-note-cell { min-width:180px; max-width:300px; white-space:pre-wrap; overflow-wrap:anywhere; }
+.target-name { display:block; max-width:220px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.target-actions { display:flex; align-items:center; gap:6px; white-space:nowrap; }
+.target-table { min-width:1080px; }
+.target-table th:first-child,
+.target-table td:first-child {
+  position:sticky; left:0; z-index:1; border-inline-end:1px solid var(--border); background:var(--surface);
+}
+.target-table th:first-child { z-index:2; background:var(--surface-muted); }
+.target-inline-panel { margin-bottom:14px; }
+.target-inline-panel .toolbar { margin-bottom:10px; }
+.target-inline-panel .panel-title { margin-bottom:0; }
+.weapon-catalog { display:flex; flex-direction:column; gap:8px; }
+.weapon-group {
+  overflow:hidden; border:1px solid var(--border); border-radius:8px; background:var(--surface);
+  content-visibility:auto; contain-intrinsic-size:48px 360px;
+}
+.weapon-group summary { padding:9px 12px; background:var(--surface-muted); color:var(--text); cursor:pointer; }
+.weapon-table-wrap { overflow-x:auto; }
+.weapon-group table { min-width:560px; border:0; border-radius:0; }
+.weapon-name { font-weight:600; }
+.weapon-meta { color:var(--muted); font-size:12px; overflow-wrap:anywhere; }
+#toast {
+  position:fixed; right:20px; bottom:20px; z-index:var(--z-toast); display:none;
+  max-width:min(420px,calc(100vw - 40px)); padding:10px 16px; overflow-wrap:anywhere;
+  border-radius:8px; background:var(--text); color:#fff; font-size:13px;
+}
+@media (pointer:coarse) {
+  nav a, button, .button-link, input, select { min-height:44px; }
+}
+@media (max-width:1080px) {
+  nav { flex-basis:200px; width:200px; }
+  main { padding:24px; }
+  .group-context { grid-template-columns:minmax(220px,420px); }
+  .group-context.with-preferences {
+    grid-template-columns:minmax(220px,1fr) minmax(140px,170px);
+  }
+  .wide-table { min-width:760px; }
+  .target-form > * { grid-column:span 3; }
+  .target-form .field-wide { grid-column:span 6; }
+  .target-form .form-action { grid-column:span 3; }
+}
+@media (max-width:820px) {
+  .overview-layout, .split-layout, .dashboard-details, .settings-layout { grid-template-columns:1fr; }
+  .form-grid > * { grid-column:span 6; }
+  .form-grid .field-span-8, .form-grid .field-span-12 { grid-column:1 / -1; }
+}
+@media (max-width:720px) {
+  .layout { display:block; }
+  nav {
+    position:fixed; top:0; bottom:0; left:0; z-index:var(--z-nav); visibility:hidden;
+    width:min(320px,calc(100vw - 48px)); height:100vh;
+    padding:calc(16px + env(safe-area-inset-top)) 12px calc(16px + env(safe-area-inset-bottom));
+    transform:translateX(-100%); transition:transform 140ms ease-out,visibility 140ms;
+  }
+  body.nav-open { overflow:hidden; }
+  body.nav-open nav { visibility:visible; transform:translateX(0); }
+  .nav-close { display:inline-flex; min-height:32px; padding:3px 9px; }
+  .nav-backdrop {
+    position:fixed; top:0; right:0; bottom:0; left:min(320px,calc(100vw - 48px));
+    z-index:calc(var(--z-nav) - 1); display:none; width:auto; height:100%;
+    padding:0; border:0; border-radius:0; background:rgba(38,37,31,.32); cursor:default;
+    overscroll-behavior:contain;
+  }
+  body.nav-open .nav-backdrop { display:block; }
+  main {
+    padding:18px max(14px,env(safe-area-inset-left)) calc(36px + env(safe-area-inset-bottom))
+      max(14px,env(safe-area-inset-right));
+  }
+  .menu-toggle { display:inline-flex; flex:0 0 auto; }
+  .page-header { gap:14px; }
+  .group-context { grid-template-columns:1fr 1fr; }
+  .group-context.with-preferences { grid-template-columns:1fr 1fr; }
+  .context-field:first-of-type { grid-column:1 / -1; }
+  .context-toggle { align-self:end; }
+  .metric-grid, .status-list { grid-template-columns:1fr 1fr; }
+  .target-form > *, .target-form .field-wide, .target-form .form-action { grid-column:span 6; }
+}
+@media (max-width:520px) {
+  .page-header h1 { font-size:22px; }
+  .group-context { grid-template-columns:1fr; }
+  .group-context.with-preferences { grid-template-columns:1fr; }
+  .context-field:first-of-type { grid-column:auto; }
+  .form-grid > *, .target-form > *, .target-form .field-wide, .target-form .form-action { grid-column:1 / -1; }
+  .panel-header { flex-direction:column; }
+  .surface, .card { padding:14px; }
+  .quick-action-row, .quick-action-row.targeted { grid-template-columns:1fr; }
+  .setting-row { grid-template-columns:1fr; gap:6px; }
+  .status-error { align-items:stretch; flex-direction:column; }
+  #toast { right:12px; bottom:12px; max-width:calc(100vw - 24px); }
+}
+@media (prefers-reduced-motion:reduce) {
+  nav { transition:none; }
+}
+</style>
+</head>
+<body>
+<div id="app">
+<a class="skip-link" href="#main-content">跳到主要内容</a>
+<button class="nav-backdrop" id="nav-backdrop" type="button" aria-label="关闭导航" onclick="closeNavigation()"></button>
+<div class="layout">
+<nav id="primary-nav" aria-label="管理控制台主导航">
+  <div class="brand">
+    <div><span class="brand-name" translate="no">RivenSniper</span><small class="brand-meta" id="ver"></small></div>
+    <button class="nav-close" type="button" onclick="closeNavigation()">关闭</button>
+  </div>
+  <div class="nav-group">
+    <span class="nav-label">工作台</span>
+    <a href="#dash" data-nav="dash" class="active">总览<span class="nav-hint">状态、告警与快捷操作</span></a>
+  </div>
+  <div class="nav-group">
+    <span class="nav-label">监控与推送</span>
+    <a href="#configs/list" data-nav="configs">狙击规则<span class="nav-hint">监听条件与卖家过滤</span></a>
+    <a href="#bargain/monitor" data-nav="bargain">捡漏监控<span class="nav-hint">道具与紫卡监控目标</span></a>
+  </div>
+  <div class="nav-group">
+    <span class="nav-label">Bot 管理</span>
+    <a href="#access" data-nav="access">推送目标<span class="nav-hint">平台、所有者与有效期</span></a>
+    <a href="#commands/list" data-nav="commands">命令管理<span class="nav-hint">触发名与别名</span></a>
+    <a href="#aliases/attributes" data-nav="aliases">识别词库<span class="nav-hint">词条、武器与类型</span></a>
+  </div>
+  <div class="nav-group">
+    <span class="nav-label">系统</span>
+    <a href="#records/logs" data-nav="records">运行记录<span class="nav-hint">实时日志与操作审计</span></a>
+    <a href="#system" data-nav="system">系统设置<span class="nav-hint">运行参数、全局算法与维护</span></a>
+  </div>
+</nav>
+<main id="main-content" tabindex="-1">
+<header class="page-header">
+  <div class="page-heading">
+    <button class="menu-toggle" id="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" onclick="toggleNavigation()">菜单</button>
+    <div>
+      <h1 id="page-title">总览</h1>
+      <p id="page-description">运行状态、今日统计与异常摘要</p>
+    </div>
+  </div>
+  <div class="group-context" id="group-context" hidden>
+    <label class="context-field" for="global-gsel"><span>当前目标</span>
+      <select id="global-gsel" name="current_target" disabled onchange="currentTargetChanged()"></select>
+    </label>
+    <label class="context-field" id="target-locale-field" for="target-locale" hidden><span>回复语言</span>
+      <select id="target-locale" name="target_locale" disabled onchange="targetPreferenceChanged('locale', this.value)">
+        <option value="zh">中文</option>
+        <option value="en">English</option>
+      </select>
+    </label>
+    <label class="context-toggle" id="target-channel-field" title="只有本管理后台可开启；新目标默认关闭；只发送命中当前目标狙击配置的频道紫卡" hidden>
+      <input id="target-channel" name="target_channel_enabled" type="checkbox" disabled onchange="targetPreferenceChanged('channel_enabled', this.checked)">
+      <span>接收频道消息</span>
+    </label>
+    <label class="context-toggle" id="target-wm-fast-field" title="只加速指定武器与三个明确正词条的配置；原轮询继续工作" hidden>
+      <input id="target-wm-fast" name="target_wm_fast_enabled" type="checkbox" disabled onchange="targetPreferenceChanged('wm_fast_enabled', this.checked)">
+      <span>WM 快速获取</span>
+    </label>
+  </div>
+</header>
+
+<div class="notice status-error" id="status-error" role="alert" hidden>
+  <div>
+    <strong>系统状态加载失败</strong>
+    <span id="status-error-message">暂时无法读取运行状态。</span>
+    <span id="status-error-time">尚未成功更新。</span>
+  </div>
+  <button type="button" onclick="refreshStatus(this)">重新加载</button>
+</div>
+
+<div id="sec-dash" class="section active">
+  <div class="overview-layout">
+    <section class="surface" aria-labelledby="health-title">
+      <div class="panel-header">
+        <div><h2 class="panel-title" id="health-title">链路状态</h2><p class="panel-copy">连接、轮询、发送与队列的当前状态</p></div>
+      </div>
+      <div class="status-list" id="dashhealth"></div>
+    </section>
+    <dl class="metric-grid" id="dashmetrics"></dl>
+  </div>
+  <section class="surface" style="margin-bottom:14px" aria-labelledby="quick-title">
+    <div class="panel-header">
+      <div><h2 class="panel-title" id="quick-title">链路验证</h2><p class="panel-copy">手动触发一次轮询，或向指定目标发送测试消息</p></div>
+    </div>
+    <div class="split-layout">
+      <div class="quick-action-row">
+        <div><strong>立即轮询 WFM</strong><p class="panel-copy">读取一次最新订单并显示候选、增量和命中数</p></div>
+        <button type="button" onclick="sysPollNow('dash-action-out', this)">立即轮询</button>
+      </div>
+      <div class="quick-action-row targeted">
+        <label class="form-field" for="dash-test-group"><span>测试推送目标</span>
+          <select id="dash-test-group" name="test_push_target"></select>
+        </label>
+        <button class="primary" type="button" onclick="sysTestPush('dash-test-group', this)">发送测试消息</button>
+      </div>
+    </div>
+    <div id="dash-action-out" class="muted" role="status" aria-live="polite" style="font:12px/1.7 ui-monospace,Consolas,monospace; margin-top:12px"></div>
+  </section>
+  <div class="dashboard-details">
+    <section class="surface" aria-labelledby="target-summary-title">
+      <div class="panel-header"><div><h2 class="panel-title" id="target-summary-title">目标摘要</h2><p class="panel-copy">配置数量和投递可用性</p></div><a href="#access">管理目标</a></div>
+      <div id="groupsbox" style="font-size:13px"></div>
+    </section>
+    <section class="surface" aria-labelledby="warning-title">
+      <div class="panel-header"><div><h2 class="panel-title" id="warning-title">最近告警</h2><p class="panel-copy">需要关注的运行异常</p></div><a href="#records/logs">查看日志</a></div>
+      <div id="warnbox" style="font:12px/1.8 ui-monospace,Consolas,monospace; max-height:180px; overflow:auto;"></div>
+    </section>
+  </div>
+</div>
+
+<div id="sec-configs" class="section">
+  <div class="tabs" role="tablist" aria-label="狙击规则视图">
+    <button type="button" data-tab-page="configs" data-tab="list" onclick="goTab('configs','list')">监听规则</button>
+    <button type="button" data-tab-page="configs" data-tab="blacklist" onclick="goTab('configs','blacklist')">卖家过滤</button>
+  </div>
+  <div class="tab-panel" data-tab-page="configs" data-tab="list">
+    <div class="split-layout" style="margin-bottom:14px">
+      <section class="surface" aria-labelledby="new-config-title">
+        <div class="panel-header"><div><h2 class="panel-title" id="new-config-title">新增监听规则</h2><p class="panel-copy">使用与聊天命令“狙击添加”相同的语法；/ 仅连接同一位置的 OR 备选，词条（包括任意）可追加 @最低评级，重复词条或别名会拒绝</p></div></div>
+        <div class="form-grid">
+          <label class="form-field field-span-10" for="nc-text"><span>规则内容</span>
+            <input id="nc-text" name="sniper_rule" autocomplete="off" oninput="ncPreview()">
+          </label>
+          <div class="form-action field-span-2"><button class="primary" type="button" onclick="ncSubmit(this)">添加规则</button></div>
+        </div>
+        <div id="nc-preview" role="status" aria-live="polite" style="font-size:13px; margin-top:8px"></div>
+      </section>
+      <section class="surface" aria-labelledby="copy-config-title">
+        <div class="panel-header"><div><h2 class="panel-title" id="copy-config-title">从其他目标复制</h2><p class="panel-copy">只补充当前目标缺少的规则，重复项自动跳过</p></div></div>
+        <label class="form-field" for="cfg-copy-source"><span>来源目标</span>
+          <select id="cfg-copy-source" name="config_copy_source"></select>
+        </label>
+        <div class="form-action" style="margin-top:10px"><button type="button" onclick="cfgCopy(this)">复制到当前目标</button></div>
+      </section>
+    </div>
+    <section aria-labelledby="config-list-title">
+      <div class="panel-header"><div><h2 class="panel-title" id="config-list-title">当前目标的监听规则</h2><p class="panel-copy">编号在当前目标内固定，删除后不会重新分配</p></div></div>
+      <div class="table-wrap">
+        <table id="cfgtable" class="wide-table">
+          <caption class="sr-only">当前目标的狙击监听规则</caption>
+          <thead><tr><th>编号</th><th>规则内容</th><th style="width:80px">操作</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <div class="tab-panel" data-tab-page="configs" data-tab="blacklist">
+    <section class="surface" style="margin-bottom:14px" aria-labelledby="blacklist-add-title">
+      <div class="panel-header"><div><h2 class="panel-title" id="blacklist-add-title">添加卖家过滤</h2><p class="panel-copy">每行一个卖家名，单个最多 32 个字符；WM 与频道名单相互独立，只影响对应来源的紫卡狙击，不影响捡漏</p></div></div>
+      <div class="form-grid">
+        <label class="form-field field-span-2" for="bl-scope"><span>消息来源</span>
+          <select id="bl-scope" name="blacklist_scope">
+            <option value="wm">WM</option>
+            <option value="channel">频道</option>
+            <option value="all">全部</option>
+          </select>
+        </label>
+        <label class="form-field field-span-8" for="bl-name"><span>卖家名称</span>
+          <textarea id="bl-name" name="blacklist_seller" rows="4" autocomplete="off" spellcheck="false"></textarea>
+        </label>
+        <div class="form-action field-span-2"><button class="primary" type="button" onclick="blAdd(this)">加入名单</button></div>
+      </div>
+    </section>
+    <section aria-labelledby="blacklist-list-title">
+      <div class="panel-header"><div><h2 class="panel-title" id="blacklist-list-title">当前过滤名单</h2><p class="panel-copy">删除后该卖家的对应来源消息会重新参与匹配</p></div></div>
+      <div class="table-wrap">
+        <table id="bltable">
+          <caption class="sr-only">当前目标的卖家过滤名单</caption>
+          <thead><tr><th style="width:100px">来源</th><th>卖家</th><th style="width:100px">操作</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div id="sec-bargain" class="section">
+  <div class="tab-panel" data-tab-page="bargain" data-tab="monitor">
+    <section class="surface" style="margin-bottom:14px" aria-labelledby="bargain-add-title">
+      <div class="panel-header">
+        <div><h2 class="panel-title" id="bargain-add-title">新增监控目标</h2><p class="panel-copy">名称支持中英文；选择道具或紫卡后，输入名称并确认唯一匹配项</p></div>
+        <div class="segment" role="group" aria-label="捡漏类型">
+          <button type="button" id="bg-kind-item" class="active" aria-pressed="true" onclick="bgSetKind('item')">道具</button>
+          <button type="button" id="bg-kind-riven" aria-pressed="false" onclick="bgSetKind('riven')">紫卡</button>
+        </div>
+        <input type="hidden" id="bg-kind" name="bargain_kind" value="item">
+      </div>
+      <div class="form-grid">
+        <label class="form-field field-span-6" for="bg-name"><span>道具或武器名称</span>
+          <input id="bg-name" name="bargain_name" autocomplete="off" oninput="bgResolvePreview()">
+        </label>
+        <label id="bg-level-field" hidden class="form-field field-span-2" for="bg-level"><span>等级</span>
+          <select id="bg-level" name="bargain_level"><option value="">请选择</option><option value="0">0 级</option><option value="max">满级</option></select>
+        </label>
+        <label class="form-field field-span-2" for="bg-threshold"><span>折扣阈值（%）</span>
+          <input id="bg-threshold" name="bargain_threshold" type="number" min="5" max="90" autocomplete="off">
+        </label>
+        <div class="form-action field-span-2"><button class="primary" type="button" onclick="bgAdd(this)">添加监控</button></div>
+      </div>
+      <div id="bg-resolve" role="status" aria-live="polite" style="font-size:13px; margin-top:8px"></div>
+    </section>
+    <div class="inline-edit" id="bg-edit-panel" hidden style="margin-bottom:14px">
+      <div class="panel-header">
+        <div><h2 class="panel-title" id="bg-edit-title">编辑监控项</h2><p class="panel-copy">可调整等级与折扣阈值；使用全局默认值时跟随“系统设置”变化</p></div>
+        <button class="compact" type="button" onclick="bgEditClose()">取消</button>
+      </div>
+      <div class="form-grid">
+        <label class="form-field field-span-3" id="bg-edit-level-field" hidden for="bg-edit-level"><span>等级</span>
+          <select id="bg-edit-level" name="bargain_level_edit"><option value="0">0 级</option><option value="max">满级</option></select>
+        </label>
+        <label class="form-field field-span-3" for="bg-edit-threshold"><span>折扣阈值（%）</span>
+          <input id="bg-edit-threshold" name="bargain_threshold_edit" type="number" min="5" max="90" autocomplete="off">
+        </label>
+        <label class="context-toggle field-span-3"><input id="bg-edit-default" name="bargain_threshold_default" type="checkbox" onchange="bgEditDefaultChanged()"> <span>使用全局默认值</span></label>
+        <div class="form-action field-span-3"><button class="primary" type="button" onclick="bgEditSave(this)">保存修改</button></div>
+      </div>
+    </div>
+    <div class="panel-header"><div><h2 class="panel-title">当前目标的监控项</h2><p class="panel-copy">单项阈值留空时使用“系统设置”中的全局捡漏价格参数</p></div></div>
+    <div class="table-wrap" id="bg-items-panel">
+      <table id="bgtable" class="wide-table">
+        <caption class="sr-only">当前目标的道具捡漏监控</caption>
+        <thead><tr><th>编号</th><th>道具</th><th style="width:90px">等级</th><th style="width:130px">折扣阈值</th><th style="width:150px">操作</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="table-wrap" id="bg-riven-panel" hidden>
+      <table id="bgrtable" class="wide-table">
+        <caption class="sr-only">当前目标的紫卡捡漏监控</caption>
+        <thead><tr><th>编号</th><th>紫卡武器</th><th style="width:130px">折扣阈值</th><th style="width:150px">操作</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="sec-records" class="section">
+  <div class="tabs" role="tablist" aria-label="运行记录视图">
+    <button type="button" data-tab-page="records" data-tab="logs" onclick="goTab('records','logs')">实时日志</button>
+    <button type="button" data-tab-page="records" data-tab="audit" onclick="goTab('records','audit')">操作审计</button>
+  </div>
+  <div class="tab-panel" data-tab-page="records" data-tab="logs">
+    <div class="panel-header">
+      <div><h2 class="panel-title">实时运行日志</h2><p class="panel-copy">日志流会自动重连；暂停只停止界面刷新，不停止接收</p></div>
+      <div class="toolbar" style="margin-bottom:0">
+        <label class="form-field" for="loglevel"><span>最低级别</span>
+          <select id="loglevel" name="log_level" onchange="renderLogs()">
+            <option value="INFO">INFO+</option>
+            <option value="WARNING">WARNING+</option>
+            <option value="ERROR">ERROR+</option>
+          </select>
+        </label>
+        <button type="button" onclick="toggleLogs(this)">暂停刷新</button>
+        <span class="muted" id="logstate" role="status" aria-live="polite"></span>
+      </div>
+    </div>
+    <div id="logbox"></div>
+  </div>
+  <div class="tab-panel" data-tab-page="records" data-tab="audit">
+    <div class="panel-header">
+      <div><h2 class="panel-title">管理操作审计</h2><p class="panel-copy">按入口或关键词筛选近期配置变更与维护动作</p></div>
+      <button type="button" onclick="loadAudit()">刷新记录</button>
+    </div>
+    <div class="toolbar">
+      <label class="form-field" for="audit-via"><span>操作入口</span>
+        <select id="audit-via" name="audit_source" onchange="renderAudit()">
+          <option value="">全部入口</option>
+          <option value="webui">WebUI</option>
+          <option value="qq">QQ</option>
+        </select>
+      </label>
+      <label class="form-field" for="audit-search"><span>关键词</span>
+        <input id="audit-search" name="audit_search" type="search" autocomplete="off" style="width:280px" oninput="renderAudit()">
+      </label>
+    </div>
+    <div class="table-wrap">
+      <table id="audittable" class="wide-table">
+        <caption class="sr-only">管理操作审计记录</caption>
+        <thead><tr><th>时间</th><th>来源</th><th>动作</th><th>对象</th><th>详情</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="sec-commands" class="section">
+  <div class="tab-panel" data-tab-page="commands" data-tab="list">
+  <div class="notice" style="margin-bottom:14px">内部固定映射名仅供程序识别，不能触发命令且不可编辑。每条命令的触发名和别名均可维护，并且不能与任何其他命令入口重复；保存后需重启 Bot 生效。</div>
+  <div class="surface" id="cmd-alias-bar" style="display:none; margin-bottom:14px">
+    <div class="panel-header"><div><h2 class="panel-title" id="ca-mode"></h2><p class="panel-copy">此处保存后会标记为待重启，现有命令继续按当前别名工作</p></div></div>
+    <div class="form-grid">
+      <label class="form-field field-span-6" for="ca-name"><span id="ca-label">命令入口</span>
+        <input id="ca-name" name="command_alias" autocomplete="off">
+      </label>
+      <div class="form-action field-span-6">
+        <button class="primary" type="button" id="ca-save-btn" onclick="caSave()">保存</button>
+        <button class="danger" type="button" id="ca-del-btn" onclick="caDelete()">删除别名</button>
+        <button type="button" onclick="$('#cmd-alias-bar').style.display='none'">取消</button>
+      </div>
+    </div>
+  </div>
+  <div class="panel-header"><div><h2 class="panel-title">命令目录</h2><p class="panel-copy">点击触发名或现有别名进行编辑；内部固定映射名始终只读</p></div></div>
+  <div class="table-wrap">
+    <table id="cmdtable" class="wide-table">
+      <caption class="sr-only">内部映射名、命令触发名与可用别名</caption>
+      <thead><tr><th style="width:230px">内部固定映射名</th><th style="width:240px">触发名</th><th>可用别名</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  </div>
+</div>
+
+<div id="sec-aliases" class="section">
+  <div class="toolbar">
+    <div class="tabs" role="tablist" aria-label="识别词库视图" style="margin-bottom:0">
+      <button type="button" data-tab-page="aliases" data-tab="attributes" onclick="goTab('aliases','attributes')">词条别名</button>
+      <button type="button" data-tab-page="aliases" data-tab="weapons" onclick="goTab('aliases','weapons')">武器别名</button>
+      <button type="button" data-tab-page="aliases" data-tab="categories" onclick="goTab('aliases','categories')">武器类型</button>
+    </div>
+    <span class="spacer"></span>
+    <button type="button" onclick="sysRefreshData('data-out', this)">更新基础数据</button>
+  </div>
+  <div class="notice" style="margin-bottom:14px">标准词条、武器、倾向和基准值由数据源生成且只读；自定义别名可在线编辑，改动即时生效并写入审计。</div>
+  <div id="data-out" class="muted" role="status" aria-live="polite" style="font:12px/1.7 ui-monospace,Consolas,monospace; white-space:pre-wrap; margin-bottom:10px"></div>
+  <div class="tab-panel" data-tab-page="aliases" data-tab="attributes">
+    <section class="surface" style="margin-bottom:14px" aria-labelledby="attribute-add-title">
+      <div class="panel-header"><div><h2 class="panel-title" id="attribute-add-title">新增词条别名</h2><p class="panel-copy">把常用说法映射到标准词条；“展示”决定是否出现在群内词条列表</p></div></div>
+      <div class="form-grid">
+        <label class="form-field field-span-4" for="aa-alias"><span>新别名</span><input id="aa-alias" name="attribute_alias" autocomplete="off"></label>
+        <label class="form-field field-span-4" for="aa-slug"><span>标准词条</span><select id="aa-slug" name="attribute_slug"></select></label>
+        <label class="context-toggle field-span-2"><input type="checkbox" id="aa-show" name="attribute_show"> <span>展示在列表</span></label>
+        <div class="form-action field-span-2"><button class="primary" type="button" onclick="attrAliasAdd()">添加别名</button></div>
+      </div>
+    </section>
+    <div class="inline-edit" id="aa-edit-bar" style="display:none; margin-bottom:14px">
+      <div class="panel-title" style="margin-bottom:8px">编辑别名 <span id="ae-old"></span></div>
+      <div class="form-grid">
+        <label class="form-field field-span-5" for="ae-name"><span>别名</span><input id="ae-name" name="attribute_alias_edit" autocomplete="off"></label>
+        <label class="context-toggle field-span-3"><input type="checkbox" id="ae-show" name="attribute_show_edit"> <span>展示在词条列表</span></label>
+        <div class="form-action field-span-4"><button class="primary" type="button" onclick="aeSave()">保存</button><button class="danger" type="button" onclick="aeDelete()">删除</button><button type="button" onclick="$('#aa-edit-bar').style.display='none'">取消</button></div>
+      </div>
+    </div>
+    <div class="panel-header"><div><h2 class="panel-title">词条目录</h2><p class="panel-copy">内置别名固定显示；点击自定义别名编辑；绿色别名会展示在群内词条列表</p></div></div>
+    <div class="table-wrap">
+      <table id="aliastable">
+        <caption class="sr-only">标准词条、内置别名与自定义别名</caption>
+        <thead><tr><th style="width:160px">标准词条</th><th>可用别名</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <div class="tab-panel" data-tab-page="aliases" data-tab="weapons">
+    <section class="surface" aria-labelledby="weapon-alias-title">
+      <div class="panel-header">
+        <div><h2 class="panel-title" id="weapon-alias-title">武器别名目录</h2><p class="panel-copy">自定义武器叫法映射到 WFM 武器；在武器行中添加或点击别名编辑</p></div>
+        <label class="form-field" for="wa-filter"><span>筛选武器或别名</span><input id="wa-filter" name="weapon_filter" type="search" autocomplete="off" style="width:240px" oninput="renderWeaponCatalog()"></label>
+      </div>
+      <datalist id="weaponlist"></datalist>
+      <div id="weaponcatalog" class="weapon-catalog"></div>
+    </section>
+  </div>
+
+  <div class="tab-panel" data-tab-page="aliases" data-tab="categories">
+    <div class="stack">
+      <section class="surface" aria-labelledby="wildcard-title">
+        <div class="panel-header"><div><h2 class="panel-title" id="wildcard-title">武器类型别名</h2><p class="panel-copy">把通配说法映射到武器类型，供狙击和捡漏按类型匹配；全部武器对应 all</p></div></div>
+        <div class="form-grid">
+          <label class="form-field field-span-4" for="wc-alias"><span>新别名</span><input id="wc-alias" name="wildcard_alias" autocomplete="off"></label>
+          <label class="form-field field-span-4" for="wc-cat"><span>武器类型</span><select id="wc-cat" name="wildcard_category"></select></label>
+          <div class="form-action field-span-4"><button class="primary" type="button" onclick="wildcardAliasAdd()">添加类型别名</button></div>
+        </div>
+      </section>
+      <div class="inline-edit" id="wc-edit-bar" style="display:none">
+        <div class="panel-title" style="margin-bottom:8px">编辑武器类型别名 <span id="wc-old"></span></div>
+        <div class="form-grid">
+          <label class="form-field field-span-4" for="wc-name"><span>别名</span><input id="wc-name" name="wildcard_alias_edit" autocomplete="off"></label>
+          <label class="form-field field-span-4" for="wc-editcat"><span>武器类型</span><select id="wc-editcat" name="wildcard_category_edit"></select></label>
+          <div class="form-action field-span-4"><button class="primary" type="button" onclick="wildcardAliasSave()">保存</button><button class="danger" type="button" onclick="wildcardAliasDelete()">删除</button><button type="button" onclick="$('#wc-edit-bar').style.display='none'">取消</button></div>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="wctable"><caption class="sr-only">武器类型与自定义别名</caption><thead><tr><th style="width:180px">武器类型</th><th>自定义别名（点击编辑）</th></tr></thead><tbody></tbody></table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="sec-access" class="section">
+  <section class="surface" style="margin-bottom:14px" aria-labelledby="wm-fast-title">
+    <div class="panel-header"><div><h2 class="panel-title" id="wm-fast-title">WM 快速获取</h2><p class="panel-copy" id="wm-fast-summary" role="status">请选择目标查看快速获取状态。</p></div></div>
+    <div class="table-wrap"><table><thead><tr><th>狙击配置</th><th>获取方式</th><th>查询组数</th></tr></thead><tbody id="wm-fast-rules"></tbody></table></div>
+  </section>
+  <section class="surface" style="margin-bottom:14px" aria-labelledby="target-add-title">
+    <div class="panel-header"><div><h2 class="panel-title" id="target-add-title">新增推送目标</h2><p class="panel-copy">QQ群必须绑定唯一所有者 QQ；Discord 私聊目标归对应用户。新目标默认使用中文并关闭频道消息。</p></div></div>
+    <div class="target-form">
+      <label class="form-field"><span>平台</span>
+        <select id="pt-platform" name="target_platform" onchange="targetPlatformChanged()"><option value="qq">QQ群</option><option value="discord">Discord 私聊</option></select>
+      </label>
+      <label class="form-field"><span>目标 ID</span>
+        <input id="pt-id" name="target_external_id" inputmode="numeric" autocomplete="off" spellcheck="false">
+      </label>
+      <label class="form-field" id="pt-owner-field"><span>所有者 QQ</span>
+        <input id="pt-owner" name="target_owner_qq" inputmode="numeric" autocomplete="off" spellcheck="false">
+      </label>
+      <label class="form-field field-wide"><span>备注（可选）</span>
+        <input id="pt-note" name="target_note" maxlength="500" autocomplete="off">
+      </label>
+      <label class="form-field"><span>初始状态</span>
+        <select id="pt-enable-mode" name="target_enable_mode" onchange="targetCreateModeChanged()">
+          <option value="permanent">永久启用</option>
+          <option value="timed">限时启用</option>
+          <option value="disabled">暂不启用</option>
+        </select>
+      </label>
+      <label class="form-field" id="pt-days-field" hidden><span>限时天数</span>
+        <input id="pt-days" name="target_duration_days" type="number" min="1" step="1" value="30" inputmode="numeric" autocomplete="off">
+      </label>
+      <div class="form-action"><button class="primary" type="button" onclick="managedTargetSave(this)">新增目标</button></div>
+    </div>
+  </section>
+
+  <div class="inline-edit target-inline-panel" id="pt-edit-panel" hidden>
+    <div class="toolbar">
+      <div class="panel-title">编辑 <span id="pt-edit-label"></span></div>
+      <span class="spacer"></span>
+      <button class="compact" type="button" onclick="managedTargetEditClose()">取消</button>
+    </div>
+    <div class="target-form">
+      <label class="form-field"><span>平台用户名（只读）</span>
+        <input id="pt-edit-username" readonly name="target_username" autocomplete="off">
+      </label>
+      <label class="form-field" id="pt-edit-owner-field"><span>所有者 QQ</span>
+        <input id="pt-edit-owner" name="target_owner_qq_edit" inputmode="numeric" autocomplete="off" spellcheck="false">
+      </label>
+      <label class="form-field field-wide"><span>备注</span>
+        <textarea id="pt-edit-note" name="target_note_edit" maxlength="500" autocomplete="off"></textarea>
+      </label>
+      <div class="form-action"><button class="primary" type="button" onclick="managedTargetEditSave(this)">保存目标信息</button></div>
+    </div>
+  </div>
+
+  <div class="inline-edit target-inline-panel" id="pt-enable-panel" hidden>
+    <div class="toolbar">
+      <div>
+        <div class="panel-title"><span id="pt-enable-action">启用</span> <span id="pt-enable-label"></span></div>
+        <div class="muted" id="pt-enable-help" style="font-size:12px">限时时长可设置为任意正整数天；到期后 Bot 自动停用该目标。</div>
+      </div>
+      <span class="spacer"></span>
+      <button class="compact" type="button" onclick="managedTargetEnableClose()">取消</button>
+    </div>
+    <div class="target-form">
+      <label class="form-field" id="pt-enable-choice-field"><span>有效期</span>
+        <select id="pt-enable-choice" name="target_enable_choice" onchange="targetEnableModeChanged()">
+          <option value="permanent">永久启用</option>
+          <option value="timed">限时启用</option>
+        </select>
+      </label>
+      <label class="form-field" id="pt-enable-days-field" hidden><span>限时天数</span>
+        <input id="pt-enable-days" name="target_enable_days" type="number" min="1" step="1" value="30" inputmode="numeric" autocomplete="off">
+      </label>
+      <div class="form-action"><button class="primary" id="pt-enable-submit" type="button" onclick="managedTargetEnableSave(this)">确认启用</button></div>
+    </div>
+  </div>
+
+  <div class="panel-header"><div><h2 class="panel-title">已登记目标</h2><p class="panel-copy">平台用户名实时查询且只读；编辑、启停或删除只影响对应目标</p></div></div>
+  <div class="table-wrap">
+    <table id="pttable" class="target-table">
+      <caption class="sr-only">已登记的 QQ 群和 Discord 私聊推送目标</caption>
+      <thead><tr><th style="width:230px">操作</th><th>平台</th><th>外部 ID</th><th>平台用户名</th><th>所有者 QQ</th><th>备注</th><th>内部目标</th><th>状态 / 有效期</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+<div id="sec-system" class="section">
+  <section class="surface" style="margin-bottom:14px" aria-labelledby="runtime-settings-title">
+    <div class="panel-header"><div><h2 class="panel-title" id="runtime-settings-title">运行参数</h2><p class="panel-copy">这些设置保存后立即热更新，并同步写回 .env</p></div><span class="muted" id="st-ro"></span></div>
+    <div class="settings-layout">
+      <div class="settings-group">
+        <h3>市场与发送</h3>
+        <p>控制订单读取、消息排队和发送时效。</p>
+        <div class="setting-row"><label for="st-poll">WFM 轮询间隔<span>单位：秒，允许 1–3600</span></label><input id="st-poll" name="sniper_poll_interval" type="number" min="1" max="3600" autocomplete="off"></div>
+        <div class="setting-row"><label for="st-wm-fast">WM 快速查询间隔<span>每组查询的目标间隔，单位：秒，允许 1–60</span></label><input id="st-wm-fast" name="wm_fast_interval" type="number" min="1" max="60" step="0.1" autocomplete="off"></div>
+        <div class="setting-row"><label for="st-send">同目标推送间隔<span>单位：秒，0 表示不等待</span></label><input id="st-send" name="sniper_send_interval" type="number" min="0" max="60" step="0.5" autocomplete="off"></div>
+        <div class="setting-row"><label for="st-concurrency">主通道并发上限<span>0 不额外限制；不同目标可并发，同一目标保持顺序</span></label><input id="st-concurrency" name="sniper_send_concurrency" type="number" min="0" step="1" autocomplete="off"></div>
+        <div class="setting-row"><label for="st-ttl">交易消息有效期<span>单位：秒，过期消息会丢弃</span></label><input id="st-ttl" name="trade_message_ttl_seconds" type="number" min="0.1" max="3600" step="0.1" autocomplete="off"></div>
+      </div>
+      <div class="settings-group">
+        <h3>规则与频道</h3>
+        <p>限制目标规则规模。频道紫卡固定使用 1 小时基础去重，各目标通过“去重”命令设置 1～72 小时。</p>
+        <div class="setting-row"><label for="st-max">每目标狙击规则上限<span>0 表示不限制</span></label><input id="st-max" name="sniper_max_configs_per_group" type="number" min="0" autocomplete="off"></div>
+      </div>
+    </div>
+    <div class="settings-actions"><button class="primary" type="button" onclick="saveSettings(this)">保存运行参数</button></div>
+  </section>
+  <div class="settings-layout" style="margin-bottom:14px">
+    <section class="surface" aria-labelledby="price-params-title">
+      <div class="panel-header"><div><h2 class="panel-title" id="price-params-title">捡漏价格判定</h2><p class="panel-copy">所有目标共用；道具使用 WM 日桶均价，紫卡使用本地小时样本的滚动均价</p></div></div>
+      <div class="setting-row"><label for="bp-item">道具折扣阈值<span>允许 5–90%</span></label><input id="bp-item" name="bargain_item_threshold" type="number" min="5" max="90" step="0.1" autocomplete="off"></div>
+      <div class="setting-row"><label for="bp-riven">紫卡折扣阈值<span>允许 5–90%</span></label><input id="bp-riven" name="bargain_riven_threshold" type="number" min="5" max="90" step="0.1" autocomplete="off"></div>
+      <div class="setting-row"><label for="bp-riven-hours">紫卡滚动均价窗口<span>单位：小时，最低 12</span></label><input id="bp-riven-hours" name="bargain_riven_hours" type="number" min="12" step="1" autocomplete="off"></div>
+      <div class="setting-row"><label for="bp-riven-samples">最低有效小时样本数<span>不能超过滚动窗口</span></label><input id="bp-riven-samples" name="bargain_riven_samples" type="number" min="1" step="1" autocomplete="off"></div>
+      <div class="settings-actions"><button class="primary" type="button" onclick="bgSaveParams(this)">保存价格参数</button></div>
+    </section>
+    <section class="surface" aria-labelledby="resource-limit-title">
+      <div class="panel-header"><div><h2 class="panel-title" id="resource-limit-title">捡漏资源上限</h2><p class="panel-copy">所有目标共用；限制合计占用的不同捡漏对象数量</p></div></div>
+      <div class="setting-row"><label for="bp-max">不同监控目标上限<span>0 表示不限制，最大 200</span></label><input id="bp-max" name="bargain_max_targets" type="number" min="0" max="200" autocomplete="off"></div>
+      <div class="settings-actions"><button class="primary" type="button" onclick="bgSaveLimit(this)">保存资源上限</button></div>
+    </section>
+  </div>
+  <div class="settings-layout">
+    <section class="surface" aria-labelledby="backup-title">
+      <div class="panel-header"><div><h2 class="panel-title" id="backup-title">数据库备份</h2><p class="panel-copy">下载当前业务数据库副本。基础数据更新位于“识别词库”，链路验证位于“总览”。</p></div></div>
+      <a class="button-link" href="/admin/api/system/backup">下载备份</a>
+    </section>
+    <section class="surface danger-zone" aria-labelledby="restart-title">
+      <div class="panel-header"><div><h2 class="panel-title" id="restart-title">重启 Bot</h2><p class="panel-copy">用于应用待重启的命令触发名、别名或恢复进程。守护服务会自动拉起；手动运行时需自行再次启动。</p></div></div>
+      <button class="danger" type="button" onclick="sysRestart()">确认并重启 Bot</button>
+    </section>
+  </div>
+  <div id="sys-out" role="status" aria-live="polite" style="font:12px/1.7 ui-monospace,Consolas,monospace; margin-top:12px; white-space:pre-wrap;"></div>
+</div>
+
+</main>
+</div></div>
+<div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const LV = {DEBUG:10, INFO:20, WARNING:30, ERROR:40, CRITICAL:50};
+let logPaused = false, logLines = [], evtSrc = null, statusTimer = null;
+let statusRefreshing = false, toastTimer = null, tabsReady = false;
+let knownTargets = [], currentPage = 'dash', currentTab = '';
+let managedTargetEditingScope = 0, managedTargetEnablingScope = 0;
+let managedTargetEnableAction = 'enable';
+let bgEditReturnFocusId = '', managedTargetEditReturnFocusId = '', managedTargetEnableReturnFocusId = '';
+let lastStatusUpdatedAt = 0;
+const statusTimeFormatter = new Intl.DateTimeFormat('zh-CN', {
+  hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false,
+});
+
+const ROUTES = {
+  dash: {title:'总览', description:'确认运行状态、关键指标与近期异常，并验证轮询和推送链路'},
+  configs: {title:'狙击规则', description:'管理当前目标的紫卡监听条件和来源卖家过滤', defaultTab:'list', tabs:['list','blacklist']},
+  bargain: {title:'捡漏监控', description:'维护当前目标的道具与紫卡捡漏项', defaultTab:'monitor', tabs:['monitor']},
+  commands: {title:'命令管理', description:'维护命令触发名与别名', defaultTab:'list', tabs:['list']},
+  aliases: {title:'识别词库', description:'维护词条、武器与武器类型的自定义别名', defaultTab:'attributes', tabs:['attributes','weapons','categories']},
+  access: {title:'推送目标', description:'管理 QQ 群与 Discord 私聊目标、所有者、备注和有效期'},
+  records: {title:'运行记录', description:'查看实时运行日志和管理操作审计', defaultTab:'logs', tabs:['logs','audit']},
+  system: {title:'系统设置', description:'集中配置运行参数与全局算法，并执行备份或重启'}
+};
+const LEGACY_ROUTES = {
+  platform:'access',
+  logs:'records/logs', audit:'records/audit'
+};
+
+async function api(path, opts) {
+  const r = await fetch('/admin/api' + path, Object.assign({headers:{'Content-Type':'application/json'}}, opts));
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(d.detail || r.statusText);
+  return d;
+}
+function toast(msg, isErr) {
+  const t = $('#toast'); t.textContent = msg;
+  t.style.background = isErr ? '#a32d2d' : '#26251f';
+  t.style.display = 'block';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.style.display = 'none', 2500);
+}
+function esc(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function js(s) { return esc(JSON.stringify(String(s ?? ''))); }
+function activeFocusId() { return document.activeElement?.id || ''; }
+function restoreFocusById(id) {
+  if (!id) return;
+  requestAnimationFrame(() => document.getElementById(id)?.focus({preventScroll:true}));
+}
+
+function setNavigationOpen(open) {
+  document.body.classList.toggle('nav-open', open);
+  $('#nav-toggle').setAttribute('aria-expanded', String(open));
+}
+function toggleNavigation() { setNavigationOpen(!document.body.classList.contains('nav-open')); }
+function closeNavigation(restoreFocus=true) {
+  setNavigationOpen(false);
+  if (restoreFocus && matchMedia('(max-width:720px)').matches)
+    setTimeout(() => $('#nav-toggle').focus({preventScroll:true}), 0);
+}
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && document.body.classList.contains('nav-open')) {
+    closeNavigation();
+  }
+});
+
+function statusLoaded() {
+  lastStatusUpdatedAt = Date.now();
+  $('#status-error').hidden = true;
+}
+function showStatusError(error) {
+  $('#status-error-message').textContent = `无法读取运行状态：${error.message}`;
+  $('#status-error-time').textContent = lastStatusUpdatedAt
+    ? `上次成功更新：${statusTimeFormatter.format(lastStatusUpdatedAt)}`
+    : `本次尝试：${statusTimeFormatter.format(Date.now())}；尚未成功更新。`;
+  $('#status-error').hidden = false;
+}
+
+function resolveRoute(raw) {
+  const mapped = LEGACY_ROUTES[raw] || raw || 'dash';
+  let [page, tab] = mapped.split('/');
+  if (!ROUTES[page]) page = 'dash';
+  const meta = ROUTES[page];
+  if (meta.tabs) tab = meta.tabs.includes(tab) ? tab : meta.defaultTab;
+  else tab = '';
+  return {page, tab, canonical: page + (tab ? '/' + tab : '')};
+}
+function goTab(page, tab) {
+  const next = resolveRoute(`${page}/${tab}`).canonical;
+  if (location.hash.slice(1) === next) nav(next);
+  else location.hash = next;
+}
+function setupTabs() {
+  if (tabsReady) return;
+  tabsReady = true;
+  document.querySelectorAll('.tabs[role="tablist"]').forEach(tablist => {
+    const buttons = [...tablist.querySelectorAll('button[data-tab-page]')];
+    buttons.forEach(button => {
+      const panel = document.querySelector(`.tab-panel[data-tab-page="${button.dataset.tabPage}"][data-tab="${button.dataset.tab}"]`);
+      const suffix = `${button.dataset.tabPage}-${button.dataset.tab}`;
+      button.id = `tab-${suffix}`;
+      button.setAttribute('role', 'tab');
+      button.setAttribute('aria-controls', `panel-${suffix}`);
+      panel.id = `panel-${suffix}`;
+      panel.setAttribute('role', 'tabpanel');
+      panel.setAttribute('aria-labelledby', button.id);
+      panel.hidden = true;
+    });
+    tablist.addEventListener('keydown', event => {
+      const index = buttons.indexOf(document.activeElement);
+      if (index < 0 || !['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
+      event.preventDefault();
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? buttons.length - 1 :
+        (index + (event.key === 'ArrowRight' ? 1 : -1) + buttons.length) % buttons.length;
+      buttons[next].focus();
+      buttons[next].click();
+    });
+  });
+}
+function activateTabs(page, tab) {
+  document.querySelectorAll(`[data-tab-page="${page}"]`).forEach(el => {
+    const active = el.dataset.tab === tab;
+    if (el.matches('button')) {
+      el.classList.toggle('active', active);
+      el.setAttribute('aria-selected', String(active));
+      el.tabIndex = active ? 0 : -1;
+    } else {
+      el.classList.toggle('active', active);
+      el.hidden = !active;
+    }
+  });
+}
+function pageUsesTarget(page, tab) {
+  return page === 'configs' || page === 'access' ||
+    (page === 'bargain' && tab === 'monitor');
+}
+function normalizeTarget(target) {
+  const scopeId = Number(target?.scope_id ?? target?.group_id ?? target);
+  if (!scopeId) return null;
+  const platform = target?.platform || (scopeId > 0 ? 'qq' : 'unknown');
+  return Object.assign({}, target, {
+    scope_id: scopeId,
+    platform,
+    external_id: String(target?.external_id ?? Math.abs(scopeId)),
+    label: target?.label || (platform === 'qq' ? `QQ群 ${scopeId}` : `${platform.toUpperCase()} 用户 ${Math.abs(scopeId)}`),
+  });
+}
+function targetByScope(scopeId) {
+  return knownTargets.find(target => target.scope_id === Number(scopeId)) || null;
+}
+function targetLabel(scopeId) {
+  return targetByScope(scopeId)?.label || `目标 ${scopeId}`;
+}
+function targetOptionsHtml(targets=knownTargets) {
+  return targets.map(target => {
+    const state = target.delivery_enabled === false ? '（投递关闭）' : '';
+    return `<option value="${target.scope_id}">${esc(target.label)}${state}</option>`;
+  }).join('');
+}
+function syncTargetOptions(targets) {
+  knownTargets = (targets || []).map(normalizeTarget).filter(Boolean);
+  const main = $('#global-gsel');
+  const saved = Number(main.value || localStorage.getItem('admin-current-target') ||
+                       localStorage.getItem('admin-current-group'));
+  const scopes = knownTargets.map(target => target.scope_id);
+  const selected = scopes.includes(saved) ? saved : (scopes[0] || 0);
+  main.innerHTML = knownTargets.length ? targetOptionsHtml() : '<option value="">暂无目标</option>';
+  main.disabled = !knownTargets.length;
+  if (selected) {
+    main.value = String(selected);
+    localStorage.setItem('admin-current-target', String(selected));
+  }
+  const quick = $('#dash-test-group');
+  const deliveryTargets = knownTargets.filter(target => target.delivery_enabled !== false);
+  const deliveryScopes = deliveryTargets.map(target => target.scope_id);
+  const quickCurrent = Number(quick.value);
+  const quickSelected = deliveryScopes.includes(quickCurrent)
+    ? quickCurrent : (deliveryTargets[0]?.scope_id || 0);
+  quick.innerHTML = deliveryTargets.length
+    ? targetOptionsHtml(deliveryTargets) : '<option value="">暂无已启用目标</option>';
+  quick.disabled = !deliveryTargets.length;
+  if (quickSelected) quick.value = String(quickSelected);
+  const copySource = $('#cfg-copy-source');
+  if (copySource) {
+    const current = currentScopeId();
+    const sources = knownTargets.filter(target => target.scope_id !== current);
+    copySource.innerHTML = sources.length
+      ? targetOptionsHtml(sources) : '<option value="">无其他目标</option>';
+    copySource.disabled = !sources.length;
+  }
+  syncTargetPreferences();
+}
+async function ensureTargetContext(force=false) {
+  if (knownTargets.length && !force) return;
+  try {
+    const st = await api('/status');
+    syncTargetOptions(st.targets || st.groups);
+    statusLoaded();
+  } catch (e) {
+    showStatusError(e);
+    throw e;
+  }
+}
+function currentScopeId() { return Number($('#global-gsel').value) || 0; }
+function currentTarget() { return targetByScope(currentScopeId()); }
+function syncTargetPreferences() {
+  const target = currentTarget();
+  $('#target-locale').disabled = !target;
+  $('#target-channel').disabled = !target;
+  $('#target-locale').value = target?.locale || 'zh';
+  $('#target-channel').checked = Boolean(target?.channel_enabled);
+  $('#target-wm-fast').disabled = !target;
+  $('#target-wm-fast').checked = Boolean(target?.wm_fast_enabled);
+}
+function currentTargetChanged() {
+  const scopeId = currentScopeId();
+  if (scopeId) localStorage.setItem('admin-current-target', String(scopeId));
+  syncTargetPreferences();
+  if (currentPage === 'access') loadWmFast().catch(e => { $('#wm-fast-summary').textContent = e.message; });
+  const copySource = $('#cfg-copy-source');
+  if (copySource) {
+    const sources = knownTargets.filter(target => target.scope_id !== scopeId);
+    copySource.innerHTML = sources.length
+      ? targetOptionsHtml(sources) : '<option value="">无其他目标</option>';
+    copySource.disabled = !sources.length;
+  }
+  if (currentPage === 'configs') loadConfigs().catch(e => toast(e.message, true));
+  if (currentPage === 'bargain' && currentTab === 'monitor') {
+    bgEditClose(false); bgLoadGroup().catch(e => toast(e.message, true));
+  }
+  if (currentPage === 'commands' && currentTab === 'list') loadCommands().catch(e => toast(e.message, true));
+}
+async function targetPreferenceChanged(field, value) {
+  const scopeId = currentScopeId();
+  const target = currentTarget();
+  if (!scopeId || !target) return;
+  try {
+    const d = await api(`/targets/${scopeId}/preferences`, {
+      method:'PATCH', body:JSON.stringify({[field]: value}),
+    });
+    Object.assign(target, d.preferences);
+    syncTargetPreferences();
+    toast(field === 'locale' ? '回复语言已更新' : `${field === 'wm_fast_enabled' ? 'WM 快速获取' : '频道消息'}已${value ? '启用' : '停用'}`);
+    if (field === 'wm_fast_enabled') await loadWmFast();
+  } catch (e) {
+    syncTargetPreferences(); toast(e.message, true);
+  }
+}
+async function nav(raw) {
+  const route = resolveRoute(raw);
+  const movedFromMobileNav = matchMedia('(max-width:720px)').matches &&
+    document.body.classList.contains('nav-open');
+  const shouldFocusMain = movedFromMobileNav || document.activeElement?.matches?.('a[href^="#"]');
+  currentPage = route.page; currentTab = route.tab;
+  if (location.hash.slice(1) !== route.canonical)
+    history.replaceState(null, '', '#' + route.canonical);
+  let activeNav = null;
+  document.querySelectorAll('nav a[data-nav]').forEach(a => {
+    const active = a.dataset.nav === route.page;
+    a.classList.toggle('active', active);
+    if (active) { a.setAttribute('aria-current', 'page'); activeNav = a; }
+    else a.removeAttribute('aria-current');
+  });
+  document.querySelectorAll('.section').forEach(s =>
+    s.classList.toggle('active', s.id === 'sec-' + route.page));
+  $('#page-title').textContent = ROUTES[route.page].title;
+  $('#page-description').textContent = ROUTES[route.page].description;
+  activateTabs(route.page, route.tab);
+  if (activeNav && matchMedia('(max-width:720px)').matches)
+    activeNav.scrollIntoView({block:'nearest', inline:'nearest'});
+  const targeted = pageUsesTarget(route.page, route.tab);
+  const context = $('#group-context');
+  const showTargetPreferences = route.page === 'access';
+  context.hidden = !targeted;
+  context.classList.toggle('with-preferences', showTargetPreferences);
+  $('#target-locale-field').hidden = !showTargetPreferences;
+  $('#target-channel-field').hidden = !showTargetPreferences;
+  $('#target-wm-fast-field').hidden = !showTargetPreferences;
+  if (showTargetPreferences) syncTargetPreferences();
+  if (matchMedia('(max-width:720px)').matches) {
+    closeNavigation(false);
+  }
+  if (shouldFocusMain) $('#main-content').focus({preventScroll:true});
+  try {
+    if (targeted) await ensureTargetContext();
+    if (route.page === 'dash') await refreshStatus();
+    if (route.page === 'configs') await loadConfigs();
+    if (route.page === 'bargain' && route.tab === 'monitor') await bgLoadGroup();
+    if (route.page === 'commands' && route.tab === 'list') await loadCommands();
+    if (route.page === 'aliases') await loadAliases(false);
+    if (route.page === 'access') { await loadManagedTargets(); await loadWmFast(); }
+    if (route.page === 'records' && route.tab === 'logs') renderLogs();
+    if (route.page === 'records' && route.tab === 'audit') await loadAudit();
+    if (route.page === 'system') await loadSettings();
+  } catch (e) { toast(e.message, true); }
+}
+window.addEventListener('hashchange', () => nav(location.hash.slice(1) || 'dash'));
+
+function fmtUp(s) {
+  if (s < 3600) return Math.floor(s/60) + ' 分钟';
+  if (s < 86400) return Math.floor(s/3600) + ' 小时' + Math.floor(s%3600/60) + ' 分';
+  return Math.floor(s/86400) + ' 天' + Math.floor(s%86400/3600) + ' 小时';
+}
+async function refreshStatus(button=null) {
+  if (statusRefreshing) return;
+  statusRefreshing = true;
+  if (button) buttonBusy(button, true, '正在加载…');
+  let st;
+  try { st = await api('/status'); } catch (e) {
+    showStatusError(e);
+    statusRefreshing = false;
+    if (button) buttonBusy(button, false);
+    return;
+  }
+  try {
+  syncTargetOptions(st.targets || st.groups);
+  $('#ver').textContent = 'v' + st.version + (st.dry_run ? ' · DRY-RUN' : '');
+  const p = st.poller, ago = p.last_poll_at ? Math.round(Date.now()/1000 - p.last_poll_at) + ' 秒前' : '—';
+  const sender = st.sender;
+  const delivery = st.delivery || {};
+  const queuedBySource = delivery.queued_by_source || {};
+  const inflightBySource = delivery.inflight_by_source || {};
+  const sourceNames = {irc:'IRC', wm:'WM', bargain:'捡漏', system:'系统'};
+  const sourceBacklog = Object.keys(sourceNames).map(key => {
+    const count = Number(queuedBySource[key] || 0) + Number(inflightBySource[key] || 0);
+    const age = Number((delivery.oldest_age_by_source || {})[key] || 0);
+    return `${sourceNames[key]} ${count}${age > 0 ? ` (${Math.round(age)}s)` : ''}`;
+  }).join(' · ');
+  const senderStatus = !sender ? '<span class="muted">—</span>'
+    : sender.state === 'running'
+      ? `<span class="ok">运行中${sender.restart_count ? ` · 已恢复 ${Number(sender.restart_count)} 次` : ''}</span>`
+      : sender.state === 'restarting'
+        ? `<span class="warn">重启中 · ${Number(sender.restart_count)} 次</span>`
+        : sender.state === 'starting'
+          ? '<span class="warn">启动中</span>'
+          : '<span class="err">已停止</span>';
+  const health = [
+    ['QQ Bot', !st.bot_connected ? '<span class="err">未连接</span>'
+        : (st.account_online === false ? '<span class="err">账号离线(需重登)</span>' : '<span class="ok">已连接</span>')],
+    ['Discord Bot', !st.discord_connected ? '<span class="muted">未连接</span>'
+        : (st.discord_ready ? '<span class="ok">已就绪</span>' : '<span class="warn">重连中</span>')],
+    ['SnowLuma', st.snowluma ? (st.snowluma.good ? '<span class="ok">正常</span>' : '<span class="warn">异常</span>') : '<span class="muted">—</span>'],
+    ['WFM 轮询', p.consecutive_failures > 0 ? `<span class="warn">失败×${p.consecutive_failures}</span>` : esc(ago)],
+    ['主发送链路', senderStatus],
+    ['推送队列', st.queue_depth == null ? '—' : st.queue_depth + ' 条'],
+    ['来源积压', sourceBacklog || '—'],
+    ['运行时长', fmtUp(p.uptime_seconds)],
+    ['上轮听单', `${p.last_poll.candidates} 候选 · ${p.last_poll.new} 新 · ${p.last_poll.hits} 命中`],
+  ];
+  const pushItems = Number(p.today.push_items ?? p.today.pushes ?? 0);
+  const pushRequests = Number(p.today.pushes || 0);
+  const pushFailureItems = Number(
+    p.today.push_item_failures ?? p.today.push_failures ?? 0);
+  const metrics = [
+    ['今日命中', p.today.hits + ' 次'],
+    ['今日推送', pushItems + ' 条' +
+      (pushRequests !== pushItems ? ` · ${pushRequests} 次发送` : '') +
+      (pushFailureItems ? ` <span class="err">(失败${pushFailureItems}条)</span>` : '')],
+    ['管理目标', knownTargets.length + ' 个'],
+    ['狙击规则', Number(st.counts?.configs || 0) + ' 条'],
+  ];
+  $('#dashhealth').innerHTML = health.map(c =>
+    `<div class="status-item"><strong>${c[0]}</strong><span>${c[1]}</span></div>`).join('');
+  $('#dashmetrics').innerHTML = metrics.map(c =>
+    `<div class="metric"><dt class="k">${c[0]}</dt><dd class="v">${c[1]}</dd></div>`).join('');
+  $('#groupsbox').innerHTML = knownTargets.map(target =>
+    `<div>${esc(target.label)} — 配置 ${Number(target.configs || 0)} 条 · 黑名单 ${Number(target.blacklist || 0)}` +
+    (target.delivery_enabled ? '' : ' <span class="warn">(投递未启用)</span>') + '</div>').join('') || '<span class="muted">无</span>';
+  $('#warnbox').innerHTML = st.recent_warnings.map(w =>
+    `<div class="${w.level === 'ERROR' ? 'err' : 'warn'}">${esc(w.ts)} ${esc(w.msg)}</div>`).join('') || '<span class="muted">无告警</span>';
+  statusLoaded();
+  } finally {
+    statusRefreshing = false;
+    if (button) buttonBusy(button, false);
+  }
+}
+
+let configRequest = 0;
+async function loadConfigs() {
+  const gid = currentScopeId(); if (!gid) return;
+  const request = ++configRequest;
+  $('#cfgtable tbody').innerHTML = '<tr><td colspan="3" class="muted">正在加载当前目标配置…</td></tr>';
+  $('#bltable tbody').innerHTML = '<tr><td colspan="3" class="muted">正在加载当前目标黑名单…</td></tr>';
+  const d = await api(`/targets/${gid}/configs`);
+  if (request !== configRequest || gid !== currentScopeId()) return;
+  $('#cfgtable tbody').innerHTML = d.configs.map(c => `<tr>
+    <td>#${c.display_number}</td><td><code>${esc(c.command)}</code></td>
+    <td><button class="danger compact" onclick="cfgDelete(${gid},${c.id},${c.display_number})">删除</button></td>
+  </tr>`).join('') || '<tr><td colspan="3" class="muted">当前目标暂无配置</td></tr>';
+  const blacklists = d.blacklists || {wm: d.blacklist || [], channel: []};
+  const blacklistRows = ['wm', 'channel'].flatMap(scope =>
+    (blacklists[scope] || []).map(seller => ({scope, seller})));
+  $('#bltable tbody').innerHTML = blacklistRows.map(item => `<tr>
+    <td>${item.scope === 'wm' ? 'WM' : '频道'}</td>
+    <td>${esc(item.seller)}</td>
+    <td><button class="danger" onclick="blDel(${js(item.scope)},${js(item.seller)})">删除</button></td>
+  </tr>`).join('') || '<tr><td colspan="3" class="muted">黑名单为空</td></tr>';
+}
+
+let ncTimer = null;
+function ncPreview() {
+  clearTimeout(ncTimer);
+  ncTimer = setTimeout(async () => {
+    const text = $('#nc-text').value.trim();
+    if (!text) { $('#nc-preview').innerHTML = ''; return; }
+    try {
+      const d = await api('/parse-preview', {method:'POST', body: JSON.stringify({text})});
+      $('#nc-preview').innerHTML = d.ok
+        ? `<span class="ok">解析成功：${esc(d.message)}</span>`
+        : `<span class="err">${esc(d.message)}</span>`;
+    } catch (e) {}
+  }, 300);
+}
+async function ncSubmit(button) {
+  const gid = currentScopeId(), text = $('#nc-text').value.trim();
+  if (!gid) { toast('请先选择目标', true); $('#global-gsel').focus(); return; }
+  if (!text) { toast('请输入监听规则', true); $('#nc-text').focus(); return; }
+  try {
+    buttonBusy(button, true, '正在添加…');
+    const d = await api(`/targets/${gid}/configs`, {method:'POST', body: JSON.stringify({text})});
+    toast(`已添加 #${d.display_number}`); $('#nc-text').value = ''; $('#nc-preview').innerHTML = '';
+    await loadConfigs();
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+async function blAdd(button) {
+  const gid = currentScopeId(), scope = $('#bl-scope').value, seller = $('#bl-name').value.trim();
+  if (!gid) { toast('请先选择目标', true); $('#global-gsel').focus(); return; }
+  if (!seller) { toast('请输入卖家名', true); $('#bl-name').focus(); return; }
+  const sellerLines = seller.split(/\r?\n/).map((name, index) => ({name: name.trim(), line: index + 1}));
+  const tooLong = sellerLines.find(item => item.name && Array.from(item.name).length > 32);
+  if (tooLong) {
+    toast(`第 ${tooLong.line} 行卖家名超过 32 个字符`, true);
+    $('#bl-name').focus(); return;
+  }
+  try {
+    buttonBusy(button, true, '正在添加…');
+    const d = await api(`/targets/${gid}/blacklist`, {method:'POST', body: JSON.stringify({seller, scope})});
+    const label = scope === 'wm' ? 'WM' : scope === 'channel' ? '频道' : 'WM 与频道';
+    toast(`${label}黑名单处理完成：新增 ${d.added} 条，已存在 ${d.existing} 条`); $('#bl-name').value = ''; await loadConfigs();
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+async function blDel(scope, seller) {
+  const gid = currentScopeId();
+  const label = scope === 'wm' ? 'WM' : '频道';
+  if (!confirm(`把 ${seller} 移出${label}黑名单？`)) return;
+  try {
+    await api(`/targets/${gid}/blacklist/` + encodeURIComponent(seller) + `?scope=${scope}`, {method:'DELETE'});
+    toast('已移除'); await loadConfigs();
+  } catch (e) { toast(e.message, true); }
+}
+async function cfgCopy(button) {
+  const gid = currentScopeId(), source = Number($('#cfg-copy-source').value);
+  if (!gid || !source) { toast('请选择源目标', true); return; }
+  if (!confirm(`把 ${targetLabel(source)} 的狙击规则复制到 ${targetLabel(gid)}？重复项会跳过。`)) return;
+  try {
+    buttonBusy(button, true, '正在复制…');
+    const d = await api(`/targets/${gid}/configs/copy`, {
+      method:'POST', body:JSON.stringify({source_scope_id:source}),
+    });
+    toast(`复制完成：新增 ${d.copied}，跳过 ${d.skipped}，受上限影响 ${d.capped}`);
+    await loadConfigs();
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+async function cfgDelete(gid, cid, displayNumber) {
+  if (gid !== currentScopeId()) { toast('当前目标已切换，请重试', true); return; }
+  if (!confirm(`确认删除配置 #${displayNumber}？此操作不可撤销`)) return;
+  try {
+    await api(`/targets/${gid}/configs/${cid}`, {method:'DELETE'});
+    toast(`配置 #${displayNumber} 已删除`); await loadConfigs();
+  } catch (e) { toast(e.message, true); }
+}
+
+// ---- 捡漏管理 ----
+let bgTimer = null, bgResolved = null, bgMatches = [], bgResolveRequest = 0, bgGroupRequest = 0;
+let bgEditing = null;
+function bgSetKind(kind) {
+  $('#bg-kind').value = kind;
+  $('#bg-kind-item').classList.toggle('active', kind === 'item');
+  $('#bg-kind-riven').classList.toggle('active', kind === 'riven');
+  $('#bg-kind-item').setAttribute('aria-pressed', String(kind === 'item'));
+  $('#bg-kind-riven').setAttribute('aria-pressed', String(kind === 'riven'));
+  $('#bg-items-panel').hidden = kind !== 'item';
+  $('#bg-riven-panel').hidden = kind !== 'riven';
+  bgKindChanged();
+}
+function bgAge(s) {
+  if (s == null) return '';
+  return s < 60 ? `${s}秒前` : s < 3600 ? `${Math.floor(s/60)}分钟前` : `${Math.floor(s/3600)}小时前`;
+}
+async function bgLoadGroup() {
+  const gid = currentScopeId(); if (!gid) return;
+  const request = ++bgGroupRequest;
+  $('#bgtable tbody').innerHTML = '<tr><td colspan="5" class="muted">正在加载当前目标道具监控…</td></tr>';
+  $('#bgrtable tbody').innerHTML = '<tr><td colspan="4" class="muted">正在加载当前目标紫卡监控…</td></tr>';
+  const d = await api(`/targets/${gid}/bargain`);
+  if (request !== bgGroupRequest || gid !== currentScopeId()) return;
+  $('#bgtable tbody').innerHTML = d.items.map(it => `<tr>
+    <td>#${it.id}</td>
+    <td>${esc(it.display)}</td>
+    <td>${it.level === '0' ? '0 级' : it.level === 'max' ? '满级' : '<span class="muted">—</span>'}</td>
+    <td>${it.threshold != null ? Math.round(it.threshold*100) + '%' : '<span class="muted">全局默认</span>'}</td>
+    <td><div class="target-actions">
+      <button class="compact" id="bg-edit-trigger-item-${gid}-${it.id}" type="button" onclick="bgOpenEdit('item',${gid},${it.id},${js(it.display)},${js(it.level || '')},${Number(it.max_rank) > 0},${it.threshold != null ? Math.round(it.threshold*100) : 'null'})">编辑</button>
+      <button class="danger compact" type="button" onclick="bgConfigDel('item',${gid},${it.id})">删除</button>
+    </div></td>
+  </tr>`).join('') || '<tr><td colspan="5" class="muted">当前目标暂无捡漏监控，可在上方添加</td></tr>';
+  $('#bgrtable tbody').innerHTML = d.riven_weapons.map(it => `<tr>
+    <td>#${it.id}</td><td>${esc(it.display)}</td>
+    <td>${it.threshold != null ? Math.round(it.threshold*100) + '%' : '<span class="muted">全局默认</span>'}</td>
+    <td><div class="target-actions">
+      <button class="compact" id="bg-edit-trigger-riven-${gid}-${it.id}" type="button" onclick="bgOpenEdit('riven',${gid},${it.id},${js(it.display)},'',false,${it.threshold != null ? Math.round(it.threshold*100) : 'null'})">编辑</button>
+      <button class="danger compact" type="button" onclick="bgConfigDel('riven',${gid},${it.id})">删除</button>
+    </div></td>
+  </tr>`).join('') || '<tr><td colspan="4" class="muted">当前目标暂无紫卡捡漏监控，可在上方添加</td></tr>';
+}
+function bgKindChanged() {
+  bgResolveRequest++;
+  bgResolved = null; bgMatches = []; $('#bg-level').value = '';
+  $('#bg-level-field').hidden = true; $('#bg-resolve').innerHTML = '';
+  bgResolvePreview();
+}
+function bgUseResolved(index, fillName=false) {
+  const match = bgMatches[index]; if (!match) return;
+  bgResolveRequest++;
+  bgResolved = match;
+  if (fillName) $('#bg-name').value = match.zh || match.en || match.slug;
+  const ranked = $('#bg-kind').value === 'item' && Number(match.max_rank) > 0;
+  $('#bg-level-field').hidden = !ranked;
+  if (!ranked) $('#bg-level').value = '';
+}
+async function bgResolveNow(q) {
+  const kind = $('#bg-kind').value;
+  const requestId = ++bgResolveRequest;
+  const d = await api('/bargain/resolve?kind=' + kind + '&q=' + encodeURIComponent(q));
+  if (requestId !== bgResolveRequest || kind !== $('#bg-kind').value ||
+      q !== $('#bg-name').value.trim()) return null;
+  bgMatches = d.matches || [];
+  bgResolved = null;
+  if (bgMatches.length === 1) bgUseResolved(0);
+  return d;
+}
+function bgResolvePreview() {
+  clearTimeout(bgTimer);
+  bgResolveRequest++;
+  bgResolved = null; bgMatches = []; $('#bg-level-field').hidden = true; $('#bg-level').value = '';
+  bgTimer = setTimeout(async () => {
+    const q = $('#bg-name').value.trim();
+    if (!q) { $('#bg-resolve').innerHTML = ''; return; }
+    try {
+      const d = await bgResolveNow(q); if (!d) return;
+      if (!d.matches.length) {
+        $('#bg-resolve').innerHTML = `<span class="err">没有匹配结果${d.available ? '' : '（本地目录缺失，请到识别词库更新基础数据）'}</span>`;
+        return;
+      }
+      $('#bg-resolve').innerHTML = (d.matches.length === 1 ? '<span class="ok">已匹配：</span> ' : '匹配到多个，请选择：') +
+        d.matches.map((m, i) => `<button class="text-action" type="button" onclick="bgUseResolved(${i},true)">` +
+          `${esc(m.zh || '')}${m.zh ? ' ' : ''}(${esc(m.en || m.slug)})</button>`).join('');
+    } catch (e) {}
+  }, 300);
+}
+async function bgAdd(button) {
+  const gid = currentScopeId(), kind = $('#bg-kind').value;
+  const q = $('#bg-name').value.trim();
+  if (!gid) { toast('请先选择目标', true); $('#global-gsel').focus(); return; }
+  if (!q) { toast('请输入道具或武器名称', true); $('#bg-name').focus(); return; }
+  try {
+    if (!bgResolved) await bgResolveNow(q);
+  } catch (e) { toast(e.message, true); return; }
+  if (gid !== currentScopeId() || kind !== $('#bg-kind').value ||
+      q !== $('#bg-name').value.trim()) {
+    toast('名称、类型或目标已变化，请确认后重新点击添加', true); return;
+  }
+  const resolved = bgResolved;
+  if (!resolved) { toast('请先选择唯一匹配项', true); return; }
+  const body = {query: resolved.slug};
+  if (kind === 'item' && Number(resolved.max_rank) > 0) {
+    const level = $('#bg-level').value;
+    if (!level) { toast('该道具必须选择0级或满级', true); return; }
+    body.level = level;
+  }
+  const th = $('#bg-threshold').value.trim();
+  if (th) {
+    const threshold = Number(th);
+    if (!Number.isInteger(threshold) || threshold < 5 || threshold > 90) {
+      toast('折扣阈值必须是 5~90 的整数', true); return;
+    }
+    body.threshold = threshold;
+  }
+  try {
+    buttonBusy(button, true, '正在添加…');
+    const path = kind === 'item' ? 'bargain-items' : 'bargain-rivens';
+    const d = await api(`/targets/${gid}/${path}`, {method:'POST', body: JSON.stringify(body)});
+    toast(`已添加 #${d.id}`);
+    $('#bg-name').value = ''; $('#bg-threshold').value = ''; $('#bg-resolve').innerHTML = '';
+    bgResolved = null; bgMatches = []; $('#bg-level').value = ''; $('#bg-level-field').hidden = true;
+    await bgLoadGroup();
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+function bgConfigPath(kind, gid, iid) {
+  return `/targets/${gid}/${kind === 'item' ? 'bargain-items' : 'bargain-rivens'}/${iid}`;
+}
+function bgOpenEdit(kind, gid, iid, label, level, ranked, threshold) {
+  if (gid !== currentScopeId()) { toast('当前目标已切换，请重试', true); return; }
+  bgEditReturnFocusId = activeFocusId();
+  bgEditing = {kind, gid, iid, ranked};
+  $('#bg-edit-title').textContent = `编辑 #${iid} · ${label}`;
+  $('#bg-edit-level-field').hidden = kind !== 'item' || !ranked;
+  $('#bg-edit-level').value = level || '0';
+  $('#bg-edit-default').checked = threshold == null;
+  $('#bg-edit-threshold').value = threshold == null ? '' : threshold;
+  bgEditDefaultChanged();
+  $('#bg-edit-panel').hidden = false;
+  $('#bg-edit-panel').scrollIntoView({block:'nearest'});
+  const firstField = kind === 'item' && ranked ? $('#bg-edit-level') :
+    ($('#bg-edit-threshold').disabled ? $('#bg-edit-default') : $('#bg-edit-threshold'));
+  firstField.focus({preventScroll:true});
+}
+function bgEditDefaultChanged() {
+  $('#bg-edit-threshold').disabled = $('#bg-edit-default').checked;
+}
+function bgEditClose(restoreFocus=true) {
+  const returnFocusId = bgEditReturnFocusId;
+  bgEditReturnFocusId = '';
+  bgEditing = null;
+  $('#bg-edit-panel').hidden = true;
+  if (restoreFocus) restoreFocusById(returnFocusId);
+  return returnFocusId;
+}
+async function bgEditSave(button) {
+  if (!bgEditing || bgEditing.gid !== currentScopeId()) {
+    bgEditClose(); toast('当前目标已切换，请重新选择监控项', true); return;
+  }
+  const body = {};
+  if ($('#bg-edit-default').checked) body.clear_threshold = true;
+  else {
+    const threshold = Number($('#bg-edit-threshold').value);
+    if (!Number.isInteger(threshold) || threshold < 5 || threshold > 90) {
+      toast('折扣阈值必须是 5~90 的整数', true); $('#bg-edit-threshold').focus(); return;
+    }
+    body.threshold = threshold;
+  }
+  if (bgEditing.kind === 'item' && bgEditing.ranked) body.level = $('#bg-edit-level').value;
+  try {
+    buttonBusy(button, true, '正在保存…');
+    await api(bgConfigPath(bgEditing.kind, bgEditing.gid, bgEditing.iid), {
+      method:'PATCH', body: JSON.stringify(body),
+    });
+    const returnFocusId = bgEditClose(false);
+    toast('监控项已更新');
+    await bgLoadGroup();
+    restoreFocusById(returnFocusId);
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+async function bgConfigDel(kind, gid, iid) {
+  if (gid !== currentScopeId()) { toast('当前目标已切换，请重试', true); return; }
+  if (!confirm(`确认移出捡漏监控 #${iid}？`)) return;
+  try {
+    await api(bgConfigPath(kind, gid, iid), {method:'DELETE'});
+    toast(`监控 #${iid} 已删除`); await bgLoadGroup();
+  } catch (e) { toast(e.message, true); }
+}
+async function bgSaveParams(button) {
+  const hours = Number($('#bp-riven-hours').value);
+  const samples = Number($('#bp-riven-samples').value);
+  if (!Number.isInteger(hours) || hours < 12) { toast('紫卡滚动均价时长必须是不小于 12 的整数', true); $('#bp-riven-hours').focus(); return; }
+  if (!Number.isInteger(samples) || samples < 1) { toast('最低有效样本数必须是正整数', true); $('#bp-riven-samples').focus(); return; }
+  if (samples > hours) { toast('最低有效样本数不能超过滚动均价小时数', true); $('#bp-riven-samples').focus(); return; }
+  const params = {
+    item_threshold: parseFloat($('#bp-item').value) / 100,
+    riven_threshold: parseFloat($('#bp-riven').value) / 100,
+    riven_rolling_hours: hours,
+    riven_min_valid_samples: samples,
+  };
+  try {
+    buttonBusy(button, true, '正在保存…');
+    await api('/bargain/params', {method:'PUT', body: JSON.stringify({params})});
+    toast('参数已保存并生效');
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+async function bgSaveLimit(button) {
+  const limit = Number($('#bp-max').value);
+  if (!Number.isInteger(limit) || limit < 0 || limit > 200) {
+    toast('目标上限必须是 0~200 的整数', true); $('#bp-max').focus(); return;
+  }
+  try {
+    buttonBusy(button, true, '正在保存…');
+    await api('/settings', {method:'PATCH', body: JSON.stringify({bargain_max_distinct_slugs: limit})});
+    toast('资源上限已保存并生效');
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+function renderLogs() {
+  const floor = LV[$('#loglevel').value];
+  $('#logbox').innerHTML = logLines
+    .filter(e => (LV[e.level] || 20) >= floor)
+    .map(e => `<div class="${e.level === 'ERROR' ? 'err' : e.level === 'WARNING' ? 'warn' : ''}">${esc(e.ts)} ${esc(e.level.padEnd(7))} ${esc(e.msg)}</div>`)
+    .join('');
+  $('#logbox').scrollTop = $('#logbox').scrollHeight;
+}
+function toggleLogs(button) {
+  logPaused = !logPaused;
+  button.textContent = logPaused ? '继续刷新' : '暂停刷新';
+  $('#logstate').textContent = logPaused ? '已暂停' :
+    (evtSrc?.readyState === EventSource.OPEN ? '已连接' : '连接中…');
+  if (!logPaused) renderLogs();
+}
+function startLogStream() {
+  if (evtSrc) evtSrc.close();
+  evtSrc = new EventSource('/admin/api/logs/stream');
+  $('#logstate').textContent = '连接中…';
+  evtSrc.onopen = () => { if (!logPaused) $('#logstate').textContent = '已连接'; };
+  evtSrc.onmessage = ev => {
+    logLines.push(JSON.parse(ev.data));
+    if (logLines.length > 800) logLines = logLines.slice(-500);
+    const panel = document.querySelector('.tab-panel[data-tab-page="records"][data-tab="logs"]');
+    if (!logPaused && panel.classList.contains('active')) renderLogs();
+  };
+  evtSrc.onerror = () => { if (!logPaused) $('#logstate').textContent = '连接断开，重连中…'; };
+}
+
+let auditItems = [];
+async function loadAudit() {
+  const d = await api('/audit');
+  auditItems = d.audit;
+  renderAudit();
+}
+function renderAudit() {
+  const via = $('#audit-via').value;
+  const query = $('#audit-search').value.trim().toLowerCase();
+  const items = auditItems.filter(a => {
+    if (via && a.via !== via) return false;
+    return !query || [a.actor, a.action, a.target, a.detail]
+      .some(v => String(v || '').toLowerCase().includes(query));
+  });
+  $('#audittable tbody').innerHTML = items.map(a => `<tr>
+    <td>${new Date(a.ts*1000).toLocaleString()}</td>
+    <td><span class="pill ${a.via === 'webui' ? 'on' : ''}">${esc(a.via.toUpperCase())}</span> <span class="muted">${esc(a.actor)}</span></td>
+    <td>${esc(a.action)}</td><td>${esc(a.target || '—')}</td><td>${esc(a.detail || '—')}</td>
+  </tr>`).join('') || '<tr><td colspan="5" class="muted">没有匹配的审计记录</td></tr>';
+}
+
+let caTarget = null, commandRequest = 0;
+async function loadCommands() {
+  const request = ++commandRequest;
+  $('#cmdtable tbody').innerHTML = '<tr><td colspan="3" class="muted">正在加载命令设置…</td></tr>';
+  const d = await api('/commands');
+  if (request !== commandRequest) return;
+  $('#cmdtable tbody').innerHTML = d.commands.map(c => {
+    const namePending = c.name_pending_restart ? ' <span class="pill" style="background:#faeeda;color:#854f0b">待重启</span>' : '';
+    const aliasPending = c.aliases_pending_restart ? ' <span class="pill" style="background:#faeeda;color:#854f0b">待重启</span>' : '';
+    const aliasChips = c.aliases.map(a =>
+        `<button class="text-action" onclick="caOpenAliasEdit(${js(c.id)}, ${js(c.mapping_name)}, ${js(a)})">${esc(a)}</button>`)
+      .join('');
+    return `<tr>
+      <td><span class="weapon-name">${esc(c.mapping_name)}</span><div class="muted">${esc(c.description)}</div></td>
+      <td><button class="text-action" type="button" onclick="caOpenName(${js(c.id)}, ${js(c.mapping_name)}, ${js(c.trigger_name)})">${esc(c.trigger_name)}</button>${namePending}</td>
+      <td>${aliasChips}<button class="text-action" type="button" onclick="caOpenAliasAdd(${js(c.id)}, ${js(c.mapping_name)})">添加别名</button>${aliasPending}</td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="3" class="muted">暂无命令</td></tr>';
+}
+function caEditorOpen(label, value, deletable) {
+  $('#ca-label').textContent = label;
+  $('#ca-name').value = value;
+  $('#ca-del-btn').style.display = deletable ? '' : 'none';
+  $('#cmd-alias-bar').style.display = 'block';
+  $('#ca-name').focus();
+}
+function caOpenName(commandId, mappingName, triggerName) {
+  caTarget = {mode: 'name', commandId};
+  $('#ca-mode').textContent = `编辑「${mappingName}」的触发名`;
+  caEditorOpen('命令触发名', triggerName, false);
+}
+function caOpenAliasAdd(commandId, mappingName) {
+  caTarget = {mode: 'alias-add', commandId};
+  $('#ca-mode').textContent = `为「${mappingName}」添加别名`;
+  caEditorOpen('命令别名', '', false);
+}
+function caOpenAliasEdit(commandId, mappingName, alias) {
+  caTarget = {mode: 'alias-edit', commandId, alias};
+  $('#ca-mode').textContent = `编辑「${mappingName}」的别名「${alias}」`;
+  caEditorOpen('命令别名', alias, true);
+}
+async function caSave() {
+  if (!caTarget) return;
+  const name = $('#ca-name').value.trim();
+  if (!name) { toast('请输入命令入口名', true); $('#ca-name').focus(); return; }
+  try {
+    if (caTarget.mode === 'name') {
+      await api('/commands/' + encodeURIComponent(caTarget.commandId) + '/name',
+                {method:'PATCH', body: JSON.stringify({name})});
+    } else if (caTarget.mode === 'alias-add') {
+      await api('/commands/' + encodeURIComponent(caTarget.commandId) + '/aliases',
+                {method:'POST', body: JSON.stringify({alias: name})});
+    } else {
+      await api('/commands/' + encodeURIComponent(caTarget.commandId) + '/aliases/' + encodeURIComponent(caTarget.alias),
+                {method:'PATCH', body: JSON.stringify({new_alias: name})});
+    }
+    toast('已保存，前往“系统设置”重启 Bot 后生效');
+    $('#cmd-alias-bar').style.display = 'none'; await loadCommands();
+  } catch (e) { toast(e.message, true); }
+}
+async function caDelete() {
+  if (!caTarget || caTarget.mode !== 'alias-edit') return;
+  if (!confirm(`删除别名「${caTarget.alias}」？重启后生效`)) return;
+  try {
+    await api('/commands/' + encodeURIComponent(caTarget.commandId) + '/aliases/' + encodeURIComponent(caTarget.alias), {method:'DELETE'});
+    toast('已删除，重启后生效');
+    $('#cmd-alias-bar').style.display = 'none'; await loadCommands();
+  } catch (e) { toast(e.message, true); }
+}
+
+function capturePageView() {
+  return {x: window.scrollX, y: window.scrollY};
+}
+function restorePageView(view) {
+  if (!view) return;
+  const restore = () => window.scrollTo(view.x, view.y);
+  restore();
+  requestAnimationFrame(restore);
+}
+
+let aeTarget = null, aliasState = null;
+function captureAliasView() {
+  const view = capturePageView();
+  view.openWeaponGroups = new Set([...document.querySelectorAll('#weaponcatalog details.weapon-group[open]')]
+    .map(group => group.dataset.group));
+  const inlineRow = document.getElementById('wa-inline-tr');
+  const weaponRow = inlineRow ? inlineRow.previousElementSibling : null;
+  if (weaponRow?.id) {
+    view.anchorId = weaponRow.id;
+    view.anchorTop = weaponRow.getBoundingClientRect().top;
+  }
+  return view;
+}
+function restoreAliasView(view) {
+  if (!view?.anchorId) { restorePageView(view); return; }
+  const restore = () => {
+    const anchor = document.getElementById(view.anchorId);
+    if (!anchor) { window.scrollTo(view.x, view.y); return; }
+    anchor.scrollIntoView({block:'start'});
+    window.scrollBy(0, anchor.getBoundingClientRect().top - view.anchorTop);
+  };
+  restore();
+  requestAnimationFrame(restore);
+}
+async function loadAliases(force=true, view=null) {
+  if (force || !aliasState) aliasState = await api('/aliases');
+  renderAliasTab(currentTab, view ? view.openWeaponGroups : null);
+  restoreAliasView(view);
+}
+function renderAliasTab(tab, openWeaponGroups=null) {
+  const d = aliasState;
+  if (tab === 'attributes') {
+    $('#aa-slug').innerHTML = d.attributes.map(a =>
+    `<option value="${a.slug}">${esc(a.name_zh || a.name_en)}</option>`).join('');
+    $('#aliastable tbody').innerHTML = d.attributes.map(a => {
+      const display = new Set(a.display);
+      const builtinChips = (a.builtin_aliases || []).map(al =>
+        `<span class="pill pill-static on" title="内置别名（固定）">${esc(al)}</span>`).join('');
+      const aliases = [...a.aliases].sort((x, y) =>
+        display.has(x) === display.has(y) ? x.localeCompare(y, 'zh-Hans') : (display.has(x) ? -1 : 1));
+      const customChips = aliases.map(al => {
+        const shown = display.has(al);
+        return `<button class="pill pill-action ${shown ? 'on' : ''}" type="button" onclick="aeOpen(${js(al)}, ${shown})">${esc(al)}</button>`;
+      }).join('');
+      const chips = builtinChips + customChips;
+      return `<tr><td>${esc(a.name_zh || a.name_en)}</td><td>${chips || '<span class="muted">—</span>'}</td></tr>`;
+    }).join('');
+    return;
+  }
+  if (tab === 'weapons') {
+    $('#weaponlist').innerHTML = d.weapons_index.map(w =>
+      `<option value="${w.slug}" label="${esc(w.zh)} ${esc(w.en || '')}"></option>`).join('');
+    renderWeaponCatalog(openWeaponGroups);
+    return;
+  }
+  renderWildcardAliases();
+}
+
+function renderWildcardAliases() {
+  if (!aliasState) return;
+  const map = aliasState.wildcards || {};
+  const cats = aliasState.wildcard_categories || {};
+  const opts = Object.entries(cats).map(([k, zh]) =>
+    `<option value="${esc(k)}">${esc(zh)}（${esc(k)}）</option>`).join('');
+  $('#wc-cat').innerHTML = opts;
+  $('#wc-editcat').innerHTML = opts;
+  const byCat = {};
+  for (const k of Object.keys(cats)) byCat[k] = [];
+  for (const [al, cat] of Object.entries(map)) (byCat[cat] = byCat[cat] || []).push(al);
+  $('#wctable tbody').innerHTML = Object.entries(cats).map(([k, zh]) => {
+    const chips = (byCat[k] || []).sort((x, y) => x.localeCompare(y, 'zh-Hans')).map(al =>
+      `<button class="pill pill-action on" type="button" onclick="wildcardEditOpen(${js(al)}, ${js(k)})">${esc(al)}</button>`).join('');
+    return `<tr><td>${esc(zh)} <span class="muted" style="font-size:11px">${esc(k)}</span></td>
+      <td>${chips || '<span class="muted">—</span>'}</td></tr>`;
+  }).join('');
+}
+function wildcardEditOpen(alias, category) {
+  $('#wc-old').textContent = alias;
+  $('#wc-name').value = alias;
+  $('#wc-editcat').value = category;
+  $('#wc-edit-bar').dataset.alias = alias;
+  $('#wc-edit-bar').style.display = 'block';
+}
+async function wildcardAliasAdd() {
+  const alias = $('#wc-alias').value.trim();
+  if (!alias) { toast('请输入别名', true); $('#wc-alias').focus(); return; }
+  const category = $('#wc-cat').value;
+  const view = captureAliasView();
+  try {
+    await api('/aliases/category/wildcard', {method:'POST',
+      body: JSON.stringify({alias, category})});
+    toast('已添加'); $('#wc-alias').value = ''; await loadAliases(true, view);
+    $('#wc-cat').value = category;
+  } catch (e) { toast(e.message, true); }
+}
+async function wildcardAliasSave() {
+  const old = $('#wc-edit-bar').dataset.alias;
+  if (!old) return;
+  const newAlias = $('#wc-name').value.trim();
+  const category = $('#wc-editcat').value;
+  const view = captureAliasView();
+  try {
+    await api('/aliases/category/wildcard/' + encodeURIComponent(old), {method:'PATCH',
+      body: JSON.stringify({new_alias: newAlias, category})});
+    toast('已保存'); await loadAliases(true, view);
+    wildcardEditOpen(newAlias, category);
+  } catch (e) { toast(e.message, true); }
+}
+async function wildcardAliasDelete() {
+  const old = $('#wc-edit-bar').dataset.alias;
+  if (!old || !confirm(`删除别名「${old}」？`)) return;
+  const view = captureAliasView();
+  try {
+    await api('/aliases/category/wildcard/' + encodeURIComponent(old), {method:'DELETE'});
+    toast('已删除'); $('#wc-edit-bar').style.display = 'none'; await loadAliases(true, view);
+  } catch (e) { toast(e.message, true); }
+}
+function aeOpen(alias, shown) {
+  aeTarget = alias;
+  $('#ae-old').textContent = alias;
+  $('#ae-name').value = alias;
+  $('#ae-show').checked = shown;
+  $('#aa-edit-bar').style.display = 'block';
+}
+async function aeSave() {
+  if (!aeTarget) return;
+  const newAlias = $('#ae-name').value.trim();
+  const shown = $('#ae-show').checked;
+  const view = captureAliasView();
+  try {
+    await api('/aliases/attribute/' + encodeURIComponent(aeTarget), {method:'PATCH',
+      body: JSON.stringify({new_alias: newAlias, show_in_list: shown})});
+    toast('已保存'); await loadAliases(true, view);
+    aeOpen(newAlias, shown);
+  } catch (e) { toast(e.message, true); }
+}
+async function aeDelete() {
+  if (!aeTarget || !confirm(`删除别名「${aeTarget}」？`)) return;
+  const view = captureAliasView();
+  try {
+    await api('/aliases/attribute/' + encodeURIComponent(aeTarget), {method:'DELETE'});
+    toast('已删除'); aeTarget = null; $('#aa-edit-bar').style.display = 'none';
+    await loadAliases(true, view);
+  } catch (e) { toast(e.message, true); }
+}
+let waInline = null;
+function waCloseInline() {
+  const tr = document.getElementById('wa-inline-tr');
+  if (tr) tr.remove();
+  waInline = null;
+}
+function waOpenInline(slug, alias) {  // alias 为空 = 给该武器添加新别名
+  waCloseInline();
+  const row = document.getElementById('wrow-' + slug);
+  if (!row) return;
+  waInline = {mode: alias ? 'edit' : 'add', alias, slug};
+  const tr = document.createElement('tr');
+  tr.id = 'wa-inline-tr';
+  tr.innerHTML = `<td colspan="3" style="background:#fbfaf7"><div class="row" style="margin:2px 0">
+    <span class="muted">${alias ? '编辑别名「' + esc(alias) + '」' : '添加别名'}</span>
+    <input id="wa-in-name" name="weapon_alias_inline" aria-label="武器别名" autocomplete="off" style="width:150px" value="${esc(alias || '')}">
+    ${alias ? `<label class="muted" for="wa-in-slug">目标武器</label>
+       <input id="wa-in-slug" name="weapon_slug_inline" aria-label="目标武器" autocomplete="off" spellcheck="false" list="weaponlist" style="width:200px" value="${esc(slug)}">` : ''}
+    <button onclick="waInlineSave()">保存</button>
+    ${alias ? '<button class="danger" onclick="waInlineDelete()">删除</button>' : ''}
+    <button onclick="waCloseInline()">取消</button>
+  </div></td>`;
+  row.after(tr);
+  document.getElementById('wa-in-name').focus();
+}
+async function waInlineSave() {
+  if (!waInline) return;
+  const name = $('#wa-in-name').value.trim();
+  if (!name) { toast('请输入别名', true); return; }
+  const view = captureAliasView();
+  try {
+    if (waInline.mode === 'add') {
+      await api('/aliases/weapon', {method:'POST',
+        body: JSON.stringify({alias: name, slug: waInline.slug})});
+    } else {
+      const slug = ($('#wa-in-slug').value || '').trim() || waInline.slug;
+      await api('/aliases/weapon/' + encodeURIComponent(waInline.alias),
+                {method:'PATCH', body: JSON.stringify({new_alias: name, slug})});
+    }
+    toast('已保存'); await loadAliases(true, view);
+  } catch (e) { toast(e.message, true); }
+}
+async function waInlineDelete() {
+  if (!waInline || waInline.mode !== 'edit') return;
+  if (!confirm(`删除武器别名「${waInline.alias}」？`)) return;
+  const view = captureAliasView();
+  try {
+    await api('/aliases/weapon/' + encodeURIComponent(waInline.alias), {method:'DELETE'});
+    toast('已删除'); await loadAliases(true, view);
+  } catch (e) { toast(e.message, true); }
+}
+async function attrAliasAdd() {
+  const alias = $('#aa-alias').value.trim();
+  if (!alias) { toast('请输入别名', true); $('#aa-alias').focus(); return; }
+  const slug = $('#aa-slug').value;
+  const shown = $('#aa-show').checked;
+  const view = captureAliasView();
+  try {
+    await api('/aliases/attribute', {method:'POST', body: JSON.stringify(
+      {alias, slug, show_in_list: shown})});
+    toast('已添加'); $('#aa-alias').value = ''; await loadAliases(true, view);
+    $('#aa-slug').value = slug; $('#aa-show').checked = shown;
+  } catch (e) { toast(e.message, true); }
+}
+async function attrAliasDel(alias) {
+  if (!confirm(`删除别名「${alias}」？`)) return;
+  const view = captureAliasView();
+  try { await api('/aliases/attribute/' + encodeURIComponent(alias), {method:'DELETE'});
+        toast('已删除'); await loadAliases(true, view); } catch (e) { toast(e.message, true); }
+}
+function weaponGroupLabel(group) {
+  return ({primary:'主武器', secondary:'副武器', melee:'近战', archgun:'Archwing 枪械',
+           kitgun:'组合枪', zaw:'Zaw', sentinel:'守护武器', other:'其他'})[group] || group;
+}
+function renderWeaponCatalog(openWeaponGroups=null) {
+  if (!aliasState) return;
+  if (!openWeaponGroups) {
+    openWeaponGroups = new Set([...document.querySelectorAll('#weaponcatalog details.weapon-group[open]')]
+      .map(group => group.dataset.group));
+  }
+  waInline = null;  // 重渲染后行内编辑器随 DOM 一起消失
+  const filterInput = $('#wa-filter');
+  const q = (filterInput ? filterInput.value : '').trim().toLowerCase();
+  const groups = {};
+  for (const w of aliasState.weapons_index) {
+    const aliases = w.aliases || [];
+    const hay = [w.slug, w.zh, w.en, ...aliases].join(' ').toLowerCase();
+    if (q && !hay.includes(q)) continue;
+    const group = w.group || 'other';
+    if (!groups[group]) groups[group] = [];
+    groups[group].push({...w, aliases});
+  }
+  const order = ['primary', 'secondary', 'melee', 'archgun', 'kitgun', 'zaw', 'sentinel', 'other'];
+  const keys = Object.keys(groups).sort((a, b) => {
+    const ia = order.indexOf(a), ib = order.indexOf(b);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib) || a.localeCompare(b);
+  });
+  $('#weaponcatalog').innerHTML = keys.map(group => {
+    const rows = groups[group].sort((a, b) => (a.zh || a.en || a.slug).localeCompare(b.zh || b.en || b.slug, 'zh-Hans'));
+    const open = q || openWeaponGroups.has(group) ? ' open' : '';
+    return `<details class="weapon-group" data-group="${esc(group)}"${open}>
+      <summary>${esc(weaponGroupLabel(group))} <span class="muted">${rows.length}</span></summary>
+      <div class="weapon-table-wrap">
+      <table>
+        <thead><tr><th style="width:260px">武器</th><th>别名（点击编辑）</th><th style="width:100px">操作</th></tr></thead>
+        <tbody>${rows.map(w => {
+          const chips = w.aliases.map(al => `<button class="pill pill-action on" type="button" onclick="waOpenInline(${js(w.slug)}, ${js(al)})">${esc(al)}</button>`).join('');
+          return `<tr id="wrow-${esc(w.slug)}">
+            <td><div class="weapon-name">${esc(w.zh)}</div><div class="weapon-meta">${esc(w.en || '')} · ${esc(w.slug)}</div></td>
+            <td>${chips || '<span class="muted">—</span>'}</td>
+            <td><button onclick="waOpenInline(${js(w.slug)}, null)">添加别名</button></td>
+          </tr>`;
+        }).join('')}</tbody>
+      </table></div>
+    </details>`;
+  }).join('') || '<p class="muted">没有匹配的武器</p>';
+}
+
+function targetPlatformChanged() {
+  const qq = $('#pt-platform').value === 'qq';
+  $('#pt-owner-field').hidden = !qq;
+}
+function targetCreateModeChanged() {
+  $('#pt-days-field').hidden = $('#pt-enable-mode').value !== 'timed';
+}
+function targetEnableModeChanged() {
+  $('#pt-enable-days-field').hidden = $('#pt-enable-choice').value !== 'timed';
+}
+function targetDuration(mode, input) {
+  if (mode !== 'timed') return {ok:true, days:null};
+  const days = Number(input.value);
+  if (!Number.isInteger(days) || days <= 0) {
+    toast('限时天数必须是正整数', true);
+    input.focus();
+    return {ok:false, days:null};
+  }
+  return {ok:true, days};
+}
+function targetRemainingText(expiry) {
+  const remainingSeconds = expiry - Date.now() / 1000;
+  if (remainingSeconds <= 0) return '0 分钟';
+  const totalMinutes = Math.max(1, Math.ceil(remainingSeconds / 60));
+  const days = Math.floor(totalMinutes / 1440);
+  const hours = Math.floor((totalMinutes % 1440) / 60);
+  const minutes = totalMinutes % 60;
+  if (days) return hours ? `${days} 天 ${hours} 小时` : `${days} 天`;
+  if (hours) return minutes ? `${hours} 小时 ${minutes} 分钟` : `${hours} 小时`;
+  return `${minutes} 分钟`;
+}
+function targetValidityHtml(target) {
+  const expiry = Number(target.enabled_until || 0);
+  const expired = expiry > 0 && expiry <= Date.now() / 1000;
+  if (!target.enabled || expired) {
+    const detail = expired
+      ? ` · 到期于 ${new Intl.DateTimeFormat('zh-CN', {dateStyle:'medium', timeStyle:'short'}).format(new Date(expiry * 1000))} · 剩余 0 分钟`
+      : '';
+    return `<span class="pill off">${expired ? '已到期' : '停用'}</span><span class="muted">${esc(detail)}</span>`;
+  }
+  if (!expiry) return '<span class="pill on">启用</span><span class="muted"> · 永久</span>';
+  const formatted = new Intl.DateTimeFormat('zh-CN', {
+    dateStyle:'medium', timeStyle:'short',
+  }).format(new Date(expiry * 1000));
+  return `<span class="pill on">启用</span><span class="muted"> · 到期于 ${esc(formatted)} · 剩余 ${esc(targetRemainingText(expiry))}</span>`;
+}
+async function loadManagedTargets() {
+  $('#pttable tbody').innerHTML = '<tr><td colspan="8" class="muted">正在读取目标与平台用户名…</td></tr>';
+  const d = await api('/managed-targets');
+  syncTargetOptions(d.targets);
+  $('#pttable tbody').innerHTML = d.targets.map(t => {
+    const stateVerb = t.enabled ? '停用' : '启用';
+    const stateClass = t.enabled ? 'danger compact' : 'compact';
+    const stateHandler = t.enabled ? 'managedTargetDisable' : 'managedTargetEnable';
+    const renewAction = t.active && t.enabled_until
+      ? `<button class="compact" id="pt-renew-trigger-${t.scope_id}" type="button" aria-label="续期 ${esc(t.label)}" onclick="managedTargetRenew(${t.scope_id})">续期</button>`
+      : '';
+    return `<tr>
+    <td><div class="target-actions">
+      <button class="compact" id="pt-edit-trigger-${t.scope_id}" type="button" aria-label="编辑 ${esc(t.label)}" onclick="managedTargetEdit(${t.scope_id})">编辑</button>
+      ${renewAction}
+      <button class="${stateClass}" id="pt-state-trigger-${t.scope_id}" type="button" aria-label="${stateVerb} ${esc(t.label)}" onclick="${stateHandler}(${t.scope_id})">${stateVerb}</button>
+      <button class="danger compact" type="button" aria-label="删除 ${esc(t.label)}" onclick="managedTargetDelete(${t.scope_id},this)">删除</button>
+    </div></td>
+    <td>${esc(String(t.platform || '').toUpperCase())}</td>
+    <td>${esc(t.external_id)}</td>
+    <td><span class="target-name" title="${esc(t.username || '平台未连接或暂时无法查询')}">${t.username ? esc(t.username) : '<span class="muted">暂不可用</span>'}</span></td>
+    <td>${t.platform === 'qq' ? esc(t.owner_qq) : '<span class="muted">对应用户</span>'}</td>
+    <td class="target-note-cell">${t.note ? esc(t.note) : '<span class="muted">—</span>'}</td>
+    <td class="numeric">${t.scope_id}</td>
+    <td>${targetValidityHtml(t)}</td>
+  </tr>`;
+  }).join('') || '<tr><td colspan="8" class="muted">暂无 Bot 目标</td></tr>';
+}
+async function managedTargetSave(button) {
+  const platform = $('#pt-platform').value;
+  const externalId = $('#pt-id').value.trim();
+  const owner = $('#pt-owner').value.trim();
+  const note = $('#pt-note').value;
+  const mode = $('#pt-enable-mode').value;
+  if (!/^\d+$/.test(externalId) || Number(externalId) <= 0) {
+    toast('目标 ID 必须是正整数', true); $('#pt-id').focus(); return;
+  }
+  if (platform === 'qq' && (!/^\d+$/.test(owner) || Number(owner) <= 0)) {
+    toast('QQ群目标必须填写正整数所有者 QQ', true); $('#pt-owner').focus(); return;
+  }
+  const existing = knownTargets.find(target =>
+    target.platform === platform && target.external_id === externalId);
+  if (existing) {
+    toast('目标已存在，请使用列表中的“编辑”', true);
+    managedTargetEdit(existing.scope_id);
+    return;
+  }
+  const duration = targetDuration(mode, $('#pt-days'));
+  if (!duration.ok) return;
+  try {
+    buttonBusy(button, true, '正在新增…');
+    await api('/managed-targets', {method:'POST', body:JSON.stringify({
+      platform, external_id:externalId, owner_qq:platform === 'qq' ? owner : null,
+      note, enabled:mode !== 'disabled', duration_days:duration.days,
+    })});
+    $('#pt-id').value = ''; $('#pt-owner').value = ''; $('#pt-note').value = '';
+    toast('目标已新增');
+    await loadManagedTargets();
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+function managedTargetEdit(scopeId) {
+  const target = targetByScope(scopeId); if (!target) return;
+  const returnFocusId = activeFocusId();
+  managedTargetEnableClose(false);
+  managedTargetEditReturnFocusId = returnFocusId;
+  managedTargetEditingScope = scopeId;
+  $('#pt-edit-label').textContent = target.label;
+  $('#pt-edit-username').value = target.username || '暂不可用';
+  $('#pt-edit-owner-field').hidden = target.platform !== 'qq';
+  $('#pt-edit-owner').value = target.owner_qq || '';
+  $('#pt-edit-note').value = target.note || '';
+  $('#pt-edit-panel').hidden = false;
+  $('#pt-edit-panel').scrollIntoView({block:'nearest'});
+  (target.platform === 'qq' ? $('#pt-edit-owner') : $('#pt-edit-note')).focus({preventScroll:true});
+}
+function managedTargetEditClose(restoreFocus=true) {
+  const returnFocusId = managedTargetEditReturnFocusId;
+  managedTargetEditReturnFocusId = '';
+  managedTargetEditingScope = 0;
+  $('#pt-edit-panel').hidden = true;
+  if (restoreFocus) restoreFocusById(returnFocusId);
+  return returnFocusId;
+}
+async function managedTargetEditSave(button) {
+  const target = targetByScope(managedTargetEditingScope); if (!target) return;
+  const body = {note:$('#pt-edit-note').value};
+  if (target.platform === 'qq') {
+    const owner = $('#pt-edit-owner').value.trim();
+    if (!/^\d+$/.test(owner) || Number(owner) <= 0) {
+      toast('所有者 QQ 必须是正整数', true); $('#pt-edit-owner').focus(); return;
+    }
+    body.owner_qq = owner;
+  }
+  try {
+    buttonBusy(button, true, '正在保存…');
+    await api('/managed-targets/' + target.scope_id, {method:'PATCH', body:JSON.stringify(body)});
+    const returnFocusId = managedTargetEditClose(false);
+    toast('目标信息已更新');
+    await loadManagedTargets();
+    restoreFocusById(returnFocusId);
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+function managedTargetEnable(scopeId) {
+  const target = targetByScope(scopeId); if (!target) return;
+  const returnFocusId = activeFocusId();
+  managedTargetEditClose(false);
+  managedTargetEnableReturnFocusId = returnFocusId;
+  managedTargetEnablingScope = scopeId;
+  managedTargetEnableAction = 'enable';
+  $('#pt-enable-action').textContent = '启用';
+  $('#pt-enable-label').textContent = target.label;
+  $('#pt-enable-help').textContent = '限时时长可设置为任意正整数天；到期后 Bot 自动停用该目标。';
+  $('#pt-enable-choice-field').hidden = false;
+  $('#pt-enable-choice').value = 'permanent';
+  $('#pt-enable-submit').textContent = '确认启用';
+  targetEnableModeChanged();
+  $('#pt-enable-panel').hidden = false;
+  $('#pt-enable-panel').scrollIntoView({block:'nearest'});
+  $('#pt-enable-choice').focus({preventScroll:true});
+}
+function managedTargetRenew(scopeId) {
+  const target = targetByScope(scopeId); if (!target || !target.enabled_until) return;
+  const returnFocusId = activeFocusId();
+  managedTargetEditClose(false);
+  managedTargetEnableReturnFocusId = returnFocusId;
+  managedTargetEnablingScope = scopeId;
+  managedTargetEnableAction = 'renew';
+  $('#pt-enable-action').textContent = '续期';
+  $('#pt-enable-label').textContent = target.label;
+  $('#pt-enable-help').textContent = '续期天数从当前到期时间继续累加；若目标已到期，则从当前时间重新起算并启用。';
+  $('#pt-enable-choice-field').hidden = true;
+  $('#pt-enable-choice').value = 'timed';
+  $('#pt-enable-days-field').hidden = false;
+  $('#pt-enable-submit').textContent = '确认续期';
+  $('#pt-enable-panel').hidden = false;
+  $('#pt-enable-panel').scrollIntoView({block:'nearest'});
+  $('#pt-enable-days').focus({preventScroll:true});
+}
+function managedTargetEnableClose(restoreFocus=true) {
+  const returnFocusId = managedTargetEnableReturnFocusId;
+  managedTargetEnableReturnFocusId = '';
+  managedTargetEnablingScope = 0;
+  managedTargetEnableAction = 'enable';
+  $('#pt-enable-panel').hidden = true;
+  if (restoreFocus) restoreFocusById(returnFocusId);
+  return returnFocusId;
+}
+async function managedTargetEnableSave(button) {
+  const target = targetByScope(managedTargetEnablingScope); if (!target) return;
+  const renewing = managedTargetEnableAction === 'renew';
+  const mode = renewing ? 'timed' : $('#pt-enable-choice').value;
+  const duration = targetDuration(mode, $('#pt-enable-days'));
+  if (!duration.ok) return;
+  try {
+    buttonBusy(button, true, renewing ? '正在续期…' : '正在启用…');
+    if (renewing) {
+      await api('/managed-targets/' + target.scope_id + '/renew', {
+        method:'POST', body:JSON.stringify({duration_days:duration.days}),
+      });
+    } else {
+      await api('/managed-targets/' + target.scope_id, {method:'PATCH', body:JSON.stringify({
+        enabled:true, duration_days:duration.days,
+      })});
+    }
+    const returnFocusId = managedTargetEnableClose(false);
+    toast(renewing
+      ? `目标已续期 ${duration.days} 天`
+      : `目标已${mode === 'timed' ? `限时启用 ${duration.days} 天` : '永久启用'}`);
+    await loadManagedTargets();
+    restoreFocusById(returnFocusId);
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+async function managedTargetDisable(scopeId) {
+  if (!confirm(`确认停用 ${targetLabel(scopeId)}？\n\n目标配置会保留；下次启用时需要重新选择永久或限时有效期。`)) return;
+  try {
+    await api('/managed-targets/' + scopeId, {method:'PATCH', body:JSON.stringify({enabled:false})});
+    toast('目标已停用');
+    await loadManagedTargets();
+  } catch (e) { toast(e.message, true); }
+}
+async function managedTargetDelete(scopeId, button) {
+  const target = targetByScope(scopeId); if (!target) return;
+  const confirmed = confirm(
+    `确认永久删除 ${target.label}？\n\n` +
+    '将删除该目标的备注、偏好、狙击规则、黑名单、捡漏监控和上线提醒。\n' +
+    '共享市场/追踪数据与系统日志会保留。此操作不可撤销。'
+  );
+  if (!confirmed) return;
+  try {
+    buttonBusy(button, true, '正在删除…');
+    await api('/managed-targets/' + scopeId, {method:'DELETE'});
+    if (managedTargetEditingScope === scopeId) managedTargetEditClose(false);
+    if (managedTargetEnablingScope === scopeId) managedTargetEnableClose(false);
+    toast('目标及其专属数据已删除');
+    await loadManagedTargets();
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+async function loadWmFast() {
+  const scopeId = currentScopeId();
+  if (!scopeId) {
+    $('#wm-fast-summary').textContent = '请选择目标查看快速获取状态。';
+    $('#wm-fast-rules').innerHTML = '';
+    return;
+  }
+  const data = await api(`/wm-fast?scope_id=${scopeId}`);
+  if (scopeId !== currentScopeId()) return;
+  const enabled = Boolean(currentTarget()?.wm_fast_enabled);
+  const labels = {stopped:'Bot 未启动', idle:'等待可加速配置', target_inactive:'目标未启用或平台通道未开启', not_configured:'代理尚未配置', configuration_error:'代理配置未就绪', connecting:'正在连接代理', running:'正在查询'};
+  const actual = data.actual_interval_p95 == null ? '' : `；实际间隔 P95 ${Number(data.actual_interval_p95).toFixed(2)} 秒`;
+  $('#wm-fast-summary').textContent = enabled
+    ? `${labels[data.state] || data.state}；目标间隔 ${data.interval} 秒；${data.query_count} 组共享查询${actual}`
+    : '快速获取已关闭，使用原轮询。仅支持具体武器与三个明确正词条。';
+  $('#wm-fast-rules').innerHTML = (data.rules || []).map(rule => {
+    const mode = !rule.eligible ? '原轮询：需具体武器与三个明确正词条'
+      : !enabled ? '原轮询：快速获取已关闭'
+      : rule.truncated_count ? `${rule.truncated_count} 组达到结果上限，使用原轮询`
+      : rule.error_count ? `${rule.error_count} 组查询暂时失败，原轮询继续工作`
+      : rule.baseline_count ? `${rule.baseline_count} 组正在建立基线，原轮询继续工作`
+      : data.state === 'running' ? '快速搜索＋原轮询' : '原轮询；等待快速通道就绪';
+    return `<tr><td>配置 ${Number(rule.number)}</td><td>${esc(mode)}</td><td>${Number(rule.query_count)}</td></tr>`;
+  }).join('') || '<tr><td colspan="3" class="muted">当前目标没有狙击配置。</td></tr>';
+}
+
+async function loadSettings() {
+  const [d, bargainSettings] = await Promise.all([
+    api('/settings'), api('/bargain/params'),
+  ]);
+  const bargainParams = bargainSettings.params;
+  $('#st-poll').value = d.hot.sniper_poll_interval;
+  $('#st-wm-fast').value = d.hot.wm_fast_interval;
+  $('#st-send').value = d.hot.sniper_send_interval;
+  $('#st-concurrency').value = d.hot.sniper_send_concurrency;
+  $('#st-ttl').value = d.hot.trade_message_ttl_seconds;
+  $('#st-max').value = d.hot.sniper_max_configs_per_group;
+  $('#bp-item').value = Number((bargainParams.item_threshold * 100).toFixed(8));
+  $('#bp-riven').value = Number((bargainParams.riven_threshold * 100).toFixed(8));
+  $('#bp-riven-hours').value = bargainParams.riven_rolling_hours;
+  $('#bp-riven-samples').value = bargainParams.riven_min_valid_samples;
+  $('#bp-max').value = d.hot.bargain_max_distinct_slugs;
+  $('#st-ro').textContent = d.readonly.sniper_dry_run ? '当前为 DRY-RUN 模式' : '热更新已启用';
+}
+function buttonBusy(button, busy, busyText) {
+  if (!button) return;
+  if (busy) {
+    button.dataset.idleText = button.textContent;
+    button.textContent = busyText;
+    button.disabled = true;
+  } else {
+    button.textContent = button.dataset.idleText || button.textContent;
+    button.disabled = false;
+  }
+}
+async function sysPollNow(outputId='sys-out', button=null) {
+  const out = $('#' + outputId);
+  out.textContent = '轮询中…';
+  buttonBusy(button, true, '轮询中…');
+  try {
+    const d = await api('/system/poll-now', {method:'POST'});
+    const p = d.poller.last_poll;
+    out.textContent = `轮询完成：${p.candidates} 候选 · ${p.new} 新 · ${p.hits} 命中`;
+    if (currentPage === 'dash') refreshStatus();
+  } catch (e) { out.textContent = e.message; }
+  finally { buttonBusy(button, false); }
+}
+async function sysTestPush(selectId='dash-test-group', button=null) {
+  const gid = parseInt($('#' + selectId).value, 10);
+  if (!gid) { toast('无可用目标', true); return; }
+  buttonBusy(button, true, '入队中…');
+  try {
+    await api('/system/test-push', {method:'POST', body: JSON.stringify({scope_id: gid})});
+    toast('测试消息已入发送队列');
+    if ($('#dash-action-out')) $('#dash-action-out').textContent = `测试消息已加入 ${targetLabel(gid)} 的发送队列`;
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+async function sysRefreshData(outputId='data-out', button=null) {
+  if (!confirm('从数据源重新拉取武器/词条/基准值数据？约需 10~30 秒')) return;
+  const out = $('#' + outputId);
+  out.textContent = '数据更新中…';
+  buttonBusy(button, true, '更新中…');
+  try {
+    const d = await api('/system/refresh-data', {method:'POST'});
+    out.textContent = d.output;
+    toast('数据更新完成，缓存已刷新');
+    if (currentPage === 'aliases') await loadAliases();
+  } catch (e) { out.textContent = e.message; }
+  finally { buttonBusy(button, false); }
+}
+async function sysRestart() {
+  if (!confirm('确认重启 Bot？\n由 systemd/NSSM 守护会自动拉起；手动运行需要自己重新启动进程。\n命令触发名和别名等待重启的变更将在重启后生效。')) return;
+  try {
+    await api('/system/restart', {method:'POST'});
+    $('#sys-out').textContent = '重启指令已发出，进程即将退出…';
+  } catch (e) {
+    $('#sys-out').textContent = `未能确认重启请求：${e.message}`;
+  }
+}
+async function saveSettings(button) {
+  const poll = Number($('#st-poll').value), send = Number($('#st-send').value);
+  const fast = Number($('#st-wm-fast').value);
+  if (!Number.isFinite(fast) || fast < 1 || fast > 60) { toast('快速查询间隔需在 1~60 秒之间', true); $('#st-wm-fast').focus(); return; }
+  const concurrency = Number($('#st-concurrency').value), ttl = Number($('#st-ttl').value), max = Number($('#st-max').value);
+  if (!Number.isFinite(poll) || poll < 1 || poll > 3600) { toast('轮询间隔需在 1~3600 秒之间', true); $('#st-poll').focus(); return; }
+  if (!Number.isFinite(send) || send < 0 || send > 60) { toast('推送间隔需在 0~60 秒之间', true); $('#st-send').focus(); return; }
+  if (!Number.isInteger(concurrency) || concurrency < 0) { toast('主通道并发上限需为非负整数', true); $('#st-concurrency').focus(); return; }
+  if (!Number.isFinite(ttl) || ttl <= 0 || ttl > 3600) { toast('交易消息 TTL 需大于 0 且不超过 3600 秒', true); $('#st-ttl').focus(); return; }
+  if (!Number.isInteger(max) || max < 0) { toast('每目标配置上限需为非负整数', true); $('#st-max').focus(); return; }
+  try {
+    buttonBusy(button, true, '正在保存…');
+    await api('/settings', {method:'PATCH', body: JSON.stringify({
+      sniper_poll_interval: poll,
+      wm_fast_interval: fast,
+      sniper_send_interval: send,
+      sniper_send_concurrency: concurrency,
+      trade_message_ttl_seconds: ttl,
+      sniper_max_configs_per_group: max,
+    })});
+    toast('已保存并生效（已写回 .env）');
+    await ensureTargetContext(true);
+    if (currentPage === 'dash') refreshStatus();
+  } catch (e) { toast(e.message, true); }
+  finally { buttonBusy(button, false); }
+}
+
+async function boot() {
+  setupTabs();
+  statusTimer = setInterval(() => {
+    if ($('#sec-dash').classList.contains('active')) refreshStatus();
+    if (currentPage === 'access') loadWmFast().catch(e => { $('#wm-fast-summary').textContent = e.message; });
+  }, 3000);
+  startLogStream();
+  await nav(location.hash.slice(1) || 'dash');
+}
+boot();
+</script>
+</body>
+</html>

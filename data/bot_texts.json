@@ -1,0 +1,306 @@
+{
+  "通用.缺少英文简写": {
+    "zh": "当前命令未配置英文简写，请联系管理员在控制台添加",
+    "en": "No English shortcut is configured for this command. Ask an administrator to add one in the console."
+  },
+  "通用.监控不存在": {
+    "zh": "未找到监控编号 {id}",
+    "en": "Watch {id} was not found."
+  },
+  "通用.命令已停用": {
+    "zh": "“{name}”命令已停用",
+    "en": "Command \"{name}\" is disabled."
+  },
+  "通用.编号用法": {
+    "zh": "请输入配置编号\n示例：\n{sniper_delete} 3",
+    "en": "Enter a rule number.\nExample:\n{sniper_delete} 3"
+  },
+  "通用.配置不存在": {
+    "zh": "未找到该编号的配置",
+    "en": "No rule with that number was found."
+  },
+  "通用.未知命令": {
+    "zh": "未识别命令：{name}",
+    "en": "Unknown command: {name}"
+  },
+  "系统.测试推送": {
+    "zh": "✅ RivenSniper v{version} 这是一条测试推送。",
+    "en": "✅ RivenSniper v{version} This is a test notification."
+  },
+  "狙击添加.成功": {
+    "zh": "配置已添加\n{description}",
+    "en": "Rule added.\n{description}"
+  },
+  "狙击添加.达到上限": {
+    "zh": "无法添加，当前会话最多保存 {limit} 条狙击配置",
+    "en": "You can save at most {limit} sniper rules here."
+  },
+  "狙击添加.解析失败": {
+    "zh": "添加失败：{error}\n请修改后重试",
+    "en": "Could not add rule: {error}"
+  },
+  "狙击添加.重复": {
+    "zh": "配置已存在\n{existing}\n如需修改，请先删除原配置：\n{sniper_delete} {id}",
+    "en": "This rule already exists.\n{existing}\nTo replace it, delete the existing rule first:\n{sniper_delete} {id}"
+  },
+  "狙击添加.被已有配置覆盖": {
+    "zh": "无需添加，现有配置已覆盖这些条件\n{existing}\n可调整新条件，或先删除现有配置：\n{sniper_delete} {id}",
+    "en": "An existing rule already covers these conditions.\n{existing}\nChange the new conditions, or delete the existing rule:\n{sniper_delete} {id}"
+  },
+  "狙击列表.标题": {
+    "zh": "狙击配置",
+    "en": "Riven sniper rules"
+  },
+  "狙击列表.空": {
+    "zh": "暂无狙击配置\n示例：\n{sniper_add} Torid cc ms cd -any\n填写 2 或 3 个正词条；-any 表示任意负词条，不写则要求无负词条",
+    "en": "No sniper rules yet.\nExample:\n{sniper_add} Torid cc ms cd -any\nUse 2 or 3 positive stats. -any requires a negative stat; omit it to require no negative stat."
+  },
+  "狙击删除.成功": {
+    "zh": "配置 {id} 已删除",
+    "en": "Rule {id} deleted."
+  },
+  "黑名单添加.用法": {
+    "zh": "请输入卖家名 列如:\n{blacklist_add} SomeSeller\n单独屏蔽WM或者频道：\n{blacklist_add} WM SomeSeller\n{blacklist_add} Channel SomeSeller\n批量添加示例，每行一个卖家名：\n{blacklist_add} WM\nSellerOne\nSeller Two\n黑名单仅过滤紫卡狙击，不影响捡漏",
+    "en": "Enter a seller name.Examples:\n{blacklist_add} SomeSeller\nBlock WM or channels separately:\n{blacklist_add} WM SomeSeller\n{blacklist_add} Channel SomeSeller\nFor a bulk add, use one seller per line:\n{blacklist_add} WM\nSellerOne\nSeller Two\nBlacklists filter Riven sniper notifications, not bargain notifications."
+  },
+  "黑名单添加.名称过长": {
+    "zh": "第 {line} 行卖家名超过 {limit} 个字符",
+    "en": "The seller name on line {line} exceeds {limit} characters."
+  },
+  "黑名单添加.成功": {
+    "zh": "{name} 已加入卖家黑名单",
+    "en": "{name} was added to the seller blacklist."
+  },
+  "黑名单添加.已存在": {
+    "zh": "{name} 已在卖家黑名单中",
+    "en": "{name} is already on the seller blacklist."
+  },
+  "黑名单添加.批量完成": {
+    "zh": "批量添加完成：新增 {added} 个，已存在 {existing} 个",
+    "en": "Batch complete: {added} added, {existing} already present."
+  },
+  "黑名单删除.用法": {
+    "zh": "请输入卖家名\n示例：\n{blacklist_delete} SomeSeller\n{blacklist_delete} WM SomeSeller\n{blacklist_delete} Channel SomeSeller",
+    "en": "Enter a seller name.\nExamples:\n{blacklist_delete} WM SomeSeller\n{blacklist_delete} Channel SomeSeller\nWithout a scope: remove from both WM and Channel if channel messages are enabled; otherwise WM only."
+  },
+  "黑名单删除.成功": {
+    "zh": "{name} 已移出卖家黑名单",
+    "en": "{name} was removed from the seller blacklist."
+  },
+  "黑名单删除.不存在": {
+    "zh": "{name} 不在卖家黑名单中",
+    "en": "{name} is not on the seller blacklist."
+  },
+  "黑名单.标题": {
+    "zh": "卖家黑名单",
+    "en": "Seller blacklist"
+  },
+  "黑名单.空": {
+    "zh": "卖家黑名单为空",
+    "en": "The seller blacklist is empty."
+  },
+  "黑名单.子命令错误": {
+    "zh": "用法：\n{blacklist_list} WM\n{blacklist_list} Channel\n添加或删除示例：\n{blacklist_add} WM SomeSeller\n{blacklist_delete} WM SomeSeller",
+    "en": "Usage:\n{blacklist_list} WM\n{blacklist_list} Channel\nAdd or remove a seller:\n{blacklist_add} WM SomeSeller\n{blacklist_delete} WM SomeSeller"
+  },
+  "开盒.用法": {
+    "zh": "按玩家查询：\n{tracking_open} SomePlayer\n按紫卡编号查询：\n{tracking_open_riven} 3\n分页与导出示例：\n{tracking_open} SomePlayer page 2\n{tracking_open_riven} 3 all",
+    "en": "Look up a player:\n{tracking_open} SomePlayer\nLook up a Riven number:\n{tracking_open_riven} 3\nPage or export examples:\n{tracking_open} SomePlayer page 2\n{tracking_open_riven} 3 all"
+  },
+  "开盒.无结果": {
+    "zh": "频道追踪库中没有“{query}”的可靠记录",
+    "en": "No reliable channel record was found for \"{query}\"."
+  },
+  "开盒.名称歧义": {
+    "zh": "“{query}”对应多个玩家，暂时无法确定目标：\n{candidates}\n当前不支持按候选项选择",
+    "en": "\"{query}\" matches multiple players:\n{candidates}\nSelecting an individual match is not currently supported."
+  },
+  "开盒.玩家标题": {
+    "zh": "频道玩家记录：{name}",
+    "en": "Channel player record: {name}"
+  },
+  "开盒.词条说明": {
+    "zh": "词条数字为评级偏差（%）.",
+    "en": "Stat numbers are grading deviations (%)."
+  },
+  "开盒.紫卡不存在": {
+    "zh": "未找到紫卡编号 {number}",
+    "en": "Riven number {number} was not found."
+  },
+  "开盒.页码超限": {
+    "zh": "页码 {page} 超出范围，共 {pages} 页",
+    "en": "Page {page} is out of range; there are {pages} pages."
+  },
+  "开盒.导出过大": {
+    "zh": "历史共 {total} 条，超过单次导出上限 {limit} 条，请使用分页查询",
+    "en": "This history has {total} records and exceeds the {limit}-record export limit. Use paged queries instead."
+  },
+  "上线提醒.用法": {
+    "zh": "添加频道提醒：\n{tracker_add} SomePlayer\n查看提醒：\n{tracker_list}\n删除提醒：\n{tracker_delete} 3",
+    "en": "Add a channel alert:\n{tracker_add} SomePlayer\nList alerts:\n{tracker_list}\nDelete an alert:\n{tracker_delete} 3."
+  },
+  "上线提醒.已添加": {
+    "zh": "频道提醒 {id} 已添加：{name}",
+    "en": "Channel alert {id} added for {name}."
+  },
+  "上线提醒.已存在": {
+    "zh": "{name} 已在提醒列表中（编号 {id}）",
+    "en": "An alert for {name} already exists (number {id})."
+  },
+  "上线提醒.待识别已添加": {
+    "zh": "频道提醒 {id} 已添加：{name}\n等待首次在受监控频道中识别到该玩家",
+    "en": "Channel alert {id} saved for {name}.\nWaiting to identify this player in a monitored channel."
+  },
+  "上线提醒.列表空": {
+    "zh": "暂无频道提醒",
+    "en": "No channel alerts yet."
+  },
+  "上线提醒.列表标题": {
+    "zh": "频道提醒",
+    "en": "Channel alerts"
+  },
+  "上线提醒.等待识别": {
+    "zh": "（等待首次识别）",
+    "en": "(waiting for identification)"
+  },
+  "上线提醒.玩家未知": {
+    "zh": "已记录玩家",
+    "en": "Recorded player"
+  },
+  "上线提醒.删除成功": {
+    "zh": "频道提醒 {id} 已删除",
+    "en": "Channel alert {id} deleted."
+  },
+  "上线提醒.删除失败": {
+    "zh": "未找到频道提醒 {id}",
+    "en": "Channel alert {id} was not found."
+  },
+  "上线提醒.上线": {
+    "zh": "频道提醒：{name} 出现在 {channel}",
+    "en": "Channel alert: {name} appeared in {channel}."
+  },
+  "上线提醒.离开": {
+    "zh": "频道提醒：{name} 已离开所有受监控频道",
+    "en": "Channel alert: {name} left all monitored channels."
+  },
+  "去重.用法": {
+    "zh": "查看当前间隔：\n{channel_dedupe}\n设置间隔示例：\n{channel_dedupe} 24\n单位为小时，只接受 1～72 的整数",
+    "en": "View the current interval:\n{channel_dedupe}\nSet the interval:\n{channel_dedupe} 24\nEnter an integer from 1 to 72 hours."
+  },
+  "去重.当前": {
+    "zh": "频道紫卡去重间隔：{hours} 小时\n同一张紫卡再次出现时，距上次被观察到至少 {hours} 小时，才有机会再次推送",
+    "en": "Channel Riven dedupe interval: {hours} hours.\nA Riven can be sent again only if at least {hours} hours have passed since it was last observed."
+  },
+  "去重.成功": {
+    "zh": "频道紫卡去重间隔已设为 {hours} 小时\n同一张紫卡再次出现时，距上次被观察到至少 {hours} 小时，才有机会再次推送",
+    "en": "Channel Riven dedupe interval set to {hours} hours.\nA Riven can be sent again only if at least {hours} hours have passed since it was last observed."
+  },
+  "词条列表.标题": {
+    "zh": "词条最简写",
+    "en": "Stat shortcuts"
+  },
+  "狙击推送.标题": {
+    "zh": "WARFRAME.MARKET · RIVEN\n",
+    "en": "WARFRAME.MARKET · RIVEN\n"
+  },
+  "狙击推送.价格行": {
+    "zh": "价格：{price_line}\n卖家：{seller}\n状态：{status}",
+    "en": "Price: {price_line}\nSeller: {seller}\nStatus: {status}"
+  },
+  "狙击推送.私聊": {
+    "zh": "私聊\n/w {seller} hi wtb your \"{weapon_en} {riven}\" riven for {price} platinum.",
+    "en": "DM\n/w {seller} Hi! I want to buy your \"{weapon_en} {riven}\" riven for {price} platinum."
+  },
+  "捡漏添加.用法": {
+    "zh": "请输入道具名\n示例：\n{bargain_add} Arcane Grace 0 25\n0 表示未升级，满级使用 max；无等级道具省略等级\n25 表示低于参考价至少 25%；省略时使用系统默认门槛",
+    "en": "Enter an item name.\nExample:\n{bargain_add} Arcane Grace 0 25\nUse 0 for unranked or max for max rank; omit the rank for items without ranks.\n25 means at least 25% below reference. Omit it to use the system default."
+  },
+  "捡漏添加.成功": {
+    "zh": "监控已添加\n{description}",
+    "en": "Watch added.\n{description}"
+  },
+  "捡漏添加.找不到": {
+    "zh": "未找到道具“{name}”\n可使用中文、英文或别名，也可输入部分名称",
+    "en": "Item \"{name}\" was not found.\nUse a Chinese or English name, an alias, or part of the name."
+  },
+  "捡漏添加.数据缺失": {
+    "zh": "道具目录不可用，请联系管理员",
+    "en": "The item catalogue is unavailable. Please contact an administrator."
+  },
+  "捡漏添加.多个匹配": {
+    "zh": "“{name}”匹配到多个道具\n请使用更完整的名称\n{candidates}",
+    "en": "\"{name}\" matches multiple items. Use a more complete name:\n{candidates}"
+  },
+  "捡漏添加.已存在": {
+    "zh": "{name} 已在道具监控清单中",
+    "en": "{name} is already on the item watch list."
+  },
+  "捡漏添加.达到上限": {
+    "zh": "已达全局监控上限，最多监控 {limit} 种不同道具或武器",
+    "en": "The global watch limit is {limit} distinct items or weapons."
+  },
+  "捡漏添加.折扣格式错误": {
+    "zh": "低于参考价的百分比无效：“{value}”\n请输入 5～90 的整数，例如 25 表示低于参考价至少 25%",
+    "en": "Invalid percentage below reference: \"{value}\".\nEnter an integer from 5 to 90. For example, 25 means at least 25% below reference."
+  },
+  "捡漏列表.标题": {
+    "zh": "道具捡漏监控",
+    "en": "Item bargain watches"
+  },
+  "捡漏列表.空": {
+    "zh": "暂无道具捡漏监控\n示例：\n{bargain_add} Arcane Grace 0 25\n25 表示低于参考价至少 25%",
+    "en": "No item bargain watches yet.\nExample:\n{bargain_add} Arcane Grace 0 25\n25 means at least 25% below reference."
+  },
+  "捡漏删除.用法": {
+    "zh": "请输入监控编号\n示例：\n{bargain_delete} 3",
+    "en": "Enter a watch number.\nExample:\n{bargain_delete} 3"
+  },
+  "捡漏删除.成功": {
+    "zh": "监控 {id} 已移除",
+    "en": "Watch {id} removed."
+  },
+  "捡漏紫卡.用法": {
+    "zh": "添加紫卡监控：\n{bargain_riven_add} Torid 30\n30 表示低于参考价至少 30%；省略时使用系统默认门槛\n查看监控：\n{bargain_riven_list}\n删除监控：\n{bargain_riven_delete} 3",
+    "en": "Add a Riven watch:\n{bargain_riven_add} Torid 30\n30 means at least 30% below reference. Omit it to use the system default.\nList watches:\n{bargain_riven_list}\nDelete a watch:\n{bargain_riven_delete} 3"
+  },
+  "捡漏紫卡.添加成功": {
+    "zh": "紫卡监控已添加\n{description}",
+    "en": "Riven watch added.\n{description}"
+  },
+  "捡漏紫卡.找不到武器": {
+    "zh": "未找到武器“{name}”\n请使用游戏内中文名或英文名",
+    "en": "Weapon \"{name}\" was not found. Use its exact in-game name."
+  },
+  "捡漏紫卡.已存在": {
+    "zh": "{name} 已在紫卡监控清单中",
+    "en": "{name} is already on the Riven watch list."
+  },
+  "捡漏紫卡.达到上限": {
+    "zh": "已达全局监控上限，最多监控 {limit} 种不同道具或武器",
+    "en": "The global watch limit is {limit} distinct items or weapons."
+  },
+  "捡漏紫卡.列表标题": {
+    "zh": "紫卡捡漏监控",
+    "en": "Riven bargain watches"
+  },
+  "捡漏紫卡.列表空": {
+    "zh": "暂无紫卡捡漏监控\n示例：\n{bargain_riven_add} Torid 30\n30 表示低于参考价至少 30%",
+    "en": "No Riven bargain watches yet.\nExample:\n{bargain_riven_add} Torid 30\n30 means at least 30% below reference."
+  },
+  "捡漏紫卡.删除用法": {
+    "zh": "请输入监控编号\n示例：\n{bargain_riven_delete} 3",
+    "en": "Enter a watch number.\nExample:\n{bargain_riven_delete} 3"
+  },
+  "捡漏紫卡.删除成功": {
+    "zh": "紫卡监控 {id} 已移除",
+    "en": "Riven watch {id} removed."
+  },
+  "捡漏推送.道具": {
+    "zh": "低价挂单\n{name}{bucket}\n价格：{price} 白金\n参考日均价：{baseline} 白金\n低于参考价：{discount}%\n数量：{quantity}\n卖家：{seller}\n状态：{seller_status}\n游戏内联系\n/w {seller} Hi! I want to buy: \"{whisper_item}\" for {price} platinum. (warframe.market)",
+    "en": "Low-price listing\n{name_en}{bucket}\nPrice: {price} platinum\nReference daily average: {baseline} platinum\nBelow reference: {discount}%\nQuantity: {quantity}\nSeller: {seller}\nStatus: {seller_status}\nIn-game contact\n/w {seller} Hi! I want to buy: \"{whisper_item}\" for {price} platinum. (warframe.market)"
+  },
+  "捡漏推送.紫卡": {
+    "zh": "紫卡低价挂单\n{weapon} {riven}\n价格：{price} 白金\n低价样本均价：{baseline} 白金\n低于参考价：{discount}%\n洗练次数：{re_rolls}\n卖家：{seller}\n状态：{seller_status}\n游戏内联系\n/w {seller} Hi! I want to buy your \"{weapon_en} {riven}\" riven for {price} platinum. (warframe.market)",
+    "en": "Low-price Riven\n{weapon_en} {riven}\nPrice: {price} platinum\nRolling low-price average: {baseline} platinum\nBelow reference: {discount}%\nRerolls: {re_rolls}\nSeller: {seller}\nStatus: {seller_status}\nIn-game contact\n/w {seller} Hi! I want to buy your \"{weapon_en} {riven}\" riven for {price} platinum. (warframe.market)"
+  }
+}
