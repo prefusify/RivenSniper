@@ -1,5 +1,7 @@
 # RivenSniper
 
+简体中文 | [English](README.en.md)
+
 **Warframe 紫卡与道具监控、游戏频道采集及 QQ / Discord 推送工具。**
 
 版本 **9.0.2** · **Windows 11 桌面端** · **Python 3.12** · [MIT License](LICENSE)
